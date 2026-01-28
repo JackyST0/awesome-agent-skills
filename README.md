@@ -102,16 +102,22 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | 名称 | 描述 | Stars | 链接 |
 |------|------|-------|------|
 | Agent Skills 开放标准 | Agent Skills 官方规范文档 | - | [skill.md](https://skill.md/) |
+| Agent Skills 规范 | SKILL.md 格式规范 | - | [agentskills.io](https://agentskills.io/specification) |
 | anthropics/skills | Anthropic 官方 Agent Skills 仓库 | 54.9k | [GitHub](https://github.com/anthropics/skills) |
-| agentskills/agentskills | Agent Skills 标准参考实现 | - | [GitHub](https://github.com/agentskills/agentskills) |
 | github/awesome-copilot | GitHub 官方 Copilot 资源合集 | - | [GitHub](https://github.com/github/awesome-copilot) |
+| Agent Skills 索引 | 社区 Skills 搜索引擎 | - | [agent-skills.md](https://agent-skills.md/) |
 
 #### Skills 合集
 
 | 名称 | 描述 | Stars | 链接 |
 |------|------|-------|------|
 | awesome-cursorrules | 最全面的 Cursor Rules 合集 | 37.3k | [GitHub](https://github.com/PatrickJS/awesome-cursorrules) |
-| cursor-skills | Cursor Skills 示例集合 | - | [GitHub](https://github.com/daniel-scrivner/cursor-skills) |
+| awesome-claude-skills | Composio 维护的 Claude Skills 合集 | 25.7k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
+| everything-claude-code | Claude Code 配置大全（agents/skills/hooks） | 25.5k | [GitHub](https://github.com/affaan-m/everything-claude-code) |
+| awesome-claude-skills | VoltAgent 维护的 Claude Skills 合集 | 4.3k | [GitHub](https://github.com/VoltAgent/awesome-claude-skills) |
+| claude-skills | Simon Willison 的 Claude Skills 文档 | 906 | [GitHub](https://github.com/simonw/claude-skills) |
+| claude-skills-collection | 官方与社区 Skills 精选集合 | 402 | [GitHub](https://github.com/abubakarsiddik31/claude-skills-collection) |
+| cursor-automator | Cursor 自动化 Rules 集合 | - | [GitHub](https://github.com/ShalevAri/cursor-automator) |
 | cursor-rules-and-prompts | Cursor 规则与提示词集合 | 112 | [GitHub](https://github.com/thehimel/cursor-rules-and-prompts) |
 | claude-code-central | Claude Code 共享 agents、skills 和模板 | - | [GitHub](https://github.com/grandinh/claude-code-central) |
 | claude-code-kit | Claude Code 工具包，自动激活 skills | 58 | [GitHub](https://github.com/blencorp/claude-code-kit) |
@@ -120,7 +126,9 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 
 | 名称 | 描述 | 平台 | 链接 |
 |------|------|------|------|
-| skill-codex | 将任务委派给 Codex 的 Claude Code Skill | Claude | [GitHub](https://github.com/skills-directory/skill-codex) |
+| gh-code-review | GitHub PR 代码审查 Skill | Copilot | [GitHub](https://github.com/bkircher/skills) |
+| skill-codex | 将任务委派给 Codex 的 Skill | Claude | [GitHub](https://github.com/skills-directory/skill-codex) |
+| skillset-example | GitHub Copilot 扩展示例 | Copilot | [GitHub](https://github.com/copilot-extensions/skillset-example) |
 | code-review | 智能代码审查示例 Skill | All | [示例](examples/code-review/) |
 | git-commit | Git 提交信息生成示例 Skill | All | [示例](examples/git-commit/) |
 
@@ -208,9 +216,9 @@ cp -r my-skill ~/.cursor/skills/
 ### Skills List
 
 See the [中文 Skills 列表](#skills-列表) above for the complete categorized list, including:
-- **Official Resources** - Official repositories from Anthropic, GitHub, etc.
-- **Skills Collections** - Curated collections like awesome-cursorrules (37.3k⭐)
-- **Development Tools** - Code review, git commit, debugging skills
+- **Official Resources** - anthropics/skills (54.9k⭐), skill.md, agentskills.io
+- **Skills Collections** - awesome-cursorrules (37.3k⭐), awesome-claude-skills (25.7k⭐), everything-claude-code (25.5k⭐)
+- **Development Tools** - Code review, git commit, GitHub PR review skills
 - **And more categories** - Productivity, Writing, Data, DevOps, Design
 
 ### Contributing
