@@ -1,8 +1,15 @@
-# Awesome Agent Skills
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Agent Skills" width="100%">
+</p>
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![License: CC0](https://img.shields.io/badge/License-CC0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+<p align="center">
+  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
+  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+  <a href="https://creativecommons.org/publicdomain/zero/1.0/"><img src="https://img.shields.io/badge/License-CC0-lightgrey.svg" alt="License: CC0"></a>
+  <img src="https://img.shields.io/github/stars/JackyST0/awesome-agent-skills?style=social" alt="GitHub Stars">
+</p>
+
+# Awesome Agent Skills
 
 > 🤖 精选的 AI Agent Skills 列表，适用于 Cursor、Claude Code、GitHub Copilot 等 AI 编程工具。
 >
@@ -14,13 +21,31 @@
 
 ## 快速开始
 
-```bash
-# 克隆示例 skill 到 Cursor
-git clone https://github.com/anthropics/skills.git ~/.cursor/skills/anthropics
+### 一键安装（推荐）
 
-# 或复制本仓库的示例
+```bash
+# 交互式模式 - 支持安装、卸载、查看
+curl -sL https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.sh | bash
+
+# 或直接安装到指定平台
+curl -sL https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.sh | bash -s -- -p cursor -a
+
+# 卸载 Skills
+curl -sL https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.sh | bash -s -- -p cursor -u -s code-review
+
+# 查看已安装的 Skills
+curl -sL https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.sh | bash -s -- -p cursor --list-installed
+```
+
+### 手动安装
+
+```bash
+# 克隆本仓库的示例
 git clone https://github.com/JackyST0/awesome-agent-skills.git
 cp -r awesome-agent-skills/examples/code-review ~/.cursor/skills/
+
+# 或克隆官方 Skills
+git clone https://github.com/anthropics/skills.git ~/.cursor/skills/anthropics
 ```
 
 ---
@@ -105,8 +130,10 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | 名称 | 描述 | Stars | 链接 |
 |------|------|-------|------|
 | awesome-cursorrules | ⭐ 最全面的 Cursor Rules 合集 | 37.4k | [GitHub](https://github.com/PatrickJS/awesome-cursorrules) |
-| awesome-claude-skills | ⭐ Composio 维护的 Claude Skills 合集 | 27.1k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
 | everything-claude-code | ⭐ Claude Code 配置大全（agents/skills/hooks） | 32.9k | [GitHub](https://github.com/affaan-m/everything-claude-code) |
+| awesome-claude-skills | ⭐ Composio 维护的 Claude Skills 合集 | 27.1k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
+| awesome-claude-code | ⭐ Claude Code skills/hooks/插件合集 | 22.1k | [GitHub](https://github.com/hesreallyhim/awesome-claude-code) |
+| openskills | ⭐ 通用 Skills 加载器（npm 安装） | 7.3k | [GitHub](https://github.com/numman-ali/openskills) |
 | awesome-claude-skills | VoltAgent 维护的 Claude Skills 合集 | 4.4k | [GitHub](https://github.com/VoltAgent/awesome-claude-skills) |
 | claude-skills | Simon Willison 的 Claude Skills 文档 | 910 | [GitHub](https://github.com/simonw/claude-skills) |
 | claude-skills-collection | 官方与社区 Skills 精选集合 | 406 | [GitHub](https://github.com/abubakarsiddik31/claude-skills-collection) |
@@ -119,9 +146,13 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 
 | 名称 | 描述 | 平台 | 链接 |
 |------|------|------|------|
+| claude-code-security-review | ⭐ AI 安全审查 GitHub Action（官方） | Claude | [GitHub](https://github.com/anthropics/claude-code-security-review) |
+| trailofbits/skills | ⭐ Trail of Bits 安全研究和审计 Skills | Claude | [GitHub](https://github.com/trailofbits/skills) |
+| playwright-skill | Playwright 浏览器自动化测试 Skill | Claude | [GitHub](https://github.com/lackeyjb/playwright-skill) |
 | gh-code-review | GitHub PR 代码审查 Skill | Copilot | [GitHub](https://github.com/bkircher/skills) |
 | skill-codex | 将任务委派给 Codex 的 Skill | Claude | [GitHub](https://github.com/skills-directory/skill-codex) |
 | skillset-example | GitHub Copilot 扩展示例 | Copilot | [GitHub](https://github.com/copilot-extensions/skillset-example) |
+| claude-code-skills | 专业级 Skills 市场 | Claude | [GitHub](https://github.com/daymade/claude-code-skills) |
 | code-review | 智能代码审查示例 Skill | All | [示例](examples/code-review/) |
 | git-commit | Git 提交信息生成示例 Skill | All | [示例](examples/git-commit/) |
 | unit-test-generator | 单元测试自动生成 Skill | All | [示例](examples/unit-test-generator/) |

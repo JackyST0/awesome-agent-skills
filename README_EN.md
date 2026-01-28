@@ -1,8 +1,15 @@
-# Awesome Agent Skills
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Agent Skills" width="100%">
+</p>
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![License: CC0](https://img.shields.io/badge/License-CC0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+<p align="center">
+  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
+  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+  <a href="https://creativecommons.org/publicdomain/zero/1.0/"><img src="https://img.shields.io/badge/License-CC0-lightgrey.svg" alt="License: CC0"></a>
+  <img src="https://img.shields.io/github/stars/JackyST0/awesome-agent-skills?style=social" alt="GitHub Stars">
+</p>
+
+# Awesome Agent Skills
 
 > 🤖 A curated list of awesome AI Agent Skills for Cursor, Claude Code, GitHub Copilot, and other AI-powered tools.
 
@@ -12,13 +19,31 @@
 
 ## Quick Start
 
-```bash
-# Clone example skills to Cursor
-git clone https://github.com/anthropics/skills.git ~/.cursor/skills/anthropics
+### One-Click Install (Recommended)
 
-# Or copy examples from this repository
+```bash
+# Interactive mode - install, uninstall, or list
+curl -sL https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.sh | bash
+
+# Or install all skills to a specific platform
+curl -sL https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.sh | bash -s -- -p cursor -a
+
+# Uninstall skills
+curl -sL https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.sh | bash -s -- -p cursor -u -s code-review
+
+# List installed skills
+curl -sL https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.sh | bash -s -- -p cursor --list-installed
+```
+
+### Manual Install
+
+```bash
+# Clone examples from this repository
 git clone https://github.com/JackyST0/awesome-agent-skills.git
 cp -r awesome-agent-skills/examples/code-review ~/.cursor/skills/
+
+# Or clone official skills
+git clone https://github.com/anthropics/skills.git ~/.cursor/skills/anthropics
 ```
 
 ---
@@ -104,8 +129,10 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | Name | Description | Stars | Link |
 |------|-------------|-------|------|
 | awesome-cursorrules | ⭐ The most comprehensive Cursor Rules collection | 37.4k | [GitHub](https://github.com/PatrickJS/awesome-cursorrules) |
-| awesome-claude-skills | ⭐ Claude Skills collection by Composio | 27.1k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
 | everything-claude-code | ⭐ Complete Claude Code configs (agents/skills/hooks) | 32.9k | [GitHub](https://github.com/affaan-m/everything-claude-code) |
+| awesome-claude-skills | ⭐ Claude Skills collection by Composio | 27.1k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
+| awesome-claude-code | ⭐ Claude Code skills/hooks/plugins collection | 22.1k | [GitHub](https://github.com/hesreallyhim/awesome-claude-code) |
+| openskills | ⭐ Universal Skills loader (npm install) | 7.3k | [GitHub](https://github.com/numman-ali/openskills) |
 | awesome-claude-skills | Claude Skills collection by VoltAgent | 4.4k | [GitHub](https://github.com/VoltAgent/awesome-claude-skills) |
 | claude-skills | Claude Skills documentation by Simon Willison | 910 | [GitHub](https://github.com/simonw/claude-skills) |
 | claude-skills-collection | Curated official and community Skills | 406 | [GitHub](https://github.com/abubakarsiddik31/claude-skills-collection) |
@@ -118,8 +145,12 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 
 | Name | Description | Platform | Link |
 |------|-------------|----------|------|
+| claude-code-security-review | ⭐ AI security review GitHub Action (Official) | Claude | [GitHub](https://github.com/anthropics/claude-code-security-review) |
+| trailofbits/skills | ⭐ Trail of Bits security research & audit Skills | Claude | [GitHub](https://github.com/trailofbits/skills) |
+| playwright-skill | Playwright browser automation testing Skill | Claude | [GitHub](https://github.com/lackeyjb/playwright-skill) |
 | gh-code-review | GitHub PR code review Skill | Copilot | [GitHub](https://github.com/bkircher/skills) |
 | skill-codex | Delegate tasks to Codex Skill | Claude | [GitHub](https://github.com/skills-directory/skill-codex) |
+| claude-code-skills | Professional Skills marketplace | Claude | [GitHub](https://github.com/daymade/claude-code-skills) |
 | skillset-example | GitHub Copilot extension example | Copilot | [GitHub](https://github.com/copilot-extensions/skillset-example) |
 | code-review | Smart code review example Skill | All | [Example](examples/code-review/) |
 | git-commit | Git commit message generator Skill | All | [Example](examples/git-commit/) |
