@@ -1,0 +1,123 @@
+name: Link Check
+
+on:
+  # Run weekly on Sunday at 00:00 UTC
+  schedule:
+    - cron: '0 0 * * 0'
+
+  # Run on pull requests that modify markdown files
+  pull_request:
+    paths:
+      - '**.md'
+
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  link-check:
+    name: Check Links
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check links with lychee
+        id: lychee
+        uses: lycheeverse/lychee-action@v1
+        with:
+          # Check all markdown files
+          args: >-
+            --verbose
+            --no-progress
+            --accept 200,204,206,301,302,303,307,308
+            --timeout 30
+            --max-retries 3
+            --exclude-mail
+            --exclude '^https://github\.com/.*/(issues|pull)/\d+'
+            --exclude '^https://star-history\.com'
+            '**/*.md'
+
+          # Don't fail immediately - we want to create an issue first
+          fail: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload link check report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: link-check-report
+          path: ./lychee/out.md
+          retention-days: 30
+
+      - name: Create issue for broken links
+        if: steps.lychee.outputs.exit_code != 0 && github.event_name == 'schedule'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const reportPath = './lychee/out.md';
+
+            let reportContent = '';
+            if (fs.existsSync(reportPath)) {
+              reportContent = fs.readFileSync(reportPath, 'utf8');
+            }
+
+            // Check if an open issue already exists
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'broken-links'
+            });
+
+            const existingIssue = issues.data.find(issue =>
+              issue.title.includes('Broken Links Detected')
+            );
+
+            const issueBody = `## Broken Links Report
+
+            The automated link checker found broken links in the repository.
+
+            **Run Date**: ${new Date().toISOString().split('T')[0]}
+            **Workflow Run**: [View Run](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})
+
+            ### Report Details
+
+            \`\`\`
+            ${reportContent.substring(0, 60000)}
+            \`\`\`
+
+            ---
+
+            Please review and fix the broken links, then close this issue.
+
+            *This issue was automatically created by the link-check workflow.*`;
+
+            if (existingIssue) {
+              // Update existing issue
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existingIssue.number,
+                body: issueBody
+              });
+              console.log(`Updated existing issue #${existingIssue.number}`);
+            } else {
+              // Create new issue
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: '🔗 Broken Links Detected',
+                body: issueBody,
+                labels: ['broken-links', 'maintenance']
+              });
+              console.log('Created new issue for broken links');
+            }
+
+      - name: Fail if broken links found (for PRs)
+        if: steps.lychee.outputs.exit_code != 0 && github.event_name == 'pull_request'
+        run: |
+          echo "Broken links were found. Please fix them before merging."
+          exit 1

@@ -2,6 +2,8 @@
 
 本指南将帮助你创建一个标准的 Agent Skill，可在 Cursor、Claude、Codex 等平台使用。
 
+> 📋 **规范文档**: 查看 [SKILL.md 规范文档](skill-spec.md) 了解完整的格式规范和最佳实践。
+
 ## 快速开始
 
 ### 1. 创建目录结构
@@ -257,6 +259,7 @@ templates/
 
 ## 更多资源
 
+- [SKILL.md 规范文档](skill-spec.md) - 完整的格式规范和最佳实践
 - [Anthropic 官方 Skills 仓库](https://github.com/anthropics/skills)
 - [Awesome Cursor Rules](https://github.com/PatrickJS/awesome-cursorrules)
 - [GitHub Copilot Agent Skills 文档](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills)

@@ -10,6 +10,9 @@ This directory contains ready-to-use example Agent Skills.
 |-------------|---------------------|
 | [code-review](code-review/) | 智能代码审查 / Smart code review |
 | [git-commit](git-commit/) | Git 提交信息生成 / Git commit message generator |
+| [unit-test-generator](unit-test-generator/) | 单元测试生成 / Unit test generator |
+| [api-doc-generator](api-doc-generator/) | API 文档生成 / API documentation generator |
+| [debug-helper](debug-helper/) | 调试助手 / Debug helper |
 
 ## 如何使用 / How to Use
 
@@ -19,7 +22,13 @@ This directory contains ready-to-use example Agent Skills.
 cp -r code-review ~/.cursor/skills/
 ```
 
-### Claude Code / Codex
+### Claude Code
+
+```bash
+cp -r code-review ~/.claude/skills/
+```
+
+### OpenAI Codex
 
 ```bash
 cp -r code-review ~/.codex/skills/

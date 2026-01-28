@@ -40,11 +40,7 @@ cp -r awesome-agent-skills/examples/code-review ~/.cursor/skills/
   - [官方资源](#官方资源)
   - [Skills 合集](#skills-合集)
   - [开发工具](#开发工具)
-  - [效率提升](#效率提升)
-  - [写作创作](#写作创作)
-  - [数据处理](#数据处理)
-  - [DevOps](#devops)
-  - [设计相关](#设计相关)
+  - [更多分类（待收录）](#更多分类待收录)
 - [如何贡献](#如何贡献)
 - [创建你自己的 Skill](#创建你自己的-skill)
 
@@ -103,7 +99,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 |------|------|-------|------|
 | Agent Skills 开放标准 | Agent Skills 官方规范文档 | - | [skill.md](https://skill.md/) |
 | Agent Skills 规范 | SKILL.md 格式规范 | - | [agentskills.io](https://agentskills.io/specification) |
-| anthropics/skills | Anthropic 官方 Agent Skills 仓库 | 54.9k | [GitHub](https://github.com/anthropics/skills) |
+| anthropics/skills | ⭐ Anthropic 官方 Agent Skills 仓库 | 54.9k | [GitHub](https://github.com/anthropics/skills) |
 | github/awesome-copilot | GitHub 官方 Copilot 资源合集 | - | [GitHub](https://github.com/github/awesome-copilot) |
 | Agent Skills 索引 | 社区 Skills 搜索引擎 | - | [agent-skills.md](https://agent-skills.md/) |
 
@@ -111,9 +107,9 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 
 | 名称 | 描述 | Stars | 链接 |
 |------|------|-------|------|
-| awesome-cursorrules | 最全面的 Cursor Rules 合集 | 37.3k | [GitHub](https://github.com/PatrickJS/awesome-cursorrules) |
-| awesome-claude-skills | Composio 维护的 Claude Skills 合集 | 25.7k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
-| everything-claude-code | Claude Code 配置大全（agents/skills/hooks） | 25.5k | [GitHub](https://github.com/affaan-m/everything-claude-code) |
+| awesome-cursorrules | ⭐ 最全面的 Cursor Rules 合集 | 37.3k | [GitHub](https://github.com/PatrickJS/awesome-cursorrules) |
+| awesome-claude-skills | ⭐ Composio 维护的 Claude Skills 合集 | 25.7k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
+| everything-claude-code | ⭐ Claude Code 配置大全（agents/skills/hooks） | 25.5k | [GitHub](https://github.com/affaan-m/everything-claude-code) |
 | awesome-claude-skills | VoltAgent 维护的 Claude Skills 合集 | 4.3k | [GitHub](https://github.com/VoltAgent/awesome-claude-skills) |
 | claude-skills | Simon Willison 的 Claude Skills 文档 | 906 | [GitHub](https://github.com/simonw/claude-skills) |
 | claude-skills-collection | 官方与社区 Skills 精选集合 | 402 | [GitHub](https://github.com/abubakarsiddik31/claude-skills-collection) |
@@ -131,26 +127,23 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | skillset-example | GitHub Copilot 扩展示例 | Copilot | [GitHub](https://github.com/copilot-extensions/skillset-example) |
 | code-review | 智能代码审查示例 Skill | All | [示例](examples/code-review/) |
 | git-commit | Git 提交信息生成示例 Skill | All | [示例](examples/git-commit/) |
+| unit-test-generator | 单元测试自动生成 Skill | All | [示例](examples/unit-test-generator/) |
+| api-doc-generator | API 文档生成 Skill | All | [示例](examples/api-doc-generator/) |
+| debug-helper | 代码调试助手 Skill | All | [示例](examples/debug-helper/) |
 
-#### 效率提升
+#### 更多分类（待收录）
 
-> 🚧 等待收录中... [提交你的第一个 Skill →](CONTRIBUTING.md)
+以下分类正在征集优秀 Skills，欢迎提交：
 
-#### 写作创作
+| 分类 | 说明 |
+|------|------|
+| 效率提升 | 自动化工作流、时间管理、任务规划等 |
+| 写作创作 | 文案生成、文档撰写、翻译润色等 |
+| 数据处理 | 数据分析、格式转换、可视化等 |
+| DevOps | CI/CD、容器化、监控运维等 |
+| 设计相关 | UI/UX 辅助、设计规范、图像处理等 |
 
-> 🚧 等待收录中... [提交你的第一个 Skill →](CONTRIBUTING.md)
-
-#### 数据处理
-
-> 🚧 等待收录中... [提交你的第一个 Skill →](CONTRIBUTING.md)
-
-#### DevOps
-
-> 🚧 等待收录中... [提交你的第一个 Skill →](CONTRIBUTING.md)
-
-#### 设计相关
-
-> 🚧 等待收录中... [提交你的第一个 Skill →](CONTRIBUTING.md)
+> 🚧 [提交你的 Skill →](CONTRIBUTING.md)
 
 ### 如何贡献
 
@@ -205,6 +198,7 @@ Agent Skills are instruction sets, scripts, and resources that AI agents can dis
 | Claude Code | `~/.claude/skills/` | `.claude/skills/` |
 | GitHub Copilot | `~/.copilot/skills/` | `.github/skills/` |
 | Windsurf | `~/.windsurf/skills/` | `.windsurf/skills/` |
+| OpenAI Codex | `~/.codex/skills/` | `.codex/skills/` |
 
 ```bash
 # Quick install example
@@ -216,10 +210,10 @@ cp -r my-skill ~/.cursor/skills/
 ### Skills List
 
 See the [中文 Skills 列表](#skills-列表) above for the complete categorized list, including:
-- **Official Resources** - anthropics/skills (54.9k⭐), skill.md, agentskills.io
-- **Skills Collections** - awesome-cursorrules (37.3k⭐), awesome-claude-skills (25.7k⭐), everything-claude-code (25.5k⭐)
-- **Development Tools** - Code review, git commit, GitHub PR review skills
-- **And more categories** - Productivity, Writing, Data, DevOps, Design
+- **Official Resources** - ⭐ anthropics/skills (54.9k⭐), skill.md, agentskills.io
+- **Skills Collections** - ⭐ awesome-cursorrules (37.3k⭐), ⭐ awesome-claude-skills (25.7k⭐), ⭐ everything-claude-code (25.5k⭐)
+- **Development Tools** - Code review, git commit, unit test generator, API doc generator, debug helper, and more
+- **More Categories** - Productivity, Writing, Data, DevOps, Design (contributions welcome!)
 
 ### Contributing
 
@@ -242,9 +236,11 @@ my-skill/
 └── examples/         # Optional: examples
 ```
 
-📁 Check out [examples/](examples/) for ready-to-use skill templates.
+📁 Check out [examples/](examples/) for ready-to-use skill templates (5 examples available).
 
 📖 See [How to Create a Skill](docs/how-to-create.md) for the complete guide.
+
+📋 See [SKILL.md Specification](docs/skill-spec.md) for format standards and best practices.
 
 ---
 
