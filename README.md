@@ -4,20 +4,15 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![License: CC0](https://img.shields.io/badge/License-CC0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-> 🤖 A curated list of awesome AI Agent Skills for Cursor, Claude Code, GitHub Copilot, and other AI-powered tools.
+> 🤖 精选的 AI Agent Skills 列表，适用于 Cursor、Claude Code、GitHub Copilot 等 AI 编程工具。
 >
 > Agent Skills 是 AI Agent 可以发现和使用的指令、脚本和资源包，让 AI 更好地完成特定任务。
 
-<p align="center">
-  <a href="#quick-start--快速开始">Quick Start</a> •
-  <a href="#skills-列表">Skills 列表</a> •
-  <a href="#如何贡献">贡献</a> •
-  <a href="#english">English</a>
-</p>
+[English](README_EN.md) | [简体中文](README.md)
 
 ---
 
-## Quick Start / 快速开始
+## 快速开始
 
 ```bash
 # 克隆示例 skill 到 Cursor
@@ -30,9 +25,7 @@ cp -r awesome-agent-skills/examples/code-review ~/.cursor/skills/
 
 ---
 
-## 中文
-
-### 目录
+## 目录
 
 - [什么是 Agent Skills](#什么是-agent-skills)
 - [如何使用](#如何使用)
@@ -44,7 +37,7 @@ cp -r awesome-agent-skills/examples/code-review ~/.cursor/skills/
 - [如何贡献](#如何贡献)
 - [创建你自己的 Skill](#创建你自己的-skill)
 
-### 什么是 Agent Skills
+## 什么是 Agent Skills
 
 Agent Skills 是一种让 AI Agent 更智能的方式。每个 Skill 包含：
 
@@ -63,9 +56,9 @@ Skills 可在多个平台使用：
 | Windsurf | `~/.windsurf/skills/` | `.windsurf/skills/` |
 | OpenAI Codex | `~/.codex/skills/` | `.codex/skills/` |
 
-### 如何使用
+## 如何使用
 
-#### 方式一：手动复制
+### 方式一：手动复制
 
 ```bash
 # Cursor
@@ -80,7 +73,7 @@ cp -r my-skill ~/.copilot/skills/
 cp -r my-skill .github/skills/
 ```
 
-#### 方式二：Git Clone
+### 方式二：Git Clone
 
 ```bash
 # 克隆到全局目录
@@ -91,9 +84,9 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 > 
 > 📖 **详细指南**：查看 [如何使用 Agent Skills](docs/how-to-use.md)
 
-### Skills 列表
+## Skills 列表
 
-#### 官方资源
+### 官方资源
 
 | 名称 | 描述 | Stars | 链接 |
 |------|------|-------|------|
@@ -103,7 +96,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | github/awesome-copilot | GitHub 官方 Copilot 资源合集 | - | [GitHub](https://github.com/github/awesome-copilot) |
 | Agent Skills 索引 | 社区 Skills 搜索引擎 | - | [agent-skills.md](https://agent-skills.md/) |
 
-#### Skills 合集
+### Skills 合集
 
 | 名称 | 描述 | Stars | 链接 |
 |------|------|-------|------|
@@ -118,7 +111,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | claude-code-central | Claude Code 共享 agents、skills 和模板 | - | [GitHub](https://github.com/grandinh/claude-code-central) |
 | claude-code-kit | Claude Code 工具包，自动激活 skills | 58 | [GitHub](https://github.com/blencorp/claude-code-kit) |
 
-#### 开发工具
+### 开发工具
 
 | 名称 | 描述 | 平台 | 链接 |
 |------|------|------|------|
@@ -131,7 +124,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | api-doc-generator | API 文档生成 Skill | All | [示例](examples/api-doc-generator/) |
 | debug-helper | 代码调试助手 Skill | All | [示例](examples/debug-helper/) |
 
-#### 更多分类（待收录）
+### 更多分类（待收录）
 
 以下分类正在征集优秀 Skills，欢迎提交：
 
@@ -145,7 +138,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 
 > 🚧 [提交你的 Skill →](CONTRIBUTING.md)
 
-### 如何贡献
+## 如何贡献
 
 欢迎提交 PR！请遵循以下步骤：
 
@@ -154,16 +147,16 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 3. 确保填写完整信息（名称、描述、平台、链接）
 4. 提交 Pull Request
 
-#### 贡献规范
+### 贡献规范
 
 - 每个 skill 必须有清晰的描述
 - 链接必须有效且可访问
 - 优先收录开源项目
 - 请按字母顺序排列
 
-### 创建你自己的 Skill
+详细指南请查看 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
-查看 [Skill 创建指南](docs/how-to-create.md) 学习如何创建一个标准的 Agent Skill。
+## 创建你自己的 Skill
 
 基本结构：
 
@@ -175,72 +168,11 @@ my-skill/
 └── examples/         # 可选：示例
 ```
 
-📁 **查看示例**：本仓库的 [examples/](examples/) 目录包含可直接使用的示例 Skills。
+📁 **查看示例**：本仓库的 [examples/](examples/) 目录包含 5 个可直接使用的示例 Skills。
 
----
+📖 **创建指南**：查看 [如何创建 Skill](docs/how-to-create.md) 了解详细步骤。
 
-## English
-
-### What are Agent Skills
-
-Agent Skills are instruction sets, scripts, and resources that AI agents can discover and use to perform specific tasks. Each skill contains a `SKILL.md` file that tells the AI how to use it.
-
-**A skill typically includes:**
-- `SKILL.md` - Core instruction file (required)
-- `scripts/` - Automation scripts (optional)
-- `templates/` - Output templates (optional)
-
-### How to Use
-
-| Platform | Global Directory | Project Directory |
-|----------|------------------|-------------------|
-| Cursor | `~/.cursor/skills/` | `.cursor/skills/` |
-| Claude Code | `~/.claude/skills/` | `.claude/skills/` |
-| GitHub Copilot | `~/.copilot/skills/` | `.github/skills/` |
-| Windsurf | `~/.windsurf/skills/` | `.windsurf/skills/` |
-| OpenAI Codex | `~/.codex/skills/` | `.codex/skills/` |
-
-```bash
-# Quick install example
-cp -r my-skill ~/.cursor/skills/
-```
-
-> 📖 See [How to Use Guide](docs/how-to-use.md) for detailed instructions.
-
-### Skills List
-
-See the [中文 Skills 列表](#skills-列表) above for the complete categorized list, including:
-- **Official Resources** - ⭐ anthropics/skills (54.9k⭐), skill.md, agentskills.io
-- **Skills Collections** - ⭐ awesome-cursorrules (37.3k⭐), ⭐ awesome-claude-skills (25.7k⭐), ⭐ everything-claude-code (25.5k⭐)
-- **Development Tools** - Code review, git commit, unit test generator, API doc generator, debug helper, and more
-- **More Categories** - Productivity, Writing, Data, DevOps, Design (contributions welcome!)
-
-### Contributing
-
-We welcome contributions! Here's how:
-
-1. Fork this repository
-2. Add your skill to the appropriate category in README.md
-3. Ensure complete information (name, description, platform, link)
-4. Submit a Pull Request
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
-
-### Create Your Own Skill
-
-```
-my-skill/
-├── SKILL.md          # Required: instruction file
-├── scripts/          # Optional: scripts
-├── templates/        # Optional: templates
-└── examples/         # Optional: examples
-```
-
-📁 Check out [examples/](examples/) for ready-to-use skill templates (5 examples available).
-
-📖 See [How to Create a Skill](docs/how-to-create.md) for the complete guide.
-
-📋 See [SKILL.md Specification](docs/skill-spec.md) for format standards and best practices.
+📋 **规范文档**：查看 [SKILL.md 规范](docs/skill-spec.md) 了解格式标准和最佳实践。
 
 ---
 
@@ -250,8 +182,8 @@ my-skill/
 
 ---
 
-## License
+## 许可证
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-To the extent possible under law, the contributors have waived all copyright and related rights to this work.
+在法律允许的范围内，贡献者已放弃此作品的所有版权和相关权利。
