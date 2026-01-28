@@ -31,7 +31,11 @@ cp -r awesome-agent-skills/examples/code-review ~/.cursor/skills/
   - [Official Resources](#official-resources)
   - [Skills Collections](#skills-collections)
   - [Development Tools](#development-tools)
-  - [More Categories](#more-categories-contributions-welcome)
+  - [Productivity](#productivity)
+  - [DevOps](#devops)
+  - [Data Processing](#data-processing)
+  - [Writing](#writing)
+  - [Design](#design)
 - [Contributing](#contributing)
 - [Create Your Own Skill](#create-your-own-skill)
 
@@ -123,19 +127,54 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | api-doc-generator | API documentation generator Skill | All | [Example](examples/api-doc-generator/) |
 | debug-helper | Code debugging assistant Skill | All | [Example](examples/debug-helper/) |
 
-### More Categories (Contributions Welcome)
+### Productivity
 
-The following categories are open for submissions:
+| Name | Description | Platform | Link |
+|------|-------------|----------|------|
+| claude-code-workflows | Production-grade dev workflows with quality checks | Claude | [GitHub](https://github.com/shinpr/claude-code-workflows) |
+| claude-skills | 20+ productivity tools with 8 expert Agents | Claude | [GitHub](https://github.com/alirezarezvani/claude-skills) |
+| claude-code-skill-factory | Skills factory for batch generation and deployment | Claude | [GitHub](https://github.com/alirezarezvani/claude-code-skill-factory) |
 
-| Category | Description |
-|----------|-------------|
-| Productivity | Workflow automation, time management, task planning |
-| Writing | Content generation, documentation, translation |
-| Data Processing | Data analysis, format conversion, visualization |
-| DevOps | CI/CD, containerization, monitoring |
-| Design | UI/UX assistance, design guidelines, image processing |
+### DevOps
 
-> 🚧 [Submit your Skill →](CONTRIBUTING.md)
+| Name | Description | Platform | Link |
+|------|-------------|----------|------|
+| devops-claude-skills | DevOps workflow marketplace with Terraform/K8s | Claude | [GitHub](https://github.com/ahmedasmar/devops-claude-skills) |
+| claudekit-skills | Docker/GCP/Cloudflare deployment and management | Claude | [GitHub](https://github.com/mrgoonie/claudekit-skills) |
+| claudebox | Dockerized Claude Code dev environment | Claude | [GitHub](https://github.com/RchGrav/claudebox) |
+
+### Data Processing
+
+| Name | Description | Platform | Link |
+|------|-------------|----------|------|
+| d3-visualization | D3.js data visualization Skill | Claude | [ComposioHQ](https://github.com/ComposioHQ/awesome-claude-skills) |
+| context-engineering | Context engineering and multi-Agent architecture | All | [GitHub](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) |
+
+### Writing
+
+| Name | Description | Platform | Link |
+|------|-------------|----------|------|
+| doc-coauthoring | ⭐ Document co-authoring Skill | Claude | [Official](https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring) |
+| internal-comms | ⭐ Internal communications generation Skill | Claude | [Official](https://github.com/anthropics/skills/tree/main/skills/internal-comms) |
+| docx | ⭐ Word document processing Skill | Claude | [Official](https://github.com/anthropics/skills/tree/main/skills/docx) |
+| pdf | ⭐ PDF document processing Skill | Claude | [Official](https://github.com/anthropics/skills/tree/main/skills/pdf) |
+| pptx | ⭐ PowerPoint presentation generator Skill | Claude | [Official](https://github.com/anthropics/skills/tree/main/skills/pptx) |
+| xlsx | ⭐ Excel spreadsheet processing Skill | Claude | [Official](https://github.com/anthropics/skills/tree/main/skills/xlsx) |
+
+### Design
+
+| Name | Description | Platform | Link |
+|------|-------------|----------|------|
+| frontend-design | ⭐ Frontend UI design Skill | Claude | [Official](https://github.com/anthropics/skills/tree/main/skills/frontend-design) |
+| brand-guidelines | ⭐ Brand design guidelines Skill | Claude | [Official](https://github.com/anthropics/skills/tree/main/skills/brand-guidelines) |
+| canvas-design | ⭐ Canvas design Skill | Claude | [Official](https://github.com/anthropics/skills/tree/main/skills/canvas-design) |
+| theme-factory | ⭐ Theme style factory Skill | Claude | [Official](https://github.com/anthropics/skills/tree/main/skills/theme-factory) |
+| algorithmic-art | ⭐ Algorithmic art generation Skill | Claude | [Official](https://github.com/anthropics/skills/tree/main/skills/algorithmic-art) |
+| slack-gif-creator | ⭐ Slack GIF creator Skill | Claude | [Official](https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator) |
+
+---
+
+> 🚧 Found more awesome Skills? [Submit your discovery →](CONTRIBUTING.md)
 
 ## Contributing
 

@@ -33,7 +33,11 @@ cp -r awesome-agent-skills/examples/code-review ~/.cursor/skills/
   - [官方资源](#官方资源)
   - [Skills 合集](#skills-合集)
   - [开发工具](#开发工具)
-  - [更多分类（待收录）](#更多分类待收录)
+  - [效率提升](#效率提升)
+  - [DevOps](#devops)
+  - [数据处理](#数据处理)
+  - [写作创作](#写作创作)
+  - [设计相关](#设计相关)
 - [如何贡献](#如何贡献)
 - [创建你自己的 Skill](#创建你自己的-skill)
 
@@ -124,19 +128,57 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | api-doc-generator | API 文档生成 Skill | All | [示例](examples/api-doc-generator/) |
 | debug-helper | 代码调试助手 Skill | All | [示例](examples/debug-helper/) |
 
-### 更多分类（待收录）
+### 效率提升
 
-以下分类正在征集优秀 Skills，欢迎提交：
+| 名称 | 描述 | 平台 | 链接 |
+|------|------|------|------|
+| claude-code-workflows | 生产级开发工作流，自动化质量检查 | Claude | [GitHub](https://github.com/shinpr/claude-code-workflows) |
+| claude-skills | 20+ 生产力工具，含 8 个专家 Agent | Claude | [GitHub](https://github.com/alirezarezvani/claude-skills) |
+| claude-code-skill-factory | Skills 工厂，批量生成和部署 Skills | Claude | [GitHub](https://github.com/alirezarezvani/claude-code-skill-factory) |
+| changelog-generator | 从 Git 提交自动生成 Changelog | Claude | [ComposioHQ](https://github.com/ComposioHQ/awesome-claude-skills) |
 
-| 分类 | 说明 |
-|------|------|
-| 效率提升 | 自动化工作流、时间管理、任务规划等 |
-| 写作创作 | 文案生成、文档撰写、翻译润色等 |
-| 数据处理 | 数据分析、格式转换、可视化等 |
-| DevOps | CI/CD、容器化、监控运维等 |
-| 设计相关 | UI/UX 辅助、设计规范、图像处理等 |
+### DevOps
 
-> 🚧 [提交你的 Skill →](CONTRIBUTING.md)
+| 名称 | 描述 | 平台 | 链接 |
+|------|------|------|------|
+| devops-claude-skills | DevOps 工作流市场，含 Terraform/K8s | Claude | [GitHub](https://github.com/ahmedasmar/devops-claude-skills) |
+| devops-engineer | DevOps 工程师 Skill，云基础设施管理 | Claude | [claude-plugins.dev](https://claude-plugins.dev/skills/@Jeffallan/claude-skills/devops-engineer) |
+| ci-cd | CI/CD 管道设计、优化和安全扫描 | Claude | [claude-plugins.dev](https://claude-plugins.dev/skills/@ahmedasmar/devops-claude-skills/ci-cd) |
+| claudekit-skills | Docker/GCP/Cloudflare 部署和管理 | Claude | [GitHub](https://github.com/mrgoonie/claudekit-skills) |
+| claudebox | Docker 容器化 Claude Code 开发环境 | Claude | [GitHub](https://github.com/RchGrav/claudebox) |
+
+### 数据处理
+
+| 名称 | 描述 | 平台 | 链接 |
+|------|------|------|------|
+| d3-visualization | D3.js 数据可视化 Skill | Claude | [ComposioHQ](https://github.com/ComposioHQ/awesome-claude-skills) |
+| context-engineering | 上下文工程和多 Agent 架构 Skills | All | [GitHub](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) |
+
+### 写作创作
+
+| 名称 | 描述 | 平台 | 链接 |
+|------|------|------|------|
+| doc-coauthoring | ⭐ 文档协作撰写 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring) |
+| internal-comms | ⭐ 内部沟通文档生成 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/internal-comms) |
+| docx | ⭐ Word 文档读写处理 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/docx) |
+| pdf | ⭐ PDF 文档处理 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/pdf) |
+| pptx | ⭐ PPT 演示文稿生成 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/pptx) |
+| xlsx | ⭐ Excel 表格处理 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/xlsx) |
+
+### 设计相关
+
+| 名称 | 描述 | 平台 | 链接 |
+|------|------|------|------|
+| frontend-design | ⭐ 前端 UI 设计 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/frontend-design) |
+| brand-guidelines | ⭐ 品牌设计规范 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/brand-guidelines) |
+| canvas-design | ⭐ Canvas 画布设计 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/canvas-design) |
+| theme-factory | ⭐ 主题样式工厂 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/theme-factory) |
+| algorithmic-art | ⭐ 算法艺术生成 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/algorithmic-art) |
+| slack-gif-creator | ⭐ Slack GIF 创建 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator) |
+
+---
+
+> 🚧 发现更多优秀 Skills？[提交你的发现 →](CONTRIBUTING.md)
 
 ## 如何贡献
 
