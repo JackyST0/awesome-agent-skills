@@ -136,9 +136,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | awesome-claude-skills | Claude Skills collection by VoltAgent | 4.4k | [GitHub](https://github.com/VoltAgent/awesome-claude-skills) |
 | claude-skills | Claude Skills documentation by Simon Willison | 910 | [GitHub](https://github.com/simonw/claude-skills) |
 | claude-skills-collection | Curated official and community Skills | 406 | [GitHub](https://github.com/abubakarsiddik31/claude-skills-collection) |
-| cursor-automator | Cursor automation Rules collection | - | [GitHub](https://github.com/ShalevAri/cursor-automator) |
 | cursor-rules-and-prompts | Cursor rules and prompts collection | 117 | [GitHub](https://github.com/thehimel/cursor-rules-and-prompts) |
-| claude-code-central | Shared Claude Code agents, skills, and templates | - | [GitHub](https://github.com/grandinh/claude-code-central) |
 | claude-code-kit | Claude Code toolkit with auto-activating skills | 59 | [GitHub](https://github.com/blencorp/claude-code-kit) |
 
 ### Development Tools

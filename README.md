@@ -137,9 +137,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | awesome-claude-skills | VoltAgent 维护的 Claude Skills 合集 | 4.4k | [GitHub](https://github.com/VoltAgent/awesome-claude-skills) |
 | claude-skills | Simon Willison 的 Claude Skills 文档 | 910 | [GitHub](https://github.com/simonw/claude-skills) |
 | claude-skills-collection | 官方与社区 Skills 精选集合 | 406 | [GitHub](https://github.com/abubakarsiddik31/claude-skills-collection) |
-| cursor-automator | Cursor 自动化 Rules 集合 | - | [GitHub](https://github.com/ShalevAri/cursor-automator) |
 | cursor-rules-and-prompts | Cursor 规则与提示词集合 | 117 | [GitHub](https://github.com/thehimel/cursor-rules-and-prompts) |
-| claude-code-central | Claude Code 共享 agents、skills 和模板 | - | [GitHub](https://github.com/grandinh/claude-code-central) |
 | claude-code-kit | Claude Code 工具包，自动激活 skills | 59 | [GitHub](https://github.com/blencorp/claude-code-kit) |
 
 ### 开发工具
