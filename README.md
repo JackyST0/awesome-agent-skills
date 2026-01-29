@@ -23,6 +23,8 @@
 
 ### 一键安装（推荐）
 
+**macOS / Linux:**
+
 ```bash
 # 交互式模式 - 支持安装、卸载、查看
 curl -sL https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.sh | bash
@@ -35,6 +37,20 @@ curl -sL https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/in
 
 # 查看已安装的 Skills
 curl -sL https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.sh | bash -s -- -p cursor --list-installed
+```
+
+**Windows (PowerShell):**
+
+```powershell
+# 下载并运行安装脚本
+irm https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.ps1 | iex
+
+# 或者先下载再运行（推荐）
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.ps1" -OutFile "install.ps1"
+.\install.ps1                                    # 交互式模式
+.\install.ps1 -Platform cursor -All              # 安装所有 Skills
+.\install.ps1 -Platform cursor -Uninstall -All   # 卸载所有 Skills
+.\install.ps1 -Platform cursor -ListInstalled    # 查看已安装
 ```
 
 ### 手动安装

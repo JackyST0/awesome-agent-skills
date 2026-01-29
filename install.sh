@@ -21,6 +21,16 @@ REPO_RAW="https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main"
 # Available skills
 SKILLS="code-review git-commit unit-test-generator api-doc-generator debug-helper"
 
+# Skill templates mapping
+get_skill_templates() {
+    case $1 in
+        unit-test-generator) echo "test-report.md" ;;
+        api-doc-generator)   echo "api-doc.md" ;;
+        debug-helper)        echo "debug-report.md" ;;
+        *)                   echo "" ;;
+    esac
+}
+
 # Platform names
 PLATFORMS="cursor claude copilot windsurf codex"
 
@@ -176,12 +186,15 @@ install_skill() {
         return 1
     fi
 
-    # Try to download templates if they exist
-    for template in test-report.md api-doc.md debug-report.md; do
-        if curl -sL --fail "$REPO_RAW/examples/$skill/templates/$template" -o "$skill_dir/templates/$template" 2>/dev/null; then
-            printf "  ${GREEN}✓${NC} Downloaded templates/%s\n" "$template"
-        fi
-    done
+    # Download templates for this skill
+    templates=$(get_skill_templates "$skill")
+    if [ -n "$templates" ]; then
+        for template in $templates; do
+            if curl -sL --fail "$REPO_RAW/examples/$skill/templates/$template" -o "$skill_dir/templates/$template" 2>/dev/null; then
+                printf "  ${GREEN}✓${NC} Downloaded templates/%s\n" "$template"
+            fi
+        done
+    fi
 
     printf "${GREEN}✓ Installed %s to %s${NC}\n" "$skill" "$skill_dir"
 }

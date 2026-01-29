@@ -6,7 +6,8 @@
       "Bash(curl:*)",
       "WebSearch",
       "Bash(chmod:*)",
-      "Bash(bash:*)"
+      "Bash(bash:*)",
+      "Bash(pwsh -NoProfile -Command:*)"
     ]
   }
 }

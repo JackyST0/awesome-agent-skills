@@ -21,6 +21,8 @@
 
 ### One-Click Install (Recommended)
 
+**macOS / Linux:**
+
 ```bash
 # Interactive mode - install, uninstall, or list
 curl -sL https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.sh | bash
@@ -33,6 +35,20 @@ curl -sL https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/in
 
 # List installed skills
 curl -sL https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.sh | bash -s -- -p cursor --list-installed
+```
+
+**Windows (PowerShell):**
+
+```powershell
+# Download and run the install script
+irm https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.ps1 | iex
+
+# Or download first then run (recommended)
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.ps1" -OutFile "install.ps1"
+.\install.ps1                                    # Interactive mode
+.\install.ps1 -Platform cursor -All              # Install all skills
+.\install.ps1 -Platform cursor -Uninstall -All   # Uninstall all skills
+.\install.ps1 -Platform cursor -ListInstalled    # List installed
 ```
 
 ### Manual Install
