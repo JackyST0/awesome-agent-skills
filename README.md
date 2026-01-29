@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://jackysto.github.io/awesome-agent-skills/"><b>🔍 在线搜索 Skills</b></a>
+  <a href="https://jackyst0.github.io/awesome-agent-skills/"><b>🔍 在线搜索 Skills</b></a>
 </p>
 
 # Awesome Agent Skills
@@ -72,7 +72,7 @@ git clone https://github.com/anthropics/skills.git ~/.cursor/skills/anthropics
 
 ## 在线搜索
 
-不想翻阅长列表？试试 **[在线搜索工具](https://jackysto.github.io/awesome-agent-skills/)**，支持按名称、描述、平台快速筛选！
+不想翻阅长列表？试试 **[在线搜索工具](https://jackyst0.github.io/awesome-agent-skills/)**，支持按名称、描述、平台快速筛选！
 
 ---
 

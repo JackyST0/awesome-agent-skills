@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://jackysto.github.io/awesome-agent-skills/"><b>🔍 Search Skills Online</b></a>
+  <a href="https://jackyst0.github.io/awesome-agent-skills/"><b>🔍 Search Skills Online</b></a>
 </p>
 
 # Awesome Agent Skills
@@ -72,7 +72,7 @@ git clone https://github.com/anthropics/skills.git ~/.cursor/skills/anthropics
 
 ## Online Search
 
-Don't want to scroll through long lists? Try the **[Online Search Tool](https://jackysto.github.io/awesome-agent-skills/)** to quickly filter by name, description, or platform!
+Don't want to scroll through long lists? Try the **[Online Search Tool](https://jackyst0.github.io/awesome-agent-skills/)** to quickly filter by name, description, or platform!
 
 ---
 
