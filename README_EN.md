@@ -9,9 +9,15 @@
   <img src="https://img.shields.io/github/stars/JackyST0/awesome-agent-skills?style=social" alt="GitHub Stars">
 </p>
 
+<p align="center">
+  <a href="https://jackysto.github.io/awesome-agent-skills/"><b>🔍 Search Skills Online</b></a>
+</p>
+
 # Awesome Agent Skills
 
 > 🤖 A curated list of awesome AI Agent Skills for Cursor, Claude Code, GitHub Copilot, and other AI-powered tools.
+>
+> Agent Skills are instructions, scripts, and resources that AI Agents can discover and use to better accomplish specific tasks.
 
 [English](README_EN.md) | [简体中文](README.md)
 
@@ -136,7 +142,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 |------|-------------|-------|------|
 | Agent Skills Open Standard | Official Agent Skills specification | - | [skill.md](https://skill.md/) |
 | Agent Skills Specification | SKILL.md format specification | - | [agentskills.io](https://agentskills.io/specification) |
-| anthropics/skills | ⭐ Official Anthropic Agent Skills repository | 56.1k | [GitHub](https://github.com/anthropics/skills) |
+| anthropics/skills | ⭐ Official Anthropic Agent Skills repository | 57.6k | [GitHub](https://github.com/anthropics/skills) |
 | github/awesome-copilot | GitHub official Copilot resources | - | [GitHub](https://github.com/github/awesome-copilot) |
 | Agent Skills Index | Community Skills search engine | - | [agent-skills.md](https://agent-skills.md/) |
 
@@ -144,16 +150,16 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 
 | Name | Description | Stars | Link |
 |------|-------------|-------|------|
-| awesome-cursorrules | ⭐ The most comprehensive Cursor Rules collection | 37.4k | [GitHub](https://github.com/PatrickJS/awesome-cursorrules) |
-| everything-claude-code | ⭐ Complete Claude Code configs (agents/skills/hooks) | 32.9k | [GitHub](https://github.com/affaan-m/everything-claude-code) |
-| awesome-claude-skills | ⭐ Claude Skills collection by Composio | 27.1k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
-| awesome-claude-code | ⭐ Claude Code skills/hooks/plugins collection | 22.1k | [GitHub](https://github.com/hesreallyhim/awesome-claude-code) |
-| openskills | ⭐ Universal Skills loader (npm install) | 7.3k | [GitHub](https://github.com/numman-ali/openskills) |
+| awesome-cursorrules | ⭐ The most comprehensive Cursor Rules collection | 37.5k | [GitHub](https://github.com/PatrickJS/awesome-cursorrules) |
+| everything-claude-code | ⭐ Complete Claude Code configs (agents/skills/hooks) | 34.1k | [GitHub](https://github.com/affaan-m/everything-claude-code) |
+| awesome-claude-skills | ⭐ Claude Skills collection by Composio | 27.7k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
+| awesome-claude-code | ⭐ Claude Code skills/hooks/plugins collection | 22.2k | [GitHub](https://github.com/hesreallyhim/awesome-claude-code) |
+| openskills | ⭐ Universal Skills loader (npm install) | 7.4k | [GitHub](https://github.com/numman-ali/openskills) |
 | awesome-claude-skills | Claude Skills collection by VoltAgent | 4.4k | [GitHub](https://github.com/VoltAgent/awesome-claude-skills) |
 | claude-skills | Claude Skills documentation by Simon Willison | 910 | [GitHub](https://github.com/simonw/claude-skills) |
-| claude-skills-collection | Curated official and community Skills | 406 | [GitHub](https://github.com/abubakarsiddik31/claude-skills-collection) |
+| claude-skills-collection | Curated official and community Skills | 408 | [GitHub](https://github.com/abubakarsiddik31/claude-skills-collection) |
 | cursor-rules-and-prompts | Cursor rules and prompts collection | 117 | [GitHub](https://github.com/thehimel/cursor-rules-and-prompts) |
-| claude-code-kit | Claude Code toolkit with auto-activating skills | 59 | [GitHub](https://github.com/blencorp/claude-code-kit) |
+| claude-code-kit | Claude Code toolkit with auto-activating skills | 60 | [GitHub](https://github.com/blencorp/claude-code-kit) |
 
 ### Development Tools
 

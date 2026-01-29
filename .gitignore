@@ -29,4 +29,12 @@ venv/
 # Misc
 *.zip
 *.tar.gz
+
+# Personal config
 .claude/settings.local.json
+
+# SpecStory
+.specstory/
+
+# Cursor indexing
+.cursorindexingignore
