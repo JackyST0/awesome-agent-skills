@@ -38,6 +38,33 @@
     header {
       text-align: center;
       padding: 40px 20px;
+      position: relative;
+    }
+
+    .lang-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 8px;
+    }
+
+    .lang-btn {
+      padding: 6px 12px;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 6px;
+      background: transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: all 0.3s;
+    }
+
+    .lang-btn:hover,
+    .lang-btn.active {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border-color: transparent;
+      color: white;
     }
 
     h1 {
@@ -215,12 +242,16 @@
 <body>
   <div class="container">
     <header>
+      <div class="lang-switch">
+        <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
+        <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">EN</button>
+      </div>
       <h1>Awesome Agent Skills</h1>
-      <p class="subtitle">Search and discover AI Agent Skills for Cursor, Claude Code, GitHub Copilot, and more.</p>
+      <p class="subtitle" id="subtitle">Search and discover AI Agent Skills for Cursor, Claude Code, GitHub Copilot, and more.</p>
     </header>
 
     <div class="search-box">
-      <input type="text" id="searchInput" placeholder="Search skills by name, description, or category...">
+      <input type="text" id="searchInput" placeholder="Search skills by name, description, or category..." data-placeholder-en="Search skills by name, description, or category..." data-placeholder-zh="按名称、描述或分类搜索 Skills...">
     </div>
 
     <div class="filters">
@@ -241,14 +272,14 @@
     <div class="skills-grid" id="skillsGrid"></div>
 
     <div class="no-results" id="noResults" style="display: none;">
-      <p>No skills found matching your search.</p>
+      <p id="noResultsText">No skills found matching your search.</p>
     </div>
 
     <footer>
       <p>
         <a href="https://github.com/JackyST0/awesome-agent-skills" target="_blank">GitHub</a> |
         <a href="https://github.com/JackyST0/awesome-agent-skills/blob/main/CONTRIBUTING.md" target="_blank">Contribute</a> |
-        Made with love for the AI community
+        <span id="footerText">Made with love for the AI community</span>
       </p>
     </footer>
   </div>
@@ -380,6 +411,79 @@
 
     // Initial render
     renderSkills(skills);
+
+    // i18n translations
+    const i18n = {
+      en: {
+        subtitle: 'Search and discover AI Agent Skills for Cursor, Claude Code, GitHub Copilot, and more.',
+        placeholder: 'Search skills by name, description, or category...',
+        noResults: 'No skills found matching your search.',
+        showing: (count, total) => `Showing ${count} of ${total} skills`,
+        loading: 'Loading skills...',
+        noSkills: 'No skills found'
+      },
+      zh: {
+        subtitle: '搜索和发现适用于 Cursor、Claude Code、GitHub Copilot 等工具的 AI Agent Skills。',
+        placeholder: '按名称、描述或分类搜索 Skills...',
+        noResults: '没有找到匹配的 Skills。',
+        showing: (count, total) => `显示 ${count} / ${total} 个 Skills`,
+        loading: '加载中...',
+        noSkills: '没有找到 Skills'
+      }
+    };
+
+    let currentLang = 'en';
+
+    function switchLang(lang) {
+      currentLang = lang;
+      
+      // Update button states
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+
+      // Update texts
+      document.getElementById('subtitle').textContent = i18n[lang].subtitle;
+      document.getElementById('searchInput').placeholder = i18n[lang].placeholder;
+      document.getElementById('noResultsText').textContent = i18n[lang].noResults;
+
+      // Re-render to update stats
+      filterSkills();
+    }
+
+    // Override renderSkills to use i18n
+    const originalRenderSkills = renderSkills;
+    renderSkills = function(filteredSkills) {
+      if (filteredSkills.length === 0) {
+        skillsGrid.innerHTML = '';
+        noResults.style.display = 'block';
+        statsEl.textContent = i18n[currentLang].noSkills;
+        return;
+      }
+
+      noResults.style.display = 'none';
+      statsEl.textContent = i18n[currentLang].showing(filteredSkills.length, skills.length);
+
+      skillsGrid.innerHTML = filteredSkills.map(skill => `
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-name">
+              <a href="${skill.url}" target="_blank">${skill.name}</a>
+            </div>
+            ${skill.stars !== '-' ? `<span class="skill-stars">${skill.stars}</span>` : ''}
+          </div>
+          <p class="skill-desc">${skill.desc}</p>
+          <div class="skill-tags">
+            <span class="tag platform-${skill.platform}">${skill.platform}</span>
+            <span class="tag category">${skill.category}</span>
+          </div>
+        </div>
+      `).join('');
+    };
+
+    // Detect browser language
+    const browserLang = navigator.language.startsWith('zh') ? 'zh' : 'en';
+    switchLang(browserLang);
   </script>
 </body>
 </html>

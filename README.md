@@ -70,6 +70,12 @@ git clone https://github.com/anthropics/skills.git ~/.cursor/skills/anthropics
 
 ---
 
+## 在线搜索
+
+不想翻阅长列表？试试 **[在线搜索工具](https://jackysto.github.io/awesome-agent-skills/)**，支持按名称、描述、平台快速筛选！
+
+---
+
 ## 目录
 
 - [什么是 Agent Skills](#什么是-agent-skills)

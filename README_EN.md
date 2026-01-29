@@ -70,6 +70,12 @@ git clone https://github.com/anthropics/skills.git ~/.cursor/skills/anthropics
 
 ---
 
+## Online Search
+
+Don't want to scroll through long lists? Try the **[Online Search Tool](https://jackysto.github.io/awesome-agent-skills/)** to quickly filter by name, description, or platform!
+
+---
+
 ## Table of Contents
 
 - [What are Agent Skills](#what-are-agent-skills)
