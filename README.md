@@ -170,6 +170,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 
 | 名称 | 描述 | 平台 | 链接 |
 |------|------|------|------|
+| agentfund-mcp | AI Agent 众筹平台 MCP 服务器（Base 链） | All | [GitHub](https://github.com/RioBot-Grind/agentfund-mcp) |
 | claude-code-security-review | ⭐ AI 安全审查 GitHub Action（官方） | Claude | [GitHub](https://github.com/anthropics/claude-code-security-review) |
 | trailofbits/skills | ⭐ Trail of Bits 安全研究和审计 Skills | Claude | [GitHub](https://github.com/trailofbits/skills) |
 | playwright-skill | Playwright 浏览器自动化测试 Skill | Claude | [GitHub](https://github.com/lackeyjb/playwright-skill) |
