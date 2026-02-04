@@ -32,7 +32,7 @@ get_skill_templates() {
 }
 
 # Platform names
-PLATFORMS="cursor claude copilot windsurf codex"
+PLATFORMS="cursor claude copilot windsurf codex opencode"
 
 # Get platform directory
 get_platform_dir() {
@@ -42,6 +42,7 @@ get_platform_dir() {
         copilot)  echo "$HOME/.copilot/skills" ;;
         windsurf) echo "$HOME/.windsurf/skills" ;;
         codex)    echo "$HOME/.codex/skills" ;;
+        opencode) echo "$HOME/.config/opencode/skills" ;;
         *)        echo "" ;;
     esac
 }
@@ -61,7 +62,7 @@ print_help() {
     echo "Usage: $0 [OPTIONS]"
     echo ""
     echo "Options:"
-    echo "  -p, --platform PLATFORM   Target platform (cursor, claude, copilot, windsurf, codex)"
+    echo "  -p, --platform PLATFORM   Target platform (cursor, claude, copilot, windsurf, codex, opencode)"
     echo "  -s, --skill SKILL         Skill to install/uninstall (can be used multiple times)"
     echo "  -a, --all                 Install/uninstall all skills"
     echo "  -u, --uninstall           Uninstall skills instead of installing"

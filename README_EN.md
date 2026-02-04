@@ -111,6 +111,7 @@ Skills work across multiple platforms:
 | GitHub Copilot | `~/.copilot/skills/` | `.github/skills/` |
 | Windsurf | `~/.windsurf/skills/` | `.windsurf/skills/` |
 | OpenAI Codex | `~/.codex/skills/` | `.codex/skills/` |
+| OpenCode | `~/.config/opencode/skills/` | `.opencode/skills/` |
 
 ## How to Use
 

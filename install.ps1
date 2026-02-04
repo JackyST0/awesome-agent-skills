@@ -28,7 +28,7 @@ $SKILL_TEMPLATES = @{
 }
 
 # Platform names
-$PLATFORMS = @("cursor", "claude", "copilot", "windsurf", "codex")
+$PLATFORMS = @("cursor", "claude", "copilot", "windsurf", "codex", "opencode")
 
 # Get platform directory
 function Get-PlatformDir {
@@ -39,6 +39,7 @@ function Get-PlatformDir {
         "copilot"  { return "$env:USERPROFILE\.copilot\skills" }
         "windsurf" { return "$env:USERPROFILE\.windsurf\skills" }
         "codex"    { return "$env:USERPROFILE\.codex\skills" }
+        "opencode" { return "$env:USERPROFILE\.config\opencode\skills" }
         default    { return "" }
     }
 }
@@ -58,7 +59,7 @@ function Print-Help {
     Write-Host "Usage: .\install.ps1 [OPTIONS]"
     Write-Host ""
     Write-Host "Options:"
-    Write-Host "  -Platform PLATFORM    Target platform (cursor, claude, copilot, windsurf, codex)"
+    Write-Host "  -Platform PLATFORM    Target platform (cursor, claude, copilot, windsurf, codex, opencode)"
     Write-Host "  -Skill SKILL          Skill to install/uninstall (can be used multiple times)"
     Write-Host "  -All                  Install/uninstall all skills"
     Write-Host "  -Uninstall            Uninstall skills instead of installing"

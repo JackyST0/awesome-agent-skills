@@ -110,6 +110,7 @@ Skills 可在多个平台使用：
 | GitHub Copilot | `~/.copilot/skills/` | `.github/skills/` |
 | Windsurf | `~/.windsurf/skills/` | `.windsurf/skills/` |
 | OpenAI Codex | `~/.codex/skills/` | `.codex/skills/` |
+| OpenCode | `~/.config/opencode/skills/` | `.opencode/skills/` |
 
 ## 如何使用
 
