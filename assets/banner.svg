@@ -1,103 +1,96 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f0c29;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#302b63;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#24243e;stop-opacity:1" />
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
       <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
-    </linearGradient>
   </defs>
 
   <!-- Background -->
-  <rect width="1200" height="300" fill="url(#bgGrad)" />
+  <rect width="1200" height="300" fill="#f9fafb" />
 
-  <!-- Decorative grid pattern -->
-  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
-    <line x1="0" y1="50" x2="1200" y2="50" />
-    <line x1="0" y1="100" x2="1200" y2="100" />
-    <line x1="0" y1="150" x2="1200" y2="150" />
-    <line x1="0" y1="200" x2="1200" y2="200" />
-    <line x1="0" y1="250" x2="1200" y2="250" />
-    <line x1="100" y1="0" x2="100" y2="300" />
-    <line x1="200" y1="0" x2="200" y2="300" />
-    <line x1="300" y1="0" x2="300" y2="300" />
-    <line x1="900" y1="0" x2="900" y2="300" />
-    <line x1="1000" y1="0" x2="1000" y2="300" />
-    <line x1="1100" y1="0" x2="1100" y2="300" />
+  <!-- Top accent bar -->
+  <rect width="1200" height="4" fill="url(#barGrad)" />
+
+  <!-- Subtle grid dots -->
+  <g fill="#e5e7eb" opacity="0.5">
+    <circle cx="60" cy="60" r="2" />
+    <circle cx="120" cy="60" r="2" />
+    <circle cx="180" cy="60" r="2" />
+    <circle cx="60" cy="120" r="2" />
+    <circle cx="120" cy="120" r="2" />
+    <circle cx="180" cy="120" r="2" />
+    <circle cx="60" cy="180" r="2" />
+    <circle cx="120" cy="180" r="2" />
+    <circle cx="180" cy="180" r="2" />
+    <circle cx="60" cy="240" r="2" />
+    <circle cx="120" cy="240" r="2" />
+    <circle cx="180" cy="240" r="2" />
+    <circle cx="1020" cy="60" r="2" />
+    <circle cx="1080" cy="60" r="2" />
+    <circle cx="1140" cy="60" r="2" />
+    <circle cx="1020" cy="120" r="2" />
+    <circle cx="1080" cy="120" r="2" />
+    <circle cx="1140" cy="120" r="2" />
+    <circle cx="1020" cy="180" r="2" />
+    <circle cx="1080" cy="180" r="2" />
+    <circle cx="1140" cy="180" r="2" />
+    <circle cx="1020" cy="240" r="2" />
+    <circle cx="1080" cy="240" r="2" />
+    <circle cx="1140" cy="240" r="2" />
   </g>
 
-  <!-- Left decorative nodes -->
-  <g fill="url(#nodeGrad)" opacity="0.6">
-    <circle cx="80" cy="80" r="6" />
-    <circle cx="120" cy="150" r="8" />
-    <circle cx="60" cy="220" r="5" />
-    <circle cx="180" cy="100" r="4" />
-    <circle cx="200" cy="200" r="7" />
-    <line x1="80" y1="80" x2="120" y2="150" stroke="url(#nodeGrad)" stroke-width="2" opacity="0.4" />
-    <line x1="120" y1="150" x2="60" y2="220" stroke="url(#nodeGrad)" stroke-width="2" opacity="0.4" />
-    <line x1="120" y1="150" x2="200" y2="200" stroke="url(#nodeGrad)" stroke-width="2" opacity="0.4" />
-  </g>
+  <!-- Left decorative shapes -->
+  <rect x="40" y="70" width="40" height="40" rx="8" fill="#667eea" opacity="0.08" />
+  <rect x="100" y="170" width="30" height="30" rx="6" fill="#764ba2" opacity="0.06" />
+  <circle cx="160" cy="110" r="20" fill="#f093fb" opacity="0.06" />
 
-  <!-- Right decorative nodes -->
-  <g fill="url(#nodeGrad)" opacity="0.6">
-    <circle cx="1120" cy="80" r="6" />
-    <circle cx="1080" cy="150" r="8" />
-    <circle cx="1140" cy="220" r="5" />
-    <circle cx="1020" cy="100" r="4" />
-    <circle cx="1000" cy="200" r="7" />
-    <line x1="1120" y1="80" x2="1080" y2="150" stroke="url(#nodeGrad)" stroke-width="2" opacity="0.4" />
-    <line x1="1080" y1="150" x2="1140" y2="220" stroke="url(#nodeGrad)" stroke-width="2" opacity="0.4" />
-    <line x1="1080" y1="150" x2="1000" y2="200" stroke="url(#nodeGrad)" stroke-width="2" opacity="0.4" />
-  </g>
+  <!-- Right decorative shapes -->
+  <rect x="1100" y="80" width="40" height="40" rx="8" fill="#764ba2" opacity="0.08" />
+  <rect x="1040" y="190" width="30" height="30" rx="6" fill="#667eea" opacity="0.06" />
+  <circle cx="1060" cy="100" r="20" fill="#f093fb" opacity="0.06" />
+
+  <!-- Emoji -->
+  <text x="600" y="90" text-anchor="middle" dominant-baseline="central" font-size="36">🤖</text>
 
   <!-- Main title -->
-  <text x="600" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="url(#textGrad)">
-    Awesome Agent Skills
-  </text>
+  <text x="600" y="140" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="48" font-weight="bold" fill="url(#grad)">Awesome Agent Skills</text>
 
   <!-- Subtitle -->
-  <text x="600" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#a0a0a0">
-    Curated AI Agent Skills for Cursor, Claude Code, GitHub Copilot
-  </text>
+  <text x="600" y="178" text-anchor="middle" dominant-baseline="central" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="16" fill="#6b7280">Curated AI Agent Skills for Cursor, Claude Code, GitHub Copilot, and more</text>
 
-  <!-- Platform badges -->
-  <g font-family="Arial, sans-serif" font-size="14">
+  <!-- Platform badges (total width: 70+10+95+10+70+10+75+10+65+10+80 = 505, start at (1200-505)/2 = 347.5) -->
+  <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="500">
     <!-- Cursor -->
-    <rect x="340" y="210" width="80" height="28" rx="14" fill="#667eea" opacity="0.8" />
-    <text x="380" y="229" text-anchor="middle" fill="#fff">Cursor</text>
+    <rect x="348" y="210" width="70" height="26" rx="13" fill="#667eea" />
+    <text x="383" y="223" text-anchor="middle" dominant-baseline="central" fill="#fff">Cursor</text>
 
-    <!-- Claude -->
-    <rect x="440" y="210" width="100" height="28" rx="14" fill="#764ba2" opacity="0.8" />
-    <text x="490" y="229" text-anchor="middle" fill="#fff">Claude Code</text>
+    <!-- Claude Code -->
+    <rect x="428" y="210" width="95" height="26" rx="13" fill="#764ba2" />
+    <text x="475" y="223" text-anchor="middle" dominant-baseline="central" fill="#fff">Claude Code</text>
 
     <!-- Copilot -->
-    <rect x="560" y="210" width="80" height="28" rx="14" fill="#f093fb" opacity="0.8" />
-    <text x="600" y="229" text-anchor="middle" fill="#fff">Copilot</text>
+    <rect x="533" y="210" width="70" height="26" rx="13" fill="#2563eb" />
+    <text x="568" y="223" text-anchor="middle" dominant-baseline="central" fill="#fff">Copilot</text>
 
     <!-- Windsurf -->
-    <rect x="660" y="210" width="80" height="28" rx="14" fill="#f5576c" opacity="0.8" />
-    <text x="700" y="229" text-anchor="middle" fill="#fff">Windsurf</text>
+    <rect x="613" y="210" width="75" height="26" rx="13" fill="#059669" />
+    <text x="650" y="223" text-anchor="middle" dominant-baseline="central" fill="#fff">Windsurf</text>
 
     <!-- Codex -->
-    <rect x="760" y="210" width="80" height="28" rx="14" fill="#667eea" opacity="0.8" />
-    <text x="800" y="229" text-anchor="middle" fill="#fff">Codex</text>
+    <rect x="698" y="210" width="65" height="26" rx="13" fill="#667eea" />
+    <text x="730" y="223" text-anchor="middle" dominant-baseline="central" fill="#fff">Codex</text>
+
+    <!-- OpenCode -->
+    <rect x="773" y="210" width="80" height="26" rx="13" fill="#764ba2" />
+    <text x="813" y="223" text-anchor="middle" dominant-baseline="central" fill="#fff">OpenCode</text>
   </g>
 
-  <!-- Star decoration -->
-  <g fill="#fff" opacity="0.3">
-    <circle cx="250" cy="60" r="2" />
-    <circle cx="950" cy="70" r="2" />
-    <circle cx="150" cy="180" r="1.5" />
-    <circle cx="1050" cy="250" r="1.5" />
-    <circle cx="300" cy="260" r="2" />
-    <circle cx="880" cy="50" r="1.5" />
-  </g>
+  <!-- Bottom accent bar -->
+  <rect y="296" width="1200" height="4" fill="url(#barGrad)" />
 </svg>
