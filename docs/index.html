@@ -3,497 +3,301 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Awesome Agent Skills - Search</title>
+  <title>Awesome Agent Skills - 精选 AI Agent Skills</title>
   <meta name="description" content="Search and discover AI Agent Skills for Cursor, Claude Code, GitHub Copilot, and more.">
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    :root {
-      --primary: #667eea;
-      --secondary: #764ba2;
-      --bg-dark: #0f0c29;
-      --bg-mid: #302b63;
-      --bg-light: #24243e;
-      --text: #e0e0e0;
-      --text-muted: #a0a0a0;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-mid) 50%, var(--bg-light) 100%);
-      color: var(--text);
-      min-height: 100vh;
-      padding: 20px;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    header {
-      text-align: center;
-      padding: 40px 20px;
-      position: relative;
-    }
-
-    .lang-switch {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      display: flex;
-      gap: 8px;
-    }
-
-    .lang-btn {
-      padding: 6px 12px;
-      border: 1px solid rgba(255,255,255,0.2);
-      border-radius: 6px;
-      background: transparent;
-      color: var(--text-muted);
-      cursor: pointer;
-      font-size: 0.85rem;
-      transition: all 0.3s;
-    }
-
-    .lang-btn:hover,
-    .lang-btn.active {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      border-color: transparent;
+    .skill-card { transition: all 0.2s ease; }
+    .skill-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    .category-btn.active {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       color: white;
     }
-
-    h1 {
-      font-size: 2.5rem;
-      background: linear-gradient(90deg, var(--primary), var(--secondary), #f093fb);
+    .gradient-text {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      margin-bottom: 10px;
     }
-
-    .subtitle {
-      color: var(--text-muted);
-      font-size: 1.1rem;
-    }
-
-    .search-box {
-      margin: 30px auto;
-      max-width: 600px;
-      position: relative;
-    }
-
-    .search-box input {
-      width: 100%;
-      padding: 15px 20px;
-      font-size: 1rem;
-      border: 2px solid rgba(255,255,255,0.1);
-      border-radius: 10px;
-      background: rgba(255,255,255,0.05);
-      color: var(--text);
-      outline: none;
-      transition: border-color 0.3s;
-    }
-
-    .search-box input:focus {
-      border-color: var(--primary);
-    }
-
-    .search-box input::placeholder {
-      color: var(--text-muted);
-    }
-
-    .filters {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin: 20px 0;
-    }
-
-    .filter-btn {
-      padding: 8px 16px;
-      border: 1px solid rgba(255,255,255,0.2);
-      border-radius: 20px;
-      background: transparent;
-      color: var(--text-muted);
-      cursor: pointer;
-      transition: all 0.3s;
-      font-size: 0.9rem;
-    }
-
-    .filter-btn:hover,
-    .filter-btn.active {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      border-color: transparent;
-      color: white;
-    }
-
-    .stats {
-      text-align: center;
-      color: var(--text-muted);
-      margin-bottom: 20px;
-    }
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .skill-card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 12px;
-      padding: 20px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .skill-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    }
-
-    .skill-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 10px;
-    }
-
-    .skill-name {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: white;
-    }
-
-    .skill-name a {
-      color: white;
-      text-decoration: none;
-    }
-
-    .skill-name a:hover {
-      color: var(--primary);
-    }
-
-    .skill-stars {
-      background: rgba(255,255,255,0.1);
-      padding: 4px 10px;
-      border-radius: 12px;
-      font-size: 0.85rem;
-      color: #ffd700;
-    }
-
-    .skill-desc {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-      margin-bottom: 15px;
-      line-height: 1.5;
-    }
-
-    .skill-tags {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .tag {
-      padding: 4px 10px;
-      border-radius: 12px;
-      font-size: 0.8rem;
-      background: rgba(102, 126, 234, 0.2);
-      color: var(--primary);
-    }
-
-    .tag.platform-cursor { background: rgba(102, 126, 234, 0.2); color: #667eea; }
-    .tag.platform-claude { background: rgba(118, 75, 162, 0.2); color: #a855f7; }
-    .tag.platform-copilot { background: rgba(240, 147, 251, 0.2); color: #f093fb; }
-    .tag.platform-opencode { background: rgba(59, 130, 246, 0.2); color: #3b82f6; }
-    .tag.platform-all { background: rgba(34, 197, 94, 0.2); color: #22c55e; }
-    .tag.category { background: rgba(255, 255, 255, 0.1); color: var(--text-muted); }
-
-    .no-results {
-      text-align: center;
-      padding: 60px 20px;
-      color: var(--text-muted);
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      color: var(--text-muted);
-    }
-
-    footer a {
-      color: var(--primary);
-      text-decoration: none;
-    }
-
-    @media (max-width: 768px) {
-      h1 { font-size: 1.8rem; }
-      .skills-grid { grid-template-columns: 1fr; }
+    .gradient-bar {
+      background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
     }
   </style>
 </head>
-<body>
-  <div class="container">
-    <header>
-      <div class="lang-switch">
-        <button class="lang-btn" data-lang="zh" onclick="switchLang('zh')">中文</button>
-        <button class="lang-btn active" data-lang="en" onclick="switchLang('en')">EN</button>
-      </div>
-      <h1>Awesome Agent Skills</h1>
-      <p class="subtitle" id="subtitle">Search and discover AI Agent Skills for Cursor, Claude Code, GitHub Copilot, and more.</p>
-    </header>
+<body class="bg-gray-50 min-h-screen">
 
-    <div class="search-box">
-      <input type="text" id="searchInput" placeholder="Search skills by name, description, or category..." data-placeholder-en="Search skills by name, description, or category..." data-placeholder-zh="按名称、描述或分类搜索 Skills...">
-    </div>
-
-    <div class="filters">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="cursor">Cursor</button>
-      <button class="filter-btn" data-filter="claude">Claude</button>
-      <button class="filter-btn" data-filter="copilot">Copilot</button>
-      <button class="filter-btn" data-filter="opencode">OpenCode</button>
-      <button class="filter-btn" data-filter="official">Official</button>
-      <button class="filter-btn" data-filter="collection">Collections</button>
-      <button class="filter-btn" data-filter="devtools">Dev Tools</button>
-      <button class="filter-btn" data-filter="devops">DevOps</button>
-      <button class="filter-btn" data-filter="writing">Writing</button>
-      <button class="filter-btn" data-filter="design">Design</button>
-    </div>
-
-    <div class="stats" id="stats">Loading skills...</div>
-
-    <div class="skills-grid" id="skillsGrid"></div>
-
-    <div class="no-results" id="noResults" style="display: none;">
-      <p id="noResultsText">No skills found matching your search.</p>
-    </div>
-
-    <footer>
-      <p>
-        <a href="https://github.com/JackyST0/awesome-agent-skills" target="_blank">GitHub</a> |
-        <a href="https://github.com/JackyST0/awesome-agent-skills/blob/main/CONTRIBUTING.md" target="_blank">Contribute</a> |
-        <span id="footerText">Made with love for the AI community</span>
-      </p>
-    </footer>
-  </div>
-
-  <script>
-    // Skills data
-    const skills = [
-      // Official Resources
-      { name: "anthropics/skills", desc: "Anthropic Official Agent Skills Repository", stars: "60.3k", platform: "claude", category: "official", url: "https://github.com/anthropics/skills" },
-      { name: "vercel-labs/skills", desc: "Vercel official Skills CLI tool (npx skills add)", stars: "5.4k", platform: "all", category: "official", url: "https://github.com/vercel-labs/add-skill" },
-      { name: "microsoft/skills", desc: "Microsoft official 131 Azure SDK Skills", stars: "1.2k", platform: "all", category: "official", url: "https://github.com/microsoft/agent-skills" },
-      { name: "Agent Skills Spec", desc: "Official SKILL.md format specification", stars: "-", platform: "all", category: "official", url: "https://agentskills.io/specification" },
-
-      // Collections
-      { name: "awesome-cursorrules", desc: "The most comprehensive Cursor Rules collection", stars: "37.4k", platform: "cursor", category: "collection", url: "https://github.com/PatrickJS/awesome-cursorrules" },
-      { name: "everything-claude-code", desc: "Complete Claude Code configs (agents/skills/hooks)", stars: "32.9k", platform: "claude", category: "collection", url: "https://github.com/affaan-m/everything-claude-code" },
-      { name: "awesome-claude-skills (Composio)", desc: "Claude Skills collection by Composio", stars: "27.1k", platform: "claude", category: "collection", url: "https://github.com/ComposioHQ/awesome-claude-skills" },
-      { name: "awesome-claude-code", desc: "Claude Code skills/hooks/plugins collection", stars: "22.1k", platform: "claude", category: "collection", url: "https://github.com/hesreallyhim/awesome-claude-code" },
-      { name: "openskills", desc: "Universal Skills loader (npm install)", stars: "7.3k", platform: "all", category: "collection", url: "https://github.com/numman-ali/openskills" },
-      { name: "awesome-claude-skills (VoltAgent)", desc: "Claude Skills collection by VoltAgent", stars: "4.4k", platform: "claude", category: "collection", url: "https://github.com/VoltAgent/awesome-claude-skills" },
-      { name: "claude-skills", desc: "Claude Skills documentation by Simon Willison", stars: "910", platform: "claude", category: "collection", url: "https://github.com/simonw/claude-skills" },
-      { name: "Ai-Agent-Skills", desc: "Universal AI Skills installer (Homebrew for Skills)", stars: "774", platform: "all", category: "collection", url: "https://github.com/skillcreatorai/Ai-Agent-Skills" },
-      { name: "claude-code-kit", desc: "Claude Code toolkit with auto-activating skills", stars: "59", platform: "claude", category: "collection", url: "https://github.com/blencorp/claude-code-kit" },
-
-      // Dev Tools
-      { name: "claude-code-security-review", desc: "AI security review GitHub Action (Official)", stars: "-", platform: "claude", category: "devtools", url: "https://github.com/anthropics/claude-code-security-review" },
-      { name: "trailofbits/skills", desc: "Trail of Bits security research & audit Skills", stars: "-", platform: "claude", category: "devtools", url: "https://github.com/trailofbits/skills" },
-      { name: "playwright-skill", desc: "Playwright browser automation testing Skill", stars: "-", platform: "claude", category: "devtools", url: "https://github.com/lackeyjb/playwright-skill" },
-      { name: "vercel-labs/agent-skills", desc: "Vercel React/Web design best practices Skills", stars: "-", platform: "all", category: "devtools", url: "https://github.com/vercel-labs/agent-skills" },
-      { name: "supabase/agent-skills", desc: "Supabase Postgres best practices Skill", stars: "-", platform: "all", category: "devtools", url: "https://github.com/supabase/agent-skills" },
-      { name: "expo/skills", desc: "Expo/React Native development Skills", stars: "-", platform: "all", category: "devtools", url: "https://github.com/expo/skills" },
-      { name: "antfu/skills", desc: "Vue/Vite/Vitest development Skills (Anthony Fu)", stars: "-", platform: "all", category: "devtools", url: "https://github.com/antfu/skills" },
-      { name: "browser-use/browser-use", desc: "Browser automation Skill", stars: "-", platform: "all", category: "devtools", url: "https://github.com/browser-use/browser-use" },
-      { name: "obra/superpowers", desc: "Debugging/TDD/Code Review/Planning superpowers", stars: "-", platform: "all", category: "devtools", url: "https://github.com/obra/superpowers" },
-      { name: "coreyhaines31/marketingskills", desc: "Marketing Skills (SEO/Copywriting/Social/Ads)", stars: "-", platform: "all", category: "devtools", url: "https://github.com/coreyhaines31/marketingskills" },
-      { name: "code-review", desc: "Smart code review example Skill", stars: "-", platform: "all", category: "devtools", url: "https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/code-review" },
-      { name: "git-commit", desc: "Git commit message generator Skill", stars: "-", platform: "all", category: "devtools", url: "https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/git-commit" },
-      { name: "unit-test-generator", desc: "Unit test auto-generator Skill", stars: "-", platform: "all", category: "devtools", url: "https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/unit-test-generator" },
-      { name: "api-doc-generator", desc: "API documentation generator Skill", stars: "-", platform: "all", category: "devtools", url: "https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/api-doc-generator" },
-      { name: "debug-helper", desc: "Code debugging assistant Skill", stars: "-", platform: "all", category: "devtools", url: "https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/debug-helper" },
-
-      // DevOps
-      { name: "devops-claude-skills", desc: "DevOps workflow marketplace with Terraform/K8s", stars: "-", platform: "claude", category: "devops", url: "https://github.com/ahmedasmar/devops-claude-skills" },
-      { name: "claudekit-skills", desc: "Docker/GCP/Cloudflare deployment and management", stars: "-", platform: "claude", category: "devops", url: "https://github.com/mrgoonie/claudekit-skills" },
-      { name: "claudebox", desc: "Dockerized Claude Code dev environment", stars: "-", platform: "claude", category: "devops", url: "https://github.com/RchGrav/claudebox" },
-
-      // Writing
-      { name: "doc-coauthoring", desc: "Document co-authoring Skill (Official)", stars: "-", platform: "claude", category: "writing", url: "https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring" },
-      { name: "internal-comms", desc: "Internal communications generation Skill (Official)", stars: "-", platform: "claude", category: "writing", url: "https://github.com/anthropics/skills/tree/main/skills/internal-comms" },
-      { name: "docx", desc: "Word document processing Skill (Official)", stars: "-", platform: "claude", category: "writing", url: "https://github.com/anthropics/skills/tree/main/skills/docx" },
-      { name: "pdf", desc: "PDF document processing Skill (Official)", stars: "-", platform: "claude", category: "writing", url: "https://github.com/anthropics/skills/tree/main/skills/pdf" },
-      { name: "pptx", desc: "PowerPoint presentation generator Skill (Official)", stars: "-", platform: "claude", category: "writing", url: "https://github.com/anthropics/skills/tree/main/skills/pptx" },
-      { name: "xlsx", desc: "Excel spreadsheet processing Skill (Official)", stars: "-", platform: "claude", category: "writing", url: "https://github.com/anthropics/skills/tree/main/skills/xlsx" },
-
-      // Design
-      { name: "frontend-design", desc: "Frontend UI design Skill (Official)", stars: "-", platform: "claude", category: "design", url: "https://github.com/anthropics/skills/tree/main/skills/frontend-design" },
-      { name: "brand-guidelines", desc: "Brand design guidelines Skill (Official)", stars: "-", platform: "claude", category: "design", url: "https://github.com/anthropics/skills/tree/main/skills/brand-guidelines" },
-      { name: "canvas-design", desc: "Canvas design Skill (Official)", stars: "-", platform: "claude", category: "design", url: "https://github.com/anthropics/skills/tree/main/skills/canvas-design" },
-      { name: "theme-factory", desc: "Theme style factory Skill (Official)", stars: "-", platform: "claude", category: "design", url: "https://github.com/anthropics/skills/tree/main/skills/theme-factory" },
-      { name: "algorithmic-art", desc: "Algorithmic art generation Skill (Official)", stars: "-", platform: "claude", category: "design", url: "https://github.com/anthropics/skills/tree/main/skills/algorithmic-art" },
-      { name: "slack-gif-creator", desc: "Slack GIF creator Skill (Official)", stars: "-", platform: "claude", category: "design", url: "https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator" },
-    ];
-
-    // DOM elements
-    const searchInput = document.getElementById('searchInput');
-    const skillsGrid = document.getElementById('skillsGrid');
-    const statsEl = document.getElementById('stats');
-    const noResults = document.getElementById('noResults');
-    const filterBtns = document.querySelectorAll('.filter-btn');
-
-    let currentFilter = 'all';
-
-    // Render skills
-    function renderSkills(filteredSkills) {
-      if (filteredSkills.length === 0) {
-        skillsGrid.innerHTML = '';
-        noResults.style.display = 'block';
-        statsEl.textContent = 'No skills found';
-        return;
-      }
-
-      noResults.style.display = 'none';
-      statsEl.textContent = `Showing ${filteredSkills.length} of ${skills.length} skills`;
-
-      skillsGrid.innerHTML = filteredSkills.map(skill => `
-        <div class="skill-card">
-          <div class="skill-header">
-            <div class="skill-name">
-              <a href="${skill.url}" target="_blank">${skill.name}</a>
-            </div>
-            ${skill.stars !== '-' ? `<span class="skill-stars">${skill.stars}</span>` : ''}
-          </div>
-          <p class="skill-desc">${skill.desc}</p>
-          <div class="skill-tags">
-            <span class="tag platform-${skill.platform}">${skill.platform}</span>
-            <span class="tag category">${skill.category}</span>
+  <!-- Header -->
+  <div class="bg-white shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-6">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <span class="text-3xl">🤖</span>
+          <div>
+            <h1 class="text-2xl font-bold gradient-text">Awesome Agent Skills</h1>
+            <p class="text-gray-500 text-sm" id="subtitle">精选 AI Agent Skills，让 AI 编程更专业</p>
           </div>
         </div>
-      `).join('');
-    }
+        <div class="flex items-center gap-3">
+          <div class="flex gap-1 mr-2">
+            <button class="lang-btn px-2 py-1 text-xs rounded active" data-lang="zh" onclick="switchLang('zh')">中文</button>
+            <button class="lang-btn px-2 py-1 text-xs rounded text-gray-400" data-lang="en" onclick="switchLang('en')">EN</button>
+          </div>
+          <a href="https://github.com/JackyST0/awesome-agent-skills" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition text-sm">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    // Filter and search
-    function filterSkills() {
-      const query = searchInput.value.toLowerCase();
+  <!-- Stats -->
+  <div class="max-w-6xl mx-auto px-4 py-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+      <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+        <div class="text-2xl font-bold gradient-text" id="stat-total">0</div>
+        <div class="text-gray-500 text-sm" id="stat-total-label">Skills 总数</div>
+      </div>
+      <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+        <div class="text-2xl font-bold gradient-text" id="stat-categories">0</div>
+        <div class="text-gray-500 text-sm" id="stat-categories-label">分类数量</div>
+      </div>
+      <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+        <div class="text-2xl font-bold gradient-text" id="stat-platforms">6</div>
+        <div class="text-gray-500 text-sm" id="stat-platforms-label">支持平台</div>
+      </div>
+      <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+        <div class="text-2xl font-bold gradient-text" id="stat-official">3</div>
+        <div class="text-gray-500 text-sm" id="stat-official-label">官方资源</div>
+      </div>
+    </div>
 
+    <!-- Search -->
+    <div class="max-w-2xl mx-auto mb-6">
+      <div class="relative">
+        <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" placeholder="搜索 Skills 名称、描述或分类..." class="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 outline-none transition text-sm">
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="flex flex-wrap gap-2 mb-2 justify-center" id="category-filters">
+      <button class="category-btn active px-4 py-2 rounded-lg bg-gray-100 text-sm whitespace-nowrap transition" data-filter="all" onclick="filterBy('all')">全部</button>
+      <button class="category-btn px-4 py-2 rounded-lg bg-gray-100 text-sm whitespace-nowrap transition" data-filter="official" onclick="filterBy('official')">官方资源</button>
+      <button class="category-btn px-4 py-2 rounded-lg bg-gray-100 text-sm whitespace-nowrap transition" data-filter="collection" onclick="filterBy('collection')">Skills 合集</button>
+      <button class="category-btn px-4 py-2 rounded-lg bg-gray-100 text-sm whitespace-nowrap transition" data-filter="devtools" onclick="filterBy('devtools')">开发工具</button>
+      <button class="category-btn px-4 py-2 rounded-lg bg-gray-100 text-sm whitespace-nowrap transition" data-filter="devops" onclick="filterBy('devops')">DevOps</button>
+      <button class="category-btn px-4 py-2 rounded-lg bg-gray-100 text-sm whitespace-nowrap transition" data-filter="writing" onclick="filterBy('writing')">写作创作</button>
+      <button class="category-btn px-4 py-2 rounded-lg bg-gray-100 text-sm whitespace-nowrap transition" data-filter="design" onclick="filterBy('design')">设计相关</button>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="h-1 rounded-full gradient-bar mb-4 opacity-60"></div>
+
+    <!-- Stats line -->
+    <div class="text-center text-gray-400 text-xs mb-4" id="stats-line"></div>
+
+    <!-- Skills Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="skillsGrid"></div>
+
+    <!-- Empty State -->
+    <div class="hidden text-center py-16 text-gray-400" id="emptyState">
+      <p class="text-lg" id="noResultsText">没有找到匹配的 Skills</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-200 mt-8">
+    <div class="max-w-6xl mx-auto px-4 py-4 text-center text-gray-400 text-sm">
+      <span id="footerText">Made with ❤️ by</span>
+      <a href="https://github.com/JackyST0" target="_blank" class="text-purple-500 hover:underline ml-1">JackyST0</a>
+    </div>
+  </footer>
+
+  <script>
+    const skills = [
+      // Official
+      { name: "anthropics/skills", desc: "Anthropic 官方 Agent Skills 仓库", descEn: "Anthropic Official Agent Skills Repository", stars: "60.3k", platform: "claude", category: "official", url: "https://github.com/anthropics/skills" },
+      { name: "vercel-labs/skills", desc: "Vercel 官方 Skills CLI 工具", descEn: "Vercel official Skills CLI tool (npx skills add)", stars: "5.4k", platform: "all", category: "official", url: "https://github.com/vercel-labs/add-skill" },
+      { name: "microsoft/skills", desc: "微软官方 131 个 Azure SDK Skills", descEn: "Microsoft official 131 Azure SDK Skills", stars: "1.2k", platform: "all", category: "official", url: "https://github.com/microsoft/agent-skills" },
+      { name: "Agent Skills Spec", desc: "SKILL.md 格式规范", descEn: "Official SKILL.md format specification", stars: "-", platform: "all", category: "official", url: "https://agentskills.io/specification" },
+
+      // Collections
+      { name: "awesome-cursorrules", desc: "最全面的 Cursor Rules 合集", descEn: "The most comprehensive Cursor Rules collection", stars: "37.4k", platform: "cursor", category: "collection", url: "https://github.com/PatrickJS/awesome-cursorrules" },
+      { name: "everything-claude-code", desc: "Claude Code 配置大全", descEn: "Complete Claude Code configs (agents/skills/hooks)", stars: "32.9k", platform: "claude", category: "collection", url: "https://github.com/affaan-m/everything-claude-code" },
+      { name: "awesome-claude-skills", desc: "Composio 维护的 Claude Skills 合集", descEn: "Claude Skills collection by Composio", stars: "27.1k", platform: "claude", category: "collection", url: "https://github.com/ComposioHQ/awesome-claude-skills" },
+      { name: "awesome-claude-code", desc: "Claude Code skills/hooks/插件合集", descEn: "Claude Code skills/hooks/plugins collection", stars: "22.1k", platform: "claude", category: "collection", url: "https://github.com/hesreallyhim/awesome-claude-code" },
+      { name: "openskills", desc: "通用 Skills 加载器（npm 安装）", descEn: "Universal Skills loader (npm install)", stars: "7.3k", platform: "all", category: "collection", url: "https://github.com/numman-ali/openskills" },
+      { name: "Ai-Agent-Skills", desc: "AI Skills 通用安装器", descEn: "Universal AI Skills installer (Homebrew for Skills)", stars: "774", platform: "all", category: "collection", url: "https://github.com/skillcreatorai/Ai-Agent-Skills" },
+      { name: "claude-skills", desc: "Simon Willison 的 Claude Skills 文档", descEn: "Claude Skills documentation by Simon Willison", stars: "910", platform: "claude", category: "collection", url: "https://github.com/simonw/claude-skills" },
+      { name: "claude-code-kit", desc: "Claude Code 工具包，自动激活 skills", descEn: "Claude Code toolkit with auto-activating skills", stars: "59", platform: "claude", category: "collection", url: "https://github.com/blencorp/claude-code-kit" },
+
+      // Dev Tools
+      { name: "obra/superpowers", desc: "完整开发工作流（调试/TDD/代码审查）", descEn: "Complete dev workflow (Debug/TDD/Code Review)", stars: "48.8k", platform: "all", category: "devtools", url: "https://github.com/obra/superpowers" },
+      { name: "browser-use", desc: "浏览器自动化 Skill", descEn: "Browser automation Skill", stars: "78.1k", platform: "all", category: "devtools", url: "https://github.com/browser-use/browser-use" },
+      { name: "vercel-labs/agent-skills", desc: "Vercel React/Web 最佳实践 Skills", descEn: "Vercel React/Web design best practices Skills", stars: "19.7k", platform: "all", category: "devtools", url: "https://github.com/vercel-labs/agent-skills" },
+      { name: "marketingskills", desc: "营销 Skills（SEO/文案/CRO/广告）", descEn: "Marketing Skills (SEO/Copywriting/CRO/Ads)", stars: "7.1k", platform: "all", category: "devtools", url: "https://github.com/coreyhaines31/marketingskills" },
+      { name: "antfu/skills", desc: "Vue/Vite/Vitest 开发 Skills", descEn: "Vue/Vite/Vitest development Skills (Anthony Fu)", stars: "3.2k", platform: "all", category: "devtools", url: "https://github.com/antfu/skills" },
+      { name: "security-review", desc: "AI 安全审查 GitHub Action（官方）", descEn: "AI security review GitHub Action (Official)", stars: "-", platform: "claude", category: "devtools", url: "https://github.com/anthropics/claude-code-security-review" },
+      { name: "trailofbits/skills", desc: "安全研究和审计 Skills", descEn: "Trail of Bits security research & audit Skills", stars: "-", platform: "claude", category: "devtools", url: "https://github.com/trailofbits/skills" },
+      { name: "supabase/agent-skills", desc: "Supabase Postgres 最佳实践", descEn: "Supabase Postgres best practices Skill", stars: "1.2k", platform: "all", category: "devtools", url: "https://github.com/supabase/agent-skills" },
+      { name: "expo/skills", desc: "Expo/React Native 开发 Skills", descEn: "Expo/React Native development Skills", stars: "931", platform: "all", category: "devtools", url: "https://github.com/expo/skills" },
+      { name: "code-review", desc: "智能代码审查示例 Skill", descEn: "Smart code review example Skill", stars: "-", platform: "all", category: "devtools", url: "https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/code-review" },
+      { name: "git-commit", desc: "Git 提交信息生成 Skill", descEn: "Git commit message generator Skill", stars: "-", platform: "all", category: "devtools", url: "https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/git-commit" },
+      { name: "unit-test-generator", desc: "单元测试自动生成 Skill", descEn: "Unit test auto-generator Skill", stars: "-", platform: "all", category: "devtools", url: "https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/unit-test-generator" },
+
+      // DevOps
+      { name: "devops-claude-skills", desc: "DevOps 工作流市场，含 Terraform/K8s", descEn: "DevOps workflow marketplace with Terraform/K8s", stars: "-", platform: "claude", category: "devops", url: "https://github.com/ahmedasmar/devops-claude-skills" },
+      { name: "claudekit-skills", desc: "Docker/GCP/Cloudflare 部署和管理", descEn: "Docker/GCP/Cloudflare deployment and management", stars: "-", platform: "claude", category: "devops", url: "https://github.com/mrgoonie/claudekit-skills" },
+      { name: "claudebox", desc: "Docker 容器化 Claude Code 开发环境", descEn: "Dockerized Claude Code dev environment", stars: "-", platform: "claude", category: "devops", url: "https://github.com/RchGrav/claudebox" },
+
+      // Writing
+      { name: "doc-coauthoring", desc: "文档协作撰写 Skill（官方）", descEn: "Document co-authoring Skill (Official)", stars: "-", platform: "claude", category: "writing", url: "https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring" },
+      { name: "docx", desc: "Word 文档读写处理 Skill（官方）", descEn: "Word document processing Skill (Official)", stars: "-", platform: "claude", category: "writing", url: "https://github.com/anthropics/skills/tree/main/skills/docx" },
+      { name: "pdf", desc: "PDF 文档处理 Skill（官方）", descEn: "PDF document processing Skill (Official)", stars: "-", platform: "claude", category: "writing", url: "https://github.com/anthropics/skills/tree/main/skills/pdf" },
+      { name: "pptx", desc: "PPT 演示文稿生成 Skill（官方）", descEn: "PowerPoint presentation generator (Official)", stars: "-", platform: "claude", category: "writing", url: "https://github.com/anthropics/skills/tree/main/skills/pptx" },
+      { name: "xlsx", desc: "Excel 表格处理 Skill（官方）", descEn: "Excel spreadsheet processing Skill (Official)", stars: "-", platform: "claude", category: "writing", url: "https://github.com/anthropics/skills/tree/main/skills/xlsx" },
+
+      // Design
+      { name: "frontend-design", desc: "前端 UI 设计 Skill（官方）", descEn: "Frontend UI design Skill (Official)", stars: "-", platform: "claude", category: "design", url: "https://github.com/anthropics/skills/tree/main/skills/frontend-design" },
+      { name: "brand-guidelines", desc: "品牌设计规范 Skill（官方）", descEn: "Brand design guidelines Skill (Official)", stars: "-", platform: "claude", category: "design", url: "https://github.com/anthropics/skills/tree/main/skills/brand-guidelines" },
+      { name: "canvas-design", desc: "Canvas 画布设计 Skill（官方）", descEn: "Canvas design Skill (Official)", stars: "-", platform: "claude", category: "design", url: "https://github.com/anthropics/skills/tree/main/skills/canvas-design" },
+      { name: "theme-factory", desc: "主题样式工厂 Skill（官方）", descEn: "Theme style factory Skill (Official)", stars: "-", platform: "claude", category: "design", url: "https://github.com/anthropics/skills/tree/main/skills/theme-factory" },
+      { name: "algorithmic-art", desc: "算法艺术生成 Skill（官方）", descEn: "Algorithmic art generation Skill (Official)", stars: "-", platform: "claude", category: "design", url: "https://github.com/anthropics/skills/tree/main/skills/algorithmic-art" },
+      { name: "slack-gif-creator", desc: "Slack GIF 创建 Skill（官方）", descEn: "Slack GIF creator Skill (Official)", stars: "-", platform: "claude", category: "design", url: "https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator" },
+    ];
+
+    const categoryLabels = {
+      zh: { official: '官方资源', collection: 'Skills 合集', devtools: '开发工具', devops: 'DevOps', writing: '写作创作', design: '设计相关' },
+      en: { official: 'Official', collection: 'Collections', devtools: 'Dev Tools', devops: 'DevOps', writing: 'Writing', design: 'Design' }
+    };
+
+    const platformColors = {
+      cursor: 'bg-purple-100 text-purple-700',
+      claude: 'bg-pink-100 text-pink-700',
+      copilot: 'bg-blue-100 text-blue-700',
+      all: 'bg-green-100 text-green-700',
+    };
+
+    let currentFilter = 'all';
+    let currentLang = 'zh';
+
+    const i18n = {
+      zh: {
+        subtitle: '精选 AI Agent Skills，让 AI 编程更专业',
+        placeholder: '搜索 Skills 名称、描述或分类...',
+        noResults: '没有找到匹配的 Skills',
+        showing: (c, t) => `显示 ${c} / ${t} 个 Skills`,
+        footer: 'Made with ❤️ by',
+        totalLabel: 'Skills 总数', catLabel: '分类数量', platLabel: '支持平台', offLabel: '官方资源'
+      },
+      en: {
+        subtitle: 'Curated AI Agent Skills for smarter coding',
+        placeholder: 'Search skills by name, description, or category...',
+        noResults: 'No skills found matching your search.',
+        showing: (c, t) => `Showing ${c} of ${t} skills`,
+        footer: 'Made with ❤️ by',
+        totalLabel: 'Total Skills', catLabel: 'Categories', platLabel: 'Platforms', offLabel: 'Official'
+      }
+    };
+
+    function renderSkills() {
+      const query = document.getElementById('searchInput').value.toLowerCase();
       let filtered = skills;
 
-      // Apply category filter
       if (currentFilter !== 'all') {
-        filtered = filtered.filter(s =>
-          s.platform === currentFilter ||
-          s.category === currentFilter
-        );
+        filtered = filtered.filter(s => s.category === currentFilter || s.platform === currentFilter);
       }
-
-      // Apply search query
       if (query) {
         filtered = filtered.filter(s =>
           s.name.toLowerCase().includes(query) ||
-          s.desc.toLowerCase().includes(query) ||
+          (currentLang === 'zh' ? s.desc : s.descEn).toLowerCase().includes(query) ||
           s.category.toLowerCase().includes(query)
         );
       }
 
-      renderSkills(filtered);
-    }
+      const grid = document.getElementById('skillsGrid');
+      const empty = document.getElementById('emptyState');
+      const statsLine = document.getElementById('stats-line');
 
-    // Event listeners
-    searchInput.addEventListener('input', filterSkills);
-
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        currentFilter = btn.dataset.filter;
-        filterSkills();
-      });
-    });
-
-    // Initial render
-    renderSkills(skills);
-
-    // i18n translations
-    const i18n = {
-      en: {
-        subtitle: 'Search and discover AI Agent Skills for Cursor, Claude Code, GitHub Copilot, and more.',
-        placeholder: 'Search skills by name, description, or category...',
-        noResults: 'No skills found matching your search.',
-        showing: (count, total) => `Showing ${count} of ${total} skills`,
-        loading: 'Loading skills...',
-        noSkills: 'No skills found'
-      },
-      zh: {
-        subtitle: '搜索和发现适用于 Cursor、Claude Code、GitHub Copilot 等工具的 AI Agent Skills。',
-        placeholder: '按名称、描述或分类搜索 Skills...',
-        noResults: '没有找到匹配的 Skills。',
-        showing: (count, total) => `显示 ${count} / ${total} 个 Skills`,
-        loading: '加载中...',
-        noSkills: '没有找到 Skills'
-      }
-    };
-
-    let currentLang = 'en';
-
-    function switchLang(lang) {
-      currentLang = lang;
-      
-      // Update button states
-      document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.lang === lang);
-      });
-
-      // Update texts
-      document.getElementById('subtitle').textContent = i18n[lang].subtitle;
-      document.getElementById('searchInput').placeholder = i18n[lang].placeholder;
-      document.getElementById('noResultsText').textContent = i18n[lang].noResults;
-
-      // Re-render to update stats
-      filterSkills();
-    }
-
-    // Override renderSkills to use i18n
-    const originalRenderSkills = renderSkills;
-    renderSkills = function(filteredSkills) {
-      if (filteredSkills.length === 0) {
-        skillsGrid.innerHTML = '';
-        noResults.style.display = 'block';
-        statsEl.textContent = i18n[currentLang].noSkills;
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        empty.classList.remove('hidden');
+        statsLine.textContent = '';
         return;
       }
 
-      noResults.style.display = 'none';
-      statsEl.textContent = i18n[currentLang].showing(filteredSkills.length, skills.length);
+      empty.classList.add('hidden');
+      statsLine.textContent = i18n[currentLang].showing(filtered.length, skills.length);
 
-      skillsGrid.innerHTML = filteredSkills.map(skill => `
-        <div class="skill-card">
-          <div class="skill-header">
-            <div class="skill-name">
-              <a href="${skill.url}" target="_blank">${skill.name}</a>
+      grid.innerHTML = filtered.map(skill => {
+        const desc = currentLang === 'zh' ? skill.desc : skill.descEn;
+        const catLabel = categoryLabels[currentLang][skill.category] || skill.category;
+        const platClass = platformColors[skill.platform] || 'bg-gray-100 text-gray-600';
+        return `
+          <div class="skill-card bg-white rounded-xl p-4 shadow-sm border border-gray-100">
+            <div class="flex items-start justify-between mb-2">
+              <a href="${skill.url}" target="_blank" rel="noopener" class="font-semibold text-gray-800 hover:text-purple-600 transition text-sm">${skill.name}</a>
+              ${skill.stars !== '-' ? `<span class="text-xs bg-yellow-50 text-yellow-700 px-2 py-0.5 rounded-full whitespace-nowrap ml-2 flex-shrink-0">★ ${skill.stars}</span>` : ''}
             </div>
-            ${skill.stars !== '-' ? `<span class="skill-stars">${skill.stars}</span>` : ''}
-          </div>
-          <p class="skill-desc">${skill.desc}</p>
-          <div class="skill-tags">
-            <span class="tag platform-${skill.platform}">${skill.platform}</span>
-            <span class="tag category">${skill.category}</span>
-          </div>
-        </div>
-      `).join('');
-    };
+            <p class="text-gray-500 text-xs mb-3 leading-relaxed">${desc}</p>
+            <div class="flex items-center justify-between">
+              <div class="flex gap-1.5">
+                <span class="text-xs px-2 py-0.5 rounded-full ${platClass}">${skill.platform}</span>
+                <span class="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-500">${catLabel}</span>
+              </div>
+              <a href="${skill.url}" target="_blank" rel="noopener" class="text-gray-400 hover:text-purple-500 transition">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>`;
+      }).join('');
+    }
 
-    // Detect browser language
+    function filterBy(category) {
+      currentFilter = category;
+      document.querySelectorAll('.category-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.filter === category);
+      });
+      renderSkills();
+    }
+
+    function switchLang(lang) {
+      currentLang = lang;
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        if (btn.dataset.lang === lang) {
+          btn.classList.add('active');
+          btn.classList.remove('text-gray-400');
+        } else {
+          btn.classList.remove('active');
+          btn.classList.add('text-gray-400');
+        }
+      });
+      document.getElementById('subtitle').textContent = i18n[lang].subtitle;
+      document.getElementById('searchInput').placeholder = i18n[lang].placeholder;
+      document.getElementById('noResultsText').textContent = i18n[lang].noResults;
+      document.getElementById('footerText').textContent = i18n[lang].footer;
+      document.getElementById('stat-total-label').textContent = i18n[lang].totalLabel;
+      document.getElementById('stat-categories-label').textContent = i18n[lang].catLabel;
+      document.getElementById('stat-platforms-label').textContent = i18n[lang].platLabel;
+      document.getElementById('stat-official-label').textContent = i18n[lang].offLabel;
+
+      // Update filter button labels
+      const filterLabels = lang === 'zh'
+        ? ['全部','官方资源','Skills 合集','开发工具','DevOps','写作创作','设计相关']
+        : ['All','Official','Collections','Dev Tools','DevOps','Writing','Design'];
+      document.querySelectorAll('.category-btn').forEach((btn, i) => {
+        btn.textContent = filterLabels[i];
+      });
+
+      renderSkills();
+    }
+
+    // Init
+    document.getElementById('searchInput').addEventListener('input', renderSkills);
+    document.getElementById('stat-total').textContent = skills.length;
+    document.getElementById('stat-categories').textContent = Object.keys(categoryLabels.zh).length;
+
     const browserLang = navigator.language.startsWith('zh') ? 'zh' : 'en';
     switchLang(browserLang);
   </script>
