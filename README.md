@@ -149,8 +149,11 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | Agent Skills 开放标准 | Agent Skills 官方规范文档 | - | [skill.md](https://skill.md/) |
 | Agent Skills 规范 | SKILL.md 格式规范 | - | [agentskills.io](https://agentskills.io/specification) |
 | anthropics/skills | ⭐ Anthropic 官方 Agent Skills 仓库 | 65.9k | [GitHub](https://github.com/anthropics/skills) |
+| vercel-labs/skills | ⭐ Vercel 官方 Skills CLI 工具（`npx skills add`） | 5.4k | [GitHub](https://github.com/vercel-labs/add-skill) |
+| microsoft/skills | ⭐ 微软官方 131 个 Azure SDK Skills | 1.2k | [GitHub](https://github.com/microsoft/agent-skills) |
 | github/awesome-copilot | GitHub 官方 Copilot 资源合集 | - | [GitHub](https://github.com/github/awesome-copilot) |
 | Agent Skills 索引 | 社区 Skills 搜索引擎 | - | [agent-skills.md](https://agent-skills.md/) |
+| Skills 排行榜 | 开放 Agent Skills 生态目录 | - | [skills.sh](https://skills.sh) |
 
 ### Skills 合集
 
@@ -165,6 +168,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | claude-skills | Simon Willison 的 Claude Skills 文档 | 915 | [GitHub](https://github.com/simonw/claude-skills) |
 | claude-skills-collection | 官方与社区 Skills 精选集合 | 426 | [GitHub](https://github.com/abubakarsiddik31/claude-skills-collection) |
 | cursor-rules-and-prompts | Cursor 规则与提示词集合 | 203 | [GitHub](https://github.com/thehimel/cursor-rules-and-prompts) |
+| Ai-Agent-Skills | ⭐ AI Skills 通用安装器（Homebrew for Skills） | 774 | [GitHub](https://github.com/skillcreatorai/Ai-Agent-Skills) |
 | claude-code-kit | Claude Code 工具包，自动激活 skills | 60 | [GitHub](https://github.com/blencorp/claude-code-kit) |
 
 ### 开发工具
@@ -178,6 +182,11 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | skill-codex | 将任务委派给 Codex 的 Skill | Claude | [GitHub](https://github.com/skills-directory/skill-codex) |
 | skillset-example | GitHub Copilot 扩展示例 | Copilot | [GitHub](https://github.com/copilot-extensions/skillset-example) |
 | claude-code-skills | 专业级 Skills 市场 | Claude | [GitHub](https://github.com/daymade/claude-code-skills) |
+| vercel-labs/agent-skills | ⭐ Vercel React/Web 设计最佳实践 Skills（19.7k ⭐） | All | [GitHub](https://github.com/vercel-labs/agent-skills) |
+| antfu/skills | ⭐ Vue/Vite/Vitest 开发 Skills（3.2k ⭐） | All | [GitHub](https://github.com/antfu/skills) |
+| supabase/agent-skills | ⭐ Supabase Postgres 最佳实践 Skill（1.2k ⭐） | All | [GitHub](https://github.com/supabase/agent-skills) |
+| expo/skills | ⭐ Expo/React Native 开发 Skills（931 ⭐） | All | [GitHub](https://github.com/expo/skills) |
+| browser-use/browser-use | 浏览器自动化 Skill（78.1k ⭐） | All | [GitHub](https://github.com/browser-use/browser-use) |
 | code-review | 智能代码审查示例 Skill | All | [示例](examples/code-review/) |
 | git-commit | Git 提交信息生成示例 Skill | All | [示例](examples/git-commit/) |
 | unit-test-generator | 单元测试自动生成 Skill | All | [示例](examples/unit-test-generator/) |
@@ -191,6 +200,8 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | claude-code-workflows | 生产级开发工作流，自动化质量检查 | Claude | [GitHub](https://github.com/shinpr/claude-code-workflows) |
 | claude-skills | 20+ 生产力工具，含 8 个专家 Agent | Claude | [GitHub](https://github.com/alirezarezvani/claude-skills) |
 | claude-code-skill-factory | Skills 工厂，批量生成和部署 Skills | Claude | [GitHub](https://github.com/alirezarezvani/claude-code-skill-factory) |
+| obra/superpowers | ⭐ 完整开发工作流（调试/TDD/代码审查/计划）（48.8k ⭐） | All | [GitHub](https://github.com/obra/superpowers) |
+| coreyhaines31/marketingskills | ⭐ 营销 Skills（SEO/文案/CRO/广告）（7.1k ⭐） | All | [GitHub](https://github.com/coreyhaines31/marketingskills) |
 | changelog-generator | 从 Git 提交自动生成 Changelog | Claude | [ComposioHQ](https://github.com/ComposioHQ/awesome-claude-skills) |
 
 ### DevOps

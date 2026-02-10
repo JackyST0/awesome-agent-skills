@@ -150,8 +150,11 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | Agent Skills Open Standard | Official Agent Skills specification | - | [skill.md](https://skill.md/) |
 | Agent Skills Specification | SKILL.md format specification | - | [agentskills.io](https://agentskills.io/specification) |
 | anthropics/skills | ⭐ Official Anthropic Agent Skills repository | 65.9k | [GitHub](https://github.com/anthropics/skills) |
+| vercel-labs/skills | ⭐ Vercel official Skills CLI tool (`npx skills add`) | 5.4k | [GitHub](https://github.com/vercel-labs/add-skill) |
+| microsoft/skills | ⭐ Microsoft official 131 Azure SDK Skills | 1.2k | [GitHub](https://github.com/microsoft/agent-skills) |
 | github/awesome-copilot | GitHub official Copilot resources | - | [GitHub](https://github.com/github/awesome-copilot) |
 | Agent Skills Index | Community Skills search engine | - | [agent-skills.md](https://agent-skills.md/) |
+| Skills Leaderboard | Open Agent Skills ecosystem directory | - | [skills.sh](https://skills.sh) |
 
 ### Skills Collections
 
@@ -166,6 +169,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | claude-skills | Claude Skills documentation by Simon Willison | 915 | [GitHub](https://github.com/simonw/claude-skills) |
 | claude-skills-collection | Curated official and community Skills | 426 | [GitHub](https://github.com/abubakarsiddik31/claude-skills-collection) |
 | cursor-rules-and-prompts | Cursor rules and prompts collection | 203 | [GitHub](https://github.com/thehimel/cursor-rules-and-prompts) |
+| Ai-Agent-Skills | ⭐ Universal AI Skills installer (Homebrew for Skills) | 774 | [GitHub](https://github.com/skillcreatorai/Ai-Agent-Skills) |
 | claude-code-kit | Claude Code toolkit with auto-activating skills | 60 | [GitHub](https://github.com/blencorp/claude-code-kit) |
 
 ### Development Tools
@@ -179,6 +183,11 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | skill-codex | Delegate tasks to Codex Skill | Claude | [GitHub](https://github.com/skills-directory/skill-codex) |
 | claude-code-skills | Professional Skills marketplace | Claude | [GitHub](https://github.com/daymade/claude-code-skills) |
 | skillset-example | GitHub Copilot extension example | Copilot | [GitHub](https://github.com/copilot-extensions/skillset-example) |
+| vercel-labs/agent-skills | ⭐ Vercel React/Web design best practices Skills (19.7k ⭐) | All | [GitHub](https://github.com/vercel-labs/agent-skills) |
+| antfu/skills | ⭐ Vue/Vite/Vitest development Skills (3.2k ⭐) | All | [GitHub](https://github.com/antfu/skills) |
+| supabase/agent-skills | ⭐ Supabase Postgres best practices Skill (1.2k ⭐) | All | [GitHub](https://github.com/supabase/agent-skills) |
+| expo/skills | ⭐ Expo/React Native development Skills (931 ⭐) | All | [GitHub](https://github.com/expo/skills) |
+| browser-use/browser-use | Browser automation Skill (78.1k ⭐) | All | [GitHub](https://github.com/browser-use/browser-use) |
 | code-review | Smart code review example Skill | All | [Example](examples/code-review/) |
 | git-commit | Git commit message generator Skill | All | [Example](examples/git-commit/) |
 | unit-test-generator | Unit test auto-generator Skill | All | [Example](examples/unit-test-generator/) |
@@ -192,6 +201,8 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | claude-code-workflows | Production-grade dev workflows with quality checks | Claude | [GitHub](https://github.com/shinpr/claude-code-workflows) |
 | claude-skills | 20+ productivity tools with 8 expert Agents | Claude | [GitHub](https://github.com/alirezarezvani/claude-skills) |
 | claude-code-skill-factory | Skills factory for batch generation and deployment | Claude | [GitHub](https://github.com/alirezarezvani/claude-code-skill-factory) |
+| obra/superpowers | ⭐ Complete dev workflow (Debug/TDD/Code Review/Planning) (48.8k ⭐) | All | [GitHub](https://github.com/obra/superpowers) |
+| coreyhaines31/marketingskills | ⭐ Marketing Skills (SEO/Copywriting/CRO/Ads) (7.1k ⭐) | All | [GitHub](https://github.com/coreyhaines31/marketingskills) |
 
 ### DevOps
 
