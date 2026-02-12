@@ -4,13 +4,18 @@
   <img src="assets/banner.svg" alt="Awesome Agent Skills" width="100%">
 </p>
 
-> Modular instruction packages that give AI coding assistants on-demand capabilities for specific tasks, working across Cursor, Claude Code, GitHub Copilot, and more.
-
-[English](README.md) | [简体中文](README_ZH.md)
+<p align="center">
+  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+  <img src="https://img.shields.io/github/stars/JackyST0/awesome-agent-skills?style=social" alt="GitHub Stars">
+</p>
 
 <p align="center">
   <a href="https://jackyst0.github.io/awesome-agent-skills/"><b>🔍 Search Skills Online</b></a>
 </p>
+
+> Modular instruction packages that give AI coding assistants on-demand capabilities for specific tasks, working across Cursor, Claude Code, GitHub Copilot, and more.
+
+[English](README.md) | [简体中文](README_ZH.md)
 
 ## Contents
 
