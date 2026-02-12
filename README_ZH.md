@@ -1,9 +1,10 @@
+# Awesome Agent Skills [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
 <p align="center">
   <img src="assets/banner.svg" alt="Awesome Agent Skills" width="100%">
 </p>
 
 <p align="center">
-  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
   <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
   <img src="https://img.shields.io/github/stars/JackyST0/awesome-agent-skills?style=social" alt="GitHub Stars">
 </p>
@@ -11,8 +12,6 @@
 <p align="center">
   <a href="https://jackyst0.github.io/awesome-agent-skills/"><b>🔍 在线搜索 Skills</b></a>
 </p>
-
-# Awesome Agent Skills
 
 > 🤖 模块化的指令包，赋予 AI 编程助手按需完成特定任务的能力，支持 Cursor、Claude Code、GitHub Copilot 等多个平台。
 
