@@ -15,7 +15,7 @@
 
 > Modular instruction packages that give AI coding assistants on-demand capabilities for specific tasks, working across Cursor, Claude Code, GitHub Copilot, and more.
 
-[English](README.md) | [简体中文](README_ZH.md)
+English | [简体中文](README_ZH.md)
 
 ## Contents
 

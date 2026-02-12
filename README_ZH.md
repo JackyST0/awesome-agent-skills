@@ -15,7 +15,7 @@
 
 > 🤖 模块化的指令包，赋予 AI 编程助手按需完成特定任务的能力，支持 Cursor、Claude Code、GitHub Copilot 等多个平台。
 
-[English](README.md) | [简体中文](README_ZH.md)
+[English](README.md) | 简体中文
 
 ---
 
