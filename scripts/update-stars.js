@@ -111,23 +111,23 @@ async function main() {
   );
 
   // Read README files
-  const readmeZh = fs.readFileSync('README.md', 'utf8');
-  const readmeEn = fs.readFileSync('README_EN.md', 'utf8');
+  const readmeEn = fs.readFileSync('README.md', 'utf8');
+  const readmeZh = fs.readFileSync('README_ZH.md', 'utf8');
 
-  let updatedZh = readmeZh;
   let updatedEn = readmeEn;
+  let updatedZh = readmeZh;
 
   // Update star counts in both files
   for (const { repo, formatted } of results) {
     if (formatted !== '-') {
-      updatedZh = updateStarsInContent(updatedZh, repo, formatted);
       updatedEn = updateStarsInContent(updatedEn, repo, formatted);
+      updatedZh = updateStarsInContent(updatedZh, repo, formatted);
     }
   }
 
   // Write updated files
-  fs.writeFileSync('README.md', updatedZh);
-  fs.writeFileSync('README_EN.md', updatedEn);
+  fs.writeFileSync('README.md', updatedEn);
+  fs.writeFileSync('README_ZH.md', updatedZh);
 
   console.log('\nREADME files updated successfully!');
 }
