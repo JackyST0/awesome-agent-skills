@@ -1,5 +1,9 @@
 # Awesome Agent Skills [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Agent Skills" width="100%">
+</p>
+
 > Modular instruction packages that give AI coding assistants on-demand capabilities for specific tasks, working across Cursor, Claude Code, GitHub Copilot, and more.
 
 [English](README.md) | [简体中文](README_ZH.md)
