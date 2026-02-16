@@ -139,7 +139,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 |------|------|-------|------|
 | Agent Skills 开放标准 | Agent Skills 官方规范文档 | - | [skill.md](https://skill.md/) |
 | Agent Skills 规范 | SKILL.md 格式规范 | - | [agentskills.io](https://agentskills.io/specification) |
-| anthropics/skills | ⭐ Anthropic 官方 Agent Skills 仓库 | 65.9k | [GitHub](https://github.com/anthropics/skills) |
+| anthropics/skills | ⭐ Anthropic 官方 Agent Skills 仓库 | 70.3k | [GitHub](https://github.com/anthropics/skills) |
 | vercel-labs/skills | ⭐ Vercel 官方 Skills CLI 工具（`npx skills add`） | 5.4k | [GitHub](https://github.com/vercel-labs/add-skill) |
 | microsoft/skills | ⭐ 微软官方 131 个 Azure SDK Skills | 1.2k | [GitHub](https://github.com/microsoft/agent-skills) |
 | github/awesome-copilot | GitHub 官方 Copilot 资源合集 | - | [GitHub](https://github.com/github/awesome-copilot) |
@@ -150,17 +150,17 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 
 | 名称 | 描述 | Stars | 链接 |
 |------|------|-------|------|
-| awesome-cursorrules | ⭐ 最全面的 Cursor Rules 合集 | 37.7k | [GitHub](https://github.com/PatrickJS/awesome-cursorrules) |
-| everything-claude-code | ⭐ Claude Code 配置大全（agents/skills/hooks） | 42.4k | [GitHub](https://github.com/affaan-m/everything-claude-code) |
-| awesome-claude-skills | ⭐ Composio 维护的 Claude Skills 合集 | 32.7k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
-| awesome-claude-code | ⭐ Claude Code skills/hooks/插件合集 | 23.2k | [GitHub](https://github.com/hesreallyhim/awesome-claude-code) |
-| openskills | ⭐ 通用 Skills 加载器（npm 安装） | 8.0k | [GitHub](https://github.com/numman-ali/openskills) |
+| awesome-cursorrules | ⭐ 最全面的 Cursor Rules 合集 | 37.9k | [GitHub](https://github.com/PatrickJS/awesome-cursorrules) |
+| everything-claude-code | ⭐ Claude Code 配置大全（agents/skills/hooks） | 46.6k | [GitHub](https://github.com/affaan-m/everything-claude-code) |
+| awesome-claude-skills | ⭐ Composio 维护的 Claude Skills 合集 | 35.1k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
+| awesome-claude-code | ⭐ Claude Code skills/hooks/插件合集 | 23.8k | [GitHub](https://github.com/hesreallyhim/awesome-claude-code) |
+| openskills | ⭐ 通用 Skills 加载器（npm 安装） | 8.3k | [GitHub](https://github.com/numman-ali/openskills) |
 | awesome-claude-skills | VoltAgent 维护的 Claude Skills 合集 | 4.4k | [GitHub](https://github.com/VoltAgent/awesome-claude-skills) |
 | claude-skills | Simon Willison 的 Claude Skills 文档 | 915 | [GitHub](https://github.com/simonw/claude-skills) |
-| claude-skills-collection | 官方与社区 Skills 精选集合 | 426 | [GitHub](https://github.com/abubakarsiddik31/claude-skills-collection) |
-| cursor-rules-and-prompts | Cursor 规则与提示词集合 | 203 | [GitHub](https://github.com/thehimel/cursor-rules-and-prompts) |
+| claude-skills-collection | 官方与社区 Skills 精选集合 | 435 | [GitHub](https://github.com/abubakarsiddik31/claude-skills-collection) |
+| cursor-rules-and-prompts | Cursor 规则与提示词集合 | 204 | [GitHub](https://github.com/thehimel/cursor-rules-and-prompts) |
 | Ai-Agent-Skills | ⭐ AI Skills 通用安装器（Homebrew for Skills） | 774 | [GitHub](https://github.com/skillcreatorai/Ai-Agent-Skills) |
-| claude-code-kit | Claude Code 工具包，自动激活 skills | 60 | [GitHub](https://github.com/blencorp/claude-code-kit) |
+| claude-code-kit | Claude Code 工具包，自动激活 skills | 61 | [GitHub](https://github.com/blencorp/claude-code-kit) |
 
 ## 开发工具
 
