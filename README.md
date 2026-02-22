@@ -131,6 +131,7 @@ Skills work across multiple platforms:
 - [claude-code-skill-factory](https://github.com/alirezarezvani/claude-code-skill-factory) - Skills factory for batch generation and deployment.
 - [obra/superpowers](https://github.com/obra/superpowers) - Complete dev workflow (Debug/TDD/Code Review/Planning).
 - [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) - Marketing Skills (SEO/Copywriting/CRO/Ads).
+- [Mantra](https://mantra.gonewx.com) - AI coding session management. Save, restore, and time-travel through your Claude Code, Cursor, and Windsurf sessions.
 
 ## DevOps
 
