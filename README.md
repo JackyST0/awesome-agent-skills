@@ -115,6 +115,7 @@ Skills work across multiple platforms:
 - [claude-code-skills](https://github.com/daymade/claude-code-skills) - Professional Skills marketplace.
 - [skillset-example](https://github.com/copilot-extensions/skillset-example) - GitHub Copilot extension example.
 - [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) - Vercel React/Web design best practices Skills.
+- [EmblemCompany/Agent-skills](https://github.com/EmblemCompany/Agent-skills) - Multi-chain crypto wallet skills across Solana, Ethereum, Base, BSC, Polygon, Hedera, and Bitcoin.
 - [antfu/skills](https://github.com/antfu/skills) - Vue/Vite/Vitest development Skills.
 - [Supabase Agent Skills](https://github.com/supabase/agent-skills) - PostgreSQL best practices Skill by Supabase.
 - [Expo Skills](https://github.com/expo/skills) - Expo/React Native development Skills.
