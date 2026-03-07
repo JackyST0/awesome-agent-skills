@@ -132,6 +132,7 @@ Skills work across multiple platforms:
 - [claude-code-skill-factory](https://github.com/alirezarezvani/claude-code-skill-factory) - Skills factory for batch generation and deployment.
 - [obra/superpowers](https://github.com/obra/superpowers) - Complete dev workflow (Debug/TDD/Code Review/Planning).
 - [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) - Marketing Skills (SEO/Copywriting/CRO/Ads).
+- [readtheskill/readtheskill](https://github.com/readtheskill/readtheskill) - AI agent skill propagation experiment on Solana.
 
 ## DevOps
 
