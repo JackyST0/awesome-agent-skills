@@ -186,6 +186,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | debug-helper | 代码调试助手 Skill | All | [示例](examples/debug-helper/) |
 
 | x-twitter-scraper | X/Twitter 数据技能 — MCP 服务器，REST API，20 个提取工具，账户监控 | All | [GitHub](https://github.com/Xquik-dev/x-twitter-scraper) |
+
 ## 效率提升
 
 | 名称 | 描述 | 平台 | 链接 |
