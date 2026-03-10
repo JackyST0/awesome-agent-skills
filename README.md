@@ -143,6 +143,7 @@ Skills work across multiple platforms:
 
 - [d3-visualization](https://github.com/ComposioHQ/awesome-claude-skills#data-visualization) - D3.js data visualization Skill.
 - [context-engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) - Context engineering and multi-Agent architecture.
+- [Nutrient Document Processing](https://github.com/PSPDFKit-labs/nutrient-agent-skill) - Full document-processing skill via Nutrient DWS: convert PDF/Office/images, OCR, extract text/tables/key-values, redact PII (pattern+AI), watermark, sign, merge/split/reorder, and form fill.
 
 ## Writing
 
