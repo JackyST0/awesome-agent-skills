@@ -108,6 +108,8 @@ Skills work across multiple platforms:
 
 ## Development Tools
 
+[ethos-link/rails-conventions](https://github.com/ethos-link/rails-conventions) - Rails 8 conventions + implementation/review guidance.
+
 - [claude-code-security-review](https://github.com/anthropics/claude-code-security-review) - AI security review GitHub Action (Official).
 - [trailofbits/skills](https://github.com/trailofbits/skills) - Trail of Bits security research and audit Skills.
 - [playwright-skill](https://github.com/lackeyjb/playwright-skill) - Playwright browser automation testing Skill.
