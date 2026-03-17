@@ -133,6 +133,7 @@ Skills work across multiple platforms:
 - [claude-code-skill-factory](https://github.com/alirezarezvani/claude-code-skill-factory) - Skills factory for batch generation and deployment.
 - [obra/superpowers](https://github.com/obra/superpowers) - Complete dev workflow (Debug/TDD/Code Review/Planning).
 - [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) - Marketing Skills (SEO/Copywriting/CRO/Ads).
+- [Digidai/product-manager-skills](https://github.com/Digidai/product-manager-skills) - Senior PM agent with 30+ frameworks, 32 SaaS metrics, templates, and anti-pattern detection.
 
 ## DevOps
 
