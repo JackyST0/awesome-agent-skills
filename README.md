@@ -97,6 +97,7 @@ Skills work across multiple platforms:
 
 - [awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) - The most comprehensive Cursor Rules collection.
 - [everything-claude-code](https://github.com/affaan-m/everything-claude-code) - Complete Claude Code configs (agents/skills/hooks).
+- [kasetto](https://github.com/pivoshenko/kasetto) - An extremely fast AI skills manager, written in Rust.
 - [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) - Claude Skills collection by Composio.
 - [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) - Claude Code skills/hooks/plugins collection.
 - [openskills](https://github.com/numman-ali/openskills) - Universal Skills loader (npm install).

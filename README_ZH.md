@@ -153,11 +153,12 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 
 | 名称 | 描述 | Stars | 链接 |
 |------|------|-------|------|
-| awesome-cursorrules | ⭐ 最全面的 Cursor Rules 合集 | 38.6k | [GitHub](https://github.com/PatrickJS/awesome-cursorrules) |
-| everything-claude-code | ⭐ Claude Code 配置大全（agents/skills/hooks） | 98.3k | [GitHub](https://github.com/affaan-m/everything-claude-code) |
-| awesome-claude-skills | ⭐ Composio 维护的 Claude Skills 合集 | 47.0k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
-| awesome-claude-code | ⭐ Claude Code skills/hooks/插件合集 | 30.3k | [GitHub](https://github.com/hesreallyhim/awesome-claude-code) |
-| openskills | ⭐ 通用 Skills 加载器（npm 安装） | 9.2k | [GitHub](https://github.com/numman-ali/openskills) |
+| awesome-cursorrules | ⭐ 最全面的 Cursor Rules 合集 | 38.5k | [GitHub](https://github.com/PatrickJS/awesome-cursorrules) |
+| everything-claude-code | ⭐ Claude Code 配置大全（agents/skills/hooks） | 77.7k | [GitHub](https://github.com/affaan-m/everything-claude-code) |
+| awesome-claude-skills | ⭐ Composio 维护的 Claude Skills 合集 | 44.4k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
+| kasetto | 用 Rust 编写的极速 AI 技能管理器 | — | [GitHub](https://github.com/pivoshenko/kasetto) |
+| awesome-claude-code | ⭐ Claude Code skills/hooks/插件合集 | 28.4k | [GitHub](https://github.com/hesreallyhim/awesome-claude-code) |
+| openskills | ⭐ 通用 Skills 加载器（npm 安装） | 9.0k | [GitHub](https://github.com/numman-ali/openskills) |
 | awesome-claude-skills | VoltAgent 维护的 Claude Skills 合集 | 4.4k | [GitHub](https://github.com/VoltAgent/awesome-claude-skills) |
 | claude-skills | Simon Willison 的 Claude Skills 文档 | 925 | [GitHub](https://github.com/simonw/claude-skills) |
 | claude-skills-collection | 官方与社区 Skills 精选集合 | 553 | [GitHub](https://github.com/abubakarsiddik31/claude-skills-collection) |
