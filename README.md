@@ -78,6 +78,7 @@ Skills work across multiple platforms:
 |Windsurf   |`~/.windsurf/skills/`        |`.windsurf/skills/` |
 |Codex      |`~/.codex/skills/`           |`.codex/skills/`    |
 |OpenCode   |`~/.config/opencode/skills/` |`.opencode/skills/` |
+|OpenClaw   |`~/.openclaw/skills/`        |`skills/`           |
 
 ## Official Resources
 
@@ -90,6 +91,7 @@ Skills work across multiple platforms:
 - [Agent Skills Index](https://agent-skills.md/) - Community Skills search engine.
 - [Skills Leaderboard](https://skills.sh) - Open Agent Skills ecosystem directory.
 - [Tencent SkillHub](https://skillhub.tencent.com/) - Tencent's Skills community with 13k+ skills, optimized for Chinese users.
+- [ClawHub](https://docs.openclaw.ai/skills) - OpenClaw's public skills registry for discovering and sharing skills.
 
 ## Skills Collections
 
