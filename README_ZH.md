@@ -201,6 +201,10 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | claude-code-skill-factory | Skills 工厂，批量生成和部署 Skills | Claude | [GitHub](https://github.com/alirezarezvani/claude-code-skill-factory) |
 | obra/superpowers | ⭐ 完整开发工作流（调试/TDD/代码审查/计划）（48.8k ⭐） | All | [GitHub](https://github.com/obra/superpowers) |
 | coreyhaines31/marketingskills | ⭐ 营销 Skills（SEO/文案/CRO/广告）（7.1k ⭐） | All | [GitHub](https://github.com/coreyhaines31/marketingskills) |
+| gingiris-launch | 🚀 Product Hunt Launch Playbook — 30次日榜第一经验总结，AI产品/创业公司/开源项目 GTM 全攻略 | All | [GitHub](https://github.com/Gingiris/gingiris-launch) |
+| gingiris-opensource | ⭐ Open Source Marketing Playbook — GitHub Star 增长指南，AFFiNE 18个月 33k stars 实战经验 | All | [GitHub](https://github.com/Gingiris/gingiris-opensource) |
+| gingiris-b2b-growth | 📈 B2B SaaS Growth Playbook — PLG & SLG 增长策略，从 0 到 $10M ARR，含 HeyGen、Deel、Vercel 案例 | All | [GitHub](https://github.com/Gingiris/gingiris-b2b-growth) |
+| gingiris-aso-growth | 📱 ASO & Mobile App Growth Playbook — 应用商店优化完整指南，含冷启动、UGC、TikTok 营销策略 | All | [GitHub](https://github.com/Gingiris/gingiris-aso-growth) |
 | changelog-generator | 从 Git 提交自动生成 Changelog | Claude | [ComposioHQ](https://github.com/ComposioHQ/awesome-claude-skills) |
 
 ## DevOps
