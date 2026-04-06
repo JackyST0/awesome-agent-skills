@@ -17,6 +17,7 @@
 
 English | [简体中文](README_ZH.md)
 
+- [guardian-agent-prompts](https://github.com/milkomida77/guardian-agent-prompts) - 49 production-tested AI agent skills and system prompts for Claude Code multi-agent orchestration. MIT licensed.
 ## Contents
 
 - [Quick Start](#quick-start)
