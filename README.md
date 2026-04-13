@@ -172,6 +172,7 @@ Skills work across multiple platforms:
 - [theme-factory](https://github.com/anthropics/skills/tree/main/skills/theme-factory) - Theme style factory Skill.
 - [algorithmic-art](https://github.com/anthropics/skills/tree/main/skills/algorithmic-art) - Algorithmic art generation Skill.
 - [slack-gif-creator](https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator) - Slack GIF creator Skill.
+- [fabbo-ai-generator](https://github.com/fabbo-ai/fabbo-ai-generator) - Generate AI videos and images on [fabbo.ai](https://fabbo.ai) via a real Playwright browser session. Text-to-video, image-to-video, text-to-image, reference-to-video, and image editing across Veo, Sora, Kling, Wan, Luma, Runway, Midjourney, Nano Banana.
 
 ## Contributing
 
