@@ -94,6 +94,7 @@ Skills work across multiple platforms:
 - [Skills Leaderboard](https://skills.sh) - Open Agent Skills ecosystem directory.
 - [Tencent SkillHub](https://skillhub.tencent.com/) - Tencent's Skills community with 13k+ skills, optimized for Chinese users.
 - [ClawHub](https://docs.openclaw.ai/skills) - OpenClaw's public skills registry for discovering and sharing skills.
+- [CCHub](https://github.com/Moresl/cchub) - A desktop control panel for the Claude Code / Codex / Gemini CLI ecosystem. Manage MCP servers, config profiles, agent skills, CLAUDE.md, hooks, and workflow templates from a single Tauri app (Windows / macOS / Linux).
 
 ## Skills Collections
 
