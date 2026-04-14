@@ -136,6 +136,7 @@ Skills work across multiple platforms:
 
 - [claude-code-workflows](https://github.com/shinpr/claude-code-workflows) - Production-grade dev workflows with quality checks.
 - [claude-skills](https://github.com/alirezarezvani/claude-skills) - 20+ productivity tools with 8 expert Agents.
+- [character-ai-bots](https://github.com/lincyang720/character-ai-bots) - Discover and navigate AI roleplay character bots across multiple platforms.
 - [claude-code-skill-factory](https://github.com/alirezarezvani/claude-code-skill-factory) - Skills factory for batch generation and deployment.
 - [obra/superpowers](https://github.com/obra/superpowers) - Complete dev workflow (Debug/TDD/Code Review/Planning).
 - [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) - Marketing Skills (SEO/Copywriting/CRO/Ads).
