@@ -200,6 +200,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | claude-skills | 20+ 生产力工具，含 8 个专家 Agent | Claude | [GitHub](https://github.com/alirezarezvani/claude-skills) |
 | claude-code-skill-factory | Skills 工厂，批量生成和部署 Skills | Claude | [GitHub](https://github.com/alirezarezvani/claude-code-skill-factory) |
 | obra/superpowers | ⭐ 完整开发工作流（调试/TDD/代码审查/计划）（48.8k ⭐） | All | [GitHub](https://github.com/obra/superpowers) |
+| cognyai/claude-code-marketing-skills | AI 营销技能（SEO 审计/落地页评审/竞品分析/广告文案/线索筛选），支持 MCP 服务器集成 | All | [GitHub](https://github.com/cognyai/claude-code-marketing-skills) |
 | coreyhaines31/marketingskills | ⭐ 营销 Skills（SEO/文案/CRO/广告）（7.1k ⭐） | All | [GitHub](https://github.com/coreyhaines31/marketingskills) |
 | gingiris-launch | AI 产品、创业公司与开源项目的 Product Hunt 发布与 GTM 指南 | All | [GitHub](https://github.com/Gingiris/gingiris-launch) |
 | gingiris-opensource | 面向 GitHub 增长与开源发布策略的营销 Playbook | All | [GitHub](https://github.com/Gingiris/gingiris-opensource) |
