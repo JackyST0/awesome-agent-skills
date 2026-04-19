@@ -191,6 +191,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | unit-test-generator | 单元测试自动生成 Skill | All | [示例](examples/unit-test-generator/) |
 | api-doc-generator | API 文档生成 Skill | All | [示例](examples/api-doc-generator/) |
 | debug-helper | 代码调试助手 Skill | All | [示例](examples/debug-helper/) |
+| zero-api-key-web-search | 零API密钥的免费网页搜索、浏览和主张验证工具。无需任何API密钥，100%免费。 | All | [GitHub](https://github.com/wd041216-bit/cross-validated-search) |
 
 ## 效率提升
 
