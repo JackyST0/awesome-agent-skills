@@ -115,6 +115,7 @@ Skills work across multiple platforms:
 - [best-skills](https://github.com/xstongxue/best-skills) - High-quality Skills collection for paper writing, dev workflow, and content creation.
 - [skillkit](https://github.com/rohitg00/skillkit) - Cross-platform skills manager that installs, translates, and syncs skills across 40+ agents.
 - [Skywork-Skills](https://github.com/SkyworkAI/Skywork-Skills) - Officially maintained Skywork agent skills for AI office workflows, including PPT, documents, Excel, design, search, and music.
+- [BytesAgain](https://bytesagain.com) - Search and discover 60,000+ AI agent skills across ClawHub, LobeHub, Dify, GitHub and more. Supports MCP SSE/REST API for agent integration. Free.
 
 ## Development Tools
 

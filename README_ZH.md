@@ -173,6 +173,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | best-skills | 通用高质量 Skills 合集，涵盖论文写作、开发流程、自媒体创作等 | 264 | [GitHub](https://github.com/xstongxue/best-skills) |
 | skillkit | 跨平台 Skills 管理器，可安装、转换并同步 Skills 到 40+ Agent | 875 | [GitHub](https://github.com/rohitg00/skillkit) |
 | Skywork-Skills | Skywork 官方维护的 agent skills，面向 AI 办公场景，覆盖 PPT、文档、Excel、设计、搜索和音乐工作流 | 48 | [GitHub](https://github.com/SkyworkAI/Skywork-Skills) |
+| BytesAgain | 搜索和发现 60,000+ AI agent skills，覆盖 ClawHub、LobeHub、Dify、GitHub 等多个平台。支持 MCP SSE/REST API 接入，免费使用。 | — | [Website](https://bytesagain.com) |
 
 ## 开发工具
 
