@@ -87,8 +87,11 @@ Skills work across multiple platforms:
 - [Agent Skills Open Standard](https://skill.md/) - Official Agent Skills specification.
 - [Agent Skills Specification](https://agentskills.io/specification) - SKILL.md format specification.
 - [anthropics/skills](https://github.com/anthropics/skills) - Official Anthropic Agent Skills repository.
+- [GitHub Docs: About agent skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills) - GitHub official overview of agent skills, supported hosts, and `gh skill`.
+- [GitHub Docs: Adding agent skills for GitHub Copilot](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/add-skills) - GitHub official guide for creating, installing, and publishing agent skills.
 - [vercel-labs/skills](https://github.com/vercel-labs/add-skill) - Vercel official Skills CLI tool.
 - [microsoft/skills](https://github.com/microsoft/agent-skills) - Microsoft official 131 Azure SDK Skills.
+- [microsoft/azure-skills](https://github.com/microsoft/azure-skills) - Official Azure skills plugin with MCP server configurations and 20 curated Azure skills.
 - [GitHub Awesome Copilot](https://github.com/github/awesome-copilot) - Official Copilot resources collection.
 - [Agent Skills Index](https://agent-skills.md/) - Community Skills search engine.
 - [Skills Leaderboard](https://skills.sh) - Open Agent Skills ecosystem directory.
@@ -110,10 +113,12 @@ Skills work across multiple platforms:
 - [Ai-Agent-Skills](https://github.com/skillcreatorai/Ai-Agent-Skills) - Universal AI Skills installer (Homebrew for Skills).
 - [claude-code-kit](https://github.com/blencorp/claude-code-kit) - Claude Code toolkit with auto-activating skills.
 - [best-skills](https://github.com/xstongxue/best-skills) - High-quality Skills collection for paper writing, dev workflow, and content creation.
+- [skillkit](https://github.com/rohitg00/skillkit) - Cross-platform skills manager that installs, translates, and syncs skills across 40+ agents.
 - [Skywork-Skills](https://github.com/SkyworkAI/Skywork-Skills) - Officially maintained Skywork agent skills for AI office workflows, including PPT, documents, Excel, design, search, and music.
 
 ## Development Tools
 
+- [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) - Production-grade engineering skills and slash-command workflows for AI coding agents.
 - [claude-code-security-review](https://github.com/anthropics/claude-code-security-review) - AI security review GitHub Action (Official).
 - [trailofbits/skills](https://github.com/trailofbits/skills) - Trail of Bits security research and audit Skills.
 - [playwright-skill](https://github.com/lackeyjb/playwright-skill) - Playwright browser automation testing Skill.
@@ -121,6 +126,7 @@ Skills work across multiple platforms:
 - [skill-codex](https://github.com/skills-directory/skill-codex) - Delegate tasks to Codex Skill.
 - [claude-code-skills](https://github.com/daymade/claude-code-skills) - Professional Skills marketplace.
 - [skillset-example](https://github.com/copilot-extensions/skillset-example) - GitHub Copilot extension example.
+- [elastic/agent-skills](https://github.com/elastic/agent-skills) - Official Elastic skills for Elasticsearch, Kibana, Observability, and Security workflows.
 - [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) - Vercel React/Web design best practices Skills.
 - [antfu/skills](https://github.com/antfu/skills) - Vue/Vite/Vitest development Skills.
 - [Supabase Agent Skills](https://github.com/supabase/agent-skills) - PostgreSQL best practices Skill by Supabase.

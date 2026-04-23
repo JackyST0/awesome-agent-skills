@@ -67,7 +67,7 @@ SKILL.md 文件必须以 YAML frontmatter 开头，定义 Skill 的元数据。
 | `license` | string | 许可证标识符 | `MIT`, `CC0-1.0`, `Apache-2.0` |
 | `version` | string | 语义化版本号 | `1.0.0` |
 | `author` | string | 作者或组织名称 | `Your Name` |
-| `homepage` | string | 项目主页 URL | `https://github.com/...` |
+| `homepage` | string | 项目主页 URL | `https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/code-review` |
 | `tags` | array | 分类标签 | `[code, review, quality]` |
 | `platforms` | array | 支持的平台 | `[cursor, claude, copilot]` |
 | `requires` | array | 依赖的其他 Skills | `[git-helper]` |
@@ -81,7 +81,7 @@ description: Smart code review skill that helps review code quality and provide 
 license: MIT
 version: 1.0.0
 author: Your Name
-homepage: https://github.com/yourname/code-review-skill
+homepage: https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/code-review
 tags:
   - code
   - review

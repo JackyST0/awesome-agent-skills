@@ -21,8 +21,8 @@
 
 ```bash
 # 示例：安装 code-review skill 到 Cursor
-git clone https://github.com/example/code-review-skill.git
-cp -r code-review-skill ~/.cursor/skills/
+git clone https://github.com/JackyST0/awesome-agent-skills.git
+cp -r awesome-agent-skills/examples/code-review ~/.cursor/skills/
 ```
 
 ### 方式二：使用 Git 子模块
@@ -33,7 +33,7 @@ cp -r code-review-skill ~/.cursor/skills/
 # 在项目根目录
 mkdir -p .cursor/skills
 cd .cursor/skills
-git submodule add https://github.com/example/code-review-skill.git
+git submodule add https://github.com/JackyST0/awesome-agent-skills.git awesome-agent-skills
 ```
 
 ### 方式三：使用 Skill 安装器（如果可用）

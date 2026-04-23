@@ -129,7 +129,8 @@ cp -r my-skill .github/skills/
 
 ```bash
 # 克隆到全局目录
-git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
+git clone https://github.com/JackyST0/awesome-agent-skills.git
+cp -r awesome-agent-skills/examples/code-review ~/.cursor/skills/
 ```
 
 > 💡 **提示**：全局 skills 对所有项目生效，项目级 skills 仅对当前项目生效。
@@ -143,8 +144,11 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | Agent Skills 开放标准 | Agent Skills 官方规范文档 | - | [skill.md](https://skill.md/) |
 | Agent Skills 规范 | SKILL.md 格式规范 | - | [agentskills.io](https://agentskills.io/specification) |
 | anthropics/skills | ⭐ Anthropic 官方 Agent Skills 仓库 | 120.5k | [GitHub](https://github.com/anthropics/skills) |
+| GitHub Docs: About agent skills | GitHub 官方 agent skills 概览，涵盖支持的宿主环境与 `gh skill` | - | [GitHub Docs](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills) |
+| GitHub Docs: Adding agent skills for GitHub Copilot | GitHub 官方创建、安装与发布 agent skills 指南 | - | [GitHub Docs](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/add-skills) |
 | vercel-labs/skills | ⭐ Vercel 官方 Skills CLI 工具（`npx skills add`） | 5.4k | [GitHub](https://github.com/vercel-labs/add-skill) |
 | microsoft/skills | ⭐ 微软官方 131 个 Azure SDK Skills | 1.2k | [GitHub](https://github.com/microsoft/agent-skills) |
+| microsoft/azure-skills | ⭐ 微软官方 Azure Skills 插件，内置 MCP 配置与 20 个 Azure 技能 | 670 | [GitHub](https://github.com/microsoft/azure-skills) |
 | github/awesome-copilot | GitHub 官方 Copilot 资源合集 | - | [GitHub](https://github.com/github/awesome-copilot) |
 | Agent Skills 索引 | 社区 Skills 搜索引擎 | - | [agent-skills.md](https://agent-skills.md/) |
 | Skills 排行榜 | 开放 Agent Skills 生态目录 | - | [skills.sh](https://skills.sh) |
@@ -168,12 +172,14 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | Ai-Agent-Skills | ⭐ AI Skills 通用安装器（Homebrew for Skills） | 774 | [GitHub](https://github.com/skillcreatorai/Ai-Agent-Skills) |
 | claude-code-kit | Claude Code 工具包，自动激活 skills | 84 | [GitHub](https://github.com/blencorp/claude-code-kit) |
 | best-skills | 通用高质量 Skills 合集，涵盖论文写作、开发流程、自媒体创作等 | 264 | [GitHub](https://github.com/xstongxue/best-skills) |
+| skillkit | 跨平台 Skills 管理器，可安装、转换并同步 Skills 到 40+ Agent | 875 | [GitHub](https://github.com/rohitg00/skillkit) |
 | Skywork-Skills | Skywork 官方维护的 agent skills，面向 AI 办公场景，覆盖 PPT、文档、Excel、设计、搜索和音乐工作流 | 48 | [GitHub](https://github.com/SkyworkAI/Skywork-Skills) |
 
 ## 开发工具
 
 | 名称 | 描述 | 平台 | 链接 |
 |------|------|------|------|
+| addyosmani/agent-skills | 面向 AI 编程代理的生产级工程技能与斜杠命令工作流 | All | [GitHub](https://github.com/addyosmani/agent-skills) |
 | claude-code-security-review | ⭐ AI 安全审查 GitHub Action（官方） | Claude | [GitHub](https://github.com/anthropics/claude-code-security-review) |
 | trailofbits/skills | ⭐ Trail of Bits 安全研究和审计 Skills | Claude | [GitHub](https://github.com/trailofbits/skills) |
 | playwright-skill | Playwright 浏览器自动化测试 Skill | Claude | [GitHub](https://github.com/lackeyjb/playwright-skill) |
@@ -181,6 +187,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | skill-codex | 将任务委派给 Codex 的 Skill | Claude | [GitHub](https://github.com/skills-directory/skill-codex) |
 | skillset-example | GitHub Copilot 扩展示例 | Copilot | [GitHub](https://github.com/copilot-extensions/skillset-example) |
 | claude-code-skills | 专业级 Skills 市场 | Claude | [GitHub](https://github.com/daymade/claude-code-skills) |
+| elastic/agent-skills | Elastic 官方 Skills，覆盖 Elasticsearch、Kibana、可观测性与安全工作流 | All | [GitHub](https://github.com/elastic/agent-skills) |
 | vercel-labs/agent-skills | ⭐ Vercel React/Web 设计最佳实践 Skills（19.7k ⭐） | All | [GitHub](https://github.com/vercel-labs/agent-skills) |
 | antfu/skills | ⭐ Vue/Vite/Vitest 开发 Skills（3.2k ⭐） | All | [GitHub](https://github.com/antfu/skills) |
 | supabase/agent-skills | ⭐ Supabase Postgres 最佳实践 Skill（1.2k ⭐） | All | [GitHub](https://github.com/supabase/agent-skills) |
