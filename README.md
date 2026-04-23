@@ -197,3 +197,6 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed gu
 ### Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=JackyST0/awesome-agent-skills&type=Date)](https://star-history.com/#JackyST0/awesome-agent-skills&Date)
+
+## SymCLI
+- [SymCLI](https://symboliccomputation.com) - SymCLI is a math skill. Turn your coding agent into an AI mathematician, SymbolicComputation.com
