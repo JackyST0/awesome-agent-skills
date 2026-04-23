@@ -19,7 +19,6 @@ English | [简体中文](README_ZH.md)
 
 ## Contents
 
-- [BytesAgain](https://bytesagain.com) - Search 60,000+ AI agent skills via MCP SSE or REST API. 7 languages. Free. https://bytesagain.com/mcp
 - [Quick Start](#quick-start)
 - [What Are Agent Skills](#what-are-agent-skills)
 - [Official Resources](#official-resources)
@@ -112,6 +111,7 @@ Skills work across multiple platforms:
 - [claude-code-kit](https://github.com/blencorp/claude-code-kit) - Claude Code toolkit with auto-activating skills.
 - [best-skills](https://github.com/xstongxue/best-skills) - High-quality Skills collection for paper writing, dev workflow, and content creation.
 - [Skywork-Skills](https://github.com/SkyworkAI/Skywork-Skills) - Officially maintained Skywork agent skills for AI office workflows, including PPT, documents, Excel, design, search, and music.
+- [BytesAgain](https://bytesagain.com) - Search and discover 60,000+ AI agent skills across ClawHub, LobeHub, Dify, GitHub and more. Supports MCP SSE/REST API for agent integration. Free.
 
 ## Development Tools
 
