@@ -170,6 +170,7 @@ Skills work across multiple platforms:
 - [pdf](https://github.com/anthropics/skills/tree/main/skills/pdf) - Portable document format processing Skill.
 - [pptx](https://github.com/anthropics/skills/tree/main/skills/pptx) - PowerPoint presentation generator Skill.
 - [xlsx](https://github.com/anthropics/skills/tree/main/skills/xlsx) - Excel spreadsheet processing Skill.
+- [MohamedAbdallah-14/unslop](https://github.com/MohamedAbdallah-14/unslop) - AI writing pattern removal Skill that removes robotic tells from text output: tricolons, em-dash pileups, hedging stacks, sycophancy openers, overused vocab. Lint-only audit mode included.
 
 ## Design
 
@@ -179,6 +180,7 @@ Skills work across multiple platforms:
 - [theme-factory](https://github.com/anthropics/skills/tree/main/skills/theme-factory) - Theme style factory Skill.
 - [algorithmic-art](https://github.com/anthropics/skills/tree/main/skills/algorithmic-art) - Algorithmic art generation Skill.
 - [slack-gif-creator](https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator) - Slack GIF creator Skill.
+- [MohamedAbdallah-14/prompt-to-asset](https://github.com/MohamedAbdallah-14/prompt-to-asset) - Visual asset generation Skill for app icons, favicons, OG images, and logos by routing across 30+ image generation models. Zero API key for first run via free-tier providers.
 
 ## Contributing
 
