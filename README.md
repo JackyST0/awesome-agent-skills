@@ -120,6 +120,12 @@ Skills work across multiple platforms:
 
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) - Production-grade engineering skills and slash-command workflows for AI coding agents.
 - [claude-code-security-review](https://github.com/anthropics/claude-code-security-review) - AI security review GitHub Action (Official).
+- [aptratcn/prompt-guard](https://github.com/aptratcn/prompt-guard) - Prompt injection detection and resistance (⭐).
+- [aptratcn/skill-llm-sanitizer](https://github.com/aptratcn/skill-llm-sanitizer) - Strip PII, secrets, credentials before sending to LLMs.
+- [aptratcn/cognitive-debt-guard](https://github.com/aptratcn/cognitive-debt-guard) - Prevent AI-generated code incidents (23.5% spike data) (⭐).
+- [aptratcn/skill-mcp-security-audit](https://github.com/aptratcn/skill-mcp-security-audit) - Security audit for MCP servers.
+- [aptratcn/skill-error-recovery](https://github.com/aptratcn/skill-error-recovery) - 4R error recovery framework (⭐).
+- [aptratcn/token-budget-guard](https://github.com/aptratcn/token-budget-guard) - Token budget management with progressive disclosure.
 - [trailofbits/skills](https://github.com/trailofbits/skills) - Trail of Bits security research and audit Skills.
 - [playwright-skill](https://github.com/lackeyjb/playwright-skill) - Playwright browser automation testing Skill.
 - [gh-code-review](https://github.com/bkircher/skills) - PR code review Skill for GitHub.
