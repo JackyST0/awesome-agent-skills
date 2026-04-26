@@ -156,6 +156,7 @@ Skills work across multiple platforms:
 - [devops-claude-skills](https://github.com/ahmedasmar/devops-claude-skills) - DevOps workflow marketplace with Terraform/K8s.
 - [claudekit-skills](https://github.com/mrgoonie/claudekit-skills) - Docker/GCP/Cloudflare deployment and management.
 - [claudebox](https://github.com/RchGrav/claudebox) - Dockerized Claude Code dev environment.
+- [kubestellar-console](https://github.com/kubestellar/console) - Multi-cluster Kubernetes dashboard with built-in MCP server for AI-assisted cluster operations, RBAC, and compliance.
 
 ## Data Processing
 

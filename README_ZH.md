@@ -223,6 +223,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | ci-cd | CI/CD 管道设计、优化和安全扫描 | Claude | [claude-plugins.dev](https://claude-plugins.dev/skills/@ahmedasmar/devops-claude-skills/ci-cd) |
 | claudekit-skills | Docker/GCP/Cloudflare 部署和管理 | Claude | [GitHub](https://github.com/mrgoonie/claudekit-skills) |
 | claudebox | Docker 容器化 Claude Code 开发环境 | Claude | [GitHub](https://github.com/RchGrav/claudebox) |
+| kubestellar-console | 多集群 Kubernetes 仪表盘，内置 MCP 服务器，支持 AI 辅助集群运维、RBAC 和合规 | Claude, Copilot | [GitHub](https://github.com/kubestellar/console) |
 
 ## 数据处理
 
