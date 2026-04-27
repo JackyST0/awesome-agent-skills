@@ -241,6 +241,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | pdf | ⭐ PDF 文档处理 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/pdf) |
 | pptx | ⭐ PPT 演示文稿生成 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/pptx) |
 | xlsx | ⭐ Excel 表格处理 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/xlsx) |
+| voidborne-d/humanize-chinese | 中文 AI 文本检测与去 AI 化 Skill：n-gram 困惑度评分、20+ 写作模式识别、段落级 0-100 评分、7 种风格改写（口语/知乎/小红书/微信/学术/文学/微博）、学术降 AIGC 适配知网/维普/万方。纯 Python 零依赖，本地运行。 | All | [GitHub](https://github.com/voidborne-d/humanize-chinese) |
 
 ## 设计相关
 

@@ -170,6 +170,7 @@ Skills work across multiple platforms:
 - [pdf](https://github.com/anthropics/skills/tree/main/skills/pdf) - Portable document format processing Skill.
 - [pptx](https://github.com/anthropics/skills/tree/main/skills/pptx) - PowerPoint presentation generator Skill.
 - [xlsx](https://github.com/anthropics/skills/tree/main/skills/xlsx) - Excel spreadsheet processing Skill.
+- [voidborne-d/humanize-chinese](https://github.com/voidborne-d/humanize-chinese) - Chinese AI text detection & humanization Skill. N-gram perplexity scoring, 20+ stylistic patterns, paragraph-level 0-100 scoring, 7 style transforms (casual/zhihu/xiaohongshu/wechat/academic/literary/weibo), academic AIGC reduction targeting 知网/维普/万方. Pure Python, zero deps, runs locally.
 
 ## Design
 
