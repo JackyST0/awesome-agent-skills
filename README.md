@@ -118,6 +118,7 @@ Skills work across multiple platforms:
 
 ## Development Tools
 
+- [agenttrace-session-audit](https://github.com/luoyuctl/agenttrace/blob/master/skills/agenttrace-session-audit/SKILL.md) - Audit local AI coding-agent session health, cost, failures, and diffs.
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) - Production-grade engineering skills and slash-command workflows for AI coding agents.
 - [claude-code-security-review](https://github.com/anthropics/claude-code-security-review) - AI security review GitHub Action (Official).
 - [trailofbits/skills](https://github.com/trailofbits/skills) - Trail of Bits security research and audit Skills.
