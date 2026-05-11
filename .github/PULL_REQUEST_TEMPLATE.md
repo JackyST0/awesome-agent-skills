@@ -20,5 +20,8 @@
 
 ## 其他说明 / Additional Notes
 
+<!-- docs/skills.json is generated automatically after merge. You do not need to edit it manually. -->
+<!-- docs/skills.json 会在 PR 合并后自动生成，无需手动编辑。 -->
+
 <!-- 可选：添加任何其他相关信息 -->
 <!-- Optional: Add any other relevant information -->
