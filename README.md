@@ -164,6 +164,7 @@ Skills work across multiple platforms:
 
 - [d3-visualization](https://github.com/ComposioHQ/awesome-claude-skills#data-visualization) - D3.js data visualization Skill.
 - [context-engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) - Context engineering and multi-Agent architecture.
+- [Suppr Skills](https://github.com/WildDataX/suppr-skills) - Literature search and document translation workflows through the Suppr APIs.
 
 ## Writing
 
