@@ -162,6 +162,7 @@ Skills work across multiple platforms:
 
 ## Data Processing
 
+- [bilig-workpaper](https://github.com/proompteng/bilig/tree/main/skills/bilig-workpaper) - Formula-backed WorkPaper skill for editing cells, recalculating, verifying readback, and persisting spreadsheet logic from agents.
 - [d3-visualization](https://github.com/ComposioHQ/awesome-claude-skills#data-visualization) - D3.js data visualization Skill.
 - [context-engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) - Context engineering and multi-Agent architecture.
 
