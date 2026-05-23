@@ -153,6 +153,7 @@ Skills work across multiple platforms:
 - [gingiris-b2b-growth](https://github.com/Gingiris/gingiris-b2b-growth) - B2B SaaS growth playbook covering PLG, SLG, and go-to-market strategy.
 - [gingiris-aso-growth](https://github.com/Gingiris/gingiris-aso-growth) - ASO and mobile app growth playbook for cold start, UGC, and distribution.
 - [salespeak-ai/buyer-eval-skill](https://github.com/salespeak-ai/buyer-eval-skill) - B2B vendor evaluation skill: 7-dimension scoring and evidence-tracked scorecards for procurement and build-vs-buy decisions.
+- [heyneuron/flowhunt-skill](https://github.com/heyneuron/flowhunt-skill) - Automation discovery audit: 5-question workflow intake, audits Gmail/Calendar/Slack, produces a markdown report of automation opportunities. Install: `npx skills add heyneuron/flowhunt-skill`
 
 ## DevOps
 
