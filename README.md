@@ -165,6 +165,7 @@ Skills work across multiple platforms:
 - [bilig-workpaper](https://github.com/proompteng/bilig/tree/main/skills/bilig-workpaper) - Formula-backed WorkPaper skill for editing cells, recalculating, verifying readback, and persisting spreadsheet logic from agents.
 - [d3-visualization](https://github.com/ComposioHQ/awesome-claude-skills#data-visualization) - D3.js data visualization Skill.
 - [context-engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) - Context engineering and multi-Agent architecture.
+- [yield-intelligence](https://github.com/thebrierfox/intuitek-ace) - Passive income yield analysis skill — scans live U.S. Treasury rates, dividend ETFs, REITs, and preferred stocks; builds portfolios optimized for monthly income targets. Hosted remote MCP (no auth required).
 
 ## Writing
 
