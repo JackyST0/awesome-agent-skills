@@ -500,6 +500,16 @@
     "url": "https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/debug-helper"
   },
   {
+    "name": "authsome",
+    "nameZh": "authsome",
+    "desc": "AI Agent 本地凭据代理，加密本地保管库与基于代理的凭据注入",
+    "descEn": "Local credential broker for AI agents with encrypted local vault storage and proxy-based credential injection",
+    "stars": "-",
+    "platform": "all",
+    "category": "devtools",
+    "url": "https://github.com/agentrhq/authsome"
+  },
+  {
     "name": "claude-code-workflows",
     "nameZh": "claude-code-workflows",
     "desc": "生产级开发工作流，自动化质量检查",
