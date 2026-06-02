@@ -280,6 +280,16 @@
     "url": "https://github.com/SkyworkAI/Skywork-Skills"
   },
   {
+    "name": "unifapi-agent/skills",
+    "nameZh": "unifapi-agent/skills",
+    "desc": "基于 UnifAPI MCP 的公共数据与 KOL 定价 Skills",
+    "descEn": "Public-data MCP and KOL pricing Skills for Codex, Claude Code, Cursor, and other agents",
+    "stars": "481",
+    "platform": "claude",
+    "category": "collection",
+    "url": "https://github.com/unifapi-agent/skills"
+  },
+  {
     "name": "agenttrace-session-audit",
     "nameZh": "agenttrace-session-audit",
     "desc": "审计本地 AI 编程 Agent 会话的健康度、成本、失败与差异",
