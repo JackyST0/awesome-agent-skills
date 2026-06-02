@@ -214,6 +214,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | gingiris-opensource | 面向 GitHub 增长与开源发布策略的营销 Playbook | All | [GitHub](https://github.com/Gingiris/gingiris-opensource) |
 | gingiris-b2b-growth | 覆盖 PLG、SLG 与 GTM 策略的 B2B SaaS 增长 Playbook | All | [GitHub](https://github.com/Gingiris/gingiris-b2b-growth) |
 | gingiris-aso-growth | 面向冷启动、UGC 与分发策略的 ASO 与移动增长 Playbook | All | [GitHub](https://github.com/Gingiris/gingiris-aso-growth) |
+| alpha-insights | 带 Harness 门控的商业研究 Skill，内置咨询框架、证据分级、阶段门控与 HTML 报告 | Claude/Codex | [GitHub](https://github.com/Ericyoung-183/alpha-insights) |
 | salespeak-ai/buyer-eval-skill | 结构化 B2B 软件供应商评估：7 维度评分与证据追踪的评分卡，用于采购与自建/采购决策 | All | [GitHub](https://github.com/salespeak-ai/buyer-eval-skill) |
 | changelog-generator | 从 Git 提交自动生成 Changelog | Claude | [ComposioHQ](https://github.com/ComposioHQ/awesome-claude-skills) |
 

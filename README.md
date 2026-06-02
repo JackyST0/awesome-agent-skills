@@ -152,6 +152,7 @@ Skills work across multiple platforms:
 - [gingiris-opensource](https://github.com/Gingiris/gingiris-opensource) - Open source marketing playbook focused on GitHub growth and launch strategy.
 - [gingiris-b2b-growth](https://github.com/Gingiris/gingiris-b2b-growth) - B2B SaaS growth playbook covering PLG, SLG, and go-to-market strategy.
 - [gingiris-aso-growth](https://github.com/Gingiris/gingiris-aso-growth) - ASO and mobile app growth playbook for cold start, UGC, and distribution.
+- [alpha-insights](https://github.com/Ericyoung-183/alpha-insights) - Harness-enforced business research skill with consulting frameworks, evidence grading, stage gates, and HTML reports.
 - [salespeak-ai/buyer-eval-skill](https://github.com/salespeak-ai/buyer-eval-skill) - B2B vendor evaluation skill: 7-dimension scoring and evidence-tracked scorecards for procurement and build-vs-buy decisions.
 
 ## DevOps
