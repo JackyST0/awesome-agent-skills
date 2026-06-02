@@ -291,6 +291,22 @@ my-skill/
 
 📋 **规范文档**：查看 [SKILL.md 规范](docs/skill-spec.md) 了解格式标准和最佳实践。
 
+### 支持项目
+
+如果这个项目对你有帮助，可以支持我继续维护：
+
+<details>
+<summary>展开支持方式</summary>
+
+赞助不会影响条目收录判断。所有提交仍按同一套贡献规则审核。
+
+<p>
+  <img src="assets/sponsor-wechat.png" alt="微信收款码" width="220">
+  <img src="assets/sponsor-alipay.png" alt="支付宝收款码" width="220">
+</p>
+
+</details>
+
 ### Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=JackyST0/awesome-agent-skills&type=Date)](https://star-history.com/#JackyST0/awesome-agent-skills&Date)

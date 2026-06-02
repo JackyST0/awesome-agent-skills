@@ -201,6 +201,22 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed gu
 
 📋 **Specification**: See [SKILL.md Specification](docs/skill-spec.md) for format standards and best practices.
 
+### Support
+
+If this project helps you, you can support its maintenance:
+
+<details>
+<summary>Show support options</summary>
+
+Sponsorship does not affect listing decisions. All submissions are reviewed using the same contribution criteria.
+
+<p>
+  <img src="assets/sponsor-wechat.png" alt="WeChat Pay QR code" width="220">
+  <img src="assets/sponsor-alipay.png" alt="Alipay QR code" width="220">
+</p>
+
+</details>
+
 ### Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=JackyST0/awesome-agent-skills&type=Date)](https://star-history.com/#JackyST0/awesome-agent-skills&Date)
