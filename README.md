@@ -140,6 +140,7 @@ Skills work across multiple platforms:
 - [Expo Skills](https://github.com/expo/skills) - Expo/React Native development Skills.
 - [browser-use/browser-use](https://github.com/browser-use/browser-use) - Browser automation Skill.
 - [Xquik x-twitter-scraper](https://github.com/Xquik-dev/x-twitter-scraper) - X (Twitter) data Skill with REST endpoints, MCP tools, webhooks, SDKs, and automation workflows.
+- [runapi-ai/cli-skill](https://github.com/runapi-ai/cli-skill) - Generate AI images, videos, music/audio, and other model API jobs with the RunAPI CLI.
 - [code-review](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/code-review) - Smart code review example Skill.
 - [git-commit](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/git-commit) - Git commit message generator Skill.
 - [unit-test-generator](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/unit-test-generator) - Unit test auto-generator Skill.

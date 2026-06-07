@@ -200,6 +200,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | expo/skills | ⭐ Expo/React Native 开发 Skills（931 ⭐） | All | [GitHub](https://github.com/expo/skills) |
 | browser-use/browser-use | 浏览器自动化 Skill（78.1k ⭐） | All | [GitHub](https://github.com/browser-use/browser-use) |
 | Xquik x-twitter-scraper | X（Twitter）数据平台 Skill，提供 REST API、MCP 工具、webhooks、SDK 和自动化工作流（66 ⭐） | All | [GitHub](https://github.com/Xquik-dev/x-twitter-scraper) |
+| runapi-ai/cli-skill | 用 RunAPI CLI 生成 AI 图片、视频、音乐/音频，并执行其他模型 API 任务 | All | [GitHub](https://github.com/runapi-ai/cli-skill) |
 | code-review | 智能代码审查示例 Skill | All | [示例](examples/code-review/) |
 | git-commit | Git 提交信息生成示例 Skill | All | [示例](examples/git-commit/) |
 | unit-test-generator | 单元测试自动生成 Skill | All | [示例](examples/unit-test-generator/) |

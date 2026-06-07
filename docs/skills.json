@@ -500,6 +500,16 @@
     "url": "https://github.com/Xquik-dev/x-twitter-scraper"
   },
   {
+    "name": "runapi-ai/cli-skill",
+    "nameZh": "runapi-ai/cli-skill",
+    "desc": "用 RunAPI CLI 生成 AI 图片、视频、音乐/音频，并执行其他模型 API 任务",
+    "descEn": "Generate AI images, videos, music/audio, and other model API jobs with the RunAPI CLI",
+    "stars": "-",
+    "platform": "all",
+    "category": "devtools",
+    "url": "https://github.com/runapi-ai/cli-skill"
+  },
+  {
     "name": "code-review",
     "nameZh": "code-review",
     "desc": "Smart code review example Skill",
