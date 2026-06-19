@@ -218,6 +218,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | obra/superpowers | ⭐ 完整开发工作流（调试/TDD/代码审查/计划）（48.8k ⭐） | All | [GitHub](https://github.com/obra/superpowers) |
 | cognyai/claude-code-marketing-skills | AI 营销技能（SEO 审计/落地页评审/竞品分析/广告文案/线索筛选），支持 MCP 服务器集成 | All | [GitHub](https://github.com/cognyai/claude-code-marketing-skills) |
 | coreyhaines31/marketingskills | ⭐ 营销 Skills（SEO/文案/CRO/广告）（7.1k ⭐） | All | [GitHub](https://github.com/coreyhaines31/marketingskills) |
+| nowork-studio/NotFair | Claude Code SEO、GEO、Google Ads 和 Meta Ads 技能集；通过 Google Ads MCP、Meta Ads MCP、Google Search Console MCP 和 Google Analytics (GA4) MCP 接入实时数据 | Claude | [GitHub](https://github.com/nowork-studio/NotFair) |
 | gingiris-launch | AI 产品、创业公司与开源项目的 Product Hunt 发布与 GTM 指南 | All | [GitHub](https://github.com/Gingiris/gingiris-launch) |
 | gingiris-opensource | 面向 GitHub 增长与开源发布策略的营销 Playbook | All | [GitHub](https://github.com/Gingiris/gingiris-opensource) |
 | gingiris-b2b-growth | 覆盖 PLG、SLG 与 GTM 策略的 B2B SaaS 增长 Playbook | All | [GitHub](https://github.com/Gingiris/gingiris-b2b-growth) |

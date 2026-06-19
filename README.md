@@ -156,6 +156,7 @@ Skills work across multiple platforms:
 - [obra/superpowers](https://github.com/obra/superpowers) - Complete dev workflow (Debug/TDD/Code Review/Planning).
 - [cognyai/claude-code-marketing-skills](https://github.com/cognyai/claude-code-marketing-skills) - AI marketing skills (SEO Audit/Landing Page Review/Competitor Analysis/Ad Copywriting/Lead Qualification) with MCP server integration.
 - [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) - Marketing Skills (SEO/Copywriting/CRO/Ads).
+- [nowork-studio/NotFair](https://github.com/nowork-studio/NotFair) - Claude Code skills for SEO, GEO, Google Ads, and Meta Ads; connects to live data via Google Ads MCP, Meta Ads MCP, Google Search Console MCP, and Google Analytics (GA4) MCP.
 - [gingiris-launch](https://github.com/Gingiris/gingiris-launch) - Product Hunt launch playbook for AI products, startups, and open source GTM.
 - [gingiris-opensource](https://github.com/Gingiris/gingiris-opensource) - Open source marketing playbook focused on GitHub growth and launch strategy.
 - [gingiris-b2b-growth](https://github.com/Gingiris/gingiris-b2b-growth) - B2B SaaS growth playbook covering PLG, SLG, and go-to-market strategy.
