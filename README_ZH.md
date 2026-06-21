@@ -185,6 +185,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | 名称 | 描述 | 平台 | 链接 |
 |------|------|------|------|
 | agenttrace-session-audit | 审计本地 AI 编程 Agent 会话的健康度、成本、失败与差异 | All | [GitHub](https://github.com/luoyuctl/agenttrace/blob/master/skills/agenttrace-session-audit/SKILL.md) |
+| agent-skill-groups | 面向 Codex、Claude Code、OpenCode 与通用 `SKILL.md` 目录的场景化 Skills 配置管理器 | All | [GitHub](https://github.com/go165/agent-skill-groups) |
 | addyosmani/agent-skills | 面向 AI 编程代理的生产级工程技能与斜杠命令工作流 | All | [GitHub](https://github.com/addyosmani/agent-skills) |
 | claude-code-security-review | ⭐ AI 安全审查 GitHub Action（官方） | Claude | [GitHub](https://github.com/anthropics/claude-code-security-review) |
 | trailofbits/skills | ⭐ Trail of Bits 安全研究和审计 Skills | Claude | [GitHub](https://github.com/trailofbits/skills) |
