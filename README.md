@@ -119,6 +119,7 @@ Skills work across multiple platforms:
 - [claude-code-kit](https://github.com/blencorp/claude-code-kit) - Claude Code toolkit with auto-activating skills.
 - [best-skills](https://github.com/xstongxue/best-skills) - High-quality Skills collection for paper writing, dev workflow, and content creation.
 - [skillkit](https://github.com/rohitg00/skillkit) - Cross-platform skills manager that installs, translates, and syncs skills across 40+ agents.
+- [agent-skill-groups](https://github.com/go165/agent-skill-groups) - Scenario-based skill group and profile manager for Codex, Claude Code, OpenCode, and Agent Skills.
 - [Skywork-Skills](https://github.com/SkyworkAI/Skywork-Skills) - Officially maintained Skywork agent skills for AI office workflows, including PPT, documents, Excel, design, search, and music.
 - [unifapi-agent/skills](https://github.com/unifapi-agent/skills) - Public-data MCP and KOL pricing Skills for Codex, Claude Code, Cursor, and other agents.
 
