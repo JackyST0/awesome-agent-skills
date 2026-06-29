@@ -224,3 +224,5 @@ PayPal: [paypal.me/JackyST0](https://paypal.me/JackyST0)
 ### Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=JackyST0/awesome-agent-skills&type=Date)](https://star-history.com/#JackyST0/awesome-agent-skills&Date)
+
+- [ai-delivery-spec](https://github.com/franklinxkk/ai-delivery-spec) — Spec-driven delivery framework for product managers — 4 delivery tiers, 0D triage, prototype testability, AI runtime governance, 5 domain modules
