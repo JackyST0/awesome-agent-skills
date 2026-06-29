@@ -83,6 +83,7 @@ Skills work across multiple platforms:
 |OpenClaw   |`~/.openclaw/skills/`        |`skills/`           |
 
 ## Official Resources
+- [Skill Hub](https://github.com/rdone4425/skill) — 多平台 AI Agent Skills 导航站：2595+ skills / 24 sources / 6 platforms。在线：https://skill.442595.xyz/
 
 - [Agent Skills Open Standard](https://skill.md/) - Official Agent Skills specification.
 - [Agent Skills Specification](https://agentskills.io/specification) - SKILL.md format specification.
