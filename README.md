@@ -121,6 +121,7 @@ Skills work across multiple platforms:
 - [skillkit](https://github.com/rohitg00/skillkit) - Cross-platform skills manager that installs, translates, and syncs skills across 40+ agents.
 - [Skywork-Skills](https://github.com/SkyworkAI/Skywork-Skills) - Officially maintained Skywork agent skills for AI office workflows, including PPT, documents, Excel, design, search, and music.
 - [unifapi-agent/skills](https://github.com/unifapi-agent/skills) - Public-data MCP and KOL pricing Skills for Codex, Claude Code, Cursor, and other agents.
+- [youtube-skills](https://github.com/sergebulaev/youtube-skills) - Claude Code and Codex skills for YouTube and Shorts: high-CTR titles, SEO descriptions, retention hooks, thumbnail briefs, and a content planner.
 
 ## Development Tools
 
