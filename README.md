@@ -122,6 +122,7 @@ Skills work across multiple platforms:
 - [Skywork-Skills](https://github.com/SkyworkAI/Skywork-Skills) - Officially maintained Skywork agent skills for AI office workflows, including PPT, documents, Excel, design, search, and music.
 - [unifapi-agent/skills](https://github.com/unifapi-agent/skills) - Public-data MCP and KOL pricing Skills for Codex, Claude Code, Cursor, and other agents.
 
+- **[Context Kit](https://github.com/JDDavenport/context-kit)** — Personal Context Artifacts: 4 Markdown templates (wiki, mental-models, voice, protocols) + 5 Claude Code skills. Solves context amnesia — every session starts context-full. MIT, one-command install.
 ## Development Tools
 
 - [agenttrace-session-audit](https://github.com/luoyuctl/agenttrace/blob/master/skills/agenttrace-session-audit/SKILL.md) - Audit local AI coding-agent session health, cost, failures, and diffs.
