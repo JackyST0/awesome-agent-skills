@@ -147,6 +147,7 @@ Skills work across multiple platforms:
 - [debug-helper](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/debug-helper) - Code debugging assistant Skill.
 - [authsome](https://github.com/agentrhq/authsome) - Local credential broker for AI agents with encrypted local vault storage and proxy-based credential injection.
 - [Sverklo](https://github.com/sverklo/sverklo) - Local-first repo-memory MCP for coding agents: proof receipts, symbol refs, impact, and diff review.
+- [harmony-next.skills](https://github.com/linhay/harmony-next.skills) - HarmonyOS NEXT development workflows, offline references, DevEco/HDC automation, UI/UX audits, and smoke-test templates.
 
 ## Productivity
 
