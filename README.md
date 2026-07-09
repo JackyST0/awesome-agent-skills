@@ -124,6 +124,7 @@ Skills work across multiple platforms:
 
 ## Development Tools
 
+- [agent-qa](https://github.com/vostride/agent-qa/tree/main/skills) - Agent Skills for natural-language QA authoring, failed-run debugging, and result triage.
 - [agenttrace-session-audit](https://github.com/luoyuctl/agenttrace/blob/master/skills/agenttrace-session-audit/SKILL.md) - Audit local AI coding-agent session health, cost, failures, and diffs.
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) - Production-grade engineering skills and slash-command workflows for AI coding agents.
 - [claude-code-security-review](https://github.com/anthropics/claude-code-security-review) - AI security review GitHub Action (Official).
