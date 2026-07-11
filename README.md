@@ -169,6 +169,7 @@ Skills work across multiple platforms:
 - [devops-claude-skills](https://github.com/ahmedasmar/devops-claude-skills) - DevOps workflow marketplace with Terraform/K8s.
 - [claudekit-skills](https://github.com/mrgoonie/claudekit-skills) - Docker/GCP/Cloudflare deployment and management.
 - [claudebox](https://github.com/RchGrav/claudebox) - Dockerized Claude Code dev environment.
+- [nika-skills](https://github.com/supernovae-st/nika-agents) - Author checked .nika.yaml AI workflows: statically audited before a token is spent, tamper-evident traces after.
 
 ## Data Processing
 
