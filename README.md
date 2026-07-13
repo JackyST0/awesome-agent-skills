@@ -121,6 +121,7 @@ Skills work across multiple platforms:
 - [skillkit](https://github.com/rohitg00/skillkit) - Cross-platform skills manager that installs, translates, and syncs skills across 40+ agents.
 - [Skywork-Skills](https://github.com/SkyworkAI/Skywork-Skills) - Officially maintained Skywork agent skills for AI office workflows, including PPT, documents, Excel, design, search, and music.
 - [unifapi-agent/skills](https://github.com/unifapi-agent/skills) - Public-data MCP and KOL pricing Skills for Codex, Claude Code, Cursor, and other agents.
+- - [zhuangxiu-skills (装修避坑 Skill 合集)](https://github.com/zx029w/zhuangxiu-skills) - 11 Chinese home-renovation pitfall-avoidance skills covering customization, old-house remodel, contract/quote review, eco, workflow, first-aid, Q&A, extra-charge and company choice.
 
 ## Development Tools
 
