@@ -190,6 +190,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | trailofbits/skills | ⭐ Trail of Bits 安全研究和审计 Skills | Claude | [GitHub](https://github.com/trailofbits/skills) |
 | playwright-skill | Playwright 浏览器自动化测试 Skill | Claude | [GitHub](https://github.com/lackeyjb/playwright-skill) |
 | gh-code-review | GitHub PR 代码审查 Skill | Copilot | [GitHub](https://github.com/bkircher/skills) |
+| markstream-install | 为 Vue、React、Svelte、Angular 和 Vue 2 项目安装流式 Markdown 渲染器 | All | [GitHub](https://github.com/Simon-He95/markstream-vue/tree/main/.agents/skills/markstream-install) |
 | skill-codex | 将任务委派给 Codex 的 Skill | Claude | [GitHub](https://github.com/skills-directory/skill-codex) |
 | skillset-example | GitHub Copilot 扩展示例 | Copilot | [GitHub](https://github.com/copilot-extensions/skillset-example) |
 | claude-code-skills | 专业级 Skills 市场 | Claude | [GitHub](https://github.com/daymade/claude-code-skills) |
