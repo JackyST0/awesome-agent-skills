@@ -130,6 +130,7 @@ Skills work across multiple platforms:
 - [trailofbits/skills](https://github.com/trailofbits/skills) - Trail of Bits security research and audit Skills.
 - [playwright-skill](https://github.com/lackeyjb/playwright-skill) - Playwright browser automation testing Skill.
 - [gh-code-review](https://github.com/bkircher/skills) - PR code review Skill for GitHub.
+- [markstream-install](https://github.com/Simon-He95/markstream-vue/tree/main/.agents/skills/markstream-install) - Install streaming Markdown renderers across Vue, React, Svelte, Angular, and Vue 2 projects.
 - [skill-codex](https://github.com/skills-directory/skill-codex) - Delegate tasks to Codex Skill.
 - [claude-code-skills](https://github.com/daymade/claude-code-skills) - Professional Skills marketplace.
 - [skillset-example](https://github.com/copilot-extensions/skillset-example) - GitHub Copilot extension example.
