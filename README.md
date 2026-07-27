@@ -127,6 +127,7 @@ Skills work across multiple platforms:
 - [agenttrace-session-audit](https://github.com/luoyuctl/agenttrace/blob/master/skills/agenttrace-session-audit/SKILL.md) - Audit local AI coding-agent session health, cost, failures, and diffs.
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) - Production-grade engineering skills and slash-command workflows for AI coding agents.
 - [claude-code-security-review](https://github.com/anthropics/claude-code-security-review) - AI security review GitHub Action (Official).
+- [fractal](https://github.com/plasma-ai/fractal/blob/main/fractal/skills/fractal/SKILL.md) - Run bounded hierarchical coding-agent loops with recursive delegation and isolated Git worktrees.
 - [trailofbits/skills](https://github.com/trailofbits/skills) - Trail of Bits security research and audit Skills.
 - [playwright-skill](https://github.com/lackeyjb/playwright-skill) - Playwright browser automation testing Skill.
 - [gh-code-review](https://github.com/bkircher/skills) - PR code review Skill for GitHub.
