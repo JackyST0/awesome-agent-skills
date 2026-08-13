@@ -162,6 +162,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 
 | 名称 | 描述 | Stars | 链接 |
 |------|------|-------|------|
+| Agentlas OS | 面向 Claude Code、Codex、Gemini、Cursor、Antigravity 和本地模型的可移植 Agent 软件包、编排、运行时适配器、A2A Agent Card 与 MCP 集成 | 1.1k | [GitHub](https://github.com/agentlas-ai/Agentlas-OS) |
 | awesome-cursorrules | ⭐ 最全面的 Cursor Rules 合集 | 40.5k | [GitHub](https://github.com/PatrickJS/awesome-cursorrules) |
 | everything-claude-code | ⭐ Claude Code 配置大全（agents/skills/hooks） | 185.6k | [GitHub](https://github.com/affaan-m/everything-claude-code) |
 | heilcheng/awesome-agent-skills | ⭐ 社区维护的 Agent Skills 导航，聚焦工程团队实际使用的真实 Skills | 5.3k | [GitHub](https://github.com/heilcheng/awesome-agent-skills) |

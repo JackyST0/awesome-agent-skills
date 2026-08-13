@@ -104,6 +104,7 @@ Skills work across multiple platforms:
 
 ## Skills Collections
 
+- [Agentlas OS](https://github.com/agentlas-ai/Agentlas-OS) - Portable agent packages, orchestration, runtime adapters, A2A Agent Cards, and MCP integration for Claude Code, Codex, Gemini, Cursor, Antigravity, and local models.
 - [awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) - The most comprehensive Cursor Rules collection.
 - [everything-claude-code](https://github.com/affaan-m/everything-claude-code) - Complete Claude Code configs (agents/skills/hooks).
 - [heilcheng/awesome-agent-skills](https://github.com/heilcheng/awesome-agent-skills) - Community-curated Agent Skills directory focused on real-world skills used by engineering teams.
