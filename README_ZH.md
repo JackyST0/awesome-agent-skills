@@ -226,6 +226,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | gingiris-aso-growth | 面向冷启动、UGC 与分发策略的 ASO 与移动增长 Playbook | All | [GitHub](https://github.com/Gingiris/gingiris-aso-growth) |
 | alpha-insights | 带 Harness 门控的商业研究 Skill，内置咨询框架、证据分级、阶段门控与 HTML 报告 | Claude/Codex | [GitHub](https://github.com/Ericyoung-183/alpha-insights) |
 | salespeak-ai/buyer-eval-skill | 结构化 B2B 软件供应商评估：7 维度评分与证据追踪的评分卡，用于采购与自建/采购决策 | All | [GitHub](https://github.com/salespeak-ai/buyer-eval-skill) |
+| comfortable-roadtrip-planner | 舒适优先的自驾路书 Skill：锁死已订酒店，按体力把景点标成 A/B/C，并产出带地图、吃饭、票务和日历导入的交互式 HTML 路线图 | All | [GitHub](https://github.com/CrazyRiceMaker/comfortable-roadtrip-planner) |
 | changelog-generator | 从 Git 提交自动生成 Changelog | Claude | [ComposioHQ](https://github.com/ComposioHQ/awesome-claude-skills) |
 
 ## DevOps

@@ -164,6 +164,7 @@ Skills work across multiple platforms:
 - [gingiris-aso-growth](https://github.com/Gingiris/gingiris-aso-growth) - ASO and mobile app growth playbook for cold start, UGC, and distribution.
 - [alpha-insights](https://github.com/Ericyoung-183/alpha-insights) - Harness-enforced business research skill with consulting frameworks, evidence grading, stage gates, and HTML reports.
 - [salespeak-ai/buyer-eval-skill](https://github.com/salespeak-ai/buyer-eval-skill) - B2B vendor evaluation skill: 7-dimension scoring and evidence-tracked scorecards for procurement and build-vs-buy decisions.
+- [comfortable-roadtrip-planner](https://github.com/CrazyRiceMaker/comfortable-roadtrip-planner) - Comfort-first road trip / 自驾路书 skill for Codex, Claude Code, Cursor, and OpenClaw. Keeps booked hotels fixed, ranks stops A/B/C for limited stamina, and outputs an interactive HTML route app with maps, meals, tickets, and calendar .ics.
 
 ## DevOps
 
