@@ -189,6 +189,7 @@ Skills work across multiple platforms:
 ## Design
 
 - [frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design) - Frontend UI design Skill.
+- [UIZZE](https://github.com/uizze/uizze) - Anti-UI-slop Skill and hard UI Slop Gate for coding agents, with a free MCP preview grounded in 800,000+ real web and iOS screens.
 - [brand-guidelines](https://github.com/anthropics/skills/tree/main/skills/brand-guidelines) - Brand design guidelines Skill.
 - [canvas-design](https://github.com/anthropics/skills/tree/main/skills/canvas-design) - Canvas design Skill.
 - [theme-factory](https://github.com/anthropics/skills/tree/main/skills/theme-factory) - Theme style factory Skill.

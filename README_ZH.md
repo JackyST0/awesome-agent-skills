@@ -262,6 +262,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | 名称 | 描述 | 平台 | 链接 |
 |------|------|------|------|
 | frontend-design | ⭐ 前端 UI 设计 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/frontend-design) |
+| UIZZE | 面向编程代理的 anti-UI-slop Skill 与 UI Slop Gate，提供基于 800,000+ 个真实 Web 与 iOS 界面的免费 MCP 预览 | All | [GitHub](https://github.com/uizze/uizze) |
 | brand-guidelines | ⭐ 品牌设计规范 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/brand-guidelines) |
 | canvas-design | ⭐ Canvas 画布设计 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/canvas-design) |
 | theme-factory | ⭐ 主题样式工厂 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/theme-factory) |
