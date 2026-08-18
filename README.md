@@ -38,7 +38,7 @@ English | [简体中文](README_ZH.md)
 
 ```bash
 # Use a reviewed release tag or full commit SHA, never a moving branch name.
-export AAS_REF="<release-tag-or-full-commit-sha>"
+export AAS_REF="8e70a595a2731d21ae62deb8b9035c49298cc36c"
 base_url="https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$AAS_REF"
 curl --fail --proto '=https' --tlsv1.2 -LO "$base_url/install.sh" -LO "$base_url/checksums.txt"
 shasum -a 256 -c checksums.txt --ignore-missing
@@ -52,7 +52,7 @@ AAS_REPOSITORY_REF="$AAS_REF" bash install.sh -p cursor -a
 
 ```powershell
 # Use a reviewed release tag or full commit SHA, never a moving branch name.
-$AAS_REF = "<release-tag-or-full-commit-sha>"
+$AAS_REF = "8e70a595a2731d21ae62deb8b9035c49298cc36c"
 $baseUrl = "https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$AAS_REF"
 Invoke-WebRequest -Uri "$baseUrl/install.ps1" -OutFile "install.ps1"
 Invoke-WebRequest -Uri "$baseUrl/checksums.txt" -OutFile "checksums.txt"
