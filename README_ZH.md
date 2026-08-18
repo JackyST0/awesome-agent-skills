@@ -189,6 +189,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | agenttrace-session-audit | 审计本地 AI 编程 Agent 会话的健康度、成本、失败与差异 | All | [GitHub](https://github.com/luoyuctl/agenttrace/blob/master/skills/agenttrace-session-audit/SKILL.md) |
 | addyosmani/agent-skills | 面向 AI 编程代理的生产级工程技能与斜杠命令工作流 | All | [GitHub](https://github.com/addyosmani/agent-skills) |
 | claude-code-security-review | ⭐ AI 安全审查 GitHub Action（官方） | Claude | [GitHub](https://github.com/anthropics/claude-code-security-review) |
+| fractal | 运行有界分层编程 Agent 循环，支持递归委派与隔离 Git worktree | Claude/Codex/OpenCode | [GitHub](https://github.com/plasma-ai/fractal/blob/main/fractal/skills/fractal/SKILL.md) |
 | trailofbits/skills | ⭐ Trail of Bits 安全研究和审计 Skills | Claude | [GitHub](https://github.com/trailofbits/skills) |
 | playwright-skill | Playwright 浏览器自动化测试 Skill | Claude | [GitHub](https://github.com/lackeyjb/playwright-skill) |
 | gh-code-review | GitHub PR 代码审查 Skill | Copilot | [GitHub](https://github.com/bkircher/skills) |
