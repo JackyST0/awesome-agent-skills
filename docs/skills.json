@@ -320,6 +320,16 @@
     "url": "https://github.com/rohitg00/skillkit"
   },
   {
+    "name": "OrkasVideoStudio",
+    "nameZh": "OrkasVideoStudio",
+    "desc": "面向 Agent 的视频制作 Skills 合集，配套 CLI 与 MCP 运行时",
+    "descEn": "Agent video-production skill pack with CLI and MCP runtime",
+    "stars": "515",
+    "platform": "all",
+    "category": "collection",
+    "url": "https://github.com/Orkas-AI/Orkas-VideoStudio"
+  },
+  {
     "name": "Skywork-Skills",
     "nameZh": "Skywork-Skills",
     "desc": "Skywork 官方维护的 agent skills，面向 AI 办公场景，覆盖 PPT、文档、Excel、设计、搜索和音乐工作流",
