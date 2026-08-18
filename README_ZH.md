@@ -229,6 +229,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | alpha-insights | 带 Harness 门控的商业研究 Skill，内置咨询框架、证据分级、阶段门控与 HTML 报告 | Claude/Codex | [GitHub](https://github.com/Ericyoung-183/alpha-insights) |
 | salespeak-ai/buyer-eval-skill | 结构化 B2B 软件供应商评估：7 维度评分与证据追踪的评分卡，用于采购与自建/采购决策 | All | [GitHub](https://github.com/salespeak-ai/buyer-eval-skill) |
 | changelog-generator | 从 Git 提交自动生成 Changelog | Claude | [ComposioHQ](https://github.com/ComposioHQ/awesome-claude-skills) |
+| wiki | 构建带索引的 Markdown 知识库，供 Agent 映射、搜索、读取、更新与检查 | Claude/Codex | [GitHub](https://github.com/plasma-ai/wiki/blob/main/wiki/skills/wiki/SKILL.md) |
 
 ## DevOps
 
