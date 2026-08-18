@@ -194,6 +194,7 @@ Skills work across multiple platforms:
 - [bilig-workpaper](https://github.com/proompteng/bilig/tree/main/skills/bilig-workpaper) - Formula-backed WorkPaper skill for editing cells, recalculating, verifying readback, and persisting spreadsheet logic from agents.
 - [d3-visualization](https://github.com/ComposioHQ/awesome-claude-skills#data-visualization) - D3.js data visualization Skill.
 - [context-engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) - Context engineering and multi-Agent architecture.
+- [x-research](https://github.com/agentbody/skills/tree/main/skills/x-research) - Read-only X/Twitter research skill: post search, trends, post details, profiles, profile posts/media, and replies.
 
 ## Writing
 
