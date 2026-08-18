@@ -340,6 +340,16 @@
     "url": "https://github.com/SkyworkAI/Skywork-Skills"
   },
   {
+    "name": "suede-creator-skills",
+    "nameZh": "suede-creator-skills",
+    "desc": "面向 Claude Code 与 Codex 的 Skills 合集，覆盖代码质量与评审、设计、营销与 SEO、Agent 工作流和移动应用发布",
+    "descEn": "Skills pack for Claude Code and Codex covering code review and grading, design, marketing and SEO, agent workflows, and mobile app shipping",
+    "stars": "153",
+    "platform": "claude",
+    "category": "collection",
+    "url": "https://github.com/JasonColapietro/suede-creator-skills"
+  },
+  {
     "name": "unifapi-agent/skills",
     "nameZh": "unifapi-agent/skills",
     "desc": "基于 UnifAPI MCP 的公共数据与 KOL 定价 Skills",
