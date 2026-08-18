@@ -730,6 +730,16 @@
     "url": "https://github.com/salespeak-ai/buyer-eval-skill"
   },
   {
+    "name": "wiki",
+    "nameZh": "wiki",
+    "desc": "构建带索引的 Markdown 知识库，供 Agent 映射、搜索、读取、更新与检查",
+    "descEn": "Build indexed Markdown knowledge bases that agents map, search, read, update, and lint",
+    "stars": "-",
+    "platform": "claude/codex",
+    "category": "productivity",
+    "url": "https://github.com/plasma-ai/wiki/blob/main/wiki/skills/wiki/SKILL.md"
+  },
+  {
     "name": "devops-claude-skills",
     "nameZh": "devops-claude-skills",
     "desc": "DevOps 工作流市场，含 Terraform/K8s",
