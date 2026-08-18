@@ -182,6 +182,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | skillkit | 跨平台 Skills 管理器，可安装、转换并同步 Skills 到 40+ Agent | 875 | [GitHub](https://github.com/rohitg00/skillkit) |
 | OrkasVideoStudio | 面向 Agent 的视频制作 Skills 合集，配套 CLI 与 MCP 运行时 | 515 | [GitHub](https://github.com/Orkas-AI/Orkas-VideoStudio) |
 | Skywork-Skills | Skywork 官方维护的 agent skills，面向 AI 办公场景，覆盖 PPT、文档、Excel、设计、搜索和音乐工作流 | 48 | [GitHub](https://github.com/SkyworkAI/Skywork-Skills) |
+| suede-creator-skills | 面向 Claude Code 与 Codex 的 Skills 合集，覆盖代码质量与评审、设计、营销与 SEO、Agent 工作流和移动应用发布 | 153 | [GitHub](https://github.com/JasonColapietro/suede-creator-skills) |
 | unifapi-agent/skills | 基于 UnifAPI MCP 的公共数据与 KOL 定价 Skills | 481 | [GitHub](https://github.com/unifapi-agent/skills) |
 | youtube-skills | 面向 YouTube 的转录、视频搜索、频道浏览与播放列表 Skills，适用于 Claude Code、OpenClaw、Hermes Agent 等 Agent 运行时 | 504 | [GitHub](https://github.com/ZeroPointRepo/youtube-skills) |
 
