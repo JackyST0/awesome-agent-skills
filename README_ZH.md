@@ -26,34 +26,37 @@
 **macOS / Linux:**
 
 ```bash
-# 交互式模式 - 支持安装、卸载、查看
-curl -sL https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.sh | bash
+# 使用已审核的 release tag 或完整 commit SHA，不能使用会变动的分支名。
+export AAS_REF="<release-tag-or-full-commit-sha>"
+base_url="https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$AAS_REF"
+curl --fail --proto '=https' --tlsv1.2 -LO "$base_url/install.sh" -LO "$base_url/checksums.txt"
+shasum -a 256 -c checksums.txt --ignore-missing
 
-# 或直接安装到指定平台
-curl -sL https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.sh | bash -s -- -p cursor -a
-
-# 卸载 Skills
-curl -sL https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.sh | bash -s -- -p cursor -u -s code-review
-
-# 查看已安装的 Skills
-curl -sL https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.sh | bash -s -- -p cursor --list-installed
+# 交互式模式；也可直接安装、卸载或查看指定平台
+AAS_REPOSITORY_REF="$AAS_REF" bash install.sh
+AAS_REPOSITORY_REF="$AAS_REF" bash install.sh -p cursor -a
+AAS_REPOSITORY_REF="$AAS_REF" bash install.sh -p cursor -u -s code-review
+AAS_REPOSITORY_REF="$AAS_REF" bash install.sh -p cursor --list-installed
 ```
 
 **Windows (PowerShell):**
 
 ```powershell
-# 下载并运行安装脚本
-irm https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.ps1 | iex
+# 使用已审核的 release tag 或完整 commit SHA，不能使用会变动的分支名。
+$AAS_REF = "<release-tag-or-full-commit-sha>"
+$baseUrl = "https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$AAS_REF"
+Invoke-WebRequest -Uri "$baseUrl/install.ps1" -OutFile "install.ps1"
+Invoke-WebRequest -Uri "$baseUrl/checksums.txt" -OutFile "checksums.txt"
+$expected = (Select-String -Path checksums.txt -Pattern ' install\.ps1$').Line.Split()[0]
+if ((Get-FileHash install.ps1 -Algorithm SHA256).Hash.ToLower() -ne $expected) { throw "SHA-256 校验失败。" }
 
-# 或者先下载再运行（推荐）
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.ps1" -OutFile "install.ps1"
-.\install.ps1                                    # 交互式模式
-.\install.ps1 -Platform cursor -All              # 安装所有 Skills
-.\install.ps1 -Platform cursor -Uninstall -All   # 卸载所有 Skills
-.\install.ps1 -Platform cursor -ListInstalled    # 查看已安装
+.\install.ps1 -RepositoryRef $AAS_REF                 # 交互式模式
+.\install.ps1 -RepositoryRef $AAS_REF -Platform cursor -All
+.\install.ps1 -RepositoryRef $AAS_REF -Platform cursor -Uninstall -All
+.\install.ps1 -RepositoryRef $AAS_REF -Platform cursor -ListInstalled
 ```
 
-> 注意：安装脚本当前仅用于安装本仓库 `examples/` 目录中的内置示例 Skills，并不负责安装下方 awesome list 里收录的所有第三方项目。
+> 注意：安装脚本当前仅用于安装本仓库 `examples/` 目录中的内置示例 Skills，并不负责安装下方 awesome list 里收录的所有第三方项目。执行前请使用版本化 release tag（推荐）或完整 commit SHA，并校验脚本的 SHA-256。
 
 ### 手动安装
 
@@ -236,8 +239,8 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | 名称 | 描述 | 平台 | 链接 |
 |------|------|------|------|
 | devops-claude-skills | DevOps 工作流市场，含 Terraform/K8s | Claude | [GitHub](https://github.com/ahmedasmar/devops-claude-skills) |
-| devops-engineer | DevOps 工程师 Skill，云基础设施管理 | Claude | [claude-plugins.dev](https://claude-plugins.dev/skills/@Jeffallan/claude-skills/devops-engineer) |
-| ci-cd | CI/CD 管道设计、优化和安全扫描 | Claude | [claude-plugins.dev](https://claude-plugins.dev/skills/@ahmedasmar/devops-claude-skills/ci-cd) |
+| devops-engineer | DevOps 工程师 Skill，云基础设施管理 | All | [claude-plugins.dev](https://claude-plugins.dev/skills/@Jeffallan/claude-skills/devops-engineer) |
+| ci-cd | CI/CD 管道设计、优化和安全扫描 | All | [claude-plugins.dev](https://claude-plugins.dev/skills/@ahmedasmar/devops-claude-skills/ci-cd) |
 | claudekit-skills | Docker/GCP/Cloudflare 部署和管理 | Claude | [GitHub](https://github.com/mrgoonie/claudekit-skills) |
 | claudebox | Docker 容器化 Claude Code 开发环境 | Claude | [GitHub](https://github.com/RchGrav/claudebox) |
 
@@ -246,7 +249,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | 名称 | 描述 | 平台 | 链接 |
 |------|------|------|------|
 | bilig-workpaper | 公式驱动的 WorkPaper Skill，可让 Agent 编辑单元格、重新计算、校验回读并持久化表格业务逻辑 | All | [GitHub](https://github.com/proompteng/bilig/tree/main/skills/bilig-workpaper) |
-| d3-visualization | D3.js 数据可视化 Skill | Claude | [ComposioHQ](https://github.com/ComposioHQ/awesome-claude-skills) |
+| d3-visualization | D3.js 数据可视化 Skill | Claude | [ComposioHQ](https://github.com/ComposioHQ/awesome-claude-skills#data-visualization) |
 | context-engineering | 上下文工程和多 Agent 架构 Skills | All | [GitHub](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) |
 
 ## 写作创作

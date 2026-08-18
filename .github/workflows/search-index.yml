@@ -1,4 +1,4 @@
-name: Search Index
+name: Validate Search Index
 
 on:
   pull_request:
@@ -6,25 +6,16 @@ on:
       - 'README.md'
       - 'README_ZH.md'
       - 'docs/index.html'
+      - 'docs/skills.json'
       - 'scripts/sync-search-index.js'
       - 'package.json'
-  push:
-    branches:
-      - main
-    paths:
-      - 'README.md'
-      - 'README_ZH.md'
-      - 'docs/index.html'
-      - 'scripts/sync-search-index.js'
-      - 'package.json'
-  workflow_dispatch:
 
 jobs:
-  search-index:
-    name: Sync search index
+  validate-search-index:
+    name: Validate README search data
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
 
     steps:
       - name: Checkout repository
@@ -35,25 +26,11 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Generate search index
+      - name: Validate bilingual entries and generate a temporary index
         run: npm run sync:search
 
-      - name: Check generated index on pull requests
-        if: github.event_name == 'pull_request'
+      - name: Validate generated JSON
         run: |
           test -s docs/skills.json
-          git diff -- docs/skills.json
-
-      - name: Commit generated index on main
-        if: github.event_name != 'pull_request'
-        run: |
-          if git diff --quiet docs/skills.json; then
-            echo "Search index already up to date."
-            exit 0
-          fi
-
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add docs/skills.json
-          git commit -m "chore: sync search index [skip ci]"
-          git push
+          node -e "JSON.parse(require('fs').readFileSync('docs/skills.json', 'utf8'))"
+          git diff --check

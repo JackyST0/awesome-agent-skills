@@ -158,4 +158,4 @@ rm -rf ~/.cursor/skills/code-review-skill
 ## 下一步
 
 - [创建你自己的 Skill](how-to-create.md)
-- [浏览 Skills 列表](../README.md#skills-列表)
+- [浏览 Skills 列表](../README.md#contents)

@@ -13,7 +13,7 @@
 - [ ] 描述准确 / Description is accurate
 - [ ] 放在正确分类 / Placed in correct category
 - [ ] 没有为单个项目新增独立 section / Did not create a standalone section for a single project
-- [ ] 按字母顺序排列 / Sorted alphabetically
+- [ ] 保持分类现有顺序 / Preserves the category's existing order
 - [ ] 单个 Skill 仓库包含 SKILL.md（如适用） / Single Skill repository contains SKILL.md (if applicable)
 - [ ] Skills 合集 / 管理器 / 安装器明确服务于 Skills 生态（如适用） / Skills collection / manager / installer clearly serves the skills ecosystem (if applicable)
 - [ ] 社区项目满足最低门槛（64+ Stars，如适用） / Community project meets the minimum threshold (64+ Stars, if applicable)

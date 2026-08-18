@@ -16,7 +16,10 @@ NC='\033[0m' # No Color
 
 # Repository URL
 REPO_URL="https://github.com/JackyST0/awesome-agent-skills"
-REPO_RAW="https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main"
+# Set AAS_REPOSITORY_REF to a reviewed release tag or full commit SHA when
+# invoking this script. Do not fetch Skills from an unpinned branch.
+REPOSITORY_REF="${AAS_REPOSITORY_REF:-}"
+REPO_RAW=""
 
 # Available skills
 SKILLS="code-review git-commit unit-test-generator api-doc-generator debug-helper"
@@ -242,21 +245,14 @@ interactive_mode() {
         i=$((i + 1))
     done
     echo ""
-    printf "Enter number (1-5): "
+    printf "Enter number (1-7): "
     read -r platform_choice
 
-    # Validate choice
-    case $platform_choice in
-        1) selected_platform="cursor" ;;
-        2) selected_platform="claude" ;;
-        3) selected_platform="copilot" ;;
-        4) selected_platform="windsurf" ;;
-        5) selected_platform="codex" ;;
-        *)
-            printf "${RED}Invalid selection${NC}\n"
-            exit 1
-            ;;
-    esac
+    selected_platform=$(printf '%s\n' "$PLATFORMS" | awk -v choice="$platform_choice" 'NR == choice { print; exit }')
+    if [ -z "$selected_platform" ]; then
+        printf "${RED}Invalid selection${NC}\n"
+        exit 1
+    fi
 
     target_dir=$(get_platform_dir "$selected_platform")
 
@@ -394,6 +390,13 @@ main() {
                 ;;
         esac
     done
+
+    if [ -z "$REPOSITORY_REF" ]; then
+        printf "${RED}Error: AAS_REPOSITORY_REF must be a reviewed release tag or full commit SHA.${NC}\n"
+        printf "Example: AAS_REPOSITORY_REF=<release-tag-or-commit> %s -p cursor -a\n" "$0"
+        exit 1
+    fi
+    REPO_RAW="https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$REPOSITORY_REF"
 
     # If no arguments, run interactive mode
     if [ -z "$platform" ] && [ -z "$skills" ] && [ "$install_all" = false ] && [ "$list_installed_mode" = false ]; then

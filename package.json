@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "sync:search": "node scripts/sync-search-index.js",
-    "check:search": "node scripts/sync-search-index.js --check"
+    "check:search": "node scripts/sync-search-index.js --check",
+    "check:search-security": "node scripts/check-search-page-security.js"
   }
 }

@@ -3,8 +3,8 @@
 /**
  * Generate the GitHub Pages search index from README.md and README_ZH.md.
  *
- * README.md remains the source of truth for entry order and links. README_ZH.md
- * supplies Chinese descriptions, platforms, and star counts where available.
+ * Both READMEs must describe the same entries. README.md supplies the entry
+ * order; README_ZH.md supplies Chinese descriptions, platforms, and stars.
  */
 
 const fs = require('fs');
@@ -14,6 +14,7 @@ const ROOT = path.resolve(__dirname, '..');
 const README_EN = path.join(ROOT, 'README.md');
 const README_ZH = path.join(ROOT, 'README_ZH.md');
 const OUTPUT = path.join(ROOT, 'docs', 'skills.json');
+const REPOSITORY_TREE_URL = 'https://github.com/JackyST0/awesome-agent-skills/tree/main';
 
 const CATEGORIES = [
   { id: 'official', en: 'Official Resources', zh: '官方资源' },
@@ -31,7 +32,23 @@ function read(file) {
 }
 
 function normalizeUrl(url) {
-  return url.trim().replace(/\/$/, '');
+  const value = url.trim();
+  const absolute = /^https?:\/\//i.test(value)
+    ? value
+    : value.startsWith('examples/')
+      ? `${REPOSITORY_TREE_URL}/${value}`
+      : value;
+
+  return absolute.replace(/\/$/, '');
+}
+
+function isHttpUrl(url) {
+  try {
+    const parsed = new URL(url);
+    return parsed.protocol === 'http:' || parsed.protocol === 'https:';
+  } catch {
+    return false;
+  }
 }
 
 function sectionContent(markdown, heading) {
@@ -74,9 +91,13 @@ function parseEnglish(readme) {
       if (!match) continue;
 
       const [, name, url, descEn] = match;
+      const normalizedUrl = normalizeUrl(url);
+      if (!isHttpUrl(normalizedUrl)) {
+        throw new Error(`Invalid URL in README.md (${category.en}): ${url}`);
+      }
       entries.push({
         name: name.trim(),
-        url: normalizeUrl(url),
+        url: normalizedUrl,
         descEn: trimSentence(stripMarkdown(descEn)),
         category: category.id,
       });
@@ -117,12 +138,19 @@ function parseChinese(readme) {
       const [name, rawDesc, third, linkCell] = cells;
       const url = extractLink(linkCell);
       if (!url) continue;
+      if (!isHttpUrl(url)) {
+        throw new Error(`Invalid URL in README_ZH.md (${category.zh}): ${url}`);
+      }
 
       const { desc, stars: starsFromDesc } = cleanChineseDescription(rawDesc);
       const starOrPlatform = third.replace(/—/g, '-').trim();
       const usesStarsColumn = category.id === 'official' || category.id === 'collection';
 
-      byUrl.set(keyFor(category.id, url), {
+      const key = keyFor(category.id, url);
+      if (byUrl.has(key)) {
+        throw new Error(`Duplicate Chinese entry: ${key}`);
+      }
+      byUrl.set(key, {
         name: stripMarkdown(name),
         desc,
         stars: usesStarsColumn ? starOrPlatform : starsFromDesc,
@@ -187,6 +215,32 @@ function keyFor(category, url) {
   return `${category}::${url}`;
 }
 
+function assertBilingualConsistency(enEntries, zhByUrl) {
+  const englishKeys = new Set();
+  const errors = [];
+
+  for (const entry of enEntries) {
+    const key = keyFor(entry.category, entry.url);
+    if (englishKeys.has(key)) {
+      errors.push(`Duplicate English entry: ${key}`);
+    }
+    englishKeys.add(key);
+    if (!zhByUrl.has(key)) {
+      errors.push(`Missing Chinese entry: ${key}`);
+    }
+  }
+
+  for (const key of zhByUrl.keys()) {
+    if (!englishKeys.has(key)) {
+      errors.push(`Missing English entry: ${key}`);
+    }
+  }
+
+  if (errors.length > 0) {
+    throw new Error(`README entries are not bilingual equivalents:\n- ${errors.join('\n- ')}`);
+  }
+}
+
 function normalizeStars(value) {
   if (!value || value === '-') return '-';
   return value;
@@ -200,6 +254,7 @@ function main() {
   const check = process.argv.includes('--check');
   const enEntries = parseEnglish(read(README_EN));
   const zhByUrl = parseChinese(read(README_ZH));
+  assertBilingualConsistency(enEntries, zhByUrl);
   const index = buildIndex(enEntries, zhByUrl);
   const next = `${JSON.stringify(index, null, 2)}\n`;
 
@@ -217,4 +272,8 @@ function main() {
   console.log(`Wrote ${path.relative(ROOT, OUTPUT)} with ${index.length} entries.`);
 }
 
-main();
+if (require.main === module) {
+  main();
+}
+
+module.exports = { isHttpUrl };

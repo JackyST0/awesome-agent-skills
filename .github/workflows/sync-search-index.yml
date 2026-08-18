@@ -1,0 +1,46 @@
+name: Sync Search Index
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'README.md'
+      - 'README_ZH.md'
+      - 'docs/skills.json'
+      - 'scripts/sync-search-index.js'
+      - 'package.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-search-index:
+    name: Regenerate search index
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate search index
+        run: npm run sync:search
+
+      - name: Commit generated index
+        run: |
+          if git diff --quiet -- docs/skills.json; then
+            echo "Search index already up to date."
+            exit 0
+          fi
+
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add docs/skills.json
+          git commit -m "chore: sync search index [skip ci]"
+          git push

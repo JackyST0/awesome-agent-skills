@@ -37,21 +37,32 @@ English | [简体中文](README_ZH.md)
 **macOS / Linux:**
 
 ```bash
-# Interactive mode - install, uninstall, or list
-curl -sL https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.sh | bash
+# Use a reviewed release tag or full commit SHA, never a moving branch name.
+export AAS_REF="<release-tag-or-full-commit-sha>"
+base_url="https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$AAS_REF"
+curl --fail --proto '=https' --tlsv1.2 -LO "$base_url/install.sh" -LO "$base_url/checksums.txt"
+shasum -a 256 -c checksums.txt --ignore-missing
 
-# Or install all skills to a specific platform
-curl -sL https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.sh | bash -s -- -p cursor -a
+# Interactive mode, or install all skills to a specific platform
+AAS_REPOSITORY_REF="$AAS_REF" bash install.sh
+AAS_REPOSITORY_REF="$AAS_REF" bash install.sh -p cursor -a
 ```
 
 **Windows (PowerShell):**
 
 ```powershell
-# Download and run the install script
-irm https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main/install.ps1 | iex
+# Use a reviewed release tag or full commit SHA, never a moving branch name.
+$AAS_REF = "<release-tag-or-full-commit-sha>"
+$baseUrl = "https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$AAS_REF"
+Invoke-WebRequest -Uri "$baseUrl/install.ps1" -OutFile "install.ps1"
+Invoke-WebRequest -Uri "$baseUrl/checksums.txt" -OutFile "checksums.txt"
+$expected = (Select-String -Path checksums.txt -Pattern ' install\.ps1$').Line.Split()[0]
+if ((Get-FileHash install.ps1 -Algorithm SHA256).Hash.ToLower() -ne $expected) { throw "SHA-256 verification failed." }
+
+.\install.ps1 -RepositoryRef $AAS_REF
 ```
 
-> Note: The installer currently installs the bundled example skills from this repository's `examples/` directory. It is not a general-purpose package manager for every third-party project listed below.
+> Note: The installer currently installs the bundled example skills from this repository's `examples/` directory. It is not a general-purpose package manager for every third-party project listed below. Use a versioned release tag (recommended) or full commit SHA and verify its checksum before executing the script.
 
 ### Manual Install
 
@@ -166,11 +177,14 @@ Skills work across multiple platforms:
 - [gingiris-aso-growth](https://github.com/Gingiris/gingiris-aso-growth) - ASO and mobile app growth playbook for cold start, UGC, and distribution.
 - [alpha-insights](https://github.com/Ericyoung-183/alpha-insights) - Harness-enforced business research skill with consulting frameworks, evidence grading, stage gates, and HTML reports.
 - [salespeak-ai/buyer-eval-skill](https://github.com/salespeak-ai/buyer-eval-skill) - B2B vendor evaluation skill: 7-dimension scoring and evidence-tracked scorecards for procurement and build-vs-buy decisions.
+- [changelog-generator](https://github.com/ComposioHQ/awesome-claude-skills) - Generate changelogs from Git commits.
 - [wiki](https://github.com/plasma-ai/wiki/blob/main/wiki/skills/wiki/SKILL.md) - Build indexed Markdown knowledge bases that agents map, search, read, update, and lint.
 
 ## DevOps
 
 - [devops-claude-skills](https://github.com/ahmedasmar/devops-claude-skills) - DevOps workflow marketplace with Terraform/K8s.
+- [devops-engineer](https://claude-plugins.dev/skills/@Jeffallan/claude-skills/devops-engineer) - DevOps engineer Skill for cloud infrastructure management.
+- [ci-cd](https://claude-plugins.dev/skills/@ahmedasmar/devops-claude-skills/ci-cd) - Design, optimize, and security-scan CI/CD pipelines.
 - [claudekit-skills](https://github.com/mrgoonie/claudekit-skills) - Docker/GCP/Cloudflare deployment and management.
 - [claudebox](https://github.com/RchGrav/claudebox) - Dockerized Claude Code dev environment.
 

@@ -32,7 +32,7 @@
 - [ ] 描述必须清晰准确
 - [ ] 链接必须有效
 - [ ] 必须同时更新 `README.md` 和 `README_ZH.md`（保持双语同步）
-- [ ] PR 提交前请检查格式，确保不会破坏现有文档结构
+- [ ] PR 提交前请检查格式，确保不会破坏现有文档结构；使用对应分类现有的条目格式
 - [ ] 优先放入现有分类；不要为单个项目新增独立 section
 
 #### 按条目类型区分
@@ -70,7 +70,7 @@
 - `Codex` - 仅 Codex
 - `OpenCode` - 仅 OpenCode
 - `OpenClaw` - 仅 OpenClaw
-- 多个平台用 `/` 分隔：`Cursor/Claude`
+- 多个平台用 `/` 分隔：`Cursor/Claude`（仅列出已验证支持的平台）
 
 ### 分类说明
 
@@ -107,7 +107,7 @@
 - [ ] 描述准确
 - [ ] 放在正确分类
 - [ ] 没有为单个项目新增独立 section
-- [ ] 按字母顺序排列
+- [ ] 保持该分类现有的有意义顺序；不要求对整个历史列表重新排序
 - [ ] 单个 Skill 仓库包含 SKILL.md
 - [ ] Skills 合集 / 管理器 / 安装器明确服务于 Skills 生态
 - [ ] GitHub 仓库满足最低门槛（社区项目 64+ Stars）
@@ -155,7 +155,7 @@ Thanks for your interest in contributing to Awesome Agent Skills!
 - [ ] Description must be clear and accurate
 - [ ] Link must be valid
 - [ ] Must update both `README.md` and `README_ZH.md` (keep bilingual READMEs in sync)
-- [ ] Please verify formatting before submitting — PRs that break existing document structure will be rejected
+- [ ] Please verify formatting before submitting — use the existing entry format for the target category and do not break the document structure
 - [ ] Prefer existing categories; do not create a standalone section for a single project
 
 #### By Entry Type
@@ -193,7 +193,7 @@ Thanks for your interest in contributing to Awesome Agent Skills!
 - `Codex` - Codex only
 - `OpenCode` - OpenCode only
 - `OpenClaw` - OpenClaw only
-- Multiple platforms separated by `/`: `Cursor/Claude`
+- Multiple platforms separated by `/`: `Cursor/Claude` (list only platforms the project has verified)
 
 ### Categories
 
@@ -230,7 +230,7 @@ Please include the following information when submitting a PR:
 - [ ] Description is accurate
 - [ ] Placed in correct category
 - [ ] Did not create a standalone section for a single project
-- [ ] Alphabetically ordered
+- [ ] Preserves the category's existing meaningful order; do not reorder the historical list solely for alphabetization
 - [ ] Single Skill repository contains SKILL.md
 - [ ] Skills collections / managers / installers clearly serve the skills ecosystem
 - [ ] Repository meets the minimum threshold (64+ Stars for community projects)

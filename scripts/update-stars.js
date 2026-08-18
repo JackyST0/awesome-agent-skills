@@ -2,26 +2,14 @@
 
 /**
  * Update Star Counts Script
- * Fetches star counts from GitHub API and updates README files
+ * Fetches star counts from GitHub API and updates existing numeric labels
+ * in both READMEs. It never adds a star label where the README has none.
  */
 
 const fs = require('fs');
 const https = require('https');
 
-// GitHub repos to track (owner/repo format)
-const REPOS = [
-  'anthropics/skills',
-  'PatrickJS/awesome-cursorrules',
-  'affaan-m/everything-claude-code',
-  'ComposioHQ/awesome-claude-skills',
-  'hesreallyhim/awesome-claude-code',
-  'numman-ali/openskills',
-  'VoltAgent/awesome-claude-skills',
-  'simonw/claude-skills',
-  'abubakarsiddik31/claude-skills-collection',
-  'thehimel/cursor-rules-and-prompts',
-  'blencorp/claude-code-kit',
-];
+const ROOT = require('path').resolve(__dirname, '..');
 
 // Format star count (e.g., 1234 -> 1.2k)
 function formatStars(count) {
@@ -80,25 +68,39 @@ function fetchRepoInfo(repo) {
 
 // Update star count in README content
 function updateStarsInContent(content, repo, formattedStars) {
-  // Match patterns like "| 56.1k |" or "| 1.2k |" or "| - |" followed by GitHub link
-  const repoName = repo.split('/')[1];
-  const owner = repo.split('/')[0];
+  const repoUrl = `https://github.com/${repo}`;
+  return content.split('\n').map((line) => {
+    if (!line.includes(repoUrl)) return line;
 
-  // Pattern: | old_stars | [GitHub](https://github.com/owner/repo)
-  const pattern = new RegExp(
-    `\\|\\s*[\\d.]+k?\\s*\\|\\s*\\[GitHub\\]\\(https://github\\.com/${owner}/${repoName}\\)`,
-    'g'
-  );
+    return line
+      .replace(/([（(])\s*[\d.]+k?\s*⭐\s*([）)])/gi, `$1${formattedStars} ⭐$2`)
+      .replace(/(\|\s*)[\d.]+k?(\s*\|\s*\[[^\]]+\]\(https:\/\/github\.com\/[^)]+\))/i, `$1${formattedStars}$2`);
+  }).join('\n');
+}
 
-  return content.replace(pattern, `| ${formattedStars} | [GitHub](https://github.com/${repo})`);
+function collectRepos(...contents) {
+  const repos = new Set();
+  const pattern = /https:\/\/github\.com\/([^/\s)]+\/[^/\s)#]+)/g;
+
+  for (const content of contents) {
+    for (const match of content.matchAll(pattern)) {
+      repos.add(match[1]);
+    }
+  }
+
+  return [...repos].sort();
 }
 
 async function main() {
   console.log('Fetching star counts...\n');
 
-  // Fetch all repo info
+  const readmeEn = fs.readFileSync(`${ROOT}/README.md`, 'utf8');
+  const readmeZh = fs.readFileSync(`${ROOT}/README_ZH.md`, 'utf8');
+  const repos = collectRepos(readmeEn, readmeZh);
+
+  // Fetch every GitHub repository referenced by the two READMEs.
   const results = await Promise.all(
-    REPOS.map(async (repo) => {
+    repos.map(async (repo) => {
       try {
         const info = await fetchRepoInfo(repo);
         console.log(`${repo}: ${info.formatted} stars`);
@@ -109,10 +111,6 @@ async function main() {
       }
     })
   );
-
-  // Read README files
-  const readmeEn = fs.readFileSync('README.md', 'utf8');
-  const readmeZh = fs.readFileSync('README_ZH.md', 'utf8');
 
   let updatedEn = readmeEn;
   let updatedZh = readmeZh;
@@ -126,8 +124,8 @@ async function main() {
   }
 
   // Write updated files
-  fs.writeFileSync('README.md', updatedEn);
-  fs.writeFileSync('README_ZH.md', updatedZh);
+  fs.writeFileSync(`${ROOT}/README.md`, updatedEn);
+  fs.writeFileSync(`${ROOT}/README_ZH.md`, updatedZh);
 
   console.log('\nREADME files updated successfully!');
 }

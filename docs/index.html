@@ -166,20 +166,52 @@
       skills = await response.json();
     }
 
+    function safeUrl(value) {
+      try {
+        const url = new URL(value);
+        return ['http:', 'https:'].includes(url.protocol) ? url.href : null;
+      } catch {
+        return null;
+      }
+    }
+
+    function makeLink(url, className, text) {
+      const link = document.createElement('a');
+      const safe = safeUrl(url);
+      link.className = className;
+      link.textContent = text;
+
+      if (safe) {
+        link.href = safe;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+      } else {
+        link.setAttribute('aria-disabled', 'true');
+        link.classList.add('cursor-not-allowed', 'opacity-60');
+      }
+
+      return link;
+    }
+
     function renderCategoryFilters() {
       const filters = document.getElementById('category-filters');
       const categories = [...new Set(skills.map(skill => skill.category))]
         .sort((a, b) => (categoryOrder[a] ?? 99) - (categoryOrder[b] ?? 99));
       const labels = categoryLabels[currentLang];
 
-      filters.innerHTML = [
-        `<button class="category-btn px-4 py-2 rounded-lg bg-gray-100 text-sm whitespace-nowrap transition" data-filter="all" onclick="filterBy('all')">${currentLang === 'zh' ? '全部' : 'All'}</button>`,
-        ...categories.map(category =>
-          `<button class="category-btn px-4 py-2 rounded-lg bg-gray-100 text-sm whitespace-nowrap transition" data-filter="${category}" onclick="filterBy('${category}')">${labels[category] || category}</button>`
-        )
-      ].join('');
+      filters.replaceChildren();
+      ['all', ...categories].forEach(category => {
+        const btn = document.createElement('button');
+        btn.className = 'category-btn px-4 py-2 rounded-lg bg-gray-100 text-sm whitespace-nowrap transition';
+        btn.dataset.filter = category;
+        btn.textContent = category === 'all'
+          ? (currentLang === 'zh' ? '全部' : 'All')
+          : (labels[category] || category);
+        btn.addEventListener('click', () => filterBy(category));
+        filters.appendChild(btn);
+      });
 
-      document.querySelectorAll('.category-btn').forEach(btn => {
+      filters.querySelectorAll('.category-btn').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.filter === currentFilter);
       });
     }
@@ -206,7 +238,7 @@
       const statsLine = document.getElementById('stats-line');
 
       if (filtered.length === 0) {
-        grid.innerHTML = '';
+        grid.replaceChildren();
         empty.classList.remove('hidden');
         statsLine.textContent = '';
         return;
@@ -215,7 +247,51 @@
       empty.classList.add('hidden');
       statsLine.textContent = i18n[currentLang].showing(filtered.length, skills.length);
 
-      grid.innerHTML = filtered.map(skill => {
+      const cards = filtered.map(skill => {
+        const name = currentLang === 'zh' ? (skill.nameZh || skill.name) : skill.name;
+        const desc = currentLang === 'zh' ? skill.desc : skill.descEn;
+        const catLabel = categoryLabels[currentLang][skill.category] || skill.category;
+        const platClass = platformColors[skill.platform] || 'bg-gray-100 text-gray-600';
+        const card = document.createElement('div');
+        card.className = 'skill-card bg-white rounded-xl p-4 shadow-sm border border-gray-100';
+
+        const header = document.createElement('div');
+        header.className = 'flex items-start justify-between mb-2';
+        header.appendChild(makeLink(skill.url, 'font-semibold text-gray-800 hover:text-purple-600 transition text-sm', name));
+        if (skill.stars !== '-') {
+          const stars = document.createElement('span');
+          stars.className = 'text-xs bg-yellow-50 text-yellow-700 px-2 py-0.5 rounded-full whitespace-nowrap ml-2 flex-shrink-0';
+          stars.textContent = `★ ${skill.stars}`;
+          header.appendChild(stars);
+        }
+
+        const description = document.createElement('p');
+        description.className = 'text-gray-500 text-xs mb-3 leading-relaxed';
+        description.textContent = desc;
+
+        const footer = document.createElement('div');
+        footer.className = 'flex items-center justify-between';
+        const tags = document.createElement('div');
+        tags.className = 'flex gap-1.5';
+        const platform = document.createElement('span');
+        platform.className = `text-xs px-2 py-0.5 rounded-full ${platClass}`;
+        platform.textContent = skill.platform;
+        const category = document.createElement('span');
+        category.className = 'text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-500';
+        category.textContent = catLabel;
+        tags.append(platform, category);
+
+        const external = makeLink(skill.url, 'text-gray-400 hover:text-purple-500 transition', '↗');
+        external.setAttribute('aria-label', `${name} external link`);
+        footer.append(tags, external);
+        card.append(header, description, footer);
+        return card;
+      });
+      grid.replaceChildren(...cards);
+      return;
+
+      /*
+      grid.replaceChildren(...filtered.map(skill => {
         const name = currentLang === 'zh' ? (skill.nameZh || skill.name) : skill.name;
         const desc = currentLang === 'zh' ? skill.desc : skill.descEn;
         const catLabel = categoryLabels[currentLang][skill.category] || skill.category;
@@ -237,7 +313,8 @@
               </a>
             </div>
           </div>`;
-      }).join('');
+      }));
+      */
     }
 
     function filterBy(category) {

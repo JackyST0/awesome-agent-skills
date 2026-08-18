@@ -532,7 +532,7 @@
   {
     "name": "code-review",
     "nameZh": "code-review",
-    "desc": "Smart code review example Skill",
+    "desc": "智能代码审查示例 Skill",
     "descEn": "Smart code review example Skill",
     "stars": "-",
     "platform": "all",
@@ -542,7 +542,7 @@
   {
     "name": "git-commit",
     "nameZh": "git-commit",
-    "desc": "Git commit message generator Skill",
+    "desc": "Git 提交信息生成示例 Skill",
     "descEn": "Git commit message generator Skill",
     "stars": "-",
     "platform": "all",
@@ -552,7 +552,7 @@
   {
     "name": "unit-test-generator",
     "nameZh": "unit-test-generator",
-    "desc": "Unit test auto-generator Skill",
+    "desc": "单元测试自动生成 Skill",
     "descEn": "Unit test auto-generator Skill",
     "stars": "-",
     "platform": "all",
@@ -562,7 +562,7 @@
   {
     "name": "api-doc-generator",
     "nameZh": "api-doc-generator",
-    "desc": "API documentation generator Skill",
+    "desc": "API 文档生成 Skill",
     "descEn": "API documentation generator Skill",
     "stars": "-",
     "platform": "all",
@@ -572,7 +572,7 @@
   {
     "name": "debug-helper",
     "nameZh": "debug-helper",
-    "desc": "Code debugging assistant Skill",
+    "desc": "代码调试助手 Skill",
     "descEn": "Code debugging assistant Skill",
     "stars": "-",
     "platform": "all",
@@ -730,6 +730,16 @@
     "url": "https://github.com/salespeak-ai/buyer-eval-skill"
   },
   {
+    "name": "changelog-generator",
+    "nameZh": "changelog-generator",
+    "desc": "从 Git 提交自动生成 Changelog",
+    "descEn": "Generate changelogs from Git commits",
+    "stars": "-",
+    "platform": "claude",
+    "category": "productivity",
+    "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+  },
+  {
     "name": "wiki",
     "nameZh": "wiki",
     "desc": "构建带索引的 Markdown 知识库，供 Agent 映射、搜索、读取、更新与检查",
@@ -748,6 +758,26 @@
     "platform": "claude",
     "category": "devops",
     "url": "https://github.com/ahmedasmar/devops-claude-skills"
+  },
+  {
+    "name": "devops-engineer",
+    "nameZh": "devops-engineer",
+    "desc": "DevOps 工程师 Skill，云基础设施管理",
+    "descEn": "DevOps engineer Skill for cloud infrastructure management",
+    "stars": "-",
+    "platform": "all",
+    "category": "devops",
+    "url": "https://claude-plugins.dev/skills/@Jeffallan/claude-skills/devops-engineer"
+  },
+  {
+    "name": "ci-cd",
+    "nameZh": "ci-cd",
+    "desc": "CI/CD 管道设计、优化和安全扫描",
+    "descEn": "Design, optimize, and security-scan CI/CD pipelines",
+    "stars": "-",
+    "platform": "all",
+    "category": "devops",
+    "url": "https://claude-plugins.dev/skills/@ahmedasmar/devops-claude-skills/ci-cd"
   },
   {
     "name": "claudekit-skills",
@@ -782,7 +812,7 @@
   {
     "name": "d3-visualization",
     "nameZh": "d3-visualization",
-    "desc": "D3.js data visualization Skill",
+    "desc": "D3.js 数据可视化 Skill",
     "descEn": "D3.js data visualization Skill",
     "stars": "-",
     "platform": "claude",

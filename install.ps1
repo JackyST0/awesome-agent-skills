@@ -9,13 +9,14 @@ param(
     [switch]$Uninstall,
     [switch]$ListInstalled,
     [switch]$List,
-    [switch]$Help
+    [switch]$Help,
+    [string]$RepositoryRef = $env:AAS_REPOSITORY_REF
 )
 
 $ErrorActionPreference = "Stop"
 
-# Repository URL
-$REPO_RAW = "https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/main"
+# The repository ref must be a reviewed release tag or full commit SHA.
+$REPO_RAW = ""
 
 # Available skills
 $SKILLS = @("code-review", "git-commit", "unit-test-generator", "api-doc-generator", "debug-helper")
@@ -235,19 +236,13 @@ function Interactive-Mode {
         Write-Host "  $($i + 1)) $platform ($dir)"
     }
     Write-Host ""
-    $platformChoice = Read-Host "Enter number (1-5)"
-
-    $selectedPlatform = switch ($platformChoice) {
-        "1" { "cursor" }
-        "2" { "claude" }
-        "3" { "copilot" }
-        "4" { "windsurf" }
-        "5" { "codex" }
-        default {
-            Write-Host "Invalid selection" -ForegroundColor Red
-            exit 1
-        }
+    $platformChoice = Read-Host "Enter number (1-7)"
+    $selectionIndex = 0
+    if (-not [int]::TryParse($platformChoice, [ref]$selectionIndex) -or $selectionIndex -lt 1 -or $selectionIndex -gt $PLATFORMS.Count) {
+        Write-Host "Invalid selection" -ForegroundColor Red
+        exit 1
     }
+    $selectedPlatform = $PLATFORMS[$selectionIndex - 1]
 
     $targetDir = Get-PlatformDir $selectedPlatform
 
@@ -330,6 +325,14 @@ function Main {
         List-Skills
         List-Platforms
         exit 0
+    }
+
+    if (-not $RepositoryRef -and -not $ListInstalled) {
+        Write-Host "Error: -RepositoryRef (or AAS_REPOSITORY_REF) must be a reviewed release tag or full commit SHA." -ForegroundColor Red
+        exit 1
+    }
+    if ($RepositoryRef) {
+        $script:REPO_RAW = "https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$RepositoryRef"
     }
 
     # If no arguments, run interactive mode
