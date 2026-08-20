@@ -139,6 +139,8 @@ Skills work across multiple platforms:
 ## Development Tools
 
 - [agenttrace-session-audit](https://github.com/luoyuctl/agenttrace/blob/master/skills/agenttrace-session-audit/SKILL.md) - Audit local AI coding-agent session health, cost, failures, and diffs.
+- [agent-trace](https://github.com/liangzhengtao/agent-trace) - Post-session analysis for AI coding agents. Track costs, tokens, tool health, session timeline. Supports Claude Code, Kimi Code, Codex, OpenCode.
+- [token-meter](https://github.com/liangzhengtao/token-meter) - Real-time token cost meter for AI coding agents with status bar mode. Watch your tokens burn as it happens.
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) - Production-grade engineering skills and slash-command workflows for AI coding agents.
 - [claude-code-security-review](https://github.com/anthropics/claude-code-security-review) - AI security review GitHub Action (Official).
 - [trailofbits/skills](https://github.com/trailofbits/skills) - Trail of Bits security research and audit Skills.
