@@ -234,6 +234,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | salespeak-ai/buyer-eval-skill | 结构化 B2B 软件供应商评估：7 维度评分与证据追踪的评分卡，用于采购与自建/采购决策 | All | [GitHub](https://github.com/salespeak-ai/buyer-eval-skill) |
 | changelog-generator | 从 Git 提交自动生成 Changelog | Claude | [ComposioHQ](https://github.com/ComposioHQ/awesome-claude-skills) |
 | wiki | 构建带索引的 Markdown 知识库，供 Agent 映射、搜索、读取、更新与检查 | Claude/Codex | [GitHub](https://github.com/plasma-ai/wiki/blob/main/wiki/skills/wiki/SKILL.md) |
+| Slashbooks | 导入银行与信用卡流水，完成月度结账，并导出会计所需文件 | Claude/Codex/Cursor | [GitHub](https://github.com/giltotherescue/slashbooks) |
 
 ## DevOps
 
