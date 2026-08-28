@@ -169,6 +169,7 @@ Skills work across multiple platforms:
 - [claude-skills](https://github.com/alirezarezvani/claude-skills) - 20+ productivity tools with 8 expert Agents.
 - [claude-code-skill-factory](https://github.com/alirezarezvani/claude-code-skill-factory) - Skills factory for batch generation and deployment.
 - [obra/superpowers](https://github.com/obra/superpowers) - Complete dev workflow (Debug/TDD/Code Review/Planning).
+- [planning-with-files](https://github.com/OthmanAdi/planning-with-files) - Persistent file-based planning with task plans, findings, progress tracking, and session recovery for long-running agent work.
 - [cognyai/claude-code-marketing-skills](https://github.com/cognyai/claude-code-marketing-skills) - AI marketing skills (SEO Audit/Landing Page Review/Competitor Analysis/Ad Copywriting/Lead Qualification) with MCP server integration.
 - [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) - Marketing Skills (SEO/Copywriting/CRO/Ads).
 - [nowork-studio/NotFair](https://github.com/nowork-studio/NotFair) - Claude Code skills for SEO, GEO, Google Ads, and Meta Ads; connects to live data via Google Ads MCP, Meta Ads MCP, Google Search Console MCP, and Google Analytics (GA4) MCP.

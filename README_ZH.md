@@ -223,6 +223,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | claude-skills | 20+ 生产力工具，含 8 个专家 Agent | Claude | [GitHub](https://github.com/alirezarezvani/claude-skills) |
 | claude-code-skill-factory | Skills 工厂，批量生成和部署 Skills | Claude | [GitHub](https://github.com/alirezarezvani/claude-code-skill-factory) |
 | obra/superpowers | ⭐ 完整开发工作流（调试/TDD/代码审查/计划）（276.7k ⭐） | All | [GitHub](https://github.com/obra/superpowers) |
+| planning-with-files | 基于文件的持久化规划，包含任务计划、研究发现、进度跟踪和会话恢复 | All | [GitHub](https://github.com/OthmanAdi/planning-with-files) |
 | cognyai/claude-code-marketing-skills | AI 营销技能（SEO 审计/落地页评审/竞品分析/广告文案/线索筛选），支持 MCP 服务器集成 | All | [GitHub](https://github.com/cognyai/claude-code-marketing-skills) |
 | coreyhaines31/marketingskills | ⭐ 营销 Skills（SEO/文案/CRO/广告）（45.4k ⭐） | All | [GitHub](https://github.com/coreyhaines31/marketingskills) |
 | nowork-studio/NotFair | Claude Code SEO、GEO、Google Ads 和 Meta Ads 技能集；通过 Google Ads MCP、Meta Ads MCP、Google Search Console MCP 和 Google Analytics (GA4) MCP 接入实时数据 | Claude | [GitHub](https://github.com/nowork-studio/NotFair) |
