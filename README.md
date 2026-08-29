@@ -180,6 +180,7 @@ Skills work across multiple platforms:
 - [salespeak-ai/buyer-eval-skill](https://github.com/salespeak-ai/buyer-eval-skill) - B2B vendor evaluation skill: 7-dimension scoring and evidence-tracked scorecards for procurement and build-vs-buy decisions.
 - [changelog-generator](https://github.com/ComposioHQ/awesome-claude-skills) - Generate changelogs from Git commits.
 - [wiki](https://github.com/plasma-ai/wiki/blob/main/wiki/skills/wiki/SKILL.md) - Build indexed Markdown knowledge bases that agents map, search, read, update, and lint.
+- [falsify](https://github.com/263311487-ux/falsify) - Scientific thinking protocol for AI agents: falsify first, then believe; evidence-graded conclusions with 28 built-in eval cases (Codex / Claude / Cursor / Gemini CLI).
 
 ## DevOps
 
@@ -243,3 +244,4 @@ PayPal: [paypal.me/JackyST0](https://paypal.me/JackyST0)
 ### Star History
 
 [![Star History Chart](https://star-history.dera.page/svg?repos=JackyST0/awesome-agent-skills&type=Date)](https://star-history.dera.page/#JackyST0/awesome-agent-skills&Date)
+

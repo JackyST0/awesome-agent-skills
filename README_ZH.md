@@ -234,6 +234,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | salespeak-ai/buyer-eval-skill | 结构化 B2B 软件供应商评估：7 维度评分与证据追踪的评分卡，用于采购与自建/采购决策 | All | [GitHub](https://github.com/salespeak-ai/buyer-eval-skill) |
 | changelog-generator | 从 Git 提交自动生成 Changelog | Claude | [ComposioHQ](https://github.com/ComposioHQ/awesome-claude-skills) |
 | wiki | 构建带索引的 Markdown 知识库，供 Agent 映射、搜索、读取、更新与检查 | Claude/Codex | [GitHub](https://github.com/plasma-ai/wiki/blob/main/wiki/skills/wiki/SKILL.md) |
+| falsify | ⭐ 科学思维协议：先证伪，再相信；结论带证据强度分级，内置 28 个评测用例，蒸馏自 70+ 社区来源与认知科学/因果推断文献 | All | [GitHub](https://github.com/263311487-ux/falsify) |
 
 ## DevOps
 
@@ -325,3 +326,4 @@ my-skill/
 ### Star History
 
 [![Star History Chart](https://star-history.dera.page/svg?repos=JackyST0/awesome-agent-skills&type=Date)](https://star-history.dera.page/#JackyST0/awesome-agent-skills&Date)
+
