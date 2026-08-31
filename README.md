@@ -125,6 +125,7 @@ Skills work across multiple platforms:
 - [awesome-claude-skills](https://github.com/VoltAgent/awesome-claude-skills) - Claude Skills collection by VoltAgent.
 - [claude-skills](https://github.com/simonw/claude-skills) - Claude Skills documentation by Simon Willison.
 - [claude-skills-collection](https://github.com/abubakarsiddik31/claude-skills-collection) - Curated official and community Skills.
+- [claude-skills-pro](https://github.com/Hahaknight/claude-skills-pro) - 15 engineering-workflow skills (review, debugging, testing, safe migrations); 7 free/MIT, SKILL.md format, installs into 75+ agents.
 - [cursor-rules-and-prompts](https://github.com/thehimel/cursor-rules-and-prompts) - Cursor rules and prompts collection.
 - [Ai-Agent-Skills](https://github.com/skillcreatorai/Ai-Agent-Skills) - Universal AI Skills installer (Homebrew for Skills).
 - [claude-code-kit](https://github.com/blencorp/claude-code-kit) - Claude Code toolkit with auto-activating skills.
