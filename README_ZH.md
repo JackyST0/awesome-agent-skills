@@ -185,6 +185,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | suede-creator-skills | 面向 Claude Code 与 Codex 的 Skills 合集，覆盖代码质量与评审、设计、营销与 SEO、Agent 工作流和移动应用发布 | 129 | [GitHub](https://github.com/JasonColapietro/suede-creator-skills) |
 | unifapi-agent/skills | 基于 UnifAPI MCP 的公共数据与 KOL 定价 Skills | 481 | [GitHub](https://github.com/unifapi-agent/skills) |
 | youtube-skills | 面向 YouTube 的转录、视频搜索、频道浏览与播放列表 Skills，适用于 Claude Code、OpenClaw、Hermes Agent 等 Agent 运行时 | 585 | [GitHub](https://github.com/ZeroPointRepo/youtube-skills) |
+| flaqai/backlink_skills | 开源 Codex Skills，覆盖证据优先的产品目录筛选、授权验证与 SEO 内容工作流 | 626 | [GitHub](https://github.com/flaqai/backlink_skills) |
 
 ## 开发工具
 

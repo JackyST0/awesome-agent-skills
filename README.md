@@ -135,6 +135,7 @@ Skills work across multiple platforms:
 - [suede-creator-skills](https://github.com/JasonColapietro/suede-creator-skills) - Skills pack for Claude Code and Codex covering code review and grading, design, marketing and SEO, agent workflows, and mobile app shipping.
 - [unifapi-agent/skills](https://github.com/unifapi-agent/skills) - Public-data MCP and KOL pricing Skills for Codex, Claude Code, Cursor, and other agents.
 - [youtube-skills](https://github.com/ZeroPointRepo/youtube-skills) - YouTube transcript, video search, channel and playlist skills for Claude Code, OpenClaw, Hermes Agent, and other agent runtimes.
+- [flaqai/backlink_skills](https://github.com/flaqai/backlink_skills) - Open-source Codex skills for evidence-first product-directory qualification, authorization, verification, and SEO content workflows.
 
 ## Development Tools
 
