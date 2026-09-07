@@ -145,15 +145,15 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 |------|------|-------|------|
 | Agent Skills 开放标准 | Agent Skills 官方规范文档 | - | [skill.md](https://skill.md/) |
 | Agent Skills 规范 | SKILL.md 格式规范 | - | [agentskills.io](https://agentskills.io/specification) |
-| agentskills/agentskills | ⭐ Agent Skills 官方规范与文档仓库 | 24.9k | [GitHub](https://github.com/agentskills/agentskills) |
-| anthropics/skills | ⭐ Anthropic 官方 Agent Skills 仓库 | 172.7k | [GitHub](https://github.com/anthropics/skills) |
+| agentskills/agentskills | ⭐ Agent Skills 官方规范与文档仓库 | 25.1k | [GitHub](https://github.com/agentskills/agentskills) |
+| anthropics/skills | ⭐ Anthropic 官方 Agent Skills 仓库 | 174.9k | [GitHub](https://github.com/anthropics/skills) |
 | GitHub Docs: About agent skills | GitHub 官方 agent skills 概览，涵盖支持的宿主环境与 `gh skill` | - | [GitHub Docs](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills) |
 | GitHub Docs: Adding agent skills for GitHub Copilot | GitHub 官方创建、安装与发布 agent skills 指南 | - | [GitHub Docs](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/add-skills) |
 | GitHub CLI: gh skill | GitHub CLI 官方 Skills 命令，用于发现、安装、更新和发布 Agent Skills | - | [GitHub CLI](https://cli.github.com/manual/gh_skill) |
 | VS Code Docs: Use Agent Skills in VS Code | VS Code 官方 Agent Skills 使用指南，面向 GitHub Copilot in VS Code | - | [VS Code Docs](https://code.visualstudio.com/docs/copilot/customization/agent-skills) |
 | vercel-labs/skills | ⭐ Vercel 官方 Skills CLI 工具（`npx skills add`） | 5.4k | [GitHub](https://github.com/vercel-labs/add-skill) |
 | microsoft/skills | ⭐ 微软官方 131 个 Azure SDK Skills | 1.2k | [GitHub](https://github.com/microsoft/agent-skills) |
-| microsoft/azure-skills | ⭐ 微软官方 Azure Skills 插件，内置 MCP 配置与 20 个 Azure 技能 | 1.4k | [GitHub](https://github.com/microsoft/azure-skills) |
+| microsoft/azure-skills | ⭐ 微软官方 Azure Skills 插件，内置 MCP 配置与 20 个 Azure 技能 | 1.5k | [GitHub](https://github.com/microsoft/azure-skills) |
 | OpenAI Codex: Agent Skills | OpenAI 官方 Codex Agent Skills 使用指南，覆盖 CLI、IDE 扩展和 Codex app | - | [OpenAI Developers](https://developers.openai.com/codex/skills/) |
 | github/awesome-copilot | GitHub 官方 Copilot 资源合集 | - | [GitHub](https://github.com/github/awesome-copilot) |
 | Agent Skills 索引 | 社区 Skills 搜索引擎 | - | [agent-skills.md](https://agent-skills.md/) |
@@ -168,9 +168,9 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | awesome-cursorrules | ⭐ 最全面的 Cursor Rules 合集 | 40.7k | [GitHub](https://github.com/PatrickJS/awesome-cursorrules) |
 | everything-claude-code | ⭐ Claude Code 配置大全（agents/skills/hooks） | 185.6k | [GitHub](https://github.com/affaan-m/everything-claude-code) |
 | heilcheng/awesome-agent-skills | ⭐ 社区维护的 Agent Skills 导航，聚焦工程团队实际使用的真实 Skills | 6.2k | [GitHub](https://github.com/heilcheng/awesome-agent-skills) |
-| awesome-claude-skills | ⭐ Composio 维护的 Claude Skills 合集 | 74.1k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
+| awesome-claude-skills | ⭐ Composio 维护的 Claude Skills 合集 | 74.6k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
 | kasetto | 用 Rust 编写的极速 AI 技能管理器 | — | [GitHub](https://github.com/pivoshenko/kasetto) |
-| awesome-claude-code | ⭐ Claude Code skills/hooks/插件合集 | 53.3k | [GitHub](https://github.com/hesreallyhim/awesome-claude-code) |
+| awesome-claude-code | ⭐ Claude Code skills/hooks/插件合集 | 53.6k | [GitHub](https://github.com/hesreallyhim/awesome-claude-code) |
 | openskills | ⭐ 通用 Skills 加载器（npm 安装） | 10.7k | [GitHub](https://github.com/numman-ali/openskills) |
 | awesome-claude-skills | VoltAgent 维护的 Claude Skills 合集 | 4.4k | [GitHub](https://github.com/VoltAgent/awesome-claude-skills) |
 | claude-skills | Simon Willison 的 Claude Skills 文档 | 928 | [GitHub](https://github.com/simonw/claude-skills) |
@@ -178,13 +178,13 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | cursor-rules-and-prompts | Cursor 规则与提示词集合 | 245 | [GitHub](https://github.com/thehimel/cursor-rules-and-prompts) |
 | Ai-Agent-Skills | ⭐ AI Skills 通用安装器（Homebrew for Skills） | 774 | [GitHub](https://github.com/skillcreatorai/Ai-Agent-Skills) |
 | claude-code-kit | Claude Code 工具包，自动激活 skills | 101 | [GitHub](https://github.com/blencorp/claude-code-kit) |
-| best-skills | 通用高质量 Skills 合集，涵盖论文写作、开发流程、自媒体创作等 | 2.7k | [GitHub](https://github.com/xstongxue/best-skills) |
+| best-skills | 通用高质量 Skills 合集，涵盖论文写作、开发流程、自媒体创作等 | 2.8k | [GitHub](https://github.com/xstongxue/best-skills) |
 | skillkit | 跨平台 Skills 管理器，可安装、转换并同步 Skills 到 40+ Agent | 1.5k | [GitHub](https://github.com/rohitg00/skillkit) |
-| OrkasVideoStudio | 面向 Agent 的视频制作 Skills 合集，配套 CLI 与 MCP 运行时 | 525 | [GitHub](https://github.com/Orkas-AI/Orkas-VideoStudio) |
-| Skywork-Skills | Skywork 官方维护的 agent skills，面向 AI 办公场景，覆盖 PPT、文档、Excel、设计、搜索和音乐工作流 | 201 | [GitHub](https://github.com/SkyworkAI/Skywork-Skills) |
-| suede-creator-skills | 面向 Claude Code 与 Codex 的 Skills 合集，覆盖代码质量与评审、设计、营销与 SEO、Agent 工作流和移动应用发布 | 129 | [GitHub](https://github.com/JasonColapietro/suede-creator-skills) |
+| OrkasVideoStudio | 面向 Agent 的视频制作 Skills 合集，配套 CLI 与 MCP 运行时 | 492 | [GitHub](https://github.com/Orkas-AI/Orkas-VideoStudio) |
+| Skywork-Skills | Skywork 官方维护的 agent skills，面向 AI 办公场景，覆盖 PPT、文档、Excel、设计、搜索和音乐工作流 | 202 | [GitHub](https://github.com/SkyworkAI/Skywork-Skills) |
+| suede-creator-skills | 面向 Claude Code 与 Codex 的 Skills 合集，覆盖代码质量与评审、设计、营销与 SEO、Agent 工作流和移动应用发布 | 133 | [GitHub](https://github.com/JasonColapietro/suede-creator-skills) |
 | unifapi-agent/skills | 基于 UnifAPI MCP 的公共数据与 KOL 定价 Skills | 481 | [GitHub](https://github.com/unifapi-agent/skills) |
-| youtube-skills | 面向 YouTube 的转录、视频搜索、频道浏览与播放列表 Skills，适用于 Claude Code、OpenClaw、Hermes Agent 等 Agent 运行时 | 585 | [GitHub](https://github.com/ZeroPointRepo/youtube-skills) |
+| youtube-skills | 面向 YouTube 的转录、视频搜索、频道浏览与播放列表 Skills，适用于 Claude Code、OpenClaw、Hermes Agent 等 Agent 运行时 | 807 | [GitHub](https://github.com/ZeroPointRepo/youtube-skills) |
 
 ## 开发工具
 
@@ -201,12 +201,12 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | skillset-example | GitHub Copilot 扩展示例 | Copilot | [GitHub](https://github.com/copilot-extensions/skillset-example) |
 | claude-code-skills | 专业级 Skills 市场 | Claude | [GitHub](https://github.com/daymade/claude-code-skills) |
 | elastic/agent-skills | Elastic 官方 Skills，覆盖 Elasticsearch、Kibana、可观测性与安全工作流 | All | [GitHub](https://github.com/elastic/agent-skills) |
-| vercel-labs/agent-skills | ⭐ Vercel React/Web 设计最佳实践 Skills（30.7k ⭐） | All | [GitHub](https://github.com/vercel-labs/agent-skills) |
-| antfu/skills | ⭐ Vue/Vite/Vitest 开发 Skills（5.8k ⭐） | All | [GitHub](https://github.com/antfu/skills) |
+| vercel-labs/agent-skills | ⭐ Vercel React/Web 设计最佳实践 Skills（30.9k ⭐） | All | [GitHub](https://github.com/vercel-labs/agent-skills) |
+| antfu/skills | ⭐ Vue/Vite/Vitest 开发 Skills（5.9k ⭐） | All | [GitHub](https://github.com/antfu/skills) |
 | supabase/agent-skills | ⭐ Supabase Postgres 最佳实践 Skill（2.6k ⭐） | All | [GitHub](https://github.com/supabase/agent-skills) |
 | expo/skills | ⭐ Expo/React Native 开发 Skills（2.5k ⭐） | All | [GitHub](https://github.com/expo/skills) |
-| browser-use/browser-use | 浏览器自动化 Skill（111.8k ⭐） | All | [GitHub](https://github.com/browser-use/browser-use) |
-| Xquik x-twitter-scraper | X（Twitter）数据平台 Skill，提供 REST API、MCP 工具、webhooks、SDK 和自动化工作流（191 ⭐） | All | [GitHub](https://github.com/Xquik-dev/x-twitter-scraper) |
+| browser-use/browser-use | 浏览器自动化 Skill（112.8k ⭐） | All | [GitHub](https://github.com/browser-use/browser-use) |
+| Xquik x-twitter-scraper | X（Twitter）数据平台 Skill，提供 REST API、MCP 工具、webhooks、SDK 和自动化工作流（194 ⭐） | All | [GitHub](https://github.com/Xquik-dev/x-twitter-scraper) |
 | code-review | 智能代码审查示例 Skill | All | [示例](examples/code-review/) |
 | git-commit | Git 提交信息生成示例 Skill | All | [示例](examples/git-commit/) |
 | unit-test-generator | 单元测试自动生成 Skill | All | [示例](examples/unit-test-generator/) |
@@ -222,9 +222,9 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | claude-code-workflows | 生产级开发工作流，自动化质量检查 | Claude | [GitHub](https://github.com/shinpr/claude-code-workflows) |
 | claude-skills | 20+ 生产力工具，含 8 个专家 Agent | Claude | [GitHub](https://github.com/alirezarezvani/claude-skills) |
 | claude-code-skill-factory | Skills 工厂，批量生成和部署 Skills | Claude | [GitHub](https://github.com/alirezarezvani/claude-code-skill-factory) |
-| obra/superpowers | ⭐ 完整开发工作流（调试/TDD/代码审查/计划）（279.7k ⭐） | All | [GitHub](https://github.com/obra/superpowers) |
+| obra/superpowers | ⭐ 完整开发工作流（调试/TDD/代码审查/计划）（282.4k ⭐） | All | [GitHub](https://github.com/obra/superpowers) |
 | cognyai/claude-code-marketing-skills | AI 营销技能（SEO 审计/落地页评审/竞品分析/广告文案/线索筛选），支持 MCP 服务器集成 | All | [GitHub](https://github.com/cognyai/claude-code-marketing-skills) |
-| coreyhaines31/marketingskills | ⭐ 营销 Skills（SEO/文案/CRO/广告）（46.2k ⭐） | All | [GitHub](https://github.com/coreyhaines31/marketingskills) |
+| coreyhaines31/marketingskills | ⭐ 营销 Skills（SEO/文案/CRO/广告）（47.6k ⭐） | All | [GitHub](https://github.com/coreyhaines31/marketingskills) |
 | nowork-studio/NotFair | Claude Code SEO、GEO、Google Ads 和 Meta Ads 技能集；通过 Google Ads MCP、Meta Ads MCP、Google Search Console MCP 和 Google Analytics (GA4) MCP 接入实时数据 | Claude | [GitHub](https://github.com/nowork-studio/NotFair) |
 | gingiris-launch | AI 产品、创业公司与开源项目的 Product Hunt 发布与 GTM 指南 | All | [GitHub](https://github.com/Gingiris/gingiris-launch) |
 | gingiris-opensource | 面向 GitHub 增长与开源发布策略的营销 Playbook | All | [GitHub](https://github.com/Gingiris/gingiris-opensource) |
