@@ -650,6 +650,16 @@
     "url": "https://github.com/obra/superpowers"
   },
   {
+    "name": "planning-with-files",
+    "nameZh": "planning-with-files",
+    "desc": "基于文件的持久化规划，包含任务计划、研究发现、进度跟踪和会话恢复",
+    "descEn": "Persistent file-based planning with task plans, findings, progress tracking, and session recovery for long-running agent work",
+    "stars": "-",
+    "platform": "all",
+    "category": "productivity",
+    "url": "https://github.com/OthmanAdi/planning-with-files"
+  },
+  {
     "name": "cognyai/claude-code-marketing-skills",
     "nameZh": "cognyai/claude-code-marketing-skills",
     "desc": "AI 营销技能（SEO 审计/落地页评审/竞品分析/广告文案/线索筛选），支持 MCP 服务器集成",
