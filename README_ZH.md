@@ -214,6 +214,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | debug-helper | 代码调试助手 Skill | All | [示例](examples/debug-helper/) |
 | authsome | AI Agent 本地凭据代理，加密本地保管库与基于代理的凭据注入 | All | [GitHub](https://github.com/agentrhq/authsome) |
 | Sverklo | 本地优先的仓库记忆 MCP，支持证明回执、符号引用、影响分析与差异审查 | All | [GitHub](https://github.com/sverklo/sverklo) |
+| Finn763/pit-stop | 一条指令跑完整个代码库改进循环：发现 → 修复 → 验证 → 报告，每条发现都带 path:line 证据 | All | [GitHub](https://github.com/Finn763/pit-stop) |
 
 ## 效率提升
 
