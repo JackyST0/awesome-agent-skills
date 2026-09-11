@@ -265,6 +265,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | pdf | ⭐ PDF 文档处理 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/pdf) |
 | pptx | ⭐ PPT 演示文稿生成 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/pptx) |
 | xlsx | ⭐ Excel 表格处理 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/xlsx) |
+| humanizer-ru | 清除俄语文本中的 AI 生成痕迹，内置确定性扫描器 | All | [GitHub](https://github.com/ilyautov/humanizer-ru) |
 
 ## 设计相关
 

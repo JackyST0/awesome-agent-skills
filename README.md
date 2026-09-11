@@ -205,6 +205,7 @@ Skills work across multiple platforms:
 - [pdf](https://github.com/anthropics/skills/tree/main/skills/pdf) - Portable document format processing Skill.
 - [pptx](https://github.com/anthropics/skills/tree/main/skills/pptx) - PowerPoint presentation generator Skill.
 - [xlsx](https://github.com/anthropics/skills/tree/main/skills/xlsx) - Excel spreadsheet processing Skill.
+- [humanizer-ru](https://github.com/ilyautov/humanizer-ru) - Removes AI-generation markers from Russian text, with a deterministic scanner.
 
 ## Design
 
