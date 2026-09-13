@@ -196,6 +196,7 @@ Skills work across multiple platforms:
 - [bilig-workpaper](https://github.com/proompteng/bilig/tree/main/skills/bilig-workpaper) - Formula-backed WorkPaper skill for editing cells, recalculating, verifying readback, and persisting spreadsheet logic from agents.
 - [d3-visualization](https://github.com/ComposioHQ/awesome-claude-skills#data-visualization) - D3.js data visualization Skill.
 - [context-engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) - Context engineering and multi-Agent architecture.
+- [cumcm](https://github.com/liuhaolin07/cumcm) - Battle-tested skills for mathematical modeling competitions (CUMCM/MCM/ICM): modeling, mechanism problems, solver code, figure styling, paper writing, review, and AI-use compliance.
 
 ## Writing
 
