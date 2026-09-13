@@ -32,6 +32,8 @@ English | [简体中文](README_ZH.md)
 
 ## Quick Start
 
+- [mblode/agent-skills](https://github.com/mblode/agent-skills) - Nobody ships AI slop on purpose. These skills make sure you don't. UI audits, typography, docs, PR review, and releases. `npx skills add mblode/agent-skills`
+
 ### One-Click Install (Recommended)
 
 **macOS / Linux:**
