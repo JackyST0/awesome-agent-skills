@@ -207,6 +207,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | expo/skills | ⭐ Expo/React Native 开发 Skills（2.5k ⭐） | All | [GitHub](https://github.com/expo/skills) |
 | browser-use/browser-use | 浏览器自动化 Skill（112.8k ⭐） | All | [GitHub](https://github.com/browser-use/browser-use) |
 | Xquik x-twitter-scraper | X（Twitter）数据平台 Skill，提供 REST API、MCP 工具、webhooks、SDK 和自动化工作流（194 ⭐） | All | [GitHub](https://github.com/Xquik-dev/x-twitter-scraper) |
+| squirrelscan audit-website | 使用 squirrelscan CLI 审计网站（260+ 条 SEO、性能、安全、无障碍与 Agent 体验规则）并在代码中修复问题 | All | [GitHub](https://github.com/squirrelscan/squirrelscan/blob/main/skills/audit-website/SKILL.md) |
 | code-review | 智能代码审查示例 Skill | All | [示例](examples/code-review/) |
 | git-commit | Git 提交信息生成示例 Skill | All | [示例](examples/git-commit/) |
 | unit-test-generator | 单元测试自动生成 Skill | All | [示例](examples/unit-test-generator/) |
