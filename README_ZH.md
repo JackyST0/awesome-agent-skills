@@ -191,6 +191,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | 名称 | 描述 | 平台 | 链接 |
 |------|------|------|------|
 | agenttrace-session-audit | 审计本地 AI 编程 Agent 会话的健康度、成本、失败与差异 | All | [GitHub](https://github.com/luoyuctl/agenttrace/blob/master/skills/agenttrace-session-audit/SKILL.md) |
+| orca-replay | 从录像回答 Agent 那次运行到底做了什么：发出的请求、每次工具调用、shell 退出码与文件改动，并可离线重放或从检查点分叉。重放只阻断模型侧出网，录下的 shell 命令会真的再执行一次，`worktree` 隔离也不等于沙箱，因此技能要求先确认副作用再重放 | All | [GitHub](https://github.com/Continuum-AI-Corp/OrcaReplay/tree/main/skills/orca-replay) |
 | addyosmani/agent-skills | 面向 AI 编程代理的生产级工程技能与斜杠命令工作流 | All | [GitHub](https://github.com/addyosmani/agent-skills) |
 | claude-code-security-review | ⭐ AI 安全审查 GitHub Action（官方） | Claude | [GitHub](https://github.com/anthropics/claude-code-security-review) |
 | trailofbits/skills | ⭐ Trail of Bits 安全研究和审计 Skills | Claude | [GitHub](https://github.com/trailofbits/skills) |
