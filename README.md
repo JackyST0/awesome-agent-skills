@@ -181,6 +181,7 @@ Skills work across multiple platforms:
 - [salespeak-ai/buyer-eval-skill](https://github.com/salespeak-ai/buyer-eval-skill) - B2B vendor evaluation skill: 7-dimension scoring and evidence-tracked scorecards for procurement and build-vs-buy decisions.
 - [changelog-generator](https://github.com/ComposioHQ/awesome-claude-skills) - Generate changelogs from Git commits.
 - [wiki](https://github.com/plasma-ai/wiki/blob/main/wiki/skills/wiki/SKILL.md) - Build indexed Markdown knowledge bases that agents map, search, read, update, and lint.
+- [job-application-agent](https://github.com/vaibhavarora14/job-application-agent) - Privacy-first skill + CLI to discover, qualify, complete, and track your own job applications.
 
 ## DevOps
 
