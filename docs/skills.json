@@ -24,7 +24,7 @@
     "nameZh": "agentskills/agentskills",
     "desc": "Agent Skills 官方规范与文档仓库",
     "descEn": "Official Agent Skills specification and documentation repository",
-    "stars": "25.1k",
+    "stars": "25.3k",
     "platform": "all",
     "category": "official",
     "url": "https://github.com/agentskills/agentskills"
@@ -34,7 +34,7 @@
     "nameZh": "anthropics/skills",
     "desc": "Anthropic 官方 Agent Skills 仓库",
     "descEn": "Official Anthropic Agent Skills repository",
-    "stars": "174.9k",
+    "stars": "176.2k",
     "platform": "all",
     "category": "official",
     "url": "https://github.com/anthropics/skills"
@@ -174,7 +174,7 @@
     "nameZh": "awesome-cursorrules",
     "desc": "最全面的 Cursor Rules 合集",
     "descEn": "The most comprehensive Cursor Rules collection",
-    "stars": "40.7k",
+    "stars": "40.8k",
     "platform": "cursor",
     "category": "collection",
     "url": "https://github.com/PatrickJS/awesome-cursorrules"
@@ -214,7 +214,7 @@
     "nameZh": "awesome-claude-skills",
     "desc": "Composio 维护的 Claude Skills 合集",
     "descEn": "Claude Skills collection by Composio",
-    "stars": "74.6k",
+    "stars": "75.0k",
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills"
@@ -224,7 +224,7 @@
     "nameZh": "awesome-claude-code",
     "desc": "Claude Code skills/hooks/插件合集",
     "descEn": "Claude Code skills/hooks/plugins collection",
-    "stars": "53.6k",
+    "stars": "54.0k",
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/hesreallyhim/awesome-claude-code"
@@ -234,7 +234,7 @@
     "nameZh": "openskills",
     "desc": "通用 Skills 加载器（npm 安装）",
     "descEn": "Universal Skills loader (npm install)",
-    "stars": "10.7k",
+    "stars": "10.8k",
     "platform": "all",
     "category": "collection",
     "url": "https://github.com/numman-ali/openskills"
@@ -254,7 +254,7 @@
     "nameZh": "claude-skills",
     "desc": "Simon Willison 的 Claude Skills 文档",
     "descEn": "Claude Skills documentation by Simon Willison",
-    "stars": "928",
+    "stars": "929",
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/simonw/claude-skills"
@@ -274,7 +274,7 @@
     "nameZh": "cursor-rules-and-prompts",
     "desc": "Cursor 规则与提示词集合",
     "descEn": "Cursor rules and prompts collection",
-    "stars": "245",
+    "stars": "246",
     "platform": "cursor",
     "category": "collection",
     "url": "https://github.com/thehimel/cursor-rules-and-prompts"
@@ -294,7 +294,7 @@
     "nameZh": "claude-code-kit",
     "desc": "Claude Code 工具包，自动激活 skills",
     "descEn": "Claude Code toolkit with auto-activating skills",
-    "stars": "101",
+    "stars": "102",
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/blencorp/claude-code-kit"
@@ -324,7 +324,7 @@
     "nameZh": "OrkasVideoStudio",
     "desc": "面向 Agent 的视频制作 Skills 合集，配套 CLI 与 MCP 运行时",
     "descEn": "Agent video-production skill pack with CLI and MCP runtime",
-    "stars": "492",
+    "stars": "486",
     "platform": "all",
     "category": "collection",
     "url": "https://github.com/Orkas-AI/Orkas-VideoStudio"
@@ -334,7 +334,7 @@
     "nameZh": "Skywork-Skills",
     "desc": "Skywork 官方维护的 agent skills，面向 AI 办公场景，覆盖 PPT、文档、Excel、设计、搜索和音乐工作流",
     "descEn": "Officially maintained Skywork agent skills for AI office workflows, including PPT, documents, Excel, design, search, and music",
-    "stars": "202",
+    "stars": "204",
     "platform": "all",
     "category": "collection",
     "url": "https://github.com/SkyworkAI/Skywork-Skills"
@@ -344,7 +344,7 @@
     "nameZh": "suede-creator-skills",
     "desc": "面向 Claude Code 与 Codex 的 Skills 合集，覆盖代码质量与评审、设计、营销与 SEO、Agent 工作流和移动应用发布",
     "descEn": "Skills pack for Claude Code and Codex covering code review and grading, design, marketing and SEO, agent workflows, and mobile app shipping",
-    "stars": "133",
+    "stars": "135",
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/JasonColapietro/suede-creator-skills"
@@ -364,7 +364,7 @@
     "nameZh": "youtube-skills",
     "desc": "面向 YouTube 的转录、视频搜索、频道浏览与播放列表 Skills，适用于 Claude Code、OpenClaw、Hermes Agent 等 Agent 运行时",
     "descEn": "YouTube transcript, video search, channel and playlist skills for Claude Code, OpenClaw, Hermes Agent, and other agent runtimes",
-    "stars": "807",
+    "stars": "860",
     "platform": "openclaw",
     "category": "collection",
     "url": "https://github.com/ZeroPointRepo/youtube-skills"
@@ -378,6 +378,16 @@
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/luoyuctl/agenttrace/blob/master/skills/agenttrace-session-audit/SKILL.md"
+  },
+  {
+    "name": "orca-replay",
+    "nameZh": "orca-replay",
+    "desc": "从录像回答 Agent 那次运行到底做了什么：发出的请求、每次工具调用、shell 退出码与文件改动，并可离线重放或从检查点分叉。重放只阻断模型侧出网，录下的 shell 命令会真的再执行一次，worktree 隔离也不等于沙箱，因此技能要求先确认副作用再重放",
+    "descEn": "Read a recorded agent run from its trace: what it actually sent, ran and changed. Replay is offline for the model only — the recorded shell commands re-execute for real and worktree isolation is not a sandbox, so the skill requires checking side effects first",
+    "stars": "-",
+    "platform": "all",
+    "category": "devtools",
+    "url": "https://github.com/Continuum-AI-Corp/OrcaReplay/tree/main/skills/orca-replay"
   },
   {
     "name": "addyosmani/agent-skills",
@@ -484,7 +494,7 @@
     "nameZh": "vercel-labs/agent-skills",
     "desc": "Vercel React/Web 设计最佳实践 Skills",
     "descEn": "Vercel React/Web design best practices Skills",
-    "stars": "30.9k",
+    "stars": "31.2k",
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/vercel-labs/agent-skills"
@@ -524,7 +534,7 @@
     "nameZh": "browser-use/browser-use",
     "desc": "浏览器自动化 Skill",
     "descEn": "Browser automation Skill",
-    "stars": "112.8k",
+    "stars": "114.5k",
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/browser-use/browser-use"
@@ -534,7 +544,7 @@
     "nameZh": "Xquik x-twitter-scraper",
     "desc": "X（Twitter）数据平台 Skill，提供 REST API、MCP 工具、webhooks、SDK 和自动化工作流",
     "descEn": "X (Twitter) data Skill with REST endpoints, MCP tools, webhooks, SDKs, and automation workflows",
-    "stars": "194",
+    "stars": "198",
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/Xquik-dev/x-twitter-scraper"
@@ -644,7 +654,7 @@
     "nameZh": "obra/superpowers",
     "desc": "完整开发工作流（调试/TDD/代码审查/计划）",
     "descEn": "Complete dev workflow (Debug/TDD/Code Review/Planning)",
-    "stars": "282.4k",
+    "stars": "286.3k",
     "platform": "all",
     "category": "productivity",
     "url": "https://github.com/obra/superpowers"
@@ -674,7 +684,7 @@
     "nameZh": "coreyhaines31/marketingskills",
     "desc": "营销 Skills（SEO/文案/CRO/广告）",
     "descEn": "Marketing Skills (SEO/Copywriting/CRO/Ads)",
-    "stars": "47.6k",
+    "stars": "50.0k",
     "platform": "all",
     "category": "productivity",
     "url": "https://github.com/coreyhaines31/marketingskills"
