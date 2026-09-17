@@ -166,6 +166,7 @@ Skills work across multiple platforms:
 
 ## Productivity
 
+- [dream](https://github.com/damanoreshkan-beep/dream-skill) - A one-breath awareness primer: work from a higher vantage — no self-imposed ceiling, whole-board vision, truth over position.
 - [claude-code-workflows](https://github.com/shinpr/claude-code-workflows) - Production-grade dev workflows with quality checks.
 - [claude-skills](https://github.com/alirezarezvani/claude-skills) - 20+ productivity tools with 8 expert Agents.
 - [claude-code-skill-factory](https://github.com/alirezarezvani/claude-code-skill-factory) - Skills factory for batch generation and deployment.
