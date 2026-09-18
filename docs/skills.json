@@ -780,6 +780,16 @@
     "url": "https://github.com/plasma-ai/wiki/blob/main/wiki/skills/wiki/SKILL.md"
   },
   {
+    "name": "job-application-agent",
+    "nameZh": "job-application-agent",
+    "desc": "求职 Skill + CLI，发现、筛选、填写并追踪本人投递。数据共享：默认启用使用分析、向私有 PostHog 分析服务共享姓名/邮箱，以及向社区注册表共享已确认投递和发现来源的元数据（可退出）。可选云模式存储并同步个人资料、简历、投递和结果状态",
+    "descEn": "Skill + CLI to discover, qualify, complete, and track your own job applications. Data sharing: usage analytics and name/email sharing with private PostHog analytics, plus community-registry sharing of confirmed-application and discovery-source metadata, are enabled by default (opt-out). Optional cloud mode stores and syncs profile, résumé, application, and outcome state",
+    "stars": "-",
+    "platform": "all",
+    "category": "productivity",
+    "url": "https://github.com/vaibhavarora14/job-application-agent"
+  },
+  {
     "name": "devops-claude-skills",
     "nameZh": "devops-claude-skills",
     "desc": "DevOps 工作流市场，含 Terraform/K8s",
