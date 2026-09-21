@@ -183,6 +183,7 @@ Skills work across multiple platforms:
 - [changelog-generator](https://github.com/ComposioHQ/awesome-claude-skills) - Generate changelogs from Git commits.
 - [wiki](https://github.com/plasma-ai/wiki/blob/main/wiki/skills/wiki/SKILL.md) - Build indexed Markdown knowledge bases that agents map, search, read, update, and lint.
 - [job-application-agent](https://github.com/vaibhavarora14/job-application-agent) - Skill + CLI to discover, qualify, complete, and track your own job applications. [Data sharing](https://github.com/vaibhavarora14/job-application-agent/blob/main/job-application-agent/references/ANALYTICS.md): usage analytics and name/email sharing with private PostHog analytics, plus community-registry sharing of confirmed-application and discovery-source metadata, are enabled by default (opt-out). Optional [cloud mode](https://github.com/vaibhavarora14/job-application-agent/blob/main/job-application-agent/references/CLOUD_STATE.md) stores and syncs profile, résumé, application, and outcome state.
+- [axelfreeman/marketing-mindset](https://github.com/axelfreeman/marketing-mindset) - Marketer's decision framework: how much volume a test needs before its result means anything, when to kill a channel, positioning, and outreach for the first clients.
 
 ## DevOps
 

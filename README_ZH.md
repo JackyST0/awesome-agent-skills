@@ -237,6 +237,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | changelog-generator | 从 Git 提交自动生成 Changelog | Claude | [ComposioHQ](https://github.com/ComposioHQ/awesome-claude-skills) |
 | wiki | 构建带索引的 Markdown 知识库，供 Agent 映射、搜索、读取、更新与检查 | Claude/Codex | [GitHub](https://github.com/plasma-ai/wiki/blob/main/wiki/skills/wiki/SKILL.md) |
 | job-application-agent | 求职 Skill + CLI，发现、筛选、填写并追踪本人投递。[数据共享](https://github.com/vaibhavarora14/job-application-agent/blob/main/job-application-agent/references/ANALYTICS.md)：默认启用使用分析、向私有 PostHog 分析服务共享姓名/邮箱，以及向社区注册表共享已确认投递和发现来源的元数据（可退出）。可选[云模式](https://github.com/vaibhavarora14/job-application-agent/blob/main/job-application-agent/references/CLOUD_STATE.md)存储并同步个人资料、简历、投递和结果状态 | All | [GitHub](https://github.com/vaibhavarora14/job-application-agent) |
+| axelfreeman/marketing-mindset | 营销决策框架：测试需达到的最小样本量、渠道关停规则、定位与冷启动外联 | All | [GitHub](https://github.com/axelfreeman/marketing-mindset) |
 
 ## DevOps
 
