@@ -264,7 +264,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | doc-coauthoring | ⭐ 文档协作撰写 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring) |
 | internal-comms | ⭐ 内部沟通文档生成 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/internal-comms) |
 | docx | ⭐ Word 文档读写处理 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/docx) |
-| docx-formatter | 将 Markdown/纯文本排版为专业中文 Word 文档，原生可编辑 OMML 公式、流程图、自动目录与 GB/T 7714 引用，仅依赖 python-docx | All | [GitHub](https://github.com/CP-here/docx-formatter-skill) |
+| docx-formatter | 将 Markdown/纯文本排版为专业中文 Word 文档，原生可编辑 OMML 公式、流程图、自动目录与 GB/T 7714 引用，核心功能仅依赖 python-docx | All | [GitHub](https://github.com/CP-here/docx-formatter-skill) |
 | pdf | ⭐ PDF 文档处理 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/pdf) |
 | pptx | ⭐ PPT 演示文稿生成 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/pptx) |
 | xlsx | ⭐ Excel 表格处理 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/xlsx) |
