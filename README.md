@@ -204,7 +204,7 @@ Skills work across multiple platforms:
 - [doc-coauthoring](https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring) - Document co-authoring Skill.
 - [internal-comms](https://github.com/anthropics/skills/tree/main/skills/internal-comms) - Internal communications generation Skill.
 - [docx](https://github.com/anthropics/skills/tree/main/skills/docx) - Word document processing Skill.
-- [docx-formatter](https://github.com/CP-here/docx-formatter-skill) - Typesets Markdown into professional Chinese Word (.docx) with natively editable OMML equations, flow diagrams, TOC, and GB/T 7714 citations; depends only on python-docx.
+- [docx-formatter](https://github.com/CP-here/docx-formatter-skill) - Typesets Markdown into professional Chinese Word (.docx) with natively editable OMML equations, flow diagrams, TOC, and GB/T 7714 citations; main functionality requires only python-docx.
 - [pdf](https://github.com/anthropics/skills/tree/main/skills/pdf) - Portable document format processing Skill.
 - [pptx](https://github.com/anthropics/skills/tree/main/skills/pptx) - PowerPoint presentation generator Skill.
 - [xlsx](https://github.com/anthropics/skills/tree/main/skills/xlsx) - Excel spreadsheet processing Skill.
