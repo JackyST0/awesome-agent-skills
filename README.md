@@ -163,6 +163,7 @@ Skills work across multiple platforms:
 - [debug-helper](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/debug-helper) - Code debugging assistant Skill.
 - [authsome](https://github.com/agentrhq/authsome) - Local credential broker for AI agents with encrypted local vault storage and proxy-based credential injection.
 - [Sverklo](https://github.com/sverklo/sverklo) - Local-first repo-memory MCP for coding agents: proof receipts, symbol refs, impact, and diff review.
+- [birdview](https://github.com/Qiuner/birdview) - Map project architecture, reviewed constraints, change scope, source evidence, and actual checks before coding.
 
 ## Productivity
 
