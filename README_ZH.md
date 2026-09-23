@@ -215,6 +215,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | debug-helper | 代码调试助手 Skill | All | [示例](examples/debug-helper/) |
 | authsome | AI Agent 本地凭据代理，加密本地保管库与基于代理的凭据注入 | All | [GitHub](https://github.com/agentrhq/authsome) |
 | Sverklo | 本地优先的仓库记忆 MCP，支持证明回执、符号引用、影响分析与差异审查 | All | [GitHub](https://github.com/sverklo/sverklo) |
+| task-observer | 观察工作会话，记录 Skills 失效之处，并将修正转化为 Skills 改进建议 | Claude | [GitHub](https://github.com/rebelytics/one-skill-to-rule-them-all) |
 
 ## 效率提升
 
