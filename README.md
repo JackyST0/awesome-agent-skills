@@ -199,6 +199,7 @@ Skills work across multiple platforms:
 - [bilig-workpaper](https://github.com/proompteng/bilig/tree/main/skills/bilig-workpaper) - Formula-backed WorkPaper skill for editing cells, recalculating, verifying readback, and persisting spreadsheet logic from agents.
 - [d3-visualization](https://github.com/ComposioHQ/awesome-claude-skills#data-visualization) - D3.js data visualization Skill.
 - [context-engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) - Context engineering and multi-Agent architecture.
+- [jev-social](https://github.com/socai-io/jev-social/tree/v0.1.5/skills/jev-social) - Run browser-grounded Instagram, TikTok, and LinkedIn research through Jev routing and the local socai CLI.
 
 ## Writing
 
