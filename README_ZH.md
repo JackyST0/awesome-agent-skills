@@ -168,6 +168,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | awesome-cursorrules | ⭐ 最全面的 Cursor Rules 合集 | 40.8k | [GitHub](https://github.com/PatrickJS/awesome-cursorrules) |
 | everything-claude-code | ⭐ Claude Code 配置大全（agents/skills/hooks） | 185.6k | [GitHub](https://github.com/affaan-m/everything-claude-code) |
 | heilcheng/awesome-agent-skills | ⭐ 社区维护的 Agent Skills 导航，聚焦工程团队实际使用的真实 Skills | 6.2k | [GitHub](https://github.com/heilcheng/awesome-agent-skills) |
+| mblode/agent-skills | 开源 Agent Skills 合集，覆盖 UI 审计、排版、文档、PR 审查与发布 | 129 | [GitHub](https://github.com/mblode/agent-skills) |
 | awesome-claude-skills | ⭐ Composio 维护的 Claude Skills 合集 | 75.4k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
 | kasetto | 用 Rust 编写的极速 AI 技能管理器 | — | [GitHub](https://github.com/pivoshenko/kasetto) |
 | awesome-claude-code | ⭐ Claude Code skills/hooks/插件合集 | 54.4k | [GitHub](https://github.com/hesreallyhim/awesome-claude-code) |
