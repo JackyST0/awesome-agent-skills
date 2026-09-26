@@ -185,6 +185,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | suede-creator-skills | 面向 Claude Code 与 Codex 的 Skills 合集，覆盖代码质量与评审、设计、营销与 SEO、Agent 工作流和移动应用发布 | 123 | [GitHub](https://github.com/JasonColapietro/suede-creator-skills) |
 | unifapi-agent/skills | 基于 UnifAPI MCP 的公共数据与 KOL 定价 Skills | 481 | [GitHub](https://github.com/unifapi-agent/skills) |
 | youtube-skills | 面向 YouTube 的转录、视频搜索、频道浏览与播放列表 Skills，适用于 Claude Code、OpenClaw、Hermes Agent 等 Agent 运行时 | 896 | [GitHub](https://github.com/ZeroPointRepo/youtube-skills) |
+| tonone | Claude Code 插件，包含 100 个专业 Agent 与 429 个 Skills，覆盖工程、产品、设计、安全、法务和运维；SessionStart hook 仅加载与当前仓库相关的 Skills | 73 | [GitHub](https://github.com/tonone-ai/tonone) |
 
 ## 开发工具
 
