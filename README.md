@@ -217,6 +217,7 @@ Skills work across multiple platforms:
 - [theme-factory](https://github.com/anthropics/skills/tree/main/skills/theme-factory) - Theme style factory Skill.
 - [algorithmic-art](https://github.com/anthropics/skills/tree/main/skills/algorithmic-art) - Algorithmic art generation Skill.
 - [slack-gif-creator](https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator) - Slack GIF creator Skill.
+- [three.ws 3D Studio](https://github.com/nirholas/three.ws/tree/main/public/skills/3d-studio) - Generate textured 3D models and rigged avatars (GLB) from text, auto-rig a model, and embed it on a web page, via a free keyless endpoint.
 
 ## Contributing
 
