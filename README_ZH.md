@@ -279,6 +279,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | theme-factory | ⭐ 主题样式工厂 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/theme-factory) |
 | algorithmic-art | ⭐ 算法艺术生成 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/algorithmic-art) |
 | slack-gif-creator | ⭐ Slack GIF 创建 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator) |
+| three.ws 3D Studio | 用文本生成带贴图的 3D 模型与已绑定骨骼的角色（GLB），为已有模型自动绑定骨骼，并嵌入网页；调用免费、无需 Key 的端点 | All | [GitHub](https://github.com/nirholas/three.ws/tree/main/public/skills/3d-studio) |
 
 ## Contributing
 
