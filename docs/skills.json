@@ -24,7 +24,7 @@
     "nameZh": "agentskills/agentskills",
     "desc": "Agent Skills 官方规范与文档仓库",
     "descEn": "Official Agent Skills specification and documentation repository",
-    "stars": "25.3k",
+    "stars": "25.5k",
     "platform": "all",
     "category": "official",
     "url": "https://github.com/agentskills/agentskills"
@@ -34,7 +34,7 @@
     "nameZh": "anthropics/skills",
     "desc": "Anthropic 官方 Agent Skills 仓库",
     "descEn": "Official Anthropic Agent Skills repository",
-    "stars": "176.2k",
+    "stars": "177.3k",
     "platform": "all",
     "category": "official",
     "url": "https://github.com/anthropics/skills"
@@ -214,7 +214,7 @@
     "nameZh": "awesome-claude-skills",
     "desc": "Composio 维护的 Claude Skills 合集",
     "descEn": "Claude Skills collection by Composio",
-    "stars": "75.0k",
+    "stars": "75.4k",
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills"
@@ -224,7 +224,7 @@
     "nameZh": "awesome-claude-code",
     "desc": "Claude Code skills/hooks/插件合集",
     "descEn": "Claude Code skills/hooks/plugins collection",
-    "stars": "54.0k",
+    "stars": "54.4k",
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/hesreallyhim/awesome-claude-code"
@@ -274,7 +274,7 @@
     "nameZh": "cursor-rules-and-prompts",
     "desc": "Cursor 规则与提示词集合",
     "descEn": "Cursor rules and prompts collection",
-    "stars": "246",
+    "stars": "247",
     "platform": "cursor",
     "category": "collection",
     "url": "https://github.com/thehimel/cursor-rules-and-prompts"
@@ -294,7 +294,7 @@
     "nameZh": "claude-code-kit",
     "desc": "Claude Code 工具包，自动激活 skills",
     "descEn": "Claude Code toolkit with auto-activating skills",
-    "stars": "102",
+    "stars": "103",
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/blencorp/claude-code-kit"
@@ -304,7 +304,7 @@
     "nameZh": "best-skills",
     "desc": "通用高质量 Skills 合集，涵盖论文写作、开发流程、自媒体创作等",
     "descEn": "High-quality Skills collection for paper writing, dev workflow, and content creation",
-    "stars": "2.8k",
+    "stars": "2.9k",
     "platform": "all",
     "category": "collection",
     "url": "https://github.com/xstongxue/best-skills"
@@ -324,7 +324,7 @@
     "nameZh": "OrkasVideoStudio",
     "desc": "面向 Agent 的视频制作 Skills 合集，配套 CLI 与 MCP 运行时",
     "descEn": "Agent video-production skill pack with CLI and MCP runtime",
-    "stars": "486",
+    "stars": "488",
     "platform": "all",
     "category": "collection",
     "url": "https://github.com/Orkas-AI/Orkas-VideoStudio"
@@ -334,7 +334,7 @@
     "nameZh": "Skywork-Skills",
     "desc": "Skywork 官方维护的 agent skills，面向 AI 办公场景，覆盖 PPT、文档、Excel、设计、搜索和音乐工作流",
     "descEn": "Officially maintained Skywork agent skills for AI office workflows, including PPT, documents, Excel, design, search, and music",
-    "stars": "204",
+    "stars": "203",
     "platform": "all",
     "category": "collection",
     "url": "https://github.com/SkyworkAI/Skywork-Skills"
@@ -344,7 +344,7 @@
     "nameZh": "suede-creator-skills",
     "desc": "面向 Claude Code 与 Codex 的 Skills 合集，覆盖代码质量与评审、设计、营销与 SEO、Agent 工作流和移动应用发布",
     "descEn": "Skills pack for Claude Code and Codex covering code review and grading, design, marketing and SEO, agent workflows, and mobile app shipping",
-    "stars": "135",
+    "stars": "123",
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/JasonColapietro/suede-creator-skills"
@@ -364,7 +364,7 @@
     "nameZh": "youtube-skills",
     "desc": "面向 YouTube 的转录、视频搜索、频道浏览与播放列表 Skills，适用于 Claude Code、OpenClaw、Hermes Agent 等 Agent 运行时",
     "descEn": "YouTube transcript, video search, channel and playlist skills for Claude Code, OpenClaw, Hermes Agent, and other agent runtimes",
-    "stars": "860",
+    "stars": "896",
     "platform": "openclaw",
     "category": "collection",
     "url": "https://github.com/ZeroPointRepo/youtube-skills"
@@ -494,7 +494,7 @@
     "nameZh": "vercel-labs/agent-skills",
     "desc": "Vercel React/Web 设计最佳实践 Skills",
     "descEn": "Vercel React/Web design best practices Skills",
-    "stars": "31.2k",
+    "stars": "31.4k",
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/vercel-labs/agent-skills"
@@ -524,7 +524,7 @@
     "nameZh": "expo/skills",
     "desc": "Expo/React Native 开发 Skills",
     "descEn": "Expo/React Native development Skills",
-    "stars": "2.5k",
+    "stars": "2.6k",
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/expo/skills"
@@ -534,7 +534,7 @@
     "nameZh": "browser-use/browser-use",
     "desc": "浏览器自动化 Skill",
     "descEn": "Browser automation Skill",
-    "stars": "114.5k",
+    "stars": "115.6k",
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/browser-use/browser-use"
@@ -544,7 +544,7 @@
     "nameZh": "Xquik x-twitter-scraper",
     "desc": "X（Twitter）数据平台 Skill，提供 REST API、MCP 工具、webhooks、SDK 和自动化工作流",
     "descEn": "X (Twitter) data Skill with REST endpoints, MCP tools, webhooks, SDKs, and automation workflows",
-    "stars": "198",
+    "stars": "205",
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/Xquik-dev/x-twitter-scraper"
@@ -620,6 +620,16 @@
     "url": "https://github.com/sverklo/sverklo"
   },
   {
+    "name": "task-observer",
+    "nameZh": "task-observer",
+    "desc": "观察工作会话，记录 Skills 失效之处，并将修正转化为 Skills 改进建议",
+    "descEn": "Watches work sessions, logs where skills fail, and turns the corrections into proposed skill improvements",
+    "stars": "-",
+    "platform": "claude",
+    "category": "devtools",
+    "url": "https://github.com/rebelytics/one-skill-to-rule-them-all"
+  },
+  {
     "name": "claude-code-workflows",
     "nameZh": "claude-code-workflows",
     "desc": "生产级开发工作流，自动化质量检查",
@@ -654,7 +664,7 @@
     "nameZh": "obra/superpowers",
     "desc": "完整开发工作流（调试/TDD/代码审查/计划）",
     "descEn": "Complete dev workflow (Debug/TDD/Code Review/Planning)",
-    "stars": "286.3k",
+    "stars": "289.3k",
     "platform": "all",
     "category": "productivity",
     "url": "https://github.com/obra/superpowers"
@@ -684,7 +694,7 @@
     "nameZh": "coreyhaines31/marketingskills",
     "desc": "营销 Skills（SEO/文案/CRO/广告）",
     "descEn": "Marketing Skills (SEO/Copywriting/CRO/Ads)",
-    "stars": "50.0k",
+    "stars": "51.0k",
     "platform": "all",
     "category": "productivity",
     "url": "https://github.com/coreyhaines31/marketingskills"
