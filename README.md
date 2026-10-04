@@ -164,6 +164,7 @@ Skills work across multiple platforms:
 - [authsome](https://github.com/agentrhq/authsome) - Local credential broker for AI agents with encrypted local vault storage and proxy-based credential injection.
 - [Sverklo](https://github.com/sverklo/sverklo) - Local-first repo-memory MCP for coding agents: proof receipts, symbol refs, impact, and diff review.
 - [task-observer](https://github.com/rebelytics/one-skill-to-rule-them-all) - Watches work sessions, logs where skills fail, and turns the corrections into proposed skill improvements.
+- [supercov](https://github.com/supercorp-ai/supercov/tree/main/plugins/supercov/skills/supercov) - Measures line, branch and MC/DC coverage of the existing tests and hands the agent the untested code to test next.
 
 ## Productivity
 
