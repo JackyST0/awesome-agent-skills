@@ -24,7 +24,7 @@
     "nameZh": "agentskills/agentskills",
     "desc": "Agent Skills 官方规范与文档仓库",
     "descEn": "Official Agent Skills specification and documentation repository",
-    "stars": "25.5k",
+    "stars": "25.9k",
     "platform": "all",
     "category": "official",
     "url": "https://github.com/agentskills/agentskills"
@@ -34,7 +34,7 @@
     "nameZh": "anthropics/skills",
     "desc": "Anthropic 官方 Agent Skills 仓库",
     "descEn": "Official Anthropic Agent Skills repository",
-    "stars": "177.3k",
+    "stars": "179.7k",
     "platform": "all",
     "category": "official",
     "url": "https://github.com/anthropics/skills"
@@ -174,7 +174,7 @@
     "nameZh": "awesome-cursorrules",
     "desc": "最全面的 Cursor Rules 合集",
     "descEn": "The most comprehensive Cursor Rules collection",
-    "stars": "40.8k",
+    "stars": "40.9k",
     "platform": "cursor",
     "category": "collection",
     "url": "https://github.com/PatrickJS/awesome-cursorrules"
@@ -194,7 +194,7 @@
     "nameZh": "heilcheng/awesome-agent-skills",
     "desc": "社区维护的 Agent Skills 导航，聚焦工程团队实际使用的真实 Skills",
     "descEn": "Community-curated Agent Skills directory focused on real-world skills used by engineering teams",
-    "stars": "6.2k",
+    "stars": "6.3k",
     "platform": "all",
     "category": "collection",
     "url": "https://github.com/heilcheng/awesome-agent-skills"
@@ -214,7 +214,7 @@
     "nameZh": "awesome-claude-skills",
     "desc": "Composio 维护的 Claude Skills 合集",
     "descEn": "Claude Skills collection by Composio",
-    "stars": "75.4k",
+    "stars": "76.5k",
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills"
@@ -224,7 +224,7 @@
     "nameZh": "awesome-claude-code",
     "desc": "Claude Code skills/hooks/插件合集",
     "descEn": "Claude Code skills/hooks/plugins collection",
-    "stars": "54.4k",
+    "stars": "55.1k",
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/hesreallyhim/awesome-claude-code"
@@ -274,7 +274,7 @@
     "nameZh": "cursor-rules-and-prompts",
     "desc": "Cursor 规则与提示词集合",
     "descEn": "Cursor rules and prompts collection",
-    "stars": "247",
+    "stars": "250",
     "platform": "cursor",
     "category": "collection",
     "url": "https://github.com/thehimel/cursor-rules-and-prompts"
@@ -294,7 +294,7 @@
     "nameZh": "claude-code-kit",
     "desc": "Claude Code 工具包，自动激活 skills",
     "descEn": "Claude Code toolkit with auto-activating skills",
-    "stars": "103",
+    "stars": "106",
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/blencorp/claude-code-kit"
@@ -324,7 +324,7 @@
     "nameZh": "OrkasVideoStudio",
     "desc": "面向 Agent 的视频制作 Skills 合集，配套 CLI 与 MCP 运行时",
     "descEn": "Agent video-production skill pack with CLI and MCP runtime",
-    "stars": "488",
+    "stars": "497",
     "platform": "all",
     "category": "collection",
     "url": "https://github.com/Orkas-AI/Orkas-VideoStudio"
@@ -344,7 +344,7 @@
     "nameZh": "suede-creator-skills",
     "desc": "面向 Claude Code 与 Codex 的 Skills 合集，覆盖代码质量与评审、设计、营销与 SEO、Agent 工作流和移动应用发布",
     "descEn": "Skills pack for Claude Code and Codex covering code review and grading, design, marketing and SEO, agent workflows, and mobile app shipping",
-    "stars": "123",
+    "stars": "126",
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/JasonColapietro/suede-creator-skills"
@@ -364,7 +364,7 @@
     "nameZh": "youtube-skills",
     "desc": "面向 YouTube 的转录、视频搜索、频道浏览与播放列表 Skills，适用于 Claude Code、OpenClaw、Hermes Agent 等 Agent 运行时",
     "descEn": "YouTube transcript, video search, channel and playlist skills for Claude Code, OpenClaw, Hermes Agent, and other agent runtimes",
-    "stars": "896",
+    "stars": "1.0k",
     "platform": "openclaw",
     "category": "collection",
     "url": "https://github.com/ZeroPointRepo/youtube-skills"
@@ -494,7 +494,7 @@
     "nameZh": "vercel-labs/agent-skills",
     "desc": "Vercel React/Web 设计最佳实践 Skills",
     "descEn": "Vercel React/Web design best practices Skills",
-    "stars": "31.4k",
+    "stars": "31.9k",
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/vercel-labs/agent-skills"
@@ -514,7 +514,7 @@
     "nameZh": "supabase/agent-skills",
     "desc": "Supabase Postgres 最佳实践 Skill",
     "descEn": "PostgreSQL best practices Skill by Supabase",
-    "stars": "2.6k",
+    "stars": "2.7k",
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/supabase/agent-skills"
@@ -524,7 +524,7 @@
     "nameZh": "expo/skills",
     "desc": "Expo/React Native 开发 Skills",
     "descEn": "Expo/React Native development Skills",
-    "stars": "2.6k",
+    "stars": "2.7k",
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/expo/skills"
@@ -534,7 +534,7 @@
     "nameZh": "browser-use/browser-use",
     "desc": "浏览器自动化 Skill",
     "descEn": "Browser automation Skill",
-    "stars": "115.6k",
+    "stars": "117.1k",
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/browser-use/browser-use"
@@ -544,7 +544,7 @@
     "nameZh": "Xquik x-twitter-scraper",
     "desc": "X（Twitter）数据平台 Skill，提供 REST API、MCP 工具、webhooks、SDK 和自动化工作流",
     "descEn": "X (Twitter) data Skill with REST endpoints, MCP tools, webhooks, SDKs, and automation workflows",
-    "stars": "205",
+    "stars": "210",
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/Xquik-dev/x-twitter-scraper"
@@ -630,6 +630,16 @@
     "url": "https://github.com/rebelytics/one-skill-to-rule-them-all"
   },
   {
+    "name": "check-skill",
+    "nameZh": "check-skill",
+    "desc": "衡量 Claude Code Skill 是否被正确触发：生成带标注的激活测试集，并报告精确率与召回率",
+    "descEn": "Measures whether a Claude Code skill triggers: generates a labelled activation suite and reports precision and recall",
+    "stars": "-",
+    "platform": "claude",
+    "category": "devtools",
+    "url": "https://github.com/UiPath/coder_eval/tree/main/plugins/coder-eval/skills/check-skill"
+  },
+  {
     "name": "claude-code-workflows",
     "nameZh": "claude-code-workflows",
     "desc": "生产级开发工作流，自动化质量检查",
@@ -664,7 +674,7 @@
     "nameZh": "obra/superpowers",
     "desc": "完整开发工作流（调试/TDD/代码审查/计划）",
     "descEn": "Complete dev workflow (Debug/TDD/Code Review/Planning)",
-    "stars": "289.3k",
+    "stars": "295.3k",
     "platform": "all",
     "category": "productivity",
     "url": "https://github.com/obra/superpowers"
@@ -694,7 +704,7 @@
     "nameZh": "coreyhaines31/marketingskills",
     "desc": "营销 Skills（SEO/文案/CRO/广告）",
     "descEn": "Marketing Skills (SEO/Copywriting/CRO/Ads)",
-    "stars": "51.0k",
+    "stars": "53.2k",
     "platform": "all",
     "category": "productivity",
     "url": "https://github.com/coreyhaines31/marketingskills"
@@ -798,6 +808,16 @@
     "platform": "all",
     "category": "productivity",
     "url": "https://github.com/vaibhavarora14/job-application-agent"
+  },
+  {
+    "name": "tlgr",
+    "nameZh": "tlgr",
+    "desc": "通过 tlgr 命令行收发和搜索个人 Telegram 账号的消息、管理会话与联系人，输出 JSON",
+    "descEn": "Read, search and send Telegram messages from your own account and manage chats and contacts through the tlgr CLI, with JSON output",
+    "stars": "-",
+    "platform": "claude",
+    "category": "productivity",
+    "url": "https://github.com/tlgrcli/tlgr/tree/main/plugin/skills/tlgr"
   },
   {
     "name": "devops-claude-skills",
