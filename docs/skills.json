@@ -630,6 +630,16 @@
     "url": "https://github.com/rebelytics/one-skill-to-rule-them-all"
   },
   {
+    "name": "check-skill",
+    "nameZh": "check-skill",
+    "desc": "衡量 Claude Code Skill 是否被正确触发：生成带标注的激活测试集，并报告精确率与召回率",
+    "descEn": "Measures whether a Claude Code skill triggers: generates a labelled activation suite and reports precision and recall",
+    "stars": "-",
+    "platform": "claude",
+    "category": "devtools",
+    "url": "https://github.com/UiPath/coder_eval/tree/main/plugins/coder-eval/skills/check-skill"
+  },
+  {
     "name": "claude-code-workflows",
     "nameZh": "claude-code-workflows",
     "desc": "生产级开发工作流，自动化质量检查",
