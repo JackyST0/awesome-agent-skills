@@ -810,6 +810,16 @@
     "url": "https://github.com/vaibhavarora14/job-application-agent"
   },
   {
+    "name": "universal-exam-cram-coach",
+    "nameZh": "universal-exam-cram-coach",
+    "desc": "期末备考教练：按章讲课件并标页码，只用作业和真题出题",
+    "descEn": "Exam-prep tutor that teaches from your own slides, notes and past papers with page citations, figure crops, homework-only quizzes and cross-session progress",
+    "stars": "-",
+    "platform": "all",
+    "category": "productivity",
+    "url": "https://github.com/ZeKaiNie/universal-examprep-skill"
+  },
+  {
     "name": "tlgr",
     "nameZh": "tlgr",
     "desc": "通过 tlgr 命令行收发和搜索个人 Telegram 账号的消息、管理会话与联系人，输出 JSON",
