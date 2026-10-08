@@ -164,6 +164,7 @@ Skills work across multiple platforms:
 - [debug-helper](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/debug-helper) - Code debugging assistant Skill.
 - [authsome](https://github.com/agentrhq/authsome) - Local credential broker for AI agents with encrypted local vault storage and proxy-based credential injection.
 - [Sverklo](https://github.com/sverklo/sverklo) - Local-first repo-memory MCP for coding agents: proof receipts, symbol refs, impact, and diff review.
+- [birdview](https://github.com/Qiuner/birdview) - Generate evidence-linked architecture and constraint maps, review planned change scope before implementation, and record verification results.
 - [task-observer](https://github.com/rebelytics/one-skill-to-rule-them-all) - Watches work sessions, logs where skills fail, and turns the corrections into proposed skill improvements.
 - [check-skill](https://github.com/UiPath/coder_eval/tree/main/plugins/coder-eval/skills/check-skill) - Measures whether a Claude Code skill triggers: generates a labelled activation suite and reports precision and recall.
 
