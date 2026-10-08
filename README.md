@@ -136,6 +136,7 @@ Skills work across multiple platforms:
 - [suede-creator-skills](https://github.com/JasonColapietro/suede-creator-skills) - Skills pack for Claude Code and Codex covering code review and grading, design, marketing and SEO, agent workflows, and mobile app shipping.
 - [unifapi-agent/skills](https://github.com/unifapi-agent/skills) - Public-data MCP and KOL pricing Skills for Codex, Claude Code, Cursor, and other agents.
 - [youtube-skills](https://github.com/ZeroPointRepo/youtube-skills) - YouTube transcript, video search, channel and playlist skills for Claude Code, OpenClaw, Hermes Agent, and other agent runtimes.
+- [tonone](https://github.com/tonone-ai/tonone) - Claude Code plugin with 100 specialist agents and 429 skills across engineering, product, design, security, legal, and ops; a SessionStart hook loads only the skills relevant to the current repo.
 
 ## Development Tools
 
@@ -164,7 +165,9 @@ Skills work across multiple platforms:
 - [debug-helper](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/debug-helper) - Code debugging assistant Skill.
 - [authsome](https://github.com/agentrhq/authsome) - Local credential broker for AI agents with encrypted local vault storage and proxy-based credential injection.
 - [Sverklo](https://github.com/sverklo/sverklo) - Local-first repo-memory MCP for coding agents: proof receipts, symbol refs, impact, and diff review.
+- [birdview](https://github.com/Qiuner/birdview) - Generate evidence-linked architecture and constraint maps, review planned change scope before implementation, and record verification results.
 - [task-observer](https://github.com/rebelytics/one-skill-to-rule-them-all) - Watches work sessions, logs where skills fail, and turns the corrections into proposed skill improvements.
+- [check-skill](https://github.com/UiPath/coder_eval/tree/main/plugins/coder-eval/skills/check-skill) - Measures whether a Claude Code skill triggers: generates a labelled activation suite and reports precision and recall.
 
 ## Productivity
 
@@ -185,6 +188,8 @@ Skills work across multiple platforms:
 - [changelog-generator](https://github.com/ComposioHQ/awesome-claude-skills) - Generate changelogs from Git commits.
 - [wiki](https://github.com/plasma-ai/wiki/blob/main/wiki/skills/wiki/SKILL.md) - Build indexed Markdown knowledge bases that agents map, search, read, update, and lint.
 - [job-application-agent](https://github.com/vaibhavarora14/job-application-agent) - Skill + CLI to discover, qualify, complete, and track your own job applications. [Data sharing](https://github.com/vaibhavarora14/job-application-agent/blob/main/job-application-agent/references/ANALYTICS.md): usage analytics and name/email sharing with private PostHog analytics, plus community-registry sharing of confirmed-application and discovery-source metadata, are enabled by default (opt-out). Optional [cloud mode](https://github.com/vaibhavarora14/job-application-agent/blob/main/job-application-agent/references/CLOUD_STATE.md) stores and syncs profile, résumé, application, and outcome state.
+- [universal-exam-cram-coach](https://github.com/ZeKaiNie/universal-examprep-skill) - Exam-prep tutor that teaches from your own slides, notes and past papers with page citations, figure crops, homework-only quizzes and cross-session progress.
+- [tlgr](https://github.com/tlgrcli/tlgr/tree/main/plugin/skills/tlgr) - Read, search and send Telegram messages from your own account and manage chats and contacts through the tlgr CLI, with JSON output.
 
 ## DevOps
 
