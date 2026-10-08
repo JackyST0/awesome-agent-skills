@@ -118,6 +118,7 @@ Skills work across multiple platforms:
 - [awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) - The most comprehensive Cursor Rules collection.
 - [everything-claude-code](https://github.com/affaan-m/everything-claude-code) - Complete Claude Code configs (agents/skills/hooks).
 - [heilcheng/awesome-agent-skills](https://github.com/heilcheng/awesome-agent-skills) - Community-curated Agent Skills directory focused on real-world skills used by engineering teams.
+- [mblode/agent-skills](https://github.com/mblode/agent-skills) - Open-source agent skills for UI audits, typography, documentation, PR review, and releases.
 - [kasetto](https://github.com/pivoshenko/kasetto) - An extremely fast AI skills manager, written in Rust.
 - [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) - Claude Skills collection by Composio.
 - [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) - Claude Code skills/hooks/plugins collection.
