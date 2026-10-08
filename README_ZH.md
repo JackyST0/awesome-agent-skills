@@ -207,6 +207,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | vercel-labs/agent-skills | ⭐ Vercel React/Web 设计最佳实践 Skills（31.9k ⭐） | All | [GitHub](https://github.com/vercel-labs/agent-skills) |
 | antfu/skills | ⭐ Vue/Vite/Vitest 开发 Skills（5.9k ⭐） | All | [GitHub](https://github.com/antfu/skills) |
 | supabase/agent-skills | ⭐ Supabase Postgres 最佳实践 Skill（2.7k ⭐） | All | [GitHub](https://github.com/supabase/agent-skills) |
+| prisma/skills | Prisma Postgres、Prisma ORM 与 Prisma Compute 官方 Skills | All | [GitHub](https://github.com/prisma/skills) |
 | expo/skills | ⭐ Expo/React Native 开发 Skills（2.7k ⭐） | All | [GitHub](https://github.com/expo/skills) |
 | browser-use/browser-use | 浏览器自动化 Skill（117.1k ⭐） | All | [GitHub](https://github.com/browser-use/browser-use) |
 | Xquik x-twitter-scraper | X（Twitter）数据平台 Skill，提供 REST API、MCP 工具、webhooks、SDK 和自动化工作流（210 ⭐） | All | [GitHub](https://github.com/Xquik-dev/x-twitter-scraper) |
