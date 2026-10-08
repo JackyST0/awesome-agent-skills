@@ -164,6 +164,7 @@ Skills work across multiple platforms:
 - [authsome](https://github.com/agentrhq/authsome) - Local credential broker for AI agents with encrypted local vault storage and proxy-based credential injection.
 - [Sverklo](https://github.com/sverklo/sverklo) - Local-first repo-memory MCP for coding agents: proof receipts, symbol refs, impact, and diff review.
 - [task-observer](https://github.com/rebelytics/one-skill-to-rule-them-all) - Watches work sessions, logs where skills fail, and turns the corrections into proposed skill improvements.
+- [check-skill](https://github.com/UiPath/coder_eval/tree/main/plugins/coder-eval/skills/check-skill) - Measures whether a Claude Code skill triggers: generates a labelled activation suite and reports precision and recall.
 
 ## Productivity
 
