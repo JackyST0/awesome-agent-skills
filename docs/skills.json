@@ -200,6 +200,16 @@
     "url": "https://github.com/heilcheng/awesome-agent-skills"
   },
   {
+    "name": "mblode/agent-skills",
+    "nameZh": "mblode/agent-skills",
+    "desc": "开源 Agent Skills 合集，覆盖 UI 审计、排版、文档、PR 审查与发布",
+    "descEn": "Open-source agent skills for UI audits, typography, documentation, PR review, and releases",
+    "stars": "143",
+    "platform": "all",
+    "category": "collection",
+    "url": "https://github.com/mblode/agent-skills"
+  },
+  {
     "name": "kasetto",
     "nameZh": "kasetto",
     "desc": "用 Rust 编写的极速 AI 技能管理器",
