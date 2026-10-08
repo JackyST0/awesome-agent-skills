@@ -370,6 +370,16 @@
     "url": "https://github.com/ZeroPointRepo/youtube-skills"
   },
   {
+    "name": "tonone",
+    "nameZh": "tonone",
+    "desc": "Claude Code 插件，包含 100 个专业 Agent 与 429 个 Skills，覆盖工程、产品、设计、安全、法务和运维；SessionStart hook 仅加载与当前仓库相关的 Skills",
+    "descEn": "Claude Code plugin with 100 specialist agents and 429 skills across engineering, product, design, security, legal, and ops; a SessionStart hook loads only the skills relevant to the current repo",
+    "stars": "73",
+    "platform": "claude",
+    "category": "collection",
+    "url": "https://github.com/tonone-ai/tonone"
+  },
+  {
     "name": "agenttrace-session-audit",
     "nameZh": "agenttrace-session-audit",
     "desc": "审计本地 AI 编程 Agent 会话的健康度、成本、失败与差异",
