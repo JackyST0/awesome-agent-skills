@@ -6,11 +6,15 @@
 
 | 平台 | 支持状态 | 全局目录 | 项目目录 |
 |------|---------|---------|---------|
-| Cursor | ✅ | `~/.cursor/skills/` | `.cursor/skills/` |
-| Claude Code | ✅ | `~/.claude/skills/` | `.claude/skills/` |
-| GitHub Copilot | ✅ | `~/.copilot/skills/` | `.github/skills/` |
-| Windsurf | ✅ | `~/.windsurf/skills/` | `.windsurf/skills/` |
-| OpenAI Codex | ✅ | `~/.codex/skills/` | `.codex/skills/` |
+| [Cursor](https://cursor.com/docs/context/skills) | ✅ | `~/.cursor/skills/` | `.cursor/skills/` |
+| [Claude Code](https://code.claude.com/docs/en/skills) | ✅ | `~/.claude/skills/` | `.claude/skills/` |
+| [GitHub Copilot](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills) | ✅ | `~/.copilot/skills/` | `.github/skills/` |
+| [Windsurf](https://docs.windsurf.com/windsurf/cascade/skills) | ✅ | `~/.codeium/windsurf/skills/` | `.devin/skills/` |
+| [OpenAI Codex](https://developers.openai.com/codex/skills) | ✅ | `~/.codex/skills/` | `.codex/skills/` |
+| [OpenCode](https://opencode.ai/docs/skills/) | ✅ | `~/.config/opencode/skills/` | `.opencode/skills/` |
+| [OpenClaw](https://docs.openclaw.ai/tools/skills) | ✅ | `~/.openclaw/skills/` | `skills/` |
+
+> Windsurf 仍兼容旧项目目录 `.windsurf/skills/`，新项目应使用官方当前推荐的 `.devin/skills/`。
 
 ## 安装方式
 
@@ -36,16 +40,18 @@ cd .cursor/skills
 git submodule add https://github.com/example/code-review-skill.git
 ```
 
-### 方式三：使用 Skill 安装器（如果可用）
+### 方式三：使用本仓库安装器
 
-某些平台提供内置的 skill 安装功能：
+先按照仓库首页的快速开始说明下载安装脚本。当前稳定版本可直接写在同一条命令中，无需提前设置环境变量：
 
 ```bash
-# Codex CLI
-codex skill install code-review
+AAS_REPOSITORY_REF="v1.0.1" bash install.sh -p codex -s code-review
+```
 
-# 或使用对话方式
-# "请帮我安装 code-review skill"
+需要测试其他已审核版本时，替换对应的 tag 或完整 commit SHA：
+
+```bash
+AAS_REPOSITORY_REF="<release-tag-or-full-commit-sha>" bash install.sh -p codex -s code-review
 ```
 
 ## 全局 vs 项目级别
@@ -110,10 +116,7 @@ rm -rf ~/.cursor/skills/code-review-skill
 
 ## 优先级说明
 
-当同名 skill 同时存在于全局和项目目录时：
-
-1. **项目级优先**：项目目录的 skill 优先使用
-2. **可覆盖**：项目可以用自定义版本覆盖全局 skill
+同名 Skill 同时存在于全局和项目目录时，各平台的加载与优先级规则并不完全相同。为避免加载结果不明确，应避免重复命名，并以本页“支持的平台”表格链接到的官方文档为准。
 
 ## 常见问题
 

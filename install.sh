@@ -16,9 +16,10 @@ NC='\033[0m' # No Color
 
 # Repository URL
 REPO_URL="https://github.com/JackyST0/awesome-agent-skills"
-# Set AAS_REPOSITORY_REF to a reviewed release tag or full commit SHA when
-# invoking this script. Do not fetch Skills from an unpinned branch.
-REPOSITORY_REF="${AAS_REPOSITORY_REF:-}"
+DEFAULT_REPOSITORY_REF="v1.0.1"
+# Set AAS_REPOSITORY_REF to override the default with another reviewed release
+# tag or full commit SHA. Do not fetch Skills from an unpinned branch.
+REPOSITORY_REF="${AAS_REPOSITORY_REF:-$DEFAULT_REPOSITORY_REF}"
 REPO_RAW=""
 
 # Available skills
@@ -43,12 +44,56 @@ get_platform_dir() {
         cursor)   echo "$HOME/.cursor/skills" ;;
         claude)   echo "$HOME/.claude/skills" ;;
         copilot)  echo "$HOME/.copilot/skills" ;;
-        windsurf) echo "$HOME/.windsurf/skills" ;;
+        windsurf) echo "$HOME/.codeium/windsurf/skills" ;;
         codex)    echo "$HOME/.codex/skills" ;;
         opencode) echo "$HOME/.config/opencode/skills" ;;
         openclaw) echo "$HOME/.openclaw/skills" ;;
         *)        echo "" ;;
     esac
+}
+
+get_platform_by_index() {
+    local requested_index=$1
+    local current_index=1
+    local indexed_platform
+
+    for indexed_platform in $PLATFORMS; do
+        if [ "$current_index" = "$requested_index" ]; then
+            printf '%s\n' "$indexed_platform"
+            return 0
+        fi
+        current_index=$((current_index + 1))
+    done
+
+    return 1
+}
+
+is_valid_repository_ref() {
+    printf '%s\n' "$1" | grep -Eq '^([0-9a-fA-F]{40}|v[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z][0-9A-Za-z.-]*)?(\+[0-9A-Za-z][0-9A-Za-z.-]*)?)$'
+}
+
+require_repository_source() {
+    if [ -n "$REPO_RAW" ]; then
+        return 0
+    fi
+
+    if [ -z "$REPOSITORY_REF" ]; then
+        printf "${RED}Error: no repository reference is configured.${NC}\n"
+        printf "Set DEFAULT_REPOSITORY_REF or provide AAS_REPOSITORY_REF.\n"
+        return 1
+    fi
+
+    if ! is_valid_repository_ref "$REPOSITORY_REF"; then
+        printf "${RED}Error: invalid AAS_REPOSITORY_REF '%s'.${NC}\n" "$REPOSITORY_REF"
+        printf "Use a published semantic release tag or a full 40-character commit SHA.\n"
+        return 1
+    fi
+
+    REPO_RAW="https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$REPOSITORY_REF"
+}
+
+download_file() {
+    curl -sS -L --fail --proto '=https' --proto-redir '=https' --tlsv1.2 "$1" -o "$2"
 }
 
 # Print banner
@@ -74,9 +119,14 @@ print_help() {
     echo "  --list-installed          List installed skills for a platform"
     echo "  -h, --help                Show this help message"
     echo ""
+    echo "Environment:"
+    echo "  AAS_REPOSITORY_REF        Optional semantic release tag or full commit SHA"
+    echo "                            Default: $DEFAULT_REPOSITORY_REF"
+    echo ""
     echo "Install Examples:"
     echo "  $0 -p cursor -s code-review"
     echo "  $0 -p claude -a"
+    echo "  AAS_REPOSITORY_REF=<tag-or-full-sha> $0 -p codex -a"
     echo ""
     echo "Uninstall Examples:"
     echo "  $0 -p cursor -u -s code-review    # Uninstall specific skill"
@@ -177,29 +227,49 @@ install_skill() {
     target_dir=$2
     skill_dir="$target_dir/$skill"
 
+    require_repository_source || return 1
+
     printf "${YELLOW}Installing %s...${NC}\n" "$skill"
 
-    # Create directory
-    mkdir -p "$skill_dir"
-    mkdir -p "$skill_dir/templates" 2>/dev/null || true
+    templates=$(get_skill_templates "$skill")
 
-    # Download SKILL.md
-    if curl -sL "$REPO_RAW/examples/$skill/SKILL.md" -o "$skill_dir/SKILL.md"; then
-        printf "  ${GREEN}✓${NC} Downloaded SKILL.md\n"
-    else
+    mkdir -p "$skill_dir"
+    if [ -n "$templates" ]; then
+        mkdir -p "$skill_dir/templates"
+    fi
+
+    skill_file="$skill_dir/SKILL.md"
+    skill_temp="$skill_dir/.SKILL.md.download"
+    if ! download_file "$REPO_RAW/examples/$skill/SKILL.md" "$skill_temp"; then
+        rm -f "$skill_temp"
         printf "  ${RED}✗${NC} Failed to download SKILL.md\n"
         return 1
     fi
 
-    # Download templates for this skill
-    templates=$(get_skill_templates "$skill")
+    downloaded_templates=""
     if [ -n "$templates" ]; then
         for template in $templates; do
-            if curl -sL --fail "$REPO_RAW/examples/$skill/templates/$template" -o "$skill_dir/templates/$template" 2>/dev/null; then
-                printf "  ${GREEN}✓${NC} Downloaded templates/%s\n" "$template"
+            template_temp="$skill_dir/templates/.$template.download"
+            if download_file "$REPO_RAW/examples/$skill/templates/$template" "$template_temp"; then
+                downloaded_templates="$downloaded_templates $template"
+            else
+                rm -f "$skill_temp" "$template_temp"
+                for downloaded_template in $downloaded_templates; do
+                    rm -f "$skill_dir/templates/.$downloaded_template.download"
+                done
+                printf "  ${RED}✗${NC} Failed to download templates/%s\n" "$template"
+                return 1
             fi
         done
     fi
+
+    mv "$skill_temp" "$skill_file"
+    printf "  ${GREEN}✓${NC} Downloaded SKILL.md\n"
+
+    for template in $downloaded_templates; do
+        mv "$skill_dir/templates/.$template.download" "$skill_dir/templates/$template"
+        printf "  ${GREEN}✓${NC} Downloaded templates/%s\n" "$template"
+    done
 
     printf "${GREEN}✓ Installed %s to %s${NC}\n" "$skill" "$skill_dir"
 }
@@ -248,8 +318,7 @@ interactive_mode() {
     printf "Enter number (1-7): "
     read -r platform_choice
 
-    selected_platform=$(printf '%s\n' "$PLATFORMS" | awk -v choice="$platform_choice" 'NR == choice { print; exit }')
-    if [ -z "$selected_platform" ]; then
+    if ! selected_platform=$(get_platform_by_index "$platform_choice"); then
         printf "${RED}Invalid selection${NC}\n"
         exit 1
     fi
@@ -304,6 +373,7 @@ interactive_mode() {
 
     # Execute action
     if [ "$action" = "install" ]; then
+        require_repository_source || exit 1
         printf "${BLUE}Installing to %s...${NC}\n\n" "$target_dir"
         for skill in $selected_skills; do
             install_skill "$skill" "$target_dir"
@@ -391,13 +461,6 @@ main() {
         esac
     done
 
-    if [ -z "$REPOSITORY_REF" ]; then
-        printf "${RED}Error: AAS_REPOSITORY_REF must be a reviewed release tag or full commit SHA.${NC}\n"
-        printf "Example: AAS_REPOSITORY_REF=<release-tag-or-commit> %s -p cursor -a\n" "$0"
-        exit 1
-    fi
-    REPO_RAW="https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$REPOSITORY_REF"
-
     # If no arguments, run interactive mode
     if [ -z "$platform" ] && [ -z "$skills" ] && [ "$install_all" = false ] && [ "$list_installed_mode" = false ]; then
         interactive_mode
@@ -457,6 +520,7 @@ main() {
         echo ""
         printf "${GREEN}Uninstall complete!${NC}\n"
     else
+        require_repository_source || exit 1
         printf "${BLUE}Installing to %s...${NC}\n\n" "$target_dir"
         for skill in $skills; do
             install_skill "$skill" "$target_dir"
@@ -466,4 +530,6 @@ main() {
     fi
 }
 
-main "$@"
+if [ "${BASH_SOURCE[0]}" = "$0" ]; then
+    main "$@"
+fi

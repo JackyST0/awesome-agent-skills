@@ -1,36 +1,30 @@
-name: Validate Search Index
+name: Validate Repository
 
 on:
   pull_request:
-    paths:
-      - 'README.md'
-      - 'README_ZH.md'
-      - 'docs/index.html'
-      - 'docs/skills.json'
-      - 'scripts/sync-search-index.js'
-      - 'package.json'
 
 jobs:
   validate-search-index:
-    name: Validate README search data
-    runs-on: ubuntu-latest
+    name: Validate repository data and installers
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-          node-version: '20'
+          node-version: '24'
+          cache: npm
 
-      - name: Validate bilingual entries and generate a temporary index
-        run: npm run sync:search
+      - name: Install dependencies
+        run: npm ci
 
-      - name: Validate generated JSON
-        run: |
-          test -s docs/skills.json
-          node -e "JSON.parse(require('fs').readFileSync('docs/skills.json', 'utf8'))"
-          git diff --check
+      - name: Validate repository
+        run: npm run check
+
+      - name: Validate patch formatting
+        run: git diff --check

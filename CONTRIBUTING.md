@@ -113,6 +113,22 @@
 - [ ] GitHub 仓库满足最低门槛（社区项目 64+ Stars）
 ```
 
+### 本地检查
+
+```bash
+npm ci
+npm run prepare:pr
+```
+
+`prepare:pr` 会同步搜索索引并运行完整检查，普通条目贡献不需要分别记忆各个脚本。
+
+### 发布流程
+
+- 公开主分支 README 中的安装版本必须始终指向已经发布的 tag。
+- 发布新版本时，在同一个提交中更新中英文 README、安装脚本示例和 `checksums.txt`。
+- 创建 tag 前运行 `npm ci`、`npm run check` 和 `git diff --check`。
+- 从上述提交创建并推送版本 tag；不要先发布引用尚不存在 tag 的安装说明。
+
 ### 报告问题
 
 如果发现失效链接、错误描述或分类不当，请提交 Issue 或直接 PR 修复。
@@ -235,6 +251,22 @@ Please include the following information when submitting a PR:
 - [ ] Skills collections / managers / installers clearly serve the skills ecosystem
 - [ ] Repository meets the minimum threshold (64+ Stars for community projects)
 ```
+
+### Local Validation
+
+```bash
+npm ci
+npm run prepare:pr
+```
+
+`prepare:pr` synchronizes the search index and runs the complete validation suite, so regular entry contributions do not need to invoke each script separately.
+
+### Release Process
+
+- Installer versions in the public default-branch READMEs must always reference an already published tag.
+- Update both READMEs, installer examples, and `checksums.txt` in the same release commit.
+- Run `npm ci`, `npm run check`, and `git diff --check` before creating the tag.
+- Create and push the version tag from that exact commit; do not publish installation instructions that reference a tag that does not exist yet.
 
 ### Report Issues
 
