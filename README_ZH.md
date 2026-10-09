@@ -165,6 +165,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 
 | 名称 | 描述 | Stars | 链接 |
 |------|------|-------|------|
+| ReplyNodes URL to Markdown | 读取公开网页并转换为适合 AI Agent 使用的干净 Markdown。 | — | [GitHub](https://github.com/replynodes/replynodes-agent-skills/tree/main/skills/url-to-markdown) |
 | awesome-cursorrules | ⭐ 最全面的 Cursor Rules 合集 | 40.9k | [GitHub](https://github.com/PatrickJS/awesome-cursorrules) |
 | everything-claude-code | ⭐ Claude Code 配置大全（agents/skills/hooks） | 185.6k | [GitHub](https://github.com/affaan-m/everything-claude-code) |
 | heilcheng/awesome-agent-skills | ⭐ 社区维护的 Agent Skills 导航，聚焦工程团队实际使用的真实 Skills | 6.3k | [GitHub](https://github.com/heilcheng/awesome-agent-skills) |

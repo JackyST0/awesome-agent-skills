@@ -170,6 +170,16 @@
     "url": "https://docs.openclaw.ai/skills"
   },
   {
+    "name": "ReplyNodes URL to Markdown",
+    "nameZh": "ReplyNodes URL to Markdown",
+    "desc": "读取公开网页并转换为适合 AI Agent 使用的干净 Markdown",
+    "descEn": "Read public webpages as clean Markdown for AI agents. Docs",
+    "stars": "-",
+    "platform": "all",
+    "category": "collection",
+    "url": "https://github.com/replynodes/replynodes-agent-skills/tree/main/skills/url-to-markdown"
+  },
+  {
     "name": "awesome-cursorrules",
     "nameZh": "awesome-cursorrules",
     "desc": "最全面的 Cursor Rules 合集",
