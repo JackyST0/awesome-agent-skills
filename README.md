@@ -155,6 +155,7 @@ Skills work across multiple platforms:
 - [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) - Vercel React/Web design best practices Skills.
 - [antfu/skills](https://github.com/antfu/skills) - Vue/Vite/Vitest development Skills.
 - [Supabase Agent Skills](https://github.com/supabase/agent-skills) - PostgreSQL best practices Skill by Supabase.
+- [Prisma Agent Skills](https://github.com/prisma/skills) - Prisma Postgres, Prisma ORM and Prisma Compute Skills by Prisma.
 - [Expo Skills](https://github.com/expo/skills) - Expo/React Native development Skills.
 - [browser-use/browser-use](https://github.com/browser-use/browser-use) - Browser automation Skill.
 - [Xquik x-twitter-scraper](https://github.com/Xquik-dev/x-twitter-scraper) - X (Twitter) data Skill with REST endpoints, MCP tools, webhooks, SDKs, and automation workflows.
