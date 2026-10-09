@@ -670,6 +670,16 @@
     "url": "https://github.com/UiPath/coder_eval/tree/main/plugins/coder-eval/skills/check-skill"
   },
   {
+    "name": "assay",
+    "nameZh": "assay",
+    "desc": "在真实浏览器中打开网页，操作页面上的每个控件，并报告页面出错或自相矛盾之处。确定性运行，无需编写测试，也不使用 LLM",
+    "descEn": "Opens a web page in a real browser, drives every control, and reports where the page breaks or contradicts itself. Deterministic, with no tests to write and no LLM",
+    "stars": "-",
+    "platform": "all",
+    "category": "devtools",
+    "url": "https://github.com/awss1i/assay/tree/main/plugins/assay/skills/checking-a-page"
+  },
+  {
     "name": "claude-code-workflows",
     "nameZh": "claude-code-workflows",
     "desc": "生产级开发工作流，自动化质量检查",
