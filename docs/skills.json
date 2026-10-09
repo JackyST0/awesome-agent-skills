@@ -220,8 +220,8 @@
     "url": "https://github.com/pivoshenko/kasetto"
   },
   {
-    "name": "awesome-claude-skills",
-    "nameZh": "awesome-claude-skills",
+    "name": "ComposioHQ/awesome-claude-skills",
+    "nameZh": "ComposioHQ/awesome-claude-skills",
     "desc": "Composio 维护的 Claude Skills 合集",
     "descEn": "Claude Skills collection by Composio",
     "stars": "76.5k",
@@ -250,8 +250,8 @@
     "url": "https://github.com/numman-ali/openskills"
   },
   {
-    "name": "awesome-claude-skills",
-    "nameZh": "awesome-claude-skills",
+    "name": "VoltAgent/awesome-claude-skills",
+    "nameZh": "VoltAgent/awesome-claude-skills",
     "desc": "VoltAgent 维护的 Claude Skills 合集",
     "descEn": "Claude Skills collection by VoltAgent",
     "stars": "4.4k",
@@ -260,8 +260,8 @@
     "url": "https://github.com/VoltAgent/awesome-claude-skills"
   },
   {
-    "name": "claude-skills",
-    "nameZh": "claude-skills",
+    "name": "simonw/claude-skills",
+    "nameZh": "simonw/claude-skills",
     "desc": "Simon Willison 的 Claude Skills 文档",
     "descEn": "Claude Skills documentation by Simon Willison",
     "stars": "929",
@@ -448,16 +448,6 @@
     "platform": "claude",
     "category": "devtools",
     "url": "https://github.com/lackeyjb/playwright-skill"
-  },
-  {
-    "name": "gh-code-review",
-    "nameZh": "gh-code-review",
-    "desc": "GitHub PR 代码审查 Skill",
-    "descEn": "PR code review Skill for GitHub",
-    "stars": "-",
-    "platform": "copilot",
-    "category": "devtools",
-    "url": "https://github.com/bkircher/skills"
   },
   {
     "name": "markstream-install",
@@ -700,8 +690,8 @@
     "url": "https://github.com/shinpr/claude-code-workflows"
   },
   {
-    "name": "claude-skills",
-    "nameZh": "claude-skills",
+    "name": "alirezarezvani/claude-skills",
+    "nameZh": "alirezarezvani/claude-skills",
     "desc": "20+ 生产力工具，含 8 个专家 Agent",
     "descEn": "20+ productivity tools with 8 expert Agents",
     "stars": "-",
@@ -800,16 +790,6 @@
     "url": "https://github.com/Gingiris/gingiris-b2b-growth"
   },
   {
-    "name": "gingiris-aso-growth",
-    "nameZh": "gingiris-aso-growth",
-    "desc": "面向冷启动、UGC 与分发策略的 ASO 与移动增长 Playbook",
-    "descEn": "ASO and mobile app growth playbook for cold start, UGC, and distribution",
-    "stars": "-",
-    "platform": "all",
-    "category": "productivity",
-    "url": "https://github.com/Gingiris/gingiris-aso-growth"
-  },
-  {
     "name": "alpha-insights",
     "nameZh": "alpha-insights",
     "desc": "带 Harness 门控的商业研究 Skill，内置咨询框架、证据分级、阶段门控与 HTML 报告",
@@ -837,7 +817,7 @@
     "stars": "-",
     "platform": "claude",
     "category": "productivity",
-    "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+    "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/changelog-generator"
   },
   {
     "name": "wiki",
@@ -920,16 +900,6 @@
     "url": "https://github.com/mrgoonie/claudekit-skills"
   },
   {
-    "name": "claudebox",
-    "nameZh": "claudebox",
-    "desc": "Docker 容器化 Claude Code 开发环境",
-    "descEn": "Dockerized Claude Code dev environment",
-    "stars": "-",
-    "platform": "claude",
-    "category": "devops",
-    "url": "https://github.com/RchGrav/claudebox"
-  },
-  {
     "name": "d1v",
     "nameZh": "d1v",
     "desc": "部署 Web 项目，提供可验证预览和需明确确认的生产发布",
@@ -940,16 +910,6 @@
     "url": "https://github.com/d1vai/d1v-cli/blob/main/skills/d1v/SKILL.md"
   },
   {
-    "name": "bilig-workpaper",
-    "nameZh": "bilig-workpaper",
-    "desc": "公式驱动的 WorkPaper Skill，可让 Agent 编辑单元格、重新计算、校验回读并持久化表格业务逻辑",
-    "descEn": "Formula-backed WorkPaper skill for editing cells, recalculating, verifying readback, and persisting spreadsheet logic from agents",
-    "stars": "-",
-    "platform": "all",
-    "category": "data",
-    "url": "https://github.com/proompteng/bilig/tree/main/skills/bilig-workpaper"
-  },
-  {
     "name": "d3-visualization",
     "nameZh": "d3-visualization",
     "desc": "D3.js 数据可视化 Skill",
@@ -957,7 +917,7 @@
     "stars": "-",
     "platform": "claude",
     "category": "data",
-    "url": "https://github.com/ComposioHQ/awesome-claude-skills#data-visualization"
+    "url": "https://github.com/chrisvoncsefalvay/claude-d3js-skill"
   },
   {
     "name": "context-engineering",

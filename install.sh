@@ -183,10 +183,14 @@ install_skill() {
     mkdir -p "$skill_dir"
     mkdir -p "$skill_dir/templates" 2>/dev/null || true
 
-    # Download SKILL.md
-    if curl -sL "$REPO_RAW/examples/$skill/SKILL.md" -o "$skill_dir/SKILL.md"; then
+    # Download SKILL.md to a temporary file so a failed update keeps the existing copy intact.
+    skill_file="$skill_dir/SKILL.md"
+    skill_temp="$skill_dir/.SKILL.md.download"
+    if curl -sL --fail "$REPO_RAW/examples/$skill/SKILL.md" -o "$skill_temp"; then
+        mv "$skill_temp" "$skill_file"
         printf "  ${GREEN}✓${NC} Downloaded SKILL.md\n"
     else
+        rm -f "$skill_temp"
         printf "  ${RED}✗${NC} Failed to download SKILL.md\n"
         return 1
     fi

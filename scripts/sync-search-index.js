@@ -217,6 +217,8 @@ function keyFor(category, url) {
 
 function assertBilingualConsistency(enEntries, zhByUrl) {
   const englishKeys = new Set();
+  const englishNames = new Map();
+  const englishUrls = new Map();
   const errors = [];
 
   for (const entry of enEntries) {
@@ -225,6 +227,22 @@ function assertBilingualConsistency(enEntries, zhByUrl) {
       errors.push(`Duplicate English entry: ${key}`);
     }
     englishKeys.add(key);
+
+    const nameKey = entry.name.toLowerCase();
+    const existingUrlForName = englishNames.get(nameKey);
+    if (existingUrlForName) {
+      errors.push(`Duplicate English name: ${entry.name} (${existingUrlForName} and ${entry.url})`);
+    } else {
+      englishNames.set(nameKey, entry.url);
+    }
+
+    const existingName = englishUrls.get(entry.url);
+    if (existingName) {
+      errors.push(`Duplicate English URL: ${entry.url} (${existingName} and ${entry.name})`);
+    } else {
+      englishUrls.set(entry.url, entry.name);
+    }
+
     if (!zhByUrl.has(key)) {
       errors.push(`Missing Chinese entry: ${key}`);
     }

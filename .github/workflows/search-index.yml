@@ -8,6 +8,7 @@ on:
       - 'docs/index.html'
       - 'docs/skills.json'
       - 'scripts/sync-search-index.js'
+      - 'scripts/check-search-page-security.js'
       - 'package.json'
 
 jobs:
@@ -34,3 +35,6 @@ jobs:
           test -s docs/skills.json
           node -e "JSON.parse(require('fs').readFileSync('docs/skills.json', 'utf8'))"
           git diff --check
+
+      - name: Validate search page security
+        run: npm run check:search-security

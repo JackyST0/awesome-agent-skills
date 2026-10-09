@@ -27,7 +27,7 @@
 
 ```bash
 # 使用已审核的 release tag 或完整 commit SHA，不能使用会变动的分支名。
-export AAS_REF="v1.0.0"
+export AAS_REF="v1.0.1"
 base_url="https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$AAS_REF"
 curl --fail --proto '=https' --tlsv1.2 -LO "$base_url/install.sh" -LO "$base_url/checksums.txt"
 shasum -a 256 -c checksums.txt --ignore-missing
@@ -43,7 +43,7 @@ AAS_REPOSITORY_REF="$AAS_REF" bash install.sh -p cursor --list-installed
 
 ```powershell
 # 使用已审核的 release tag 或完整 commit SHA，不能使用会变动的分支名。
-$AAS_REF = "v1.0.0"
+$AAS_REF = "v1.0.1"
 $baseUrl = "https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$AAS_REF"
 Invoke-WebRequest -Uri "$baseUrl/install.ps1" -OutFile "install.ps1"
 Invoke-WebRequest -Uri "$baseUrl/checksums.txt" -OutFile "checksums.txt"
@@ -169,12 +169,12 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | everything-claude-code | ⭐ Claude Code 配置大全（agents/skills/hooks） | 185.6k | [GitHub](https://github.com/affaan-m/everything-claude-code) |
 | heilcheng/awesome-agent-skills | ⭐ 社区维护的 Agent Skills 导航，聚焦工程团队实际使用的真实 Skills | 6.3k | [GitHub](https://github.com/heilcheng/awesome-agent-skills) |
 | mblode/agent-skills | 开源 Agent Skills 合集，覆盖 UI 审计、排版、文档、PR 审查与发布 | 143 | [GitHub](https://github.com/mblode/agent-skills) |
-| awesome-claude-skills | ⭐ Composio 维护的 Claude Skills 合集 | 76.5k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
+| ComposioHQ/awesome-claude-skills | ⭐ Composio 维护的 Claude Skills 合集 | 76.5k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
 | kasetto | 用 Rust 编写的极速 AI 技能管理器 | — | [GitHub](https://github.com/pivoshenko/kasetto) |
 | awesome-claude-code | ⭐ Claude Code skills/hooks/插件合集 | 55.1k | [GitHub](https://github.com/hesreallyhim/awesome-claude-code) |
 | openskills | ⭐ 通用 Skills 加载器（npm 安装） | 10.8k | [GitHub](https://github.com/numman-ali/openskills) |
-| awesome-claude-skills | VoltAgent 维护的 Claude Skills 合集 | 4.4k | [GitHub](https://github.com/VoltAgent/awesome-claude-skills) |
-| claude-skills | Simon Willison 的 Claude Skills 文档 | 929 | [GitHub](https://github.com/simonw/claude-skills) |
+| VoltAgent/awesome-claude-skills | VoltAgent 维护的 Claude Skills 合集 | 4.4k | [GitHub](https://github.com/VoltAgent/awesome-claude-skills) |
+| simonw/claude-skills | Simon Willison 的 Claude Skills 文档 | 929 | [GitHub](https://github.com/simonw/claude-skills) |
 | claude-skills-collection | 官方与社区 Skills 精选集合 | 1.1k | [GitHub](https://github.com/abubakarsiddik31/claude-skills-collection) |
 | cursor-rules-and-prompts | Cursor 规则与提示词集合 | 250 | [GitHub](https://github.com/thehimel/cursor-rules-and-prompts) |
 | Ai-Agent-Skills | ⭐ AI Skills 通用安装器（Homebrew for Skills） | 774 | [GitHub](https://github.com/skillcreatorai/Ai-Agent-Skills) |
@@ -198,7 +198,6 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | claude-code-security-review | ⭐ AI 安全审查 GitHub Action（官方） | Claude | [GitHub](https://github.com/anthropics/claude-code-security-review) |
 | trailofbits/skills | ⭐ Trail of Bits 安全研究和审计 Skills | Claude | [GitHub](https://github.com/trailofbits/skills) |
 | playwright-skill | Playwright 浏览器自动化测试 Skill | Claude | [GitHub](https://github.com/lackeyjb/playwright-skill) |
-| gh-code-review | GitHub PR 代码审查 Skill | Copilot | [GitHub](https://github.com/bkircher/skills) |
 | markstream-install | 为 Vue、React、Svelte、Angular 和 Vue 2 项目安装流式 Markdown 渲染器 | All | [GitHub](https://github.com/Simon-He95/markstream-vue/tree/main/.agents/skills/markstream-install) |
 | skill-codex | 将任务委派给 Codex 的 Skill | Claude | [GitHub](https://github.com/skills-directory/skill-codex) |
 | skillset-example | GitHub Copilot 扩展示例 | Copilot | [GitHub](https://github.com/copilot-extensions/skillset-example) |
@@ -228,7 +227,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | 名称 | 描述 | 平台 | 链接 |
 |------|------|------|------|
 | claude-code-workflows | 生产级开发工作流，自动化质量检查 | Claude | [GitHub](https://github.com/shinpr/claude-code-workflows) |
-| claude-skills | 20+ 生产力工具，含 8 个专家 Agent | Claude | [GitHub](https://github.com/alirezarezvani/claude-skills) |
+| alirezarezvani/claude-skills | 20+ 生产力工具，含 8 个专家 Agent | Claude | [GitHub](https://github.com/alirezarezvani/claude-skills) |
 | claude-code-skill-factory | Skills 工厂，批量生成和部署 Skills | Claude | [GitHub](https://github.com/alirezarezvani/claude-code-skill-factory) |
 | obra/superpowers | ⭐ 完整开发工作流（调试/TDD/代码审查/计划）（295.3k ⭐） | All | [GitHub](https://github.com/obra/superpowers) |
 | planning-with-files | 基于文件的持久化规划，包含任务计划、研究发现、进度跟踪和会话恢复 | All | [GitHub](https://github.com/OthmanAdi/planning-with-files) |
@@ -238,10 +237,9 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | gingiris-launch | AI 产品、创业公司与开源项目的 Product Hunt 发布与 GTM 指南 | All | [GitHub](https://github.com/Gingiris/gingiris-launch) |
 | gingiris-opensource | 面向 GitHub 增长与开源发布策略的营销 Playbook | All | [GitHub](https://github.com/Gingiris/gingiris-opensource) |
 | gingiris-b2b-growth | 覆盖 PLG、SLG 与 GTM 策略的 B2B SaaS 增长 Playbook | All | [GitHub](https://github.com/Gingiris/gingiris-b2b-growth) |
-| gingiris-aso-growth | 面向冷启动、UGC 与分发策略的 ASO 与移动增长 Playbook | All | [GitHub](https://github.com/Gingiris/gingiris-aso-growth) |
 | alpha-insights | 带 Harness 门控的商业研究 Skill，内置咨询框架、证据分级、阶段门控与 HTML 报告 | Claude/Codex | [GitHub](https://github.com/Ericyoung-183/alpha-insights) |
 | salespeak-ai/buyer-eval-skill | 结构化 B2B 软件供应商评估：7 维度评分与证据追踪的评分卡，用于采购与自建/采购决策 | All | [GitHub](https://github.com/salespeak-ai/buyer-eval-skill) |
-| changelog-generator | 从 Git 提交自动生成 Changelog | Claude | [ComposioHQ](https://github.com/ComposioHQ/awesome-claude-skills) |
+| changelog-generator | 从 Git 提交自动生成 Changelog | Claude | [ComposioHQ](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/changelog-generator) |
 | wiki | 构建带索引的 Markdown 知识库，供 Agent 映射、搜索、读取、更新与检查 | Claude/Codex | [GitHub](https://github.com/plasma-ai/wiki/blob/main/wiki/skills/wiki/SKILL.md) |
 | job-application-agent | 求职 Skill + CLI，发现、筛选、填写并追踪本人投递。[数据共享](https://github.com/vaibhavarora14/job-application-agent/blob/main/job-application-agent/references/ANALYTICS.md)：默认启用使用分析、向私有 PostHog 分析服务共享姓名/邮箱，以及向社区注册表共享已确认投递和发现来源的元数据（可退出）。可选[云模式](https://github.com/vaibhavarora14/job-application-agent/blob/main/job-application-agent/references/CLOUD_STATE.md)存储并同步个人资料、简历、投递和结果状态 | All | [GitHub](https://github.com/vaibhavarora14/job-application-agent) |
 | universal-exam-cram-coach | 期末备考教练：按章讲课件并标页码，只用作业和真题出题 | All | [GitHub](https://github.com/ZeKaiNie/universal-examprep-skill) |
@@ -255,15 +253,13 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | devops-engineer | DevOps 工程师 Skill，云基础设施管理 | All | [claude-plugins.dev](https://claude-plugins.dev/skills/@Jeffallan/claude-skills/devops-engineer) |
 | ci-cd | CI/CD 管道设计、优化和安全扫描 | All | [claude-plugins.dev](https://claude-plugins.dev/skills/@ahmedasmar/devops-claude-skills/ci-cd) |
 | claudekit-skills | Docker/GCP/Cloudflare 部署和管理 | Claude | [GitHub](https://github.com/mrgoonie/claudekit-skills) |
-| claudebox | Docker 容器化 Claude Code 开发环境 | Claude | [GitHub](https://github.com/RchGrav/claudebox) |
 | d1v | 部署 Web 项目，提供可验证预览和需明确确认的生产发布 | Claude/Codex | [GitHub](https://github.com/d1vai/d1v-cli/blob/main/skills/d1v/SKILL.md) |
 
 ## 数据处理
 
 | 名称 | 描述 | 平台 | 链接 |
 |------|------|------|------|
-| bilig-workpaper | 公式驱动的 WorkPaper Skill，可让 Agent 编辑单元格、重新计算、校验回读并持久化表格业务逻辑 | All | [GitHub](https://github.com/proompteng/bilig/tree/main/skills/bilig-workpaper) |
-| d3-visualization | D3.js 数据可视化 Skill | Claude | [ComposioHQ](https://github.com/ComposioHQ/awesome-claude-skills#data-visualization) |
+| d3-visualization | D3.js 数据可视化 Skill | Claude | [GitHub](https://github.com/chrisvoncsefalvay/claude-d3js-skill) |
 | context-engineering | 上下文工程和多 Agent 架构 Skills | All | [GitHub](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) |
 
 ## 写作创作
