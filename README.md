@@ -115,6 +115,8 @@ Skills work across multiple platforms:
 
 ## Skills Collections
 
+- [ReplyNodes URL to Markdown](https://github.com/replynodes/replynodes-agent-skills/tree/main/skills/url-to-markdown) - Read public webpages as clean Markdown for AI agents. [Docs](https://replynodes.com/markdown-api/)
+
 - [awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) - The most comprehensive Cursor Rules collection.
 - [everything-claude-code](https://github.com/affaan-m/everything-claude-code) - Complete Claude Code configs (agents/skills/hooks).
 - [heilcheng/awesome-agent-skills](https://github.com/heilcheng/awesome-agent-skills) - Community-curated Agent Skills directory focused on real-world skills used by engineering teams.
