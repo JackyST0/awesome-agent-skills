@@ -224,6 +224,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | task-observer | 观察工作会话，记录 Skills 失效之处，并将修正转化为 Skills 改进建议 | Claude | [GitHub](https://github.com/rebelytics/one-skill-to-rule-them-all) |
 | check-skill | 衡量 Claude Code Skill 是否被正确触发：生成带标注的激活测试集，并报告精确率与召回率 | Claude | [GitHub](https://github.com/UiPath/coder_eval/tree/main/plugins/coder-eval/skills/check-skill) |
 | assay | 在真实浏览器中打开网页，操作页面上的每个控件，并报告页面出错或自相矛盾之处。确定性运行，无需编写测试，也不使用 LLM | All | [GitHub](https://github.com/awss1i/assay/tree/main/plugins/assay/skills/checking-a-page) |
+| reverse-engineer-anything | 用 REA CLI/MCP 分析二进制与 JavaScript/Electron 应用并保留证据；原生深度分析需自备 Hopper、Ghidra 或 IDA | Codex | [GitHub](https://github.com/morluto/rea/tree/main/skill-src/reverse-engineer-anything) |
 
 ## 效率提升
 

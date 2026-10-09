@@ -177,6 +177,7 @@ Skills work across multiple platforms:
 - [task-observer](https://github.com/rebelytics/one-skill-to-rule-them-all) - Watches work sessions, logs where skills fail, and turns the corrections into proposed skill improvements.
 - [check-skill](https://github.com/UiPath/coder_eval/tree/main/plugins/coder-eval/skills/check-skill) - Measures whether a Claude Code skill triggers: generates a labelled activation suite and reports precision and recall.
 - [assay](https://github.com/awss1i/assay/tree/main/plugins/assay/skills/checking-a-page) - Opens a web page in a real browser, drives every control, and reports where the page breaks or contradicts itself. Deterministic, with no tests to write and no LLM.
+- [reverse-engineer-anything](https://github.com/morluto/rea/tree/main/skill-src/reverse-engineer-anything) - Inspect shipped binaries and JavaScript/Electron apps using REA CLI/MCP evidence; deep native analysis needs separately installed Hopper, Ghidra, or IDA.
 
 ## Productivity
 
