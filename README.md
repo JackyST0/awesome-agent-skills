@@ -32,37 +32,45 @@ English | [简体中文](README_ZH.md)
 
 ## Quick Start
 
-### One-Click Install (Recommended)
+### Quick Install (Recommended)
 
 **macOS / Linux:**
 
 ```bash
-# Use a reviewed release tag or full commit SHA, never a moving branch name.
-export AAS_REF="v1.0.1"
-base_url="https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$AAS_REF"
-curl --fail --proto '=https' --tlsv1.2 -LO "$base_url/install.sh" -LO "$base_url/checksums.txt"
-shasum -a 256 -c checksums.txt --ignore-missing
-
-# Interactive mode, or install all skills to a specific platform
-AAS_REPOSITORY_REF="$AAS_REF" bash install.sh
-AAS_REPOSITORY_REF="$AAS_REF" bash install.sh -p cursor -a
+curl --fail --proto '=https' --tlsv1.2 -fsSLo install.sh https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/v1.0.1/install.sh && AAS_REPOSITORY_REF=v1.0.1 bash install.sh
 ```
 
 **Windows (PowerShell):**
 
 ```powershell
-# Use a reviewed release tag or full commit SHA, never a moving branch name.
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/v1.0.1/install.ps1" -OutFile "install.ps1"; .\install.ps1 -RepositoryRef v1.0.1
+```
+
+The stable release reference is included directly in the copy-paste command, so no prior environment setup is required. For later commands, use forms such as `AAS_REPOSITORY_REF=v1.0.1 bash install.sh -p cursor -a` or `.\install.ps1 -RepositoryRef v1.0.1 -Platform cursor -All`. The installer also includes the stable release as its default; the environment variable and parameter remain available for reviewed overrides.
+
+### Verify Before Running
+
+For environments that require checksum verification:
+
+```bash
+export AAS_REF="v1.0.1"
+base_url="https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$AAS_REF"
+curl --fail --proto '=https' --tlsv1.2 -LO "$base_url/install.sh" -LO "$base_url/checksums.txt"
+shasum -a 256 -c checksums.txt --ignore-missing
+AAS_REPOSITORY_REF="$AAS_REF" bash install.sh
+```
+
+```powershell
 $AAS_REF = "v1.0.1"
 $baseUrl = "https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$AAS_REF"
 Invoke-WebRequest -Uri "$baseUrl/install.ps1" -OutFile "install.ps1"
 Invoke-WebRequest -Uri "$baseUrl/checksums.txt" -OutFile "checksums.txt"
 $expected = (Select-String -Path checksums.txt -Pattern ' install\.ps1$').Line.Split()[0]
 if ((Get-FileHash install.ps1 -Algorithm SHA256).Hash.ToLower() -ne $expected) { throw "SHA-256 verification failed." }
-
 .\install.ps1 -RepositoryRef $AAS_REF
 ```
 
-> Note: The installer currently installs the bundled example skills from this repository's `examples/` directory. It is not a general-purpose package manager for every third-party project listed below. Use a versioned release tag (recommended) or full commit SHA and verify its checksum before executing the script.
+> Note: The installer only installs the bundled example skills from this repository's `examples/` directory. It is not a package manager for every third-party project listed below.
 
 ### Manual Install
 
@@ -88,7 +96,7 @@ Skills work across multiple platforms:
 |Cursor     |`~/.cursor/skills/`          |`.cursor/skills/`   |
 |Claude Code|`~/.claude/skills/`          |`.claude/skills/`   |
 |Copilot    |`~/.copilot/skills/`         |`.github/skills/`   |
-|Windsurf   |`~/.windsurf/skills/`        |`.windsurf/skills/` |
+|Windsurf   |`~/.codeium/windsurf/skills/`|`.devin/skills/`    |
 |Codex      |`~/.codex/skills/`           |`.codex/skills/`    |
 |OpenCode   |`~/.config/opencode/skills/` |`.opencode/skills/` |
 |OpenClaw   |`~/.openclaw/skills/`        |`skills/`           |

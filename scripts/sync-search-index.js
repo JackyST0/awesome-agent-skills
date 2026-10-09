@@ -27,6 +27,16 @@ const CATEGORIES = [
   { id: 'design', en: 'Design', zh: '设计相关' },
 ];
 
+const PLATFORMS = [
+  'cursor',
+  'claude',
+  'copilot',
+  'windsurf',
+  'codex',
+  'opencode',
+  'openclaw',
+];
+
 function read(file) {
   return fs.readFileSync(file, 'utf8');
 }
@@ -177,7 +187,28 @@ function cleanChineseDescription(value) {
 
 function normalizePlatform(value) {
   if (!value || value === '-') return 'all';
-  return value.toLowerCase().replace(/\s+/g, '').replace(/\//g, '/');
+
+  const platforms = value
+    .toLowerCase()
+    .split('/')
+    .map((platform) => platform.trim())
+    .filter(Boolean);
+
+  if (platforms.length === 0 || (platforms.length === 1 && platforms[0] === 'all')) {
+    return 'all';
+  }
+  if (platforms.includes('all')) {
+    throw new Error(`Platform label cannot combine All with another platform: ${value}`);
+  }
+
+  const invalid = platforms.filter((platform) => !PLATFORMS.includes(platform));
+  if (invalid.length > 0) {
+    throw new Error(`Unsupported platform label: ${invalid.join(', ')}`);
+  }
+
+  return [...new Set(platforms)]
+    .sort((a, b) => PLATFORMS.indexOf(a) - PLATFORMS.indexOf(b))
+    .join('/');
 }
 
 function inferPlatform(entry) {

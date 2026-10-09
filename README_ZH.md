@@ -21,42 +21,45 @@
 
 ## 快速开始
 
-### 一键安装（推荐）
+### 快速安装（推荐）
 
 **macOS / Linux:**
 
 ```bash
-# 使用已审核的 release tag 或完整 commit SHA，不能使用会变动的分支名。
-export AAS_REF="v1.0.1"
-base_url="https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$AAS_REF"
-curl --fail --proto '=https' --tlsv1.2 -LO "$base_url/install.sh" -LO "$base_url/checksums.txt"
-shasum -a 256 -c checksums.txt --ignore-missing
-
-# 交互式模式；也可直接安装、卸载或查看指定平台
-AAS_REPOSITORY_REF="$AAS_REF" bash install.sh
-AAS_REPOSITORY_REF="$AAS_REF" bash install.sh -p cursor -a
-AAS_REPOSITORY_REF="$AAS_REF" bash install.sh -p cursor -u -s code-review
-AAS_REPOSITORY_REF="$AAS_REF" bash install.sh -p cursor --list-installed
+curl --fail --proto '=https' --tlsv1.2 -fsSLo install.sh https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/v1.0.1/install.sh && AAS_REPOSITORY_REF=v1.0.1 bash install.sh
 ```
 
 **Windows (PowerShell):**
 
 ```powershell
-# 使用已审核的 release tag 或完整 commit SHA，不能使用会变动的分支名。
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/v1.0.1/install.ps1" -OutFile "install.ps1"; .\install.ps1 -RepositoryRef v1.0.1
+```
+
+稳定版本已经内联在可复制命令中，无需提前设置环境变量。后续命令可使用 `AAS_REPOSITORY_REF=v1.0.1 bash install.sh -p cursor -a` 或 `.\install.ps1 -RepositoryRef v1.0.1 -Platform cursor -All`。安装器也会内置稳定版本作为默认值，同时保留环境变量和参数用于覆盖到其他已审核版本。
+
+### 执行前校验
+
+对完整性校验要求较高的环境，可先验证 SHA-256：
+
+```bash
+export AAS_REF="v1.0.1"
+base_url="https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$AAS_REF"
+curl --fail --proto '=https' --tlsv1.2 -LO "$base_url/install.sh" -LO "$base_url/checksums.txt"
+shasum -a 256 -c checksums.txt --ignore-missing
+AAS_REPOSITORY_REF="$AAS_REF" bash install.sh
+```
+
+```powershell
 $AAS_REF = "v1.0.1"
 $baseUrl = "https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$AAS_REF"
 Invoke-WebRequest -Uri "$baseUrl/install.ps1" -OutFile "install.ps1"
 Invoke-WebRequest -Uri "$baseUrl/checksums.txt" -OutFile "checksums.txt"
 $expected = (Select-String -Path checksums.txt -Pattern ' install\.ps1$').Line.Split()[0]
 if ((Get-FileHash install.ps1 -Algorithm SHA256).Hash.ToLower() -ne $expected) { throw "SHA-256 校验失败。" }
-
-.\install.ps1 -RepositoryRef $AAS_REF                 # 交互式模式
-.\install.ps1 -RepositoryRef $AAS_REF -Platform cursor -All
-.\install.ps1 -RepositoryRef $AAS_REF -Platform cursor -Uninstall -All
-.\install.ps1 -RepositoryRef $AAS_REF -Platform cursor -ListInstalled
+.\install.ps1 -RepositoryRef $AAS_REF
 ```
 
-> 注意：安装脚本当前仅用于安装本仓库 `examples/` 目录中的内置示例 Skills，并不负责安装下方 awesome list 里收录的所有第三方项目。执行前请使用版本化 release tag（推荐）或完整 commit SHA，并校验脚本的 SHA-256。
+> 注意：安装脚本仅用于安装本仓库 `examples/` 目录中的内置示例 Skills，并不负责安装下方 awesome list 中的所有第三方项目。
 
 ### 手动安装
 
@@ -106,7 +109,7 @@ Skills 可在多个平台使用：
 | Cursor | `~/.cursor/skills/` | `.cursor/skills/` |
 | Claude Code | `~/.claude/skills/` | `.claude/skills/` |
 | GitHub Copilot | `~/.copilot/skills/` | `.github/skills/` |
-| Windsurf | `~/.windsurf/skills/` | `.windsurf/skills/` |
+| Windsurf | `~/.codeium/windsurf/skills/` | `.devin/skills/` |
 | OpenAI Codex | `~/.codex/skills/` | `.codex/skills/` |
 | OpenCode | `~/.config/opencode/skills/` | `.opencode/skills/` |
 | OpenClaw | `~/.openclaw/skills/` | `skills/` |

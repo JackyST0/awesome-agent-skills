@@ -48,7 +48,7 @@ Use `templates/api-doc.md` for Markdown output format.
 
 ### 标准模板 / Standard Template
 
-```markdown
+````markdown
 ## API 文档 / API Documentation
 
 ### 端点概览 / Endpoint Overview
@@ -76,7 +76,7 @@ Use `templates/api-doc.md` for Markdown output format.
 ```json
 {}
 ```
-```
+````
 
 ## Examples
 

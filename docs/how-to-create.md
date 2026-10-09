@@ -45,9 +45,12 @@ license: MIT
 
 | 字段 | 必需 | 说明 |
 |------|------|------|
-| `name` | ✅ | 小写字母，用连字符分隔（如 `code-review`） |
-| `description` | ✅ | 简短的英文描述，说明 skill 功能和使用场景 |
+| `name` | ✅ | 1-64 个字符，只使用小写字母、数字和单连字符，并与目录名一致 |
+| `description` | ✅ | 1-1024 个字符，说明 Skill 做什么以及何时使用 |
 | `license` | ❌ | 许可证（如 MIT, CC0-1.0, Apache-2.0） |
+| `compatibility` | ❌ | 环境、产品或依赖要求 |
+| `metadata` | ❌ | 自定义字符串键值元数据，如作者和版本 |
+| `allowed-tools` | ❌ | 实验性预批准工具列表，需确认目标客户端支持 |
 
 ### 3. 添加脚本（可选）
 
@@ -73,7 +76,7 @@ code-review-skill/
 
 ### SKILL.md 示例
 
-```markdown
+````markdown
 ---
 name: code-review
 description: Smart code review skill that helps review code quality and provide improvement suggestions.
@@ -155,7 +158,7 @@ def calc(x,y):
 - 代码质量：6/10
 - 可读性：7/10
 - 可维护性：5/10
-```
+````
 
 ## 最佳实践
 

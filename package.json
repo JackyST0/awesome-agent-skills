@@ -3,6 +3,13 @@
   "scripts": {
     "sync:search": "node scripts/sync-search-index.js",
     "check:search": "node scripts/sync-search-index.js --check",
-    "check:search-security": "node scripts/check-search-page-security.js"
+    "check:search-security": "node scripts/check-search-page-security.js",
+    "check:repository": "node scripts/check-repository.js",
+    "check:installers": "node scripts/check-installers.js",
+    "check": "npm run check:search && npm run check:search-security && npm run check:repository && npm run check:installers",
+    "prepare:pr": "npm run sync:search && npm run check"
+  },
+  "devDependencies": {
+    "yaml": "2.8.2"
   }
 }

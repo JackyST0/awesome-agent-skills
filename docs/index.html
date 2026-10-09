@@ -76,7 +76,7 @@
     <div class="max-w-2xl mx-auto mb-6">
       <div class="relative">
         <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input type="text" id="searchInput" placeholder="搜索 Skills 名称、描述或分类..." class="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 outline-none transition text-sm">
+        <input type="text" id="searchInput" placeholder="搜索 Skills 名称、描述、分类或平台..." class="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 outline-none transition text-sm">
       </div>
     </div>
 
@@ -142,7 +142,7 @@
     const i18n = {
       zh: {
         subtitle: '精选 AI Agent Skills，让 AI 编程更专业',
-        placeholder: '搜索 Skills 名称、描述或分类...',
+        placeholder: '搜索 Skills 名称、描述、分类或平台...',
         noResults: '没有找到匹配的 Skills',
         showing: (c, t) => `显示 ${c} / ${t} 个 Skills`,
         footer: 'Made with ❤️ by',
@@ -150,7 +150,7 @@
       },
       en: {
         subtitle: 'Curated AI Agent Skills for smarter coding',
-        placeholder: 'Search skills by name, description, or category...',
+        placeholder: 'Search skills by name, description, category, or platform...',
         noResults: 'No skills found matching your search.',
         showing: (c, t) => `Showing ${c} of ${t} skills`,
         footer: 'Made with ❤️ by',
@@ -229,6 +229,7 @@
           (s.nameZh || s.name).toLowerCase().includes(query) ||
           (currentLang === 'zh' ? s.desc : s.descEn).toLowerCase().includes(query) ||
           s.category.toLowerCase().includes(query) ||
+          s.platform.toLowerCase().includes(query) ||
           (categoryLabels[currentLang][s.category] || '').toLowerCase().includes(query)
         );
       }

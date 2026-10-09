@@ -15,7 +15,11 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-# The repository ref must be a reviewed release tag or full commit SHA.
+$DEFAULT_REPOSITORY_REF = "v1.0.1"
+if (-not $RepositoryRef) {
+    $RepositoryRef = $DEFAULT_REPOSITORY_REF
+}
+
 $REPO_RAW = ""
 
 # Available skills
@@ -35,15 +39,30 @@ $PLATFORMS = @("cursor", "claude", "copilot", "windsurf", "codex", "opencode", "
 function Get-PlatformDir {
     param([string]$PlatformName)
     switch ($PlatformName) {
-        "cursor"   { return "$env:USERPROFILE\.cursor\skills" }
-        "claude"   { return "$env:USERPROFILE\.claude\skills" }
-        "copilot"  { return "$env:USERPROFILE\.copilot\skills" }
-        "windsurf" { return "$env:USERPROFILE\.windsurf\skills" }
-        "codex"    { return "$env:USERPROFILE\.codex\skills" }
-        "opencode" { return "$env:USERPROFILE\.config\opencode\skills" }
-        "openclaw" { return "$env:USERPROFILE\.openclaw\skills" }
+        "cursor"   { return (Join-Path $env:USERPROFILE ".cursor/skills") }
+        "claude"   { return (Join-Path $env:USERPROFILE ".claude/skills") }
+        "copilot"  { return (Join-Path $env:USERPROFILE ".copilot/skills") }
+        "windsurf" { return (Join-Path $env:USERPROFILE ".codeium/windsurf/skills") }
+        "codex"    { return (Join-Path $env:USERPROFILE ".codex/skills") }
+        "opencode" { return (Join-Path $env:USERPROFILE ".config/opencode/skills") }
+        "openclaw" { return (Join-Path $env:USERPROFILE ".openclaw/skills") }
         default    { return "" }
     }
+}
+
+function Test-RepositoryRef {
+    param([string]$Ref)
+    return $Ref -match '^([0-9a-fA-F]{40}|v[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z][0-9A-Za-z.-]*)?(\+[0-9A-Za-z][0-9A-Za-z.-]*)?)$'
+}
+
+function Require-RepositorySource {
+    if ($script:REPO_RAW) {
+        return
+    }
+
+    Write-Host "Error: the repository source is not initialized." -ForegroundColor Red
+    Write-Host "Set DEFAULT_REPOSITORY_REF or provide -RepositoryRef (or AAS_REPOSITORY_REF)."
+    exit 1
 }
 
 # Print banner
@@ -67,11 +86,14 @@ function Print-Help {
     Write-Host "  -Uninstall            Uninstall skills instead of installing"
     Write-Host "  -List                 List available skills"
     Write-Host "  -ListInstalled        List installed skills for a platform"
+    Write-Host "  -RepositoryRef REF    Optional semantic release tag or full commit SHA"
+    Write-Host "                        Default: $DEFAULT_REPOSITORY_REF"
     Write-Host "  -Help                 Show this help message"
     Write-Host ""
     Write-Host "Install Examples:"
     Write-Host "  .\install.ps1 -Platform cursor -Skill code-review"
     Write-Host "  .\install.ps1 -Platform claude -All"
+    Write-Host "  .\install.ps1 -RepositoryRef <tag-or-full-sha> -Platform codex -All"
     Write-Host ""
     Write-Host "Uninstall Examples:"
     Write-Host "  .\install.ps1 -Platform cursor -Uninstall -Skill code-review"
@@ -165,38 +187,54 @@ function Uninstall-Skill {
 # Download and install a skill
 function Install-Skill {
     param([string]$SkillName, [string]$TargetDir)
+    Require-RepositorySource
+
     $skillDir = Join-Path $TargetDir $SkillName
     $templatesDir = Join-Path $skillDir "templates"
 
     Write-Host "Installing $SkillName..." -ForegroundColor Yellow
 
-    # Create directories
     New-Item -ItemType Directory -Path $skillDir -Force | Out-Null
-    New-Item -ItemType Directory -Path $templatesDir -Force -ErrorAction SilentlyContinue | Out-Null
-
-    # Download SKILL.md
-    try {
-        $skillUrl = "$REPO_RAW/examples/$SkillName/SKILL.md"
-        $skillPath = Join-Path $skillDir "SKILL.md"
-        Invoke-WebRequest -Uri $skillUrl -OutFile $skillPath -UseBasicParsing
-        Write-Host "  [OK] Downloaded SKILL.md" -ForegroundColor Green
-    } catch {
-        Write-Host "  [X] Failed to download SKILL.md" -ForegroundColor Red
-        return
+    if ($SKILL_TEMPLATES.ContainsKey($SkillName)) {
+        New-Item -ItemType Directory -Path $templatesDir -Force | Out-Null
     }
 
-    # Download templates for this skill
-    if ($SKILL_TEMPLATES.ContainsKey($SkillName)) {
-        foreach ($template in $SKILL_TEMPLATES[$SkillName]) {
-            try {
+    $skillUrl = "$REPO_RAW/examples/$SkillName/SKILL.md"
+    $skillPath = Join-Path $skillDir "SKILL.md"
+    $skillTempPath = Join-Path $skillDir ".SKILL.md.download"
+    $templateDownloads = @()
+
+    try {
+        Invoke-WebRequest -Uri $skillUrl -OutFile $skillTempPath -UseBasicParsing -ErrorAction Stop
+
+        if ($SKILL_TEMPLATES.ContainsKey($SkillName)) {
+            foreach ($template in $SKILL_TEMPLATES[$SkillName]) {
                 $templateUrl = "$REPO_RAW/examples/$SkillName/templates/$template"
                 $templatePath = Join-Path $templatesDir $template
-                Invoke-WebRequest -Uri $templateUrl -OutFile $templatePath -UseBasicParsing -ErrorAction SilentlyContinue
-                Write-Host "  [OK] Downloaded templates/$template" -ForegroundColor Green
-            } catch {
-                # Template doesn't exist, skip silently
+                $templateTempPath = Join-Path $templatesDir ".$template.download"
+                Invoke-WebRequest -Uri $templateUrl -OutFile $templateTempPath -UseBasicParsing -ErrorAction Stop
+                $templateDownloads += [PSCustomObject]@{
+                    Name = $template
+                    TempPath = $templateTempPath
+                    FinalPath = $templatePath
+                }
             }
         }
+
+        Move-Item -Path $skillTempPath -Destination $skillPath -Force
+        Write-Host "  [OK] Downloaded SKILL.md" -ForegroundColor Green
+
+        foreach ($download in $templateDownloads) {
+            Move-Item -Path $download.TempPath -Destination $download.FinalPath -Force
+            Write-Host "  [OK] Downloaded templates/$($download.Name)" -ForegroundColor Green
+        }
+    } catch {
+        Remove-Item -Path $skillTempPath -Force -ErrorAction SilentlyContinue
+        foreach ($download in $templateDownloads) {
+            Remove-Item -Path $download.TempPath -Force -ErrorAction SilentlyContinue
+        }
+        Write-Host "  [X] Failed to install $SkillName`: $($_.Exception.Message)" -ForegroundColor Red
+        throw
     }
 
     Write-Host "[OK] Installed $SkillName to $skillDir" -ForegroundColor Green
@@ -293,6 +331,7 @@ function Interactive-Mode {
 
     # Execute action
     if ($action -eq "install") {
+        Require-RepositorySource
         Write-Host "Installing to $targetDir..." -ForegroundColor Blue
         Write-Host ""
         foreach ($skill in $selectedSkills) {
@@ -327,11 +366,12 @@ function Main {
         exit 0
     }
 
-    if (-not $RepositoryRef -and -not $ListInstalled) {
-        Write-Host "Error: -RepositoryRef (or AAS_REPOSITORY_REF) must be a reviewed release tag or full commit SHA." -ForegroundColor Red
-        exit 1
-    }
     if ($RepositoryRef) {
+        if (-not (Test-RepositoryRef $RepositoryRef)) {
+            Write-Host "Error: invalid RepositoryRef '$RepositoryRef'." -ForegroundColor Red
+            Write-Host "Use a published semantic release tag or a full 40-character commit SHA."
+            exit 1
+        }
         $script:REPO_RAW = "https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$RepositoryRef"
     }
 
@@ -398,6 +438,7 @@ function Main {
         Write-Host ""
         Write-Host "Uninstall complete!" -ForegroundColor Green
     } else {
+        Require-RepositorySource
         Write-Host "Installing to $targetDir..." -ForegroundColor Blue
         Write-Host ""
         foreach ($s in $skillsToProcess) {

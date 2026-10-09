@@ -18,7 +18,6 @@ Desktop.ini
 
 # Node (if using any build tools)
 node_modules/
-package-lock.json
 
 # Python
 __pycache__/

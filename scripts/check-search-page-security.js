@@ -11,6 +11,7 @@ const requiredSnippets = [
   'link.textContent = text;',
   'description.textContent = desc;',
   'grid.replaceChildren(...cards);',
+  's.platform.toLowerCase().includes(query)',
 ];
 
 for (const snippet of requiredSnippets) {
