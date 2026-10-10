@@ -21,7 +21,7 @@ jobs:
 
       - name: Reject manual search-index changes
         run: |
-          if ! git diff --quiet "$BASE_SHA" "$HEAD_SHA" -- docs/skills.json; then
+          if ! git diff --quiet "$BASE_SHA...$HEAD_SHA" -- docs/skills.json; then
             echo "docs/skills.json is generated after merge; update README.md and README_ZH.md only."
             exit 1
           fi
@@ -39,4 +39,4 @@ jobs:
         run: npm run check
 
       - name: Validate patch formatting
-        run: git diff --check "$BASE_SHA" "$HEAD_SHA"
+        run: git diff --check "$BASE_SHA...$HEAD_SHA"
