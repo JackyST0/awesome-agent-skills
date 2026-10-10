@@ -23,6 +23,8 @@
 4. 提交 **Pull Request**
 
 > 在线搜索页的数据会在 PR 合并后由 GitHub Actions 从 `README.md` 和 `README_ZH.md` 自动生成，无需手动编辑。
+>
+> 普通条目 PR 只需修改 `README.md` 和 `README_ZH.md`。`docs/skills.json` 由 CI 自动生成和同步，请勿手动编辑或提交。
 
 ### 收录要求
 
@@ -117,16 +119,16 @@
 
 ```bash
 npm ci
-npm run prepare:pr
+npm run check
 ```
 
-`prepare:pr` 会同步搜索索引并运行完整检查，普通条目贡献不需要分别记忆各个脚本。
+`npm run check` 会校验双语条目、搜索索引生成结果、仓库结构和安装器，不要求提交 `docs/skills.json`。
 
 ### 发布流程
 
 - 公开主分支 README 中的安装版本必须始终指向已经发布的 tag。
 - 发布新版本时，在同一个提交中更新中英文 README、安装脚本示例和 `checksums.txt`。
-- 创建 tag 前运行 `npm ci`、`npm run check` 和 `git diff --check`。
+- 创建 tag 前运行 `npm ci`、`npm run check`、`npm run check:search-index` 和 `git diff --check`。
 - 从上述提交创建并推送版本 tag；不要先发布引用尚不存在 tag 的安装说明。
 
 ### 报告问题
@@ -162,6 +164,8 @@ Thanks for your interest in contributing to Awesome Agent Skills!
 4. Submit a **Pull Request**
 
 > The online search page is generated automatically from `README.md` and `README_ZH.md` by GitHub Actions after PRs are merged. No manual search-index edits are required.
+>
+> Regular entry PRs only need to update `README.md` and `README_ZH.md`. `docs/skills.json` is generated and synchronized by CI; do not edit or submit it manually.
 
 ### Inclusion Requirements
 
@@ -256,16 +260,16 @@ Please include the following information when submitting a PR:
 
 ```bash
 npm ci
-npm run prepare:pr
+npm run check
 ```
 
-`prepare:pr` synchronizes the search index and runs the complete validation suite, so regular entry contributions do not need to invoke each script separately.
+`npm run check` validates the bilingual entries, search-index generation, repository structure, and installers without requiring `docs/skills.json` in the PR.
 
 ### Release Process
 
 - Installer versions in the public default-branch READMEs must always reference an already published tag.
 - Update both READMEs, installer examples, and `checksums.txt` in the same release commit.
-- Run `npm ci`, `npm run check`, and `git diff --check` before creating the tag.
+- Run `npm ci`, `npm run check`, `npm run check:search-index`, and `git diff --check` before creating the tag.
 - Create and push the version tag from that exact commit; do not publish installation instructions that reference a tag that does not exist yet.
 
 ### Report Issues

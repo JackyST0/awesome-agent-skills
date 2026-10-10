@@ -36,9 +36,10 @@ jobs:
             --accept 200,204,206,301,302,303,307,308
             --timeout 30
             --max-retries 3
-            --exclude-mail
+            --include-mail=false
             --exclude '^https://github\.com/.*/(issues|pull)/\d+'
             --exclude '^https://star-history\.com'
+            --exclude '%7B%7Burl%7D%7D'
             '**/*.md'
 
           # Don't fail immediately - we want to create an issue first

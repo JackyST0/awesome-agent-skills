@@ -9,10 +9,22 @@ jobs:
     runs-on: ubuntu-24.04
     permissions:
       contents: read
+    env:
+      BASE_SHA: ${{ github.event.pull_request.base.sha }}
+      HEAD_SHA: ${{ github.event.pull_request.head.sha }}
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Reject manual search-index changes
+        run: |
+          if ! git diff --quiet "$BASE_SHA...$HEAD_SHA" -- docs/skills.json; then
+            echo "docs/skills.json is generated after merge; update README.md and README_ZH.md only."
+            exit 1
+          fi
 
       - name: Setup Node.js
         uses: actions/setup-node@v7
@@ -27,4 +39,4 @@ jobs:
         run: npm run check
 
       - name: Validate patch formatting
-        run: git diff --check
+        run: git diff --check "$BASE_SHA...$HEAD_SHA"

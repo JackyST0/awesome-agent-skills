@@ -690,6 +690,16 @@
     "url": "https://github.com/morluto/rea/tree/main/skill-src/reverse-engineer-anything"
   },
   {
+    "name": "supercov",
+    "nameZh": "supercov",
+    "desc": "运行项目现有测试，测量行、分支与 MC/DC 覆盖率，并把未测试的代码交给 Agent 补测。覆盖率在本地运行；可选的质量分析在配置了 TYPESAFE_API_KEY 时会把源文件发送给 TypeSafe",
+    "descEn": "Measures line, branch and MC/DC coverage of the existing tests and hands the agent the untested code to test next. Coverage runs locally; the optional quality analysis sends source files to TypeSafe when TYPESAFE_API_KEY is configured",
+    "stars": "-",
+    "platform": "all",
+    "category": "devtools",
+    "url": "https://github.com/supercorp-ai/supercov/tree/main/plugins/supercov/skills/supercov"
+  },
+  {
     "name": "claude-code-workflows",
     "nameZh": "claude-code-workflows",
     "desc": "生产级开发工作流，自动化质量检查",

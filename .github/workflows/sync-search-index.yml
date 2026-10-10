@@ -32,6 +32,9 @@ jobs:
       - name: Generate search index
         run: npm run sync:search
 
+      - name: Validate generated index
+        run: npm run check:search-index
+
       - name: Commit generated index
         run: |
           if git diff --quiet -- docs/skills.json; then
