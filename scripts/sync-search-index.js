@@ -300,20 +300,26 @@ function writeJson(file, data) {
 }
 
 function main() {
-  const check = process.argv.includes('--check');
+  const checkSynced = process.argv.includes('--check');
+  const validateOnly = process.argv.includes('--validate');
   const enEntries = parseEnglish(read(README_EN));
   const zhByUrl = parseChinese(read(README_ZH));
   assertBilingualConsistency(enEntries, zhByUrl);
   const index = buildIndex(enEntries, zhByUrl);
   const next = `${JSON.stringify(index, null, 2)}\n`;
 
-  if (check) {
+  if (checkSynced) {
     const current = fs.existsSync(OUTPUT) ? read(OUTPUT) : '';
     if (current !== next) {
       console.error('docs/skills.json is out of sync. Run: node scripts/sync-search-index.js');
       process.exit(1);
     }
     console.log('docs/skills.json is up to date.');
+    return;
+  }
+
+  if (validateOnly) {
+    console.log(`README entries are valid; generated ${index.length} search entries.`);
     return;
   }
 
