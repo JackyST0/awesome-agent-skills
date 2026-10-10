@@ -680,16 +680,6 @@
     "url": "https://github.com/awss1i/assay/tree/main/plugins/assay/skills/checking-a-page"
   },
   {
-    "name": "reverse-engineer-anything",
-    "nameZh": "reverse-engineer-anything",
-    "desc": "用 REA CLI/MCP 分析二进制与 JavaScript/Electron 应用并保留证据；原生深度分析需自备 Hopper、Ghidra 或 IDA",
-    "descEn": "Inspect shipped binaries and JavaScript/Electron apps using REA CLI/MCP evidence; deep native analysis needs separately installed Hopper, Ghidra, or IDA",
-    "stars": "-",
-    "platform": "codex",
-    "category": "devtools",
-    "url": "https://github.com/morluto/rea/tree/main/skill-src/reverse-engineer-anything"
-  },
-  {
     "name": "supercov",
     "nameZh": "supercov",
     "desc": "运行项目现有测试，测量行、分支与 MC/DC 覆盖率，并把未测试的代码交给 Agent 补测。覆盖率在本地运行；可选的质量分析在配置了 TYPESAFE_API_KEY 时会把源文件发送给 TypeSafe",
