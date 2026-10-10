@@ -265,6 +265,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 |------|------|------|------|
 | d3-visualization | D3.js 数据可视化 Skill | Claude | [GitHub](https://github.com/chrisvoncsefalvay/claude-d3js-skill) |
 | context-engineering | 上下文工程和多 Agent 架构 Skills | All | [GitHub](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) |
+| jev-social | 通过 Jev 路由与本地 socai CLI 执行只读社交研究 | Codex | [GitHub](https://github.com/socai-io/jev-social/tree/v0.1.10/skills/jev-social) |
 
 ## 写作创作
 

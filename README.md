@@ -212,6 +212,7 @@ Skills work across multiple platforms:
 
 - [d3-visualization](https://github.com/chrisvoncsefalvay/claude-d3js-skill) - D3.js data visualization Skill.
 - [context-engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) - Context engineering and multi-Agent architecture.
+- [jev-social](https://github.com/socai-io/jev-social/tree/v0.1.10/skills/jev-social) - Run browser-grounded Instagram, TikTok, and LinkedIn research through Jev routing and the local socai CLI.
 
 ## Writing
 
