@@ -224,6 +224,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | task-observer | 观察工作会话，记录 Skills 失效之处，并将修正转化为 Skills 改进建议 | Claude | [GitHub](https://github.com/rebelytics/one-skill-to-rule-them-all) |
 | check-skill | 衡量 Claude Code Skill 是否被正确触发：生成带标注的激活测试集，并报告精确率与召回率 | Claude | [GitHub](https://github.com/UiPath/coder_eval/tree/main/plugins/coder-eval/skills/check-skill) |
 | assay | 在真实浏览器中打开网页，操作页面上的每个控件，并报告页面出错或自相矛盾之处。确定性运行，无需编写测试，也不使用 LLM | All | [GitHub](https://github.com/awss1i/assay/tree/main/plugins/assay/skills/checking-a-page) |
+| supercov | 运行项目现有测试，测量行、分支与 MC/DC 覆盖率，并把未测试的代码交给 Agent 补测。覆盖率在本地运行；可选的质量分析在配置了 `TYPESAFE_API_KEY` 时会把源文件发送给 TypeSafe | All | [GitHub](https://github.com/supercorp-ai/supercov/tree/main/plugins/supercov/skills/supercov) |
 
 ## 效率提升
 
