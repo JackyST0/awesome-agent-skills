@@ -200,6 +200,7 @@ Skills work across multiple platforms:
 - [job-application-agent](https://github.com/vaibhavarora14/job-application-agent) - Skill + CLI to discover, qualify, complete, and track your own job applications. [Data sharing](https://github.com/vaibhavarora14/job-application-agent/blob/main/job-application-agent/references/ANALYTICS.md): usage analytics and name/email sharing with private PostHog analytics, plus community-registry sharing of confirmed-application and discovery-source metadata, are enabled by default (opt-out). Optional [cloud mode](https://github.com/vaibhavarora14/job-application-agent/blob/main/job-application-agent/references/CLOUD_STATE.md) stores and syncs profile, résumé, application, and outcome state.
 - [universal-exam-cram-coach](https://github.com/ZeKaiNie/universal-examprep-skill) - Exam-prep tutor that teaches from your own slides, notes and past papers with page citations, figure crops, homework-only quizzes and cross-session progress.
 - [tlgr](https://github.com/tlgrcli/tlgr/tree/main/plugin/skills/tlgr) - Read, search and send Telegram messages from your own account and manage chats and contacts through the tlgr CLI, with JSON output.
+- [new-term-radar](https://github.com/zhuyansen/new-term-radar) - Spots new AI model, product and repo names on X, Hugging Face, GitHub and sitemaps, then ranks the search terms behind them by Google Ads volume and Google Trends (three skills; needs an AIsa API key).
 
 ## DevOps
 

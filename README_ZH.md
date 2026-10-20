@@ -249,6 +249,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | job-application-agent | 求职 Skill + CLI，发现、筛选、填写并追踪本人投递。[数据共享](https://github.com/vaibhavarora14/job-application-agent/blob/main/job-application-agent/references/ANALYTICS.md)：默认启用使用分析、向私有 PostHog 分析服务共享姓名/邮箱，以及向社区注册表共享已确认投递和发现来源的元数据（可退出）。可选[云模式](https://github.com/vaibhavarora14/job-application-agent/blob/main/job-application-agent/references/CLOUD_STATE.md)存储并同步个人资料、简历、投递和结果状态 | All | [GitHub](https://github.com/vaibhavarora14/job-application-agent) |
 | universal-exam-cram-coach | 期末备考教练：按章讲课件并标页码，只用作业和真题出题 | All | [GitHub](https://github.com/ZeKaiNie/universal-examprep-skill) |
 | tlgr | 通过 tlgr 命令行收发和搜索个人 Telegram 账号的消息、管理会话与联系人，输出 JSON | Claude | [GitHub](https://github.com/tlgrcli/tlgr/tree/main/plugin/skills/tlgr) |
+| new-term-radar | 发现 X、Hugging Face、GitHub 和 sitemap 上刚出现的 AI 模型、产品和仓库名，用 Google Ads 搜索量和 Google Trends 给背后的搜索词排优先级（3 个 Skill，需 AIsa API key） | Claude | [GitHub](https://github.com/zhuyansen/new-term-radar) |
 
 ## DevOps
 
