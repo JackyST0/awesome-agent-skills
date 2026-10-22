@@ -145,6 +145,7 @@ Skills work across multiple platforms:
 - [unifapi-agent/skills](https://github.com/unifapi-agent/skills) - Public-data MCP and KOL pricing Skills for Codex, Claude Code, Cursor, and other agents.
 - [youtube-skills](https://github.com/ZeroPointRepo/youtube-skills) - YouTube transcript, video search, channel and playlist skills for Claude Code, OpenClaw, Hermes Agent, and other agent runtimes.
 - [tonone](https://github.com/tonone-ai/tonone) - Claude Code plugin with 100 specialist agents and 429 skills across engineering, product, design, security, legal, and ops; a SessionStart hook loads only the skills relevant to the current repo.
+- [oh-my-agent](https://github.com/first-fluke/oh-my-agent) - 33 skills and 21 workflows kept in one `.agents/skills` folder and symlinked per skill into Claude Code, Codex, Cursor and other runtimes; `oma link --dry-run` previews what it will write.
 
 ## Development Tools
 

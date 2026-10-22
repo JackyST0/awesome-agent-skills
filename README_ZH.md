@@ -190,6 +190,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | unifapi-agent/skills | 基于 UnifAPI MCP 的公共数据与 KOL 定价 Skills | 481 | [GitHub](https://github.com/unifapi-agent/skills) |
 | youtube-skills | 面向 YouTube 的转录、视频搜索、频道浏览与播放列表 Skills，适用于 Claude Code、OpenClaw、Hermes Agent 等 Agent 运行时 | 1.1k | [GitHub](https://github.com/ZeroPointRepo/youtube-skills) |
 | tonone | Claude Code 插件，包含 100 个专业 Agent 与 429 个 Skills，覆盖工程、产品、设计、安全、法务和运维；SessionStart hook 仅加载与当前仓库相关的 Skills | 76 | [GitHub](https://github.com/tonone-ai/tonone) |
+| oh-my-agent | 33 个技能和 21 个工作流，统一放在 `.agents/skills`，按条目软链接到 Claude Code、Codex、Cursor 等工具的技能目录；`oma link --dry-run` 先预览要写的文件 | 1.4k | [GitHub](https://github.com/first-fluke/oh-my-agent) |
 
 ## 开发工具
 
