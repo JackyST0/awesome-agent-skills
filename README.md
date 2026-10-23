@@ -208,6 +208,7 @@ Skills work across multiple platforms:
 - [ci-cd](https://claude-plugins.dev/skills/@ahmedasmar/devops-claude-skills/ci-cd) - Design, optimize, and security-scan CI/CD pipelines.
 - [claudekit-skills](https://github.com/mrgoonie/claudekit-skills) - Docker/GCP/Cloudflare deployment and management.
 - [d1v](https://github.com/d1vai/d1v-cli/blob/main/skills/d1v/SKILL.md) - Deploy web projects with verified previews and explicit-confirmation production releases.
+- [cloud-finops-skills](https://github.com/OptimNow/cloud-finops-skills) - Cloud and AI cost management Skill: billing mechanics, commitments, allocation and waste-pattern runbooks for AWS, Azure and GCP.
 
 ## Data Processing
 

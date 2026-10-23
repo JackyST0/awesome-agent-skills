@@ -259,6 +259,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | ci-cd | CI/CD 管道设计、优化和安全扫描 | All | [claude-plugins.dev](https://claude-plugins.dev/skills/@ahmedasmar/devops-claude-skills/ci-cd) |
 | claudekit-skills | Docker/GCP/Cloudflare 部署和管理 | Claude | [GitHub](https://github.com/mrgoonie/claudekit-skills) |
 | d1v | 部署 Web 项目，提供可验证预览和需明确确认的生产发布 | Claude/Codex | [GitHub](https://github.com/d1vai/d1v-cli/blob/main/skills/d1v/SKILL.md) |
+| cloud-finops-skills | 云与 AI 成本管理（FinOps）Skill：计费机制、承诺折扣、成本分摊与浪费模式排查手册，覆盖 AWS/Azure/GCP | Claude/Cursor/Copilot/Windsurf/Codex | [GitHub](https://github.com/OptimNow/cloud-finops-skills) |
 
 ## 数据处理
 
