@@ -179,6 +179,7 @@ Skills work across multiple platforms:
 - [assay](https://github.com/awss1i/assay/tree/main/plugins/assay/skills/checking-a-page) - Opens a web page in a real browser, drives every control, and reports where the page breaks or contradicts itself. Deterministic, with no tests to write and no LLM.
 - [reverse-engineer-anything](https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything) - Inspect shipped binaries and JavaScript/Electron apps using REA CLI/MCP evidence; deep native analysis needs separately installed Hopper, Ghidra, or IDA.
 - [supercov](https://github.com/supercorp-ai/supercov/tree/main/plugins/supercov/skills/supercov) - Measures line, branch and MC/DC coverage of the existing tests and hands the agent the untested code to test next. Coverage runs locally; the optional quality analysis sends source files to TypeSafe when `TYPESAFE_API_KEY` is configured.
+- [doomsday-network](https://github.com/doomsday-network/doomsday) - Self-custodial Layer-1 `DOOM` & Base Mainnet `wDOOM` (`0x623c84A5E04bF715018203334b0eFE41696eBC3E`) agent skill (`SKILL.md`) and MCP server (`integrations/mcp/doomsday_mcp.py`) for replay-proof agent-to-agent crypto invoicing (`create_l1_invoice` / `verify_l1_payment`), PoW faucet claims, and GitHub bounty Proof-of-Escrow verification.
 
 ## Productivity
 
