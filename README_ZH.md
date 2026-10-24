@@ -226,6 +226,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | assay | 在真实浏览器中打开网页，操作页面上的每个控件，并报告页面出错或自相矛盾之处。确定性运行，无需编写测试，也不使用 LLM | All | [GitHub](https://github.com/awss1i/assay/tree/main/plugins/assay/skills/checking-a-page) |
 | reverse-engineer-anything | 用 REA CLI/MCP 分析二进制与 JavaScript/Electron 应用并保留证据；原生深度分析需自备 Hopper、Ghidra 或 IDA | Codex | [GitHub](https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything) |
 | supercov | 运行项目现有测试，测量行、分支与 MC/DC 覆盖率，并把未测试的代码交给 Agent 补测。覆盖率在本地运行；可选的质量分析在配置了 `TYPESAFE_API_KEY` 时会把源文件发送给 TypeSafe | All | [GitHub](https://github.com/supercorp-ai/supercov/tree/main/plugins/supercov/skills/supercov) |
+| write-ai-ready-issue | 把当前对话整理成 GitHub Issue（背景、可在仓库里用测试验证的验收项、不做的范围），任务包含多个可独立合并的结果时先建议拆分。来自开源编程 agent Orbi，单独使用不需要 Orbi | Claude/Codex/Cursor/Copilot | [GitHub](https://github.com/orbi-build/orbi/tree/main/integrations/claude-plugin/skills/write-ai-ready-issue) |
 
 ## 效率提升
 

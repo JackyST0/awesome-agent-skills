@@ -179,6 +179,7 @@ Skills work across multiple platforms:
 - [assay](https://github.com/awss1i/assay/tree/main/plugins/assay/skills/checking-a-page) - Opens a web page in a real browser, drives every control, and reports where the page breaks or contradicts itself. Deterministic, with no tests to write and no LLM.
 - [reverse-engineer-anything](https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything) - Inspect shipped binaries and JavaScript/Electron apps using REA CLI/MCP evidence; deep native analysis needs separately installed Hopper, Ghidra, or IDA.
 - [supercov](https://github.com/supercorp-ai/supercov/tree/main/plugins/supercov/skills/supercov) - Measures line, branch and MC/DC coverage of the existing tests and hands the agent the untested code to test next. Coverage runs locally; the optional quality analysis sends source files to TypeSafe when `TYPESAFE_API_KEY` is configured.
+- [write-ai-ready-issue](https://github.com/orbi-build/orbi/tree/main/integrations/claude-plugin/skills/write-ai-ready-issue) - Turns a conversation into a GitHub Issue with Background, testable Acceptance criteria and Out of scope, splitting tasks that have more than one mergeable result. Part of the open-source Orbi coding agent; the skill itself does not need Orbi.
 
 ## Productivity
 
