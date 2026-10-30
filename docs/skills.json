@@ -430,6 +430,16 @@
     "url": "https://github.com/firecrawl/skills"
   },
   {
+    "name": "headcount",
+    "nameZh": "headcount",
+    "desc": "按公司部门组织的 Skills 合集（法务、财务、安全、运营等），适用于 Claude Code 与 ChatGPT，每个 Skill 可单独安装，并注明所依据的标准或监管机构",
+    "descEn": "Company-department skills (legal, finance, security, ops and more) for Claude Code and ChatGPT, each installable on its own and citing the standards or regulators it relies on",
+    "stars": "2254",
+    "platform": "claude",
+    "category": "collection",
+    "url": "https://github.com/cbrock84/headcount"
+  },
+  {
     "name": "agenttrace-session-audit",
     "nameZh": "agenttrace-session-audit",
     "desc": "审计本地 AI 编程 Agent 会话的健康度、成本、失败与差异",
