@@ -276,6 +276,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | d3-visualization | D3.js 数据可视化 Skill | Claude | [GitHub](https://github.com/chrisvoncsefalvay/claude-d3js-skill) |
 | context-engineering | 上下文工程和多 Agent 架构 Skills | All | [GitHub](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) |
 | kordoc | 韩国文档（HWP/HWPX/PDF）转 Markdown、表单填写与 HWPX 生成 Skill | Claude | [GitHub](https://github.com/chrisryugj/kordoc/tree/main/plugins/kordoc/skills/kordoc) |
+| jiangshan-atlas | 中国历史地图与古诗地名、人物轨迹定位可视化 Skill | All | [GitHub](https://github.com/DeanChensj/jiangshan-map/tree/main/skills/jiangshan-atlas) |
 
 ## 写作创作
 
