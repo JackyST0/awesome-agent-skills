@@ -209,6 +209,8 @@ Skills work across multiple platforms:
 - [placecall](https://github.com/voygr-tech/placecall/tree/main/skills/placecall) - Places real phone calls to US businesses for reservations, inquiries and quotes, and returns the outcome and transcript. Uses a hosted API ([network and data](https://github.com/voygr-tech/placecall#network-access)); calls are recorded and kept 90 days.
 - [new-term-radar](https://github.com/zhuyansen/new-term-radar) - Spots new AI model, product and repo names on X, Hugging Face, GitHub and sitemaps, then ranks the search terms behind them by Google Ads volume and DataForSEO Trends (an estimate of Google search interest). Three skills and an MCP server; needs an AIsa API key, and an optional GoAnyAPI key adds Google Trends related queries and country-level trend series.
 
+- [signbee](https://github.com/signbee/skill/tree/main/signbee) - Send Markdown or PDF documents for two-party e-signing with SHA-256 tamper-evident certificates via the Signbee API and MCP server.
+
 ## DevOps
 
 - [devops-claude-skills](https://github.com/ahmedasmar/devops-claude-skills) - DevOps workflow marketplace with Terraform/K8s.
