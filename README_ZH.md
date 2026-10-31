@@ -258,6 +258,8 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | placecall | 让 Agent 给美国商家拨打真实电话（订位、咨询、询价），返回通话结果与文字记录。依赖托管 API（[网络与数据说明](https://github.com/voygr-tech/placecall#network-access)），通话会录音并保存 90 天 | Claude/Codex/Cursor/OpenClaw | [GitHub](https://github.com/voygr-tech/placecall/tree/main/skills/placecall) |
 | new-term-radar | 发现 X、Hugging Face、GitHub 和 sitemap 上刚出现的 AI 模型、产品和仓库名，用 Google Ads 搜索量和 DataForSEO Trends（对 Google 搜索热度的估算）给背后的搜索词排优先级。3 个 Skill 和一个 MCP 服务器；需要 AIsa API key，可选的 GoAnyAPI key 会加上 Google Trends 相关搜索和分国家的趋势 | All | [GitHub](https://github.com/zhuyansen/new-term-radar) |
 
+| signbee | 通过 Signbee API 与 MCP 服务器将 Markdown 或 PDF 文档发送双方法律电子签名，生成带 SHA-256 防篡改证书的签署 PDF | All | [GitHub](https://github.com/signbee/skill/tree/main/signbee) |
+
 ## DevOps
 
 | 名称 | 描述 | 平台 | 链接 |
