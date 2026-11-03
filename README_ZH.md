@@ -257,6 +257,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | tlgr | 通过 tlgr 命令行收发和搜索个人 Telegram 账号的消息、管理会话与联系人，输出 JSON | Claude | [GitHub](https://github.com/tlgrcli/tlgr/tree/main/plugin/skills/tlgr) |
 | placecall | 让 Agent 给美国商家拨打真实电话（订位、咨询、询价），返回通话结果与文字记录。依赖托管 API（[网络与数据说明](https://github.com/voygr-tech/placecall#network-access)），通话会录音并保存 90 天 | Claude/Codex/Cursor/OpenClaw | [GitHub](https://github.com/voygr-tech/placecall/tree/main/skills/placecall) |
 | new-term-radar | 发现 X、Hugging Face、GitHub 和 sitemap 上刚出现的 AI 模型、产品和仓库名，用 Google Ads 搜索量和 DataForSEO Trends（对 Google 搜索热度的估算）给背后的搜索词排优先级。3 个 Skill 和一个 MCP 服务器；需要 AIsa API key，可选的 GoAnyAPI key 会加上 Google Trends 相关搜索和分国家的趋势 | All | [GitHub](https://github.com/zhuyansen/new-term-radar) |
+| career-ops | 开源的 AI 求职智能体：扫描公司招聘页面，对照你的简历为每个职位打 1-5 分，定制 ATS 友好的简历并跟踪申请；每份申请都由你自己提交。无遥测，简历只发送给你选择的 AI 服务。 | Claude/Codex/OpenCode | [GitHub](https://github.com/career-ops-hq/career-ops) · [官网](https://career-ops.org/zh) |
 
 ## DevOps
 
