@@ -209,6 +209,7 @@ Skills work across multiple platforms:
 - [placecall](https://github.com/voygr-tech/placecall/tree/main/skills/placecall) - Places real phone calls to US businesses for reservations, inquiries and quotes, and returns the outcome and transcript. Uses a hosted API ([network and data](https://github.com/voygr-tech/placecall#network-access)); calls are recorded and kept 90 days.
 - [new-term-radar](https://github.com/zhuyansen/new-term-radar) - Spots new AI model, product and repo names on X, Hugging Face, GitHub and sitemaps, then ranks the search terms behind them by Google Ads volume and DataForSEO Trends (an estimate of Google search interest). Three skills and an MCP server; needs an AIsa API key, and an optional GoAnyAPI key adds Google Trends related queries and country-level trend series.
 - [answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) - Agent skill that writes the answer as a Markdown draft and renders one offline HTML page, using about 1/8 of the output tokens.
+- [frugal](https://github.com/fainir/frugal) - Agent skill that finds the cheapest honest way to get what you want before money is spent: free tiers, right-sized plans, verified discounts and cheaper alternatives.
 
 ## DevOps
 
