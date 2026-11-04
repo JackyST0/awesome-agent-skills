@@ -225,6 +225,7 @@ Skills work across multiple platforms:
 - [context-engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) - Context engineering and multi-Agent architecture.
 - [kordoc](https://github.com/chrisryugj/kordoc/tree/main/plugins/kordoc/skills/kordoc) - Korean document (HWP/HWPX/PDF) to Markdown conversion, form filling, and HWPX generation Skill.
 - [jiangshan-atlas](https://github.com/DeanChensj/jiangshan-map/tree/main/skills/jiangshan-atlas) - Interactive Chinese historical atlas Skill for locating ancient places, classical poems, and figure trajectories.
+- [ava](https://github.com/antvis/AVA/tree/ai/skills/ava) - Analyze files and databases, reuse business definitions, verify calculations, and generate interactive charts.
 
 ## Writing
 
