@@ -24,7 +24,7 @@
     "nameZh": "agentskills/agentskills",
     "desc": "Agent Skills 官方规范与文档仓库",
     "descEn": "Official Agent Skills specification and documentation repository",
-    "stars": "26.6k",
+    "stars": "26.9k",
     "platform": "all",
     "category": "official",
     "url": "https://github.com/agentskills/agentskills"
@@ -34,7 +34,7 @@
     "nameZh": "anthropics/skills",
     "desc": "Anthropic 官方 Agent Skills 仓库",
     "descEn": "Official Anthropic Agent Skills repository",
-    "stars": "183.8k",
+    "stars": "186.4k",
     "platform": "all",
     "category": "official",
     "url": "https://github.com/anthropics/skills"
@@ -174,7 +174,7 @@
     "nameZh": "awesome-cursorrules",
     "desc": "最全面的 Cursor Rules 合集",
     "descEn": "The most comprehensive Cursor Rules collection",
-    "stars": "41.0k",
+    "stars": "41.1k",
     "platform": "cursor",
     "category": "collection",
     "url": "https://github.com/PatrickJS/awesome-cursorrules"
@@ -204,7 +204,7 @@
     "nameZh": "mblode/agent-skills",
     "desc": "开源 Agent Skills 合集，覆盖 UI 审计、排版、文档、PR 审查与发布",
     "descEn": "Open-source agent skills for UI audits, typography, documentation, PR review, and releases",
-    "stars": "166",
+    "stars": "180",
     "platform": "all",
     "category": "collection",
     "url": "https://github.com/mblode/agent-skills"
@@ -224,7 +224,7 @@
     "nameZh": "ComposioHQ/awesome-claude-skills",
     "desc": "Composio 维护的 Claude Skills 合集",
     "descEn": "Claude Skills collection by Composio",
-    "stars": "77.9k",
+    "stars": "78.5k",
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills"
@@ -234,7 +234,7 @@
     "nameZh": "awesome-claude-code",
     "desc": "Claude Code skills/hooks/插件合集",
     "descEn": "Claude Code skills/hooks/plugins collection",
-    "stars": "56.5k",
+    "stars": "57.1k",
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/hesreallyhim/awesome-claude-code"
@@ -284,7 +284,7 @@
     "nameZh": "cursor-rules-and-prompts",
     "desc": "Cursor 规则与提示词集合",
     "descEn": "Cursor rules and prompts collection",
-    "stars": "249",
+    "stars": "251",
     "platform": "cursor",
     "category": "collection",
     "url": "https://github.com/thehimel/cursor-rules-and-prompts"
@@ -304,7 +304,7 @@
     "nameZh": "claude-code-kit",
     "desc": "Claude Code 工具包，自动激活 skills",
     "descEn": "Claude Code toolkit with auto-activating skills",
-    "stars": "110",
+    "stars": "111",
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/blencorp/claude-code-kit"
@@ -314,7 +314,7 @@
     "nameZh": "best-skills",
     "desc": "通用高质量 Skills 合集，涵盖论文写作、开发流程、自媒体创作等",
     "descEn": "High-quality Skills collection for paper writing, dev workflow, and content creation",
-    "stars": "3.0k",
+    "stars": "3.1k",
     "platform": "all",
     "category": "collection",
     "url": "https://github.com/xstongxue/best-skills"
@@ -334,7 +334,7 @@
     "nameZh": "OrkasVideoStudio",
     "desc": "面向 Agent 的视频制作 Skills 合集，配套 CLI 与 MCP 运行时",
     "descEn": "Agent video-production skill pack with CLI and MCP runtime",
-    "stars": "328",
+    "stars": "339",
     "platform": "all",
     "category": "collection",
     "url": "https://github.com/Orkas-AI/Orkas-VideoStudio"
@@ -344,7 +344,7 @@
     "nameZh": "Skywork-Skills",
     "desc": "Skywork 官方维护的 agent skills，面向 AI 办公场景，覆盖 PPT、文档、Excel、设计、搜索和音乐工作流",
     "descEn": "Officially maintained Skywork agent skills for AI office workflows, including PPT, documents, Excel, design, search, and music",
-    "stars": "205",
+    "stars": "207",
     "platform": "all",
     "category": "collection",
     "url": "https://github.com/SkyworkAI/Skywork-Skills"
@@ -354,7 +354,7 @@
     "nameZh": "suede-creator-skills",
     "desc": "面向 Claude Code 与 Codex 的 Skills 合集，覆盖代码质量与评审、设计、营销与 SEO、Agent 工作流和移动应用发布",
     "descEn": "Skills pack for Claude Code and Codex covering code review and grading, design, marketing and SEO, agent workflows, and mobile app shipping",
-    "stars": "125",
+    "stars": "126",
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/JasonColapietro/suede-creator-skills"
@@ -374,7 +374,7 @@
     "nameZh": "youtube-skills",
     "desc": "面向 YouTube 的转录、视频搜索、频道浏览与播放列表 Skills，适用于 Claude Code、OpenClaw、Hermes Agent 等 Agent 运行时",
     "descEn": "YouTube transcript, video search, channel and playlist skills for Claude Code, OpenClaw, Hermes Agent, and other agent runtimes",
-    "stars": "1.1k",
+    "stars": "1.2k",
     "platform": "openclaw",
     "category": "collection",
     "url": "https://github.com/ZeroPointRepo/youtube-skills"
@@ -384,7 +384,7 @@
     "nameZh": "tonone",
     "desc": "Claude Code 插件，包含 100 个专业 Agent 与 429 个 Skills，覆盖工程、产品、设计、安全、法务和运维；SessionStart hook 仅加载与当前仓库相关的 Skills",
     "descEn": "Claude Code plugin with 100 specialist agents and 429 skills across engineering, product, design, security, legal, and ops; a SessionStart hook loads only the skills relevant to the current repo",
-    "stars": "76",
+    "stars": "77",
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/tonone-ai/tonone"
@@ -404,7 +404,7 @@
     "nameZh": "sno-station-skills",
     "desc": "面向 Claude Code 与 Codex 的 Skills 合集：两家模型互相审查、一个 Agent 用到额度上限时交给另一个接着做，以及任务委派与汇报",
     "descEn": "Skills for Claude Code and Codex: cross-vendor peer review, handoff when one agent hits its usage limit, delegation and reporting",
-    "stars": "883",
+    "stars": "861",
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/sno-ai/sno-station-skills"
@@ -414,7 +414,7 @@
     "nameZh": "Arcmira: YouTube Transcript Search",
     "desc": "六个研究 Skills，支持转录搜索、带时间戳的引文、人物出场、赞助商研究和提及监控。需要 Arcmira 账户；以 JavaScript 程序形式将问题发送到托管 MCP 服务，工具调用记录关联到账户并用于产品分析（数据处理、隐私政策、服务条款）。插件及其内置 Skills 采用 Apache-2.0，独立 MCP 服务器为专有软件",
     "descEn": "Six research skills for transcript search, timestamped quotes, speaker appearances, sponsors and mention monitors. Requires an Arcmira account; sends questions as JavaScript programs to the hosted MCP service, which records account-linked tool calls for product analytics (data handling, privacy, terms). The plugin and bundled skills use Apache-2.0; the separate MCP server is proprietary",
-    "stars": "75",
+    "stars": "78",
     "platform": "all",
     "category": "collection",
     "url": "https://github.com/arcmira/mcp/tree/master/plugins/arcmira"
@@ -424,7 +424,7 @@
     "nameZh": "firecrawl/skills",
     "desc": "Firecrawl 官方 Skills：网页搜索、抓取、爬取与浏览器交互；调用 Firecrawl API（需 API Key 或自托管）",
     "descEn": "Official Firecrawl skills for web search, scraping, crawling and browser interaction; they call the Firecrawl API (API key or self-hosted)",
-    "stars": "135",
+    "stars": "142",
     "platform": "all",
     "category": "collection",
     "url": "https://github.com/firecrawl/skills"
@@ -434,7 +434,7 @@
     "nameZh": "headcount",
     "desc": "按公司部门组织的 Skills 合集（法务、财务、安全、运营等），适用于 Claude Code 与 ChatGPT，每个 Skill 可单独安装，并注明所依据的标准或监管机构",
     "descEn": "Company-department skills (legal, finance, security, ops and more) for Claude Code and ChatGPT, each installable on its own and citing the standards or regulators it relies on",
-    "stars": "2254",
+    "stars": "2.6k",
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/cbrock84/headcount"
@@ -554,7 +554,7 @@
     "nameZh": "vercel-labs/agent-skills",
     "desc": "Vercel React/Web 设计最佳实践 Skills",
     "descEn": "Vercel React/Web design best practices Skills",
-    "stars": "33.0k",
+    "stars": "33.4k",
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/vercel-labs/agent-skills"
@@ -574,7 +574,7 @@
     "nameZh": "supabase/agent-skills",
     "desc": "Supabase Postgres 最佳实践 Skill",
     "descEn": "PostgreSQL best practices Skill by Supabase",
-    "stars": "2.9k",
+    "stars": "3.0k",
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/supabase/agent-skills"
@@ -594,7 +594,7 @@
     "nameZh": "expo/skills",
     "desc": "Expo/React Native 开发 Skills",
     "descEn": "Expo/React Native development Skills",
-    "stars": "3.0k",
+    "stars": "4.0k",
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/expo/skills"
@@ -604,7 +604,7 @@
     "nameZh": "browser-use/browser-use",
     "desc": "浏览器自动化 Skill",
     "descEn": "Browser automation Skill",
-    "stars": "119.1k",
+    "stars": "119.8k",
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/browser-use/browser-use"
@@ -614,7 +614,7 @@
     "nameZh": "Xquik x-twitter-scraper",
     "desc": "X（Twitter）数据平台 Skill，提供 REST API、MCP 工具、webhooks、SDK 和自动化工作流",
     "descEn": "X (Twitter) data Skill with REST endpoints, MCP tools, webhooks, SDKs, and automation workflows",
-    "stars": "220",
+    "stars": "225",
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/Xquik-dev/x-twitter-scraper"
@@ -794,7 +794,7 @@
     "nameZh": "obra/superpowers",
     "desc": "完整开发工作流（调试/TDD/代码审查/计划）",
     "descEn": "Complete dev workflow (Debug/TDD/Code Review/Planning)",
-    "stars": "305.1k",
+    "stars": "310.7k",
     "platform": "all",
     "category": "productivity",
     "url": "https://github.com/obra/superpowers"
@@ -824,7 +824,7 @@
     "nameZh": "coreyhaines31/marketingskills",
     "desc": "营销 Skills（SEO/文案/CRO/广告）",
     "descEn": "Marketing Skills (SEO/Copywriting/CRO/Ads)",
-    "stars": "56.5k",
+    "stars": "57.9k",
     "platform": "all",
     "category": "productivity",
     "url": "https://github.com/coreyhaines31/marketingskills"
@@ -958,6 +958,16 @@
     "platform": "all",
     "category": "productivity",
     "url": "https://github.com/zhuyansen/new-term-radar"
+  },
+  {
+    "name": "answer-me-with-html",
+    "nameZh": "answer-me-with-html",
+    "desc": "回答难题时输出一页可离线打开的 HTML：模型只写 Markdown 草稿，由内置 CLI 渲染",
+    "descEn": "Agent skill that writes the answer as a Markdown draft and renders one offline HTML page, using about 1/8 of the output tokens",
+    "stars": "-",
+    "platform": "cursor/claude/codex/opencode",
+    "category": "productivity",
+    "url": "https://github.com/QingYunA/answer-me-with-html"
   },
   {
     "name": "devops-claude-skills",
