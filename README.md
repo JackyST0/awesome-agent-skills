@@ -151,6 +151,7 @@ Skills work across multiple platforms:
 - [firecrawl/skills](https://github.com/firecrawl/skills) - Official Firecrawl skills for web search, scraping, crawling and browser interaction; they call the Firecrawl API (API key or self-hosted).
 - [headcount](https://github.com/cbrock84/headcount) - Company-department skills (legal, finance, security, ops and more) for Claude Code and ChatGPT, each installable on its own and citing the standards or regulators it relies on.
 - [laolaoshiren/claude-code-skills-zh](https://github.com/laolaoshiren/claude-code-skills-zh) - Curated Claude Code skills collection for Chinese developers, with 438+ curated skills and 20 original skills.
+  
 ## Development Tools
 
 - [agenttrace-session-audit](https://github.com/luoyuctl/agenttrace/blob/master/skills/agenttrace-session-audit/SKILL.md) - Audit local AI coding-agent session health, cost, failures, and diffs.
