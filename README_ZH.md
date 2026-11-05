@@ -196,6 +196,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | firecrawl/skills | Firecrawl 官方 Skills：网页搜索、抓取、爬取与浏览器交互；调用 Firecrawl API（需 API Key 或自托管） | 142 | [GitHub](https://github.com/firecrawl/skills) |
 | headcount | 按公司部门组织的 Skills 合集（法务、财务、安全、运营等），适用于 Claude Code 与 ChatGPT，每个 Skill 可单独安装，并注明所依据的标准或监管机构 | 2.6k | [GitHub](https://github.com/cbrock84/headcount) |
 | laolaoshiren/claude-code-skills-zh | 面向中文开发者的 Claude Code Skills 精选集，438+ 精选 + 20 原创技能 | 904 | [GitHub](https://github.com/laolaoshiren/claude-code-skills-zh) |
+
 ## 开发工具
 
 | 名称 | 描述 | 平台 | 链接 |
