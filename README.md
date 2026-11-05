@@ -150,7 +150,7 @@ Skills work across multiple platforms:
 - [Arcmira: YouTube Transcript Search](https://github.com/arcmira/mcp/tree/master/plugins/arcmira) - Six research skills for transcript search, timestamped quotes, speaker appearances, sponsors and mention monitors. Requires an Arcmira account; sends questions as JavaScript programs to the hosted MCP service, which records account-linked tool calls for product analytics ([data handling](https://github.com/arcmira/mcp#what-we-log), [privacy](https://arcmira.com/privacy), [terms](https://arcmira.com/terms)). The plugin and bundled skills use [Apache-2.0](https://github.com/arcmira/mcp/blob/master/plugins/arcmira/LICENSE); the separate MCP server is proprietary.
 - [firecrawl/skills](https://github.com/firecrawl/skills) - Official Firecrawl skills for web search, scraping, crawling and browser interaction; they call the Firecrawl API (API key or self-hosted).
 - [headcount](https://github.com/cbrock84/headcount) - Company-department skills (legal, finance, security, ops and more) for Claude Code and ChatGPT, each installable on its own and citing the standards or regulators it relies on.
-
+- [laolaoshiren/claude-code-skills-zh](https://github.com/laolaoshiren/claude-code-skills-zh) - Curated Claude Code skills collection for Chinese developers, with 438+ curated skills and 20 original skills.
 ## Development Tools
 
 - [agenttrace-session-audit](https://github.com/luoyuctl/agenttrace/blob/master/skills/agenttrace-session-audit/SKILL.md) - Audit local AI coding-agent session health, cost, failures, and diffs.
