@@ -195,7 +195,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | Arcmira: YouTube Transcript Search | 六个研究 Skills，支持转录搜索、带时间戳的引文、人物出场、赞助商研究和提及监控。需要 Arcmira 账户；以 JavaScript 程序形式将问题发送到托管 MCP 服务，工具调用记录关联到账户并用于产品分析（[数据处理](https://github.com/arcmira/mcp#what-we-log)、[隐私政策](https://arcmira.com/privacy)、[服务条款](https://arcmira.com/terms)）。插件及其内置 Skills 采用 [Apache-2.0](https://github.com/arcmira/mcp/blob/master/plugins/arcmira/LICENSE)，独立 MCP 服务器为专有软件 | 78 | [GitHub](https://github.com/arcmira/mcp/tree/master/plugins/arcmira) |
 | firecrawl/skills | Firecrawl 官方 Skills：网页搜索、抓取、爬取与浏览器交互；调用 Firecrawl API（需 API Key 或自托管） | 142 | [GitHub](https://github.com/firecrawl/skills) |
 | headcount | 按公司部门组织的 Skills 合集（法务、财务、安全、运营等），适用于 Claude Code 与 ChatGPT，每个 Skill 可单独安装，并注明所依据的标准或监管机构 | 2.6k | [GitHub](https://github.com/cbrock84/headcount) |
-
+| laolaoshiren/claude-code-skills-zh | 面向中文开发者的 Claude Code Skills 精选集，438+ 精选 + 20 原创技能 | 904 | [GitHub](https://github.com/laolaoshiren/claude-code-skills-zh) |
 ## 开发工具
 
 | 名称 | 描述 | 平台 | 链接 |
