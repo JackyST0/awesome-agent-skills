@@ -4,7 +4,8 @@
  * Generate the GitHub Pages search index from README.md and README_ZH.md.
  *
  * Both READMEs must describe the same entries. README.md supplies the entry
- * order; README_ZH.md supplies Chinese descriptions, platforms, and stars.
+ * order and English star labels; README_ZH.md supplies Chinese descriptions,
+ * platforms, and stars.
  */
 
 const fs = require('fs');
@@ -100,7 +101,8 @@ function parseEnglish(readme) {
       const match = line.match(/^- \[([^\]]+)\]\(([^)]+)\) - (.+)$/);
       if (!match) continue;
 
-      const [, name, url, descEn] = match;
+      const [, name, url, rawDescEn] = match;
+      const starMatch = rawDescEn.match(/^([\d.,]+k?)\s*⭐\s*-\s*(.+)$/i);
       const normalizedUrl = normalizeUrl(url);
       if (!isHttpUrl(normalizedUrl)) {
         throw new Error(`Invalid URL in README.md (${category.en}): ${url}`);
@@ -108,7 +110,8 @@ function parseEnglish(readme) {
       entries.push({
         name: name.trim(),
         url: normalizedUrl,
-        descEn: trimSentence(stripMarkdown(descEn)),
+        descEn: trimSentence(stripMarkdown(starMatch ? starMatch[2] : rawDescEn)),
+        stars: starMatch ? starMatch[1].replace(/,/g, '') : '-',
         category: category.id,
       });
     }
@@ -234,7 +237,7 @@ function buildIndex(enEntries, zhByUrl) {
       nameZh: zh?.name || entry.name,
       desc: zh?.desc || entry.descEn,
       descEn: entry.descEn,
-      stars: normalizeStars(zh?.stars),
+      stars: normalizeStars(zh?.stars !== '-' && zh?.stars !== undefined ? zh?.stars : entry.stars),
       platform,
       category: entry.category,
       url: entry.url,
