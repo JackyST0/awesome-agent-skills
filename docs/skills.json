@@ -180,16 +180,6 @@
     "url": "https://github.com/PatrickJS/awesome-cursorrules"
   },
   {
-    "name": "everything-claude-code",
-    "nameZh": "everything-claude-code",
-    "desc": "Claude Code 配置大全（agents/skills/hooks）",
-    "descEn": "Complete Claude Code configs (agents/skills/hooks)",
-    "stars": "185.6k",
-    "platform": "claude",
-    "category": "collection",
-    "url": "https://github.com/affaan-m/everything-claude-code"
-  },
-  {
     "name": "heilcheng/awesome-agent-skills",
     "nameZh": "heilcheng/awesome-agent-skills",
     "desc": "社区维护的 Agent Skills 导航，聚焦工程团队实际使用的真实 Skills",
@@ -198,26 +188,6 @@
     "platform": "all",
     "category": "collection",
     "url": "https://github.com/heilcheng/awesome-agent-skills"
-  },
-  {
-    "name": "mblode/agent-skills",
-    "nameZh": "mblode/agent-skills",
-    "desc": "开源 Agent Skills 合集，覆盖 UI 审计、排版、文档、PR 审查与发布",
-    "descEn": "Open-source agent skills for UI audits, typography, documentation, PR review, and releases",
-    "stars": "180",
-    "platform": "all",
-    "category": "collection",
-    "url": "https://github.com/mblode/agent-skills"
-  },
-  {
-    "name": "kasetto",
-    "nameZh": "kasetto",
-    "desc": "用 Rust 编写的极速 AI 技能管理器",
-    "descEn": "An extremely fast AI skills manager, written in Rust",
-    "stars": "-",
-    "platform": "all",
-    "category": "collection",
-    "url": "https://github.com/pivoshenko/kasetto"
   },
   {
     "name": "ComposioHQ/awesome-claude-skills",
@@ -250,16 +220,6 @@
     "url": "https://github.com/numman-ali/openskills"
   },
   {
-    "name": "VoltAgent/awesome-claude-skills",
-    "nameZh": "VoltAgent/awesome-claude-skills",
-    "desc": "VoltAgent 维护的 Claude Skills 合集",
-    "descEn": "Claude Skills collection by VoltAgent",
-    "stars": "4.4k",
-    "platform": "claude",
-    "category": "collection",
-    "url": "https://github.com/VoltAgent/awesome-claude-skills"
-  },
-  {
     "name": "simonw/claude-skills",
     "nameZh": "simonw/claude-skills",
     "desc": "Simon Willison 的 Claude Skills 文档",
@@ -278,36 +238,6 @@
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/abubakarsiddik31/claude-skills-collection"
-  },
-  {
-    "name": "cursor-rules-and-prompts",
-    "nameZh": "cursor-rules-and-prompts",
-    "desc": "Cursor 规则与提示词集合",
-    "descEn": "Cursor rules and prompts collection",
-    "stars": "251",
-    "platform": "cursor",
-    "category": "collection",
-    "url": "https://github.com/thehimel/cursor-rules-and-prompts"
-  },
-  {
-    "name": "Ai-Agent-Skills",
-    "nameZh": "Ai-Agent-Skills",
-    "desc": "AI Skills 通用安装器（Homebrew for Skills）",
-    "descEn": "Universal AI Skills installer (Homebrew for Skills)",
-    "stars": "774",
-    "platform": "all",
-    "category": "collection",
-    "url": "https://github.com/skillcreatorai/Ai-Agent-Skills"
-  },
-  {
-    "name": "claude-code-kit",
-    "nameZh": "claude-code-kit",
-    "desc": "Claude Code 工具包，自动激活 skills",
-    "descEn": "Claude Code toolkit with auto-activating skills",
-    "stars": "111",
-    "platform": "claude",
-    "category": "collection",
-    "url": "https://github.com/blencorp/claude-code-kit"
   },
   {
     "name": "best-skills",
@@ -340,36 +270,6 @@
     "url": "https://github.com/Orkas-AI/Orkas-VideoStudio"
   },
   {
-    "name": "Skywork-Skills",
-    "nameZh": "Skywork-Skills",
-    "desc": "Skywork 官方维护的 agent skills，面向 AI 办公场景，覆盖 PPT、文档、Excel、设计、搜索和音乐工作流",
-    "descEn": "Officially maintained Skywork agent skills for AI office workflows, including PPT, documents, Excel, design, search, and music",
-    "stars": "207",
-    "platform": "all",
-    "category": "collection",
-    "url": "https://github.com/SkyworkAI/Skywork-Skills"
-  },
-  {
-    "name": "suede-creator-skills",
-    "nameZh": "suede-creator-skills",
-    "desc": "面向 Claude Code 与 Codex 的 Skills 合集，覆盖代码质量与评审、设计、营销与 SEO、Agent 工作流和移动应用发布",
-    "descEn": "Skills pack for Claude Code and Codex covering code review and grading, design, marketing and SEO, agent workflows, and mobile app shipping",
-    "stars": "126",
-    "platform": "claude",
-    "category": "collection",
-    "url": "https://github.com/JasonColapietro/suede-creator-skills"
-  },
-  {
-    "name": "unifapi-agent/skills",
-    "nameZh": "unifapi-agent/skills",
-    "desc": "基于 UnifAPI MCP 的公共数据与 KOL 定价 Skills",
-    "descEn": "Public-data MCP and KOL pricing Skills for Codex, Claude Code, Cursor, and other agents",
-    "stars": "481",
-    "platform": "claude",
-    "category": "collection",
-    "url": "https://github.com/unifapi-agent/skills"
-  },
-  {
     "name": "youtube-skills",
     "nameZh": "youtube-skills",
     "desc": "面向 YouTube 的转录、视频搜索、频道浏览与播放列表 Skills，适用于 Claude Code、OpenClaw、Hermes Agent 等 Agent 运行时",
@@ -378,16 +278,6 @@
     "platform": "openclaw",
     "category": "collection",
     "url": "https://github.com/ZeroPointRepo/youtube-skills"
-  },
-  {
-    "name": "tonone",
-    "nameZh": "tonone",
-    "desc": "Claude Code 插件，包含 100 个专业 Agent 与 429 个 Skills，覆盖工程、产品、设计、安全、法务和运维；SessionStart hook 仅加载与当前仓库相关的 Skills",
-    "descEn": "Claude Code plugin with 100 specialist agents and 429 skills across engineering, product, design, security, legal, and ops; a SessionStart hook loads only the skills relevant to the current repo",
-    "stars": "77",
-    "platform": "claude",
-    "category": "collection",
-    "url": "https://github.com/tonone-ai/tonone"
   },
   {
     "name": "oh-my-agent",
@@ -408,46 +298,6 @@
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/sno-ai/sno-station-skills"
-  },
-  {
-    "name": "Arcmira: YouTube Transcript Search",
-    "nameZh": "Arcmira: YouTube Transcript Search",
-    "desc": "六个研究 Skills，支持转录搜索、带时间戳的引文、人物出场、赞助商研究和提及监控。需要 Arcmira 账户；以 JavaScript 程序形式将问题发送到托管 MCP 服务，工具调用记录关联到账户并用于产品分析（数据处理、隐私政策、服务条款）。插件及其内置 Skills 采用 Apache-2.0，独立 MCP 服务器为专有软件",
-    "descEn": "Six research skills for transcript search, timestamped quotes, speaker appearances, sponsors and mention monitors. Requires an Arcmira account; sends questions as JavaScript programs to the hosted MCP service, which records account-linked tool calls for product analytics (data handling, privacy, terms). The plugin and bundled skills use Apache-2.0; the separate MCP server is proprietary",
-    "stars": "78",
-    "platform": "all",
-    "category": "collection",
-    "url": "https://github.com/arcmira/mcp/tree/master/plugins/arcmira"
-  },
-  {
-    "name": "firecrawl/skills",
-    "nameZh": "firecrawl/skills",
-    "desc": "Firecrawl 官方 Skills：网页搜索、抓取、爬取与浏览器交互；调用 Firecrawl API（需 API Key 或自托管）",
-    "descEn": "Official Firecrawl skills for web search, scraping, crawling and browser interaction; they call the Firecrawl API (API key or self-hosted)",
-    "stars": "142",
-    "platform": "all",
-    "category": "collection",
-    "url": "https://github.com/firecrawl/skills"
-  },
-  {
-    "name": "headcount",
-    "nameZh": "headcount",
-    "desc": "按公司部门组织的 Skills 合集（法务、财务、安全、运营等），适用于 Claude Code 与 ChatGPT，每个 Skill 可单独安装，并注明所依据的标准或监管机构",
-    "descEn": "Company-department skills (legal, finance, security, ops and more) for Claude Code and ChatGPT, each installable on its own and citing the standards or regulators it relies on",
-    "stars": "2.6k",
-    "platform": "claude",
-    "category": "collection",
-    "url": "https://github.com/cbrock84/headcount"
-  },
-  {
-    "name": "agenttrace-session-audit",
-    "nameZh": "agenttrace-session-audit",
-    "desc": "审计本地 AI 编程 Agent 会话的健康度、成本、失败与差异",
-    "descEn": "Audit local AI coding-agent session health, cost, failures, and diffs",
-    "stars": "-",
-    "platform": "all",
-    "category": "devtools",
-    "url": "https://github.com/luoyuctl/agenttrace/blob/master/skills/agenttrace-session-audit/SKILL.md"
   },
   {
     "name": "orca-replay",
@@ -530,16 +380,6 @@
     "url": "https://github.com/daymade/claude-code-skills"
   },
   {
-    "name": "skillset-example",
-    "nameZh": "skillset-example",
-    "desc": "GitHub Copilot 扩展示例",
-    "descEn": "GitHub Copilot extension example",
-    "stars": "-",
-    "platform": "copilot",
-    "category": "devtools",
-    "url": "https://github.com/copilot-extensions/skillset-example"
-  },
-  {
     "name": "elastic/agent-skills",
     "nameZh": "elastic/agent-skills",
     "desc": "Elastic 官方 Skills，覆盖 Elasticsearch、Kibana、可观测性与安全工作流",
@@ -580,16 +420,6 @@
     "url": "https://github.com/supabase/agent-skills"
   },
   {
-    "name": "Prisma Agent Skills",
-    "nameZh": "prisma/skills",
-    "desc": "Prisma Postgres、Prisma ORM 与 Prisma Compute 官方 Skills",
-    "descEn": "Prisma Postgres, Prisma ORM and Prisma Compute Skills by Prisma",
-    "stars": "-",
-    "platform": "all",
-    "category": "devtools",
-    "url": "https://github.com/prisma/skills"
-  },
-  {
     "name": "Expo Skills",
     "nameZh": "expo/skills",
     "desc": "Expo/React Native 开发 Skills",
@@ -608,16 +438,6 @@
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/browser-use/browser-use"
-  },
-  {
-    "name": "Xquik x-twitter-scraper",
-    "nameZh": "Xquik x-twitter-scraper",
-    "desc": "X（Twitter）数据平台 Skill，提供 REST API、MCP 工具、webhooks、SDK 和自动化工作流",
-    "descEn": "X (Twitter) data Skill with REST endpoints, MCP tools, webhooks, SDKs, and automation workflows",
-    "stars": "225",
-    "platform": "all",
-    "category": "devtools",
-    "url": "https://github.com/Xquik-dev/x-twitter-scraper"
   },
   {
     "name": "code-review",
@@ -670,26 +490,6 @@
     "url": "https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/debug-helper"
   },
   {
-    "name": "authsome",
-    "nameZh": "authsome",
-    "desc": "AI Agent 本地凭据代理，加密本地保管库与基于代理的凭据注入",
-    "descEn": "Local credential broker for AI agents with encrypted local vault storage and proxy-based credential injection",
-    "stars": "-",
-    "platform": "all",
-    "category": "devtools",
-    "url": "https://github.com/agentrhq/authsome"
-  },
-  {
-    "name": "Sverklo",
-    "nameZh": "Sverklo",
-    "desc": "本地优先的仓库记忆 MCP，支持证明回执、符号引用、影响分析与差异审查",
-    "descEn": "Local-first repo-memory MCP for coding agents: proof receipts, symbol refs, impact, and diff review",
-    "stars": "-",
-    "platform": "all",
-    "category": "devtools",
-    "url": "https://github.com/sverklo/sverklo"
-  },
-  {
     "name": "birdview",
     "nameZh": "birdview",
     "desc": "根据源码生成带证据的架构与约束视图，在实现前审查修改范围，并记录实际验证结果",
@@ -710,26 +510,6 @@
     "url": "https://github.com/rebelytics/one-skill-to-rule-them-all"
   },
   {
-    "name": "check-skill",
-    "nameZh": "check-skill",
-    "desc": "衡量 Claude Code Skill 是否被正确触发：生成带标注的激活测试集，并报告精确率与召回率",
-    "descEn": "Measures whether a Claude Code skill triggers: generates a labelled activation suite and reports precision and recall",
-    "stars": "-",
-    "platform": "claude",
-    "category": "devtools",
-    "url": "https://github.com/UiPath/coder_eval/tree/main/plugins/coder-eval/skills/check-skill"
-  },
-  {
-    "name": "assay",
-    "nameZh": "assay",
-    "desc": "在真实浏览器中打开网页，操作页面上的每个控件，并报告页面出错或自相矛盾之处。确定性运行，无需编写测试，也不使用 LLM",
-    "descEn": "Opens a web page in a real browser, drives every control, and reports where the page breaks or contradicts itself. Deterministic, with no tests to write and no LLM",
-    "stars": "-",
-    "platform": "all",
-    "category": "devtools",
-    "url": "https://github.com/awss1i/assay/tree/main/plugins/assay/skills/checking-a-page"
-  },
-  {
     "name": "reverse-engineer-anything",
     "nameZh": "reverse-engineer-anything",
     "desc": "用 REA CLI/MCP 分析二进制与 JavaScript/Electron 应用并保留证据；原生深度分析需自备 Hopper、Ghidra 或 IDA",
@@ -738,26 +518,6 @@
     "platform": "codex",
     "category": "devtools",
     "url": "https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything"
-  },
-  {
-    "name": "supercov",
-    "nameZh": "supercov",
-    "desc": "运行项目现有测试，测量行、分支与 MC/DC 覆盖率，并把未测试的代码交给 Agent 补测。覆盖率在本地运行；可选的质量分析在配置了 TYPESAFE_API_KEY 时会把源文件发送给 TypeSafe",
-    "descEn": "Measures line, branch and MC/DC coverage of the existing tests and hands the agent the untested code to test next. Coverage runs locally; the optional quality analysis sends source files to TypeSafe when TYPESAFE_API_KEY is configured",
-    "stars": "-",
-    "platform": "all",
-    "category": "devtools",
-    "url": "https://github.com/supercorp-ai/supercov/tree/main/plugins/supercov/skills/supercov"
-  },
-  {
-    "name": "write-ai-ready-issue",
-    "nameZh": "write-ai-ready-issue",
-    "desc": "把当前对话整理成 GitHub Issue（背景、可在仓库里用测试验证的验收项、不做的范围），任务包含多个可独立合并的结果时先建议拆分。来自开源编程 agent Orbi，单独使用不需要 Orbi",
-    "descEn": "Turns a conversation into a GitHub Issue with Background, testable Acceptance criteria and Out of scope, splitting tasks that have more than one mergeable result. Part of the open-source Orbi coding agent; the skill itself does not need Orbi",
-    "stars": "-",
-    "platform": "cursor/claude/copilot/codex",
-    "category": "devtools",
-    "url": "https://github.com/orbi-build/orbi/tree/main/integrations/claude-plugin/skills/write-ai-ready-issue"
   },
   {
     "name": "claude-code-workflows",
@@ -810,16 +570,6 @@
     "url": "https://github.com/OthmanAdi/planning-with-files"
   },
   {
-    "name": "cognyai/claude-code-marketing-skills",
-    "nameZh": "cognyai/claude-code-marketing-skills",
-    "desc": "AI 营销技能（SEO 审计/落地页评审/竞品分析/广告文案/线索筛选），支持 MCP 服务器集成",
-    "descEn": "AI marketing skills (SEO Audit/Landing Page Review/Competitor Analysis/Ad Copywriting/Lead Qualification) with MCP server integration",
-    "stars": "-",
-    "platform": "all",
-    "category": "productivity",
-    "url": "https://github.com/cognyai/claude-code-marketing-skills"
-  },
-  {
     "name": "coreyhaines31/marketingskills",
     "nameZh": "coreyhaines31/marketingskills",
     "desc": "营销 Skills（SEO/文案/CRO/广告）",
@@ -828,26 +578,6 @@
     "platform": "all",
     "category": "productivity",
     "url": "https://github.com/coreyhaines31/marketingskills"
-  },
-  {
-    "name": "nowork-studio/NotFair",
-    "nameZh": "nowork-studio/NotFair",
-    "desc": "Claude Code SEO、GEO、Google Ads 和 Meta Ads 技能集；通过 Google Ads MCP、Meta Ads MCP、Google Search Console MCP 和 Google Analytics (GA4) MCP 接入实时数据",
-    "descEn": "Claude Code skills for SEO, GEO, Google Ads, and Meta Ads; connects to live data via Google Ads MCP, Meta Ads MCP, Google Search Console MCP, and Google Analytics (GA4) MCP",
-    "stars": "-",
-    "platform": "claude",
-    "category": "productivity",
-    "url": "https://github.com/nowork-studio/NotFair"
-  },
-  {
-    "name": "gingiris-launch",
-    "nameZh": "gingiris-launch",
-    "desc": "AI 产品、创业公司与开源项目的 Product Hunt 发布与 GTM 指南",
-    "descEn": "Product Hunt launch playbook for AI products, startups, and open source GTM",
-    "stars": "-",
-    "platform": "all",
-    "category": "productivity",
-    "url": "https://github.com/Gingiris/gingiris-launch"
   },
   {
     "name": "gingiris-opensource",
@@ -860,36 +590,6 @@
     "url": "https://github.com/Gingiris/gingiris-opensource"
   },
   {
-    "name": "gingiris-b2b-growth",
-    "nameZh": "gingiris-b2b-growth",
-    "desc": "覆盖 PLG、SLG 与 GTM 策略的 B2B SaaS 增长 Playbook",
-    "descEn": "B2B SaaS growth playbook covering PLG, SLG, and go-to-market strategy",
-    "stars": "-",
-    "platform": "all",
-    "category": "productivity",
-    "url": "https://github.com/Gingiris/gingiris-b2b-growth"
-  },
-  {
-    "name": "alpha-insights",
-    "nameZh": "alpha-insights",
-    "desc": "带 Harness 门控的商业研究 Skill，内置咨询框架、证据分级、阶段门控与 HTML 报告",
-    "descEn": "Harness-enforced business research skill with consulting frameworks, evidence grading, stage gates, and HTML reports",
-    "stars": "-",
-    "platform": "claude/codex",
-    "category": "productivity",
-    "url": "https://github.com/Ericyoung-183/alpha-insights"
-  },
-  {
-    "name": "salespeak-ai/buyer-eval-skill",
-    "nameZh": "salespeak-ai/buyer-eval-skill",
-    "desc": "结构化 B2B 软件供应商评估：7 维度评分与证据追踪的评分卡，用于采购与自建/采购决策",
-    "descEn": "B2B vendor evaluation skill: 7-dimension scoring and evidence-tracked scorecards for procurement and build-vs-buy decisions",
-    "stars": "-",
-    "platform": "all",
-    "category": "productivity",
-    "url": "https://github.com/salespeak-ai/buyer-eval-skill"
-  },
-  {
     "name": "changelog-generator",
     "nameZh": "changelog-generator",
     "desc": "从 Git 提交自动生成 Changelog",
@@ -900,26 +600,6 @@
     "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/changelog-generator"
   },
   {
-    "name": "wiki",
-    "nameZh": "wiki",
-    "desc": "构建带索引的 Markdown 知识库，供 Agent 映射、搜索、读取、更新与检查",
-    "descEn": "Build indexed Markdown knowledge bases that agents map, search, read, update, and lint",
-    "stars": "-",
-    "platform": "claude/codex",
-    "category": "productivity",
-    "url": "https://github.com/plasma-ai/wiki/blob/main/wiki/skills/wiki/SKILL.md"
-  },
-  {
-    "name": "job-application-agent",
-    "nameZh": "job-application-agent",
-    "desc": "求职 Skill + CLI，发现、筛选、填写并追踪本人投递。数据共享：默认启用使用分析、向私有 PostHog 分析服务共享姓名/邮箱，以及向社区注册表共享已确认投递和发现来源的元数据（可退出）。可选云模式存储并同步个人资料、简历、投递和结果状态",
-    "descEn": "Skill + CLI to discover, qualify, complete, and track your own job applications. Data sharing: usage analytics and name/email sharing with private PostHog analytics, plus community-registry sharing of confirmed-application and discovery-source metadata, are enabled by default (opt-out). Optional cloud mode stores and syncs profile, résumé, application, and outcome state",
-    "stars": "-",
-    "platform": "all",
-    "category": "productivity",
-    "url": "https://github.com/vaibhavarora14/job-application-agent"
-  },
-  {
     "name": "universal-exam-cram-coach",
     "nameZh": "universal-exam-cram-coach",
     "desc": "期末备考教练：按章讲课件并标页码，只用作业和真题出题",
@@ -928,26 +608,6 @@
     "platform": "all",
     "category": "productivity",
     "url": "https://github.com/ZeKaiNie/universal-examprep-skill"
-  },
-  {
-    "name": "tlgr",
-    "nameZh": "tlgr",
-    "desc": "通过 tlgr 命令行收发和搜索个人 Telegram 账号的消息、管理会话与联系人，输出 JSON",
-    "descEn": "Read, search and send Telegram messages from your own account and manage chats and contacts through the tlgr CLI, with JSON output",
-    "stars": "-",
-    "platform": "claude",
-    "category": "productivity",
-    "url": "https://github.com/tlgrcli/tlgr/tree/main/plugin/skills/tlgr"
-  },
-  {
-    "name": "placecall",
-    "nameZh": "placecall",
-    "desc": "让 Agent 给美国商家拨打真实电话（订位、咨询、询价），返回通话结果与文字记录。依赖托管 API（网络与数据说明），通话会录音并保存 90 天",
-    "descEn": "Places real phone calls to US businesses for reservations, inquiries and quotes, and returns the outcome and transcript. Uses a hosted API (network and data); calls are recorded and kept 90 days",
-    "stars": "-",
-    "platform": "cursor/claude/codex/openclaw",
-    "category": "productivity",
-    "url": "https://github.com/voygr-tech/placecall/tree/main/skills/placecall"
   },
   {
     "name": "new-term-radar",
@@ -970,16 +630,6 @@
     "url": "https://github.com/QingYunA/answer-me-with-html"
   },
   {
-    "name": "devops-claude-skills",
-    "nameZh": "devops-claude-skills",
-    "desc": "DevOps 工作流市场，含 Terraform/K8s",
-    "descEn": "DevOps workflow marketplace with Terraform/K8s",
-    "stars": "-",
-    "platform": "claude",
-    "category": "devops",
-    "url": "https://github.com/ahmedasmar/devops-claude-skills"
-  },
-  {
     "name": "devops-engineer",
     "nameZh": "devops-engineer",
     "desc": "DevOps 工程师 Skill，云基础设施管理",
@@ -990,16 +640,6 @@
     "url": "https://claude-plugins.dev/skills/@Jeffallan/claude-skills/devops-engineer"
   },
   {
-    "name": "ci-cd",
-    "nameZh": "ci-cd",
-    "desc": "CI/CD 管道设计、优化和安全扫描",
-    "descEn": "Design, optimize, and security-scan CI/CD pipelines",
-    "stars": "-",
-    "platform": "all",
-    "category": "devops",
-    "url": "https://claude-plugins.dev/skills/@ahmedasmar/devops-claude-skills/ci-cd"
-  },
-  {
     "name": "claudekit-skills",
     "nameZh": "claudekit-skills",
     "desc": "Docker/GCP/Cloudflare 部署和管理",
@@ -1008,36 +648,6 @@
     "platform": "claude",
     "category": "devops",
     "url": "https://github.com/mrgoonie/claudekit-skills"
-  },
-  {
-    "name": "d1v",
-    "nameZh": "d1v",
-    "desc": "部署 Web 项目，提供可验证预览和需明确确认的生产发布",
-    "descEn": "Deploy web projects with verified previews and explicit-confirmation production releases",
-    "stars": "-",
-    "platform": "claude/codex",
-    "category": "devops",
-    "url": "https://github.com/d1vai/d1v-cli/blob/main/skills/d1v/SKILL.md"
-  },
-  {
-    "name": "cloud-finops-skills",
-    "nameZh": "cloud-finops-skills",
-    "desc": "云与 AI 成本管理（FinOps）Skill：计费机制、承诺折扣、成本分摊与浪费模式排查手册，覆盖 AWS/Azure/GCP",
-    "descEn": "Cloud and AI cost management Skill: billing mechanics, commitments, allocation and waste-pattern runbooks for AWS, Azure and GCP",
-    "stars": "-",
-    "platform": "cursor/claude/copilot/windsurf/codex",
-    "category": "devops",
-    "url": "https://github.com/OptimNow/cloud-finops-skills"
-  },
-  {
-    "name": "d3-visualization",
-    "nameZh": "d3-visualization",
-    "desc": "D3.js 数据可视化 Skill",
-    "descEn": "D3.js data visualization Skill",
-    "stars": "-",
-    "platform": "claude",
-    "category": "data",
-    "url": "https://github.com/chrisvoncsefalvay/claude-d3js-skill"
   },
   {
     "name": "context-engineering",
