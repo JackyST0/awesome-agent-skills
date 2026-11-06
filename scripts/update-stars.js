@@ -2,8 +2,9 @@
 
 /**
  * Update Star Counts Script
- * Fetches star counts from GitHub API and updates existing numeric labels
- * in both READMEs. It never adds a star label where the README has none.
+ * Fetches star counts from GitHub API and updates existing numeric labels in
+ * both READMEs. Star columns additionally populate missing GitHub entries, so
+ * category formats stay stable and the search index can expose star filters.
  */
 
 const fs = require('fs');
@@ -19,12 +20,12 @@ function formatStars(count) {
   return count.toString();
 }
 
-// Fetch repo info from GitHub API
-function fetchRepoInfo(repo) {
+// Fetch repo info from GitHub API, following repository redirects.
+function fetchRepoInfo(repoOrPath, originalRepo = repoOrPath, redirectCount = 0) {
   return new Promise((resolve, reject) => {
     const options = {
       hostname: 'api.github.com',
-      path: `/repos/${repo}`,
+      path: /^\/repositories\//.test(repoOrPath) ? repoOrPath : `/repos/${repoOrPath}`,
       method: 'GET',
       headers: {
         'User-Agent': 'awesome-agent-skills-bot',
@@ -45,18 +46,35 @@ function fetchRepoInfo(repo) {
           try {
             const json = JSON.parse(data);
             resolve({
-              repo,
+              repo: originalRepo,
               stars: json.stargazers_count,
               formatted: formatStars(json.stargazers_count),
             });
           } catch (e) {
-            reject(new Error(`Failed to parse response for ${repo}`));
+            reject(new Error(`Failed to parse response for ${repoOrPath}`));
           }
         } else if (res.statusCode === 404) {
-          console.warn(`Repository not found: ${repo}`);
-          resolve({ repo, stars: 0, formatted: '-' });
+          console.warn(`Repository not found: ${repoOrPath}`);
+          resolve({ repo: repoOrPath, stars: 0, formatted: '-' });
+        } else if (res.statusCode === 301 || res.statusCode === 302) {
+          if (redirectCount >= 5) {
+            reject(new Error(`Too many redirects for ${repoOrPath}`));
+            return;
+          }
+
+          try {
+            const redirectUrl = new URL(res.headers.location, `https://api.github.com/repos/${repoOrPath}`);
+            if (redirectUrl.protocol !== 'https:' || redirectUrl.hostname !== 'api.github.com') {
+              reject(new Error(`Unexpected redirect for ${repoOrPath}`));
+              return;
+            }
+
+            resolve(fetchRepoInfo(redirectUrl.pathname, originalRepo, redirectCount + 1));
+          } catch {
+              reject(new Error(`Invalid redirect for ${repoOrPath}`));
+          }
         } else {
-          reject(new Error(`HTTP ${res.statusCode} for ${repo}`));
+        reject(new Error(`HTTP ${res.statusCode} for ${repoOrPath}`));
         }
       });
     });
@@ -72,9 +90,34 @@ function updateStarsInContent(content, repo, formattedStars) {
   return content.split('\n').map((line) => {
     if (!line.includes(repoUrl)) return line;
 
+    const enStarMatch = line.match(/^(\s*-\s*\[[^\]]+\]\([^)\s]+\)\s*-\s*)(.*)$/);
+    if (enStarMatch && /^(?:[\d.,]+k?\s*⭐\s*-\s*)+/.test(enStarMatch[2])) {
+      return `${enStarMatch[1]}${formattedStars} ⭐ - ${enStarMatch[2].replace(
+        /^(?:[\d.,]+k?\s*⭐\s*-\s*)+/,
+        ''
+      )}`;
+    }
+
     return line
       .replace(/([（(])\s*[\d.]+k?\s*⭐\s*([）)])/gi, `$1${formattedStars} ⭐$2`)
       .replace(/(\|\s*)[\d.]+k?(\s*\|\s*\[[^\]]+\]\(https:\/\/github\.com\/[^)]+\))/i, `$1${formattedStars}$2`);
+  }).join('\n');
+}
+
+function updateMissingStarsInContent(content, repo, formattedStars) {
+  const repoUrl = `https://github.com/${repo}`;
+  return content.split('\n').map((line) => {
+    if (!line.includes(repoUrl)) return line;
+
+    const enMatch = line.match(/^(\s*-\s*\[[^\]]+\]\([^)\s]+\)\s*-\s*)(.*)$/);
+    if (enMatch && /^[\d.,]+k?\s*⭐\s*-\s*/.test(enMatch[2])) return line;
+
+    if (enMatch) return `${enMatch[1]}${formattedStars} ⭐ - ${enMatch[2]}`;
+
+    const zhMatch = line.match(/^(\|[^|]*\|[^|]*\|)\s*-\s*(\|\s*\[[^\]]+\]\([^)\s]+\)\s*\|\s*)$/);
+    if (zhMatch) return `${zhMatch[1]}${formattedStars}${zhMatch[2]}`;
+
+    return line;
   }).join('\n');
 }
 
@@ -84,7 +127,10 @@ function collectRepos(...contents) {
 
   for (const content of contents) {
     for (const match of content.matchAll(pattern)) {
-      repos.add(match[1]);
+      const repo = match[1].replace(/\.git$/, '');
+      if (repo && repo !== 'example/my-skill') {
+        repos.add(repo);
+      }
     }
   }
 
@@ -99,27 +145,28 @@ async function main() {
   const repos = collectRepos(readmeEn, readmeZh);
 
   // Fetch every GitHub repository referenced by the two READMEs.
-  const results = await Promise.all(
-    repos.map(async (repo) => {
-      try {
-        const info = await fetchRepoInfo(repo);
-        console.log(`${repo}: ${info.formatted} stars`);
-        return info;
-      } catch (error) {
-        console.error(`Error fetching ${repo}: ${error.message}`);
-        return { repo, stars: 0, formatted: '-' };
-      }
-    })
-  );
+  const results = [];
+  for (const repo of repos) {
+    try {
+      const info = await fetchRepoInfo(repo);
+      console.log(`${repo}: ${info.formatted} stars`);
+      results.push(info);
+    } catch (error) {
+      console.error(`Error fetching ${repo}: ${error.message}`);
+      results.push({ repo, stars: 0, formatted: '-' });
+    }
+  }
 
   let updatedEn = readmeEn;
   let updatedZh = readmeZh;
 
-  // Update star counts in both files
+  // Update existing star labels in both files, then fill missing star columns.
   for (const { repo, formatted } of results) {
     if (formatted !== '-') {
       updatedEn = updateStarsInContent(updatedEn, repo, formatted);
       updatedZh = updateStarsInContent(updatedZh, repo, formatted);
+      updatedEn = updateMissingStarsInContent(updatedEn, repo, formatted);
+      updatedZh = updateMissingStarsInContent(updatedZh, repo, formatted);
     }
   }
 
