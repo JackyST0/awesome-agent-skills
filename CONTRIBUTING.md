@@ -39,7 +39,7 @@
 
 #### 按条目类型区分
 
-- [ ] 社区项目默认需要至少 **256 GitHub Stars**；维护者明确认可的特殊项目可例外
+- [ ] 社区项目默认需要至少 **512 GitHub Stars**；维护者明确认可的特殊项目可例外
 - [ ] 单个 Skill 仓库：必须包含 `SKILL.md`，并满足社区项目 Stars 门槛
 - [ ] Skills 合集 / 管理器 / 安装器：必须明确服务于 Skills 的发现、安装、同步、分发或管理；不强制仓库根目录包含 `SKILL.md`，但必须满足社区项目 Stars 门槛
 - [ ] 官方资源：可不受 Stars 限制，但必须是官方项目、官方文档或公认的生态基础设施
@@ -112,7 +112,7 @@
 - [ ] 保持该分类现有的有意义顺序；不要求对整个历史列表重新排序
 - [ ] 单个 Skill 仓库包含 SKILL.md
 - [ ] Skills 合集 / 管理器 / 安装器明确服务于 Skills 生态
-- [ ] GitHub 仓库满足最低门槛（社区项目 256+ Stars）
+- [ ] GitHub 仓库满足最低门槛（社区项目 512+ Stars）
 ```
 
 ### 本地检查
@@ -180,7 +180,7 @@ Thanks for your interest in contributing to Awesome Agent Skills!
 
 #### By Entry Type
 
-- [ ] Community submissions should have at least **256 GitHub Stars** by default; maintainers may make explicit exceptions for special cases
+- [ ] Community submissions should have at least **512 GitHub Stars** by default; maintainers may make explicit exceptions for special cases
 - [ ] Single Skill repositories: must contain a `SKILL.md` file and meet the community stars threshold
 - [ ] Skills collections / managers / installers: must clearly serve skill discovery, installation, sync, distribution, or management; `SKILL.md` at the repo root is not required, but the repository must meet the community stars threshold
 - [ ] Official Resources: may be exempt from the stars threshold, but must be official projects, official docs, or widely recognized ecosystem infrastructure
@@ -253,7 +253,7 @@ Please include the following information when submitting a PR:
 - [ ] Preserves the category's existing meaningful order; do not reorder the historical list solely for alphabetization
 - [ ] Single Skill repository contains SKILL.md
 - [ ] Skills collections / managers / installers clearly serve the skills ecosystem
-- [ ] Repository meets the minimum threshold (256+ Stars for community projects)
+- [ ] Repository meets the minimum threshold (512+ Stars for community projects)
 ```
 
 ### Local Validation
