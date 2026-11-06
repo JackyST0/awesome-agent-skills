@@ -149,7 +149,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | Agent Skills 开放标准 | Agent Skills 官方规范文档 | - | [skill.md](https://skill.md/) |
 | Agent Skills 规范 | SKILL.md 格式规范 | - | [agentskills.io](https://agentskills.io/specification) |
 | agentskills/agentskills | ⭐ Agent Skills 官方规范与文档仓库 | 27.0k | [GitHub](https://github.com/agentskills/agentskills) |
-| anthropics/skills | ⭐ Anthropic 官方 Agent Skills 仓库 | 187.8k | [GitHub](https://github.com/anthropics/skills) |
+| anthropics/skills | ⭐ Anthropic 官方 Agent Skills 仓库 | 187.9k | [GitHub](https://github.com/anthropics/skills) |
 | GitHub Docs: About agent skills | GitHub 官方 agent skills 概览，涵盖支持的宿主环境与 `gh skill` | - | [GitHub Docs](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills) |
 | GitHub Docs: Adding agent skills for GitHub Copilot | GitHub 官方创建、安装与发布 agent skills 指南 | - | [GitHub Docs](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/add-skills) |
 | GitHub CLI: gh skill | GitHub CLI 官方 Skills 命令，用于发现、安装、更新和发布 Agent Skills | - | [GitHub CLI](https://cli.github.com/manual/gh_skill) |
@@ -171,7 +171,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | awesome-cursorrules | ⭐ 最全面的 Cursor Rules 合集 | 41.1k | [GitHub](https://github.com/PatrickJS/awesome-cursorrules) |
 | heilcheng/awesome-agent-skills | ⭐ 社区维护的 Agent Skills 导航，聚焦工程团队实际使用的真实 Skills | 6.3k | [GitHub](https://github.com/heilcheng/awesome-agent-skills) |
 | ComposioHQ/awesome-claude-skills | ⭐ Composio 维护的 Claude Skills 合集 | 78.9k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
-| awesome-claude-code | ⭐ Claude Code skills/hooks/插件合集 | 57.3k | [GitHub](https://github.com/hesreallyhim/awesome-claude-code) |
+| awesome-claude-code | ⭐ Claude Code skills/hooks/插件合集 | 57.4k | [GitHub](https://github.com/hesreallyhim/awesome-claude-code) |
 | openskills | ⭐ 通用 Skills 加载器（npm 安装） | 10.8k | [GitHub](https://github.com/numman-ali/openskills) |
 | simonw/claude-skills | Simon Willison 的 Claude Skills 文档 | 930 | [GitHub](https://github.com/simonw/claude-skills) |
 | claude-skills-collection | 官方与社区 Skills 精选集合 | 1.1k | [GitHub](https://github.com/abubakarsiddik31/claude-skills-collection) |
@@ -215,7 +215,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | claude-code-workflows | 生产级开发工作流，自动化质量检查 | Claude | [GitHub](https://github.com/shinpr/claude-code-workflows) |
 | alirezarezvani/claude-skills | 20+ 生产力工具，含 8 个专家 Agent | Claude | [GitHub](https://github.com/alirezarezvani/claude-skills) |
 | claude-code-skill-factory | Skills 工厂，批量生成和部署 Skills | Claude | [GitHub](https://github.com/alirezarezvani/claude-code-skill-factory) |
-| obra/superpowers | ⭐ 完整开发工作流（调试/TDD/代码审查/计划）（313.1k ⭐） | All | [GitHub](https://github.com/obra/superpowers) |
+| obra/superpowers | ⭐ 完整开发工作流（调试/TDD/代码审查/计划）（313.2k ⭐） | All | [GitHub](https://github.com/obra/superpowers) |
 | planning-with-files | 基于文件的持久化规划，包含任务计划、研究发现、进度跟踪和会话恢复 | All | [GitHub](https://github.com/OthmanAdi/planning-with-files) |
 | coreyhaines31/marketingskills | ⭐ 营销 Skills（SEO/文案/CRO/广告）（58.8k ⭐） | All | [GitHub](https://github.com/coreyhaines31/marketingskills) |
 | changelog-generator | 从 Git 提交自动生成 Changelog | Claude | [ComposioHQ](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/changelog-generator) |
