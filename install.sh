@@ -16,7 +16,7 @@ NC='\033[0m' # No Color
 
 # Repository URL
 REPO_URL="https://github.com/JackyST0/awesome-agent-skills"
-DEFAULT_REPOSITORY_REF="v1.0.1"
+DEFAULT_REPOSITORY_REF="v1.1.0"
 # Set AAS_REPOSITORY_REF to override the default with another reviewed release
 # tag or full commit SHA. Do not fetch Skills from an unpinned branch.
 REPOSITORY_REF="${AAS_REPOSITORY_REF:-$DEFAULT_REPOSITORY_REF}"

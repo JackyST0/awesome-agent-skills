@@ -26,23 +26,23 @@
 **macOS / Linux:**
 
 ```bash
-curl --fail --proto '=https' --tlsv1.2 -fsSLo install.sh https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/v1.0.1/install.sh && AAS_REPOSITORY_REF=v1.0.1 bash install.sh
+curl --fail --proto '=https' --tlsv1.2 -fsSLo install.sh https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/v1.1.0/install.sh && AAS_REPOSITORY_REF=v1.1.0 bash install.sh
 ```
 
 **Windows (PowerShell):**
 
 ```powershell
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/v1.0.1/install.ps1" -OutFile "install.ps1"; .\install.ps1 -RepositoryRef v1.0.1
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/v1.1.0/install.ps1" -OutFile "install.ps1"; .\install.ps1 -RepositoryRef v1.1.0
 ```
 
-稳定版本已经内联在可复制命令中，无需提前设置环境变量。后续命令可使用 `AAS_REPOSITORY_REF=v1.0.1 bash install.sh -p cursor -a` 或 `.\install.ps1 -RepositoryRef v1.0.1 -Platform cursor -All`。安装器也会内置稳定版本作为默认值，同时保留环境变量和参数用于覆盖到其他已审核版本。
+稳定版本已经内联在可复制命令中，无需提前设置环境变量。后续命令可使用 `AAS_REPOSITORY_REF=v1.1.0 bash install.sh -p cursor -a` 或 `.\install.ps1 -RepositoryRef v1.1.0 -Platform cursor -All`。安装器也会内置稳定版本作为默认值，同时保留环境变量和参数用于覆盖到其他已审核版本。
 
 ### 执行前校验
 
 对完整性校验要求较高的环境，可先验证 SHA-256：
 
 ```bash
-export AAS_REF="v1.0.1"
+export AAS_REF="v1.1.0"
 base_url="https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$AAS_REF"
 curl --fail --proto '=https' --tlsv1.2 -LO "$base_url/install.sh" -LO "$base_url/checksums.txt"
 shasum -a 256 -c checksums.txt --ignore-missing
@@ -50,7 +50,7 @@ AAS_REPOSITORY_REF="$AAS_REF" bash install.sh
 ```
 
 ```powershell
-$AAS_REF = "v1.0.1"
+$AAS_REF = "v1.1.0"
 $baseUrl = "https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$AAS_REF"
 Invoke-WebRequest -Uri "$baseUrl/install.ps1" -OutFile "install.ps1"
 Invoke-WebRequest -Uri "$baseUrl/checksums.txt" -OutFile "checksums.txt"

@@ -15,7 +15,7 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-$DEFAULT_REPOSITORY_REF = "v1.0.1"
+$DEFAULT_REPOSITORY_REF = "v1.1.0"
 if (-not $RepositoryRef) {
     $RepositoryRef = $DEFAULT_REPOSITORY_REF
 }

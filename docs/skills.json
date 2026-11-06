@@ -34,7 +34,7 @@
     "nameZh": "anthropics/skills",
     "desc": "Anthropic 官方 Agent Skills 仓库",
     "descEn": "Official Anthropic Agent Skills repository",
-    "stars": "187.8k",
+    "stars": "187.9k",
     "platform": "all",
     "category": "official",
     "url": "https://github.com/anthropics/skills"
@@ -204,7 +204,7 @@
     "nameZh": "awesome-claude-code",
     "desc": "Claude Code skills/hooks/插件合集",
     "descEn": "Claude Code skills/hooks/plugins collection",
-    "stars": "57.3k",
+    "stars": "57.4k",
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/hesreallyhim/awesome-claude-code"
@@ -314,7 +314,7 @@
     "nameZh": "claude-code-security-review",
     "desc": "AI 安全审查 GitHub Action（官方）",
     "descEn": "AI security review GitHub Action (Official)",
-    "stars": "6.7k",
+    "stars": "6.8k",
     "platform": "claude",
     "category": "devtools",
     "url": "https://github.com/anthropics/claude-code-security-review"
@@ -494,7 +494,7 @@
     "nameZh": "task-observer",
     "desc": "观察工作会话，记录 Skills 失效之处，并将修正转化为 Skills 改进建议",
     "descEn": "Watches work sessions, logs where skills fail, and turns the corrections into proposed skill improvements",
-    "stars": "3.7k",
+    "stars": "3.8k",
     "platform": "claude",
     "category": "devtools",
     "url": "https://github.com/rebelytics/one-skill-to-rule-them-all"
@@ -504,7 +504,7 @@
     "nameZh": "reverse-engineer-anything",
     "desc": "用 REA CLI/MCP 分析二进制与 JavaScript/Electron 应用并保留证据；原生深度分析需自备 Hopper、Ghidra 或 IDA",
     "descEn": "Inspect shipped binaries and JavaScript/Electron apps using REA CLI/MCP evidence; deep native analysis needs separately installed Hopper, Ghidra, or IDA",
-    "stars": "435.2k",
+    "stars": "435.5k",
     "platform": "codex",
     "category": "devtools",
     "url": "https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything"
@@ -544,7 +544,7 @@
     "nameZh": "obra/superpowers",
     "desc": "完整开发工作流（调试/TDD/代码审查/计划）",
     "descEn": "Complete dev workflow (Debug/TDD/Code Review/Planning)",
-    "stars": "313.1k",
+    "stars": "313.2k",
     "platform": "all",
     "category": "productivity",
     "url": "https://github.com/obra/superpowers"
@@ -594,7 +594,7 @@
     "nameZh": "answer-me-with-html",
     "desc": "回答难题时输出一页可离线打开的 HTML：模型只写 Markdown 草稿，由内置 CLI 渲染",
     "descEn": "Agent skill that writes the answer as a Markdown draft and renders one offline HTML page, using about 1/8 of the output tokens",
-    "stars": "5.5k",
+    "stars": "5.6k",
     "platform": "cursor/claude/codex/opencode",
     "category": "productivity",
     "url": "https://github.com/QingYunA/answer-me-with-html"
@@ -664,7 +664,7 @@
     "nameZh": "doc-coauthoring",
     "desc": "文档协作撰写 Skill",
     "descEn": "Document co-authoring Skill",
-    "stars": "187.8k",
+    "stars": "187.9k",
     "platform": "claude",
     "category": "writing",
     "url": "https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring"
@@ -674,7 +674,7 @@
     "nameZh": "internal-comms",
     "desc": "内部沟通文档生成 Skill",
     "descEn": "Internal communications generation Skill",
-    "stars": "187.8k",
+    "stars": "187.9k",
     "platform": "claude",
     "category": "writing",
     "url": "https://github.com/anthropics/skills/tree/main/skills/internal-comms"
@@ -684,7 +684,7 @@
     "nameZh": "docx",
     "desc": "Word 文档读写处理 Skill",
     "descEn": "Word document processing Skill",
-    "stars": "187.8k",
+    "stars": "187.9k",
     "platform": "claude",
     "category": "writing",
     "url": "https://github.com/anthropics/skills/tree/main/skills/docx"
@@ -694,7 +694,7 @@
     "nameZh": "pdf",
     "desc": "PDF 文档处理 Skill",
     "descEn": "Portable document format processing Skill",
-    "stars": "187.8k",
+    "stars": "187.9k",
     "platform": "claude",
     "category": "writing",
     "url": "https://github.com/anthropics/skills/tree/main/skills/pdf"
@@ -704,7 +704,7 @@
     "nameZh": "pptx",
     "desc": "PPT 演示文稿生成 Skill",
     "descEn": "PowerPoint presentation generator Skill",
-    "stars": "187.8k",
+    "stars": "187.9k",
     "platform": "claude",
     "category": "writing",
     "url": "https://github.com/anthropics/skills/tree/main/skills/pptx"
@@ -714,7 +714,7 @@
     "nameZh": "xlsx",
     "desc": "Excel 表格处理 Skill",
     "descEn": "Excel spreadsheet processing Skill",
-    "stars": "187.8k",
+    "stars": "187.9k",
     "platform": "claude",
     "category": "writing",
     "url": "https://github.com/anthropics/skills/tree/main/skills/xlsx"
@@ -724,7 +724,7 @@
     "nameZh": "frontend-design",
     "desc": "前端 UI 设计 Skill",
     "descEn": "Frontend UI design Skill",
-    "stars": "187.8k",
+    "stars": "187.9k",
     "platform": "claude",
     "category": "design",
     "url": "https://github.com/anthropics/skills/tree/main/skills/frontend-design"
@@ -734,7 +734,7 @@
     "nameZh": "brand-guidelines",
     "desc": "品牌设计规范 Skill",
     "descEn": "Brand design guidelines Skill",
-    "stars": "187.8k",
+    "stars": "187.9k",
     "platform": "claude",
     "category": "design",
     "url": "https://github.com/anthropics/skills/tree/main/skills/brand-guidelines"
@@ -744,7 +744,7 @@
     "nameZh": "canvas-design",
     "desc": "Canvas 画布设计 Skill",
     "descEn": "Canvas design Skill",
-    "stars": "187.8k",
+    "stars": "187.9k",
     "platform": "claude",
     "category": "design",
     "url": "https://github.com/anthropics/skills/tree/main/skills/canvas-design"
@@ -754,7 +754,7 @@
     "nameZh": "theme-factory",
     "desc": "主题样式工厂 Skill",
     "descEn": "Theme style factory Skill",
-    "stars": "187.8k",
+    "stars": "187.9k",
     "platform": "claude",
     "category": "design",
     "url": "https://github.com/anthropics/skills/tree/main/skills/theme-factory"
@@ -764,7 +764,7 @@
     "nameZh": "algorithmic-art",
     "desc": "算法艺术生成 Skill",
     "descEn": "Algorithmic art generation Skill",
-    "stars": "187.8k",
+    "stars": "187.9k",
     "platform": "claude",
     "category": "design",
     "url": "https://github.com/anthropics/skills/tree/main/skills/algorithmic-art"
@@ -774,7 +774,7 @@
     "nameZh": "slack-gif-creator",
     "desc": "Slack GIF 创建 Skill",
     "descEn": "Slack GIF creator Skill",
-    "stars": "187.8k",
+    "stars": "187.9k",
     "platform": "claude",
     "category": "design",
     "url": "https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator"

@@ -37,23 +37,23 @@ English | [简体中文](README_ZH.md)
 **macOS / Linux:**
 
 ```bash
-curl --fail --proto '=https' --tlsv1.2 -fsSLo install.sh https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/v1.0.1/install.sh && AAS_REPOSITORY_REF=v1.0.1 bash install.sh
+curl --fail --proto '=https' --tlsv1.2 -fsSLo install.sh https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/v1.1.0/install.sh && AAS_REPOSITORY_REF=v1.1.0 bash install.sh
 ```
 
 **Windows (PowerShell):**
 
 ```powershell
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/v1.0.1/install.ps1" -OutFile "install.ps1"; .\install.ps1 -RepositoryRef v1.0.1
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/v1.1.0/install.ps1" -OutFile "install.ps1"; .\install.ps1 -RepositoryRef v1.1.0
 ```
 
-The stable release reference is included directly in the copy-paste command, so no prior environment setup is required. For later commands, use forms such as `AAS_REPOSITORY_REF=v1.0.1 bash install.sh -p cursor -a` or `.\install.ps1 -RepositoryRef v1.0.1 -Platform cursor -All`. The installer also includes the stable release as its default; the environment variable and parameter remain available for reviewed overrides.
+The stable release reference is included directly in the copy-paste command, so no prior environment setup is required. For later commands, use forms such as `AAS_REPOSITORY_REF=v1.1.0 bash install.sh -p cursor -a` or `.\install.ps1 -RepositoryRef v1.1.0 -Platform cursor -All`. The installer also includes the stable release as its default; the environment variable and parameter remain available for reviewed overrides.
 
 ### Verify Before Running
 
 For environments that require checksum verification:
 
 ```bash
-export AAS_REF="v1.0.1"
+export AAS_REF="v1.1.0"
 base_url="https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$AAS_REF"
 curl --fail --proto '=https' --tlsv1.2 -LO "$base_url/install.sh" -LO "$base_url/checksums.txt"
 shasum -a 256 -c checksums.txt --ignore-missing
@@ -61,7 +61,7 @@ AAS_REPOSITORY_REF="$AAS_REF" bash install.sh
 ```
 
 ```powershell
-$AAS_REF = "v1.0.1"
+$AAS_REF = "v1.1.0"
 $baseUrl = "https://raw.githubusercontent.com/JackyST0/awesome-agent-skills/$AAS_REF"
 Invoke-WebRequest -Uri "$baseUrl/install.ps1" -OutFile "install.ps1"
 Invoke-WebRequest -Uri "$baseUrl/checksums.txt" -OutFile "checksums.txt"
