@@ -152,7 +152,7 @@ Skills work across multiple platforms:
 - [antfu/skills](https://github.com/antfu/skills) - 6.0k ⭐ - Vue/Vite/Vitest development Skills.
 - [Supabase Agent Skills](https://github.com/supabase/agent-skills) - 3.0k ⭐ - PostgreSQL best practices Skill by Supabase.
 - [Expo Skills](https://github.com/expo/skills) - 4.1k ⭐ - Expo/React Native development Skills.
-- [browser-use/browser-use](https://github.com/browser-use/browser-use) - 120.1k ⭐ - Browser automation Skill.
+- [browser-use/browser-use](https://github.com/browser-use/browser-use) - 120.2k ⭐ - Browser automation Skill.
 - [code-review](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/code-review) - 667 ⭐ - Smart code review example Skill.
 - [git-commit](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/git-commit) - 667 ⭐ - Git commit message generator Skill.
 - [unit-test-generator](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/unit-test-generator) - 667 ⭐ - Unit test auto-generator Skill.
@@ -187,6 +187,7 @@ Skills work across multiple platforms:
 - [context-engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) - 18.3k ⭐ - Context engineering and multi-Agent architecture.
 - [kordoc](https://github.com/chrisryugj/kordoc/tree/main/plugins/kordoc/skills/kordoc) - 2.9k ⭐ - Korean document (HWP/HWPX/PDF) to Markdown conversion, form filling, and HWPX generation Skill.
 - [jiangshan-atlas](https://github.com/DeanChensj/jiangshan-map/tree/main/skills/jiangshan-atlas) - 4.4k ⭐ - Interactive Chinese historical atlas Skill for locating ancient places, classical poems, and figure trajectories.
+- [ava](https://github.com/antvis/AVA/tree/ai/skills/ava) - 1.6k ⭐ - Analyze files and databases, reuse business definitions, verify calculations, and generate interactive charts.
 
 ## Writing
 

@@ -199,7 +199,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | antfu/skills | ⭐ Vue/Vite/Vitest 开发 Skills（6.0k ⭐） | All | [GitHub](https://github.com/antfu/skills) |
 | supabase/agent-skills | ⭐ Supabase Postgres 最佳实践 Skill（3.0k ⭐） | All | [GitHub](https://github.com/supabase/agent-skills) |
 | expo/skills | ⭐ Expo/React Native 开发 Skills（4.1k ⭐） | All | [GitHub](https://github.com/expo/skills) |
-| browser-use/browser-use | 浏览器自动化 Skill（120.1k ⭐） | All | [GitHub](https://github.com/browser-use/browser-use) |
+| browser-use/browser-use | 浏览器自动化 Skill（120.2k ⭐） | All | [GitHub](https://github.com/browser-use/browser-use) |
 | code-review | 智能代码审查示例 Skill | All | [示例](examples/code-review/) |
 | git-commit | Git 提交信息生成示例 Skill | All | [示例](examples/git-commit/) |
 | unit-test-generator | 单元测试自动生成 Skill | All | [示例](examples/unit-test-generator/) |
@@ -240,6 +240,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | context-engineering | 上下文工程和多 Agent 架构 Skills | All | [GitHub](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) |
 | kordoc | 韩国文档（HWP/HWPX/PDF）转 Markdown、表单填写与 HWPX 生成 Skill | Claude | [GitHub](https://github.com/chrisryugj/kordoc/tree/main/plugins/kordoc/skills/kordoc) |
 | jiangshan-atlas | 中国历史地图与古诗地名、人物轨迹定位可视化 Skill | All | [GitHub](https://github.com/DeanChensj/jiangshan-map/tree/main/skills/jiangshan-atlas) |
+| ava | 连接文件和数据库，复用业务口径，核对查询结果并生成交互图表 | Claude/Codex | [GitHub](https://github.com/antvis/AVA/tree/ai/skills/ava) |
 
 ## 写作创作
 
