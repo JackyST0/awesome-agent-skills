@@ -115,7 +115,7 @@ Skills work across multiple platforms:
 - [microsoft/skills](https://github.com/microsoft/agent-skills) - 3.2k ⭐ - Microsoft official 131 Azure SDK Skills.
 - [microsoft/azure-skills](https://github.com/microsoft/azure-skills) - 1.6k ⭐ - Official Azure skills plugin with MCP server configurations and 20 curated Azure skills.
 - [OpenAI Codex: Agent Skills](https://developers.openai.com/codex/skills/) - OpenAI official guide for using Agent Skills in Codex CLI, IDE extension, and Codex app.
-- [GitHub Awesome Copilot](https://github.com/github/awesome-copilot) - 40.8k ⭐ - Official Copilot resources collection.
+- [GitHub Awesome Copilot](https://github.com/github/awesome-copilot) - 40.9k ⭐ - Official Copilot resources collection.
 - [Agent Skills Index](https://agent-skills.md/) - Community Skills search engine.
 - [Skills Leaderboard](https://skills.sh) - Open Agent Skills ecosystem directory.
 - [Tencent SkillHub](https://skillhub.tencent.com/) - Tencent's Skills community with 13k+ skills, optimized for Chinese users.
@@ -136,11 +136,12 @@ Skills work across multiple platforms:
 - [youtube-skills](https://github.com/ZeroPointRepo/youtube-skills) - 1.2k ⭐ - YouTube transcript, video search, channel and playlist skills for Claude Code, OpenClaw, Hermes Agent, and other agent runtimes.
 - [oh-my-agent](https://github.com/first-fluke/oh-my-agent) - 1.4k ⭐ - 33 skills and 21 workflows kept in one `.agents/skills` folder and symlinked per skill into Claude Code, Codex, Cursor and other runtimes; `oma link --dry-run` previews what it will write.
 - [sno-station-skills](https://github.com/sno-ai/sno-station-skills) - 861 ⭐ - Skills for Claude Code and Codex: cross-vendor peer review, handoff when one agent hits its usage limit, delegation and reporting.
+- [laolaoshiren/claude-code-skills-zh](https://github.com/laolaoshiren/claude-code-skills-zh) - 905 ⭐ - Curated Claude Code skills collection for Chinese developers, with 438+ curated skills and 20 original skills.
 
 ## Development Tools
 
-- [orca-replay](https://github.com/Continuum-AI-Corp/OrcaReplay/tree/main/skills/orca-replay) - 350 ⭐ - Read a recorded agent run from its trace: what it actually sent, ran and changed. Replay is offline for the model only — the recorded shell commands re-execute for real and `worktree` isolation is not a sandbox, so the skill requires checking side effects first.
-- [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) - 113.5k ⭐ - Production-grade engineering skills and slash-command workflows for AI coding agents.
+- [orca-replay](https://github.com/Continuum-AI-Corp/OrcaReplay/tree/main/skills/orca-replay) - 352 ⭐ - Read a recorded agent run from its trace: what it actually sent, ran and changed. Replay is offline for the model only — the recorded shell commands re-execute for real and `worktree` isolation is not a sandbox, so the skill requires checking side effects first.
+- [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) - 113.6k ⭐ - Production-grade engineering skills and slash-command workflows for AI coding agents.
 - [claude-code-security-review](https://github.com/anthropics/claude-code-security-review) - 6.7k ⭐ - AI security review GitHub Action (Official).
 - [trailofbits/skills](https://github.com/trailofbits/skills) - 8.0k ⭐ - Trail of Bits security research and audit Skills.
 - [playwright-skill](https://github.com/lackeyjb/playwright-skill) - 3.3k ⭐ - Playwright browser automation testing Skill.
@@ -160,7 +161,7 @@ Skills work across multiple platforms:
 - [debug-helper](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/debug-helper) - 667 ⭐ - Code debugging assistant Skill.
 - [birdview](https://github.com/Qiuner/birdview) - 675 ⭐ - Generate evidence-linked architecture and constraint maps, review planned change scope before implementation, and record verification results.
 - [task-observer](https://github.com/rebelytics/one-skill-to-rule-them-all) - 3.7k ⭐ - Watches work sessions, logs where skills fail, and turns the corrections into proposed skill improvements.
-- [reverse-engineer-anything](https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything) - 434.8k ⭐ - Inspect shipped binaries and JavaScript/Electron apps using REA CLI/MCP evidence; deep native analysis needs separately installed Hopper, Ghidra, or IDA.
+- [reverse-engineer-anything](https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything) - 435.2k ⭐ - Inspect shipped binaries and JavaScript/Electron apps using REA CLI/MCP evidence; deep native analysis needs separately installed Hopper, Ghidra, or IDA.
 
 ## Productivity
 
