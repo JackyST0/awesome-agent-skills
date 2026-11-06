@@ -177,7 +177,6 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | claude-skills-collection | 官方与社区 Skills 精选集合 | 1.1k | [GitHub](https://github.com/abubakarsiddik31/claude-skills-collection) |
 | best-skills | 通用高质量 Skills 合集，涵盖论文写作、开发流程、自媒体创作等 | 3.1k | [GitHub](https://github.com/xstongxue/best-skills) |
 | skillkit | 跨平台 Skills 管理器，可安装、转换并同步 Skills 到 40+ Agent | 1.6k | [GitHub](https://github.com/rohitg00/skillkit) |
-| OrkasVideoStudio | 面向 Agent 的视频制作 Skills 合集，配套 CLI 与 MCP 运行时 | 344 | [GitHub](https://github.com/Orkas-AI/Orkas-VideoStudio) |
 | youtube-skills | 面向 YouTube 的转录、视频搜索、频道浏览与播放列表 Skills，适用于 Claude Code、OpenClaw、Hermes Agent 等 Agent 运行时 | 1.2k | [GitHub](https://github.com/ZeroPointRepo/youtube-skills) |
 | oh-my-agent | 33 个技能和 21 个工作流，统一放在 `.agents/skills`，按条目软链接到 Claude Code、Codex、Cursor 等工具的技能目录；`oma link --dry-run` 先预览要写的文件 | 1.4k | [GitHub](https://github.com/first-fluke/oh-my-agent) |
 | sno-station-skills | 面向 Claude Code 与 Codex 的 Skills 合集：两家模型互相审查、一个 Agent 用到额度上限时交给另一个接着做，以及任务委派与汇报 | 861 | [GitHub](https://github.com/sno-ai/sno-station-skills) |
@@ -187,7 +186,6 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 
 | 名称 | 描述 | 平台 | 链接 |
 |------|------|------|------|
-| orca-replay | 从录像回答 Agent 那次运行到底做了什么：发出的请求、每次工具调用、shell 退出码与文件改动，并可离线重放或从检查点分叉。重放只阻断模型侧出网，录下的 shell 命令会真的再执行一次，`worktree` 隔离也不等于沙箱，因此技能要求先确认副作用再重放 | All | [GitHub](https://github.com/Continuum-AI-Corp/OrcaReplay/tree/main/skills/orca-replay) |
 | addyosmani/agent-skills | 面向 AI 编程代理的生产级工程技能与斜杠命令工作流 | All | [GitHub](https://github.com/addyosmani/agent-skills) |
 | claude-code-security-review | ⭐ AI 安全审查 GitHub Action（官方） | Claude | [GitHub](https://github.com/anthropics/claude-code-security-review) |
 | trailofbits/skills | ⭐ Trail of Bits 安全研究和审计 Skills | Claude | [GitHub](https://github.com/trailofbits/skills) |
@@ -220,9 +218,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | obra/superpowers | ⭐ 完整开发工作流（调试/TDD/代码审查/计划）（313.1k ⭐） | All | [GitHub](https://github.com/obra/superpowers) |
 | planning-with-files | 基于文件的持久化规划，包含任务计划、研究发现、进度跟踪和会话恢复 | All | [GitHub](https://github.com/OthmanAdi/planning-with-files) |
 | coreyhaines31/marketingskills | ⭐ 营销 Skills（SEO/文案/CRO/广告）（58.8k ⭐） | All | [GitHub](https://github.com/coreyhaines31/marketingskills) |
-| gingiris-opensource | 面向 GitHub 增长与开源发布策略的营销 Playbook | All | [GitHub](https://github.com/Gingiris/gingiris-opensource) |
 | changelog-generator | 从 Git 提交自动生成 Changelog | Claude | [ComposioHQ](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/changelog-generator) |
-| universal-exam-cram-coach | 期末备考教练：按章讲课件并标页码，只用作业和真题出题 | All | [GitHub](https://github.com/ZeKaiNie/universal-examprep-skill) |
 | new-term-radar | 发现 X、Hugging Face、GitHub 和 sitemap 上刚出现的 AI 模型、产品和仓库名，用 Google Ads 搜索量和 DataForSEO Trends（对 Google 搜索热度的估算）给背后的搜索词排优先级。3 个 Skill 和一个 MCP 服务器；需要 AIsa API key，可选的 GoAnyAPI key 会加上 Google Trends 相关搜索和分国家的趋势 | All | [GitHub](https://github.com/zhuyansen/new-term-radar) |
 | answer-me-with-html | 回答难题时输出一页可离线打开的 HTML：模型只写 Markdown 草稿，由内置 CLI 渲染 | Claude/Codex/Cursor/OpenCode | [GitHub](https://github.com/QingYunA/answer-me-with-html) |
 | career-ops | 开源的 AI 求职智能体：扫描公司招聘页面，对照你的简历为每个职位打 1-5 分，定制 ATS 友好的简历并跟踪申请；每份申请都由你自己提交。无遥测，简历只发送给你选择的 AI 服务。 | Claude/Codex/OpenCode | [GitHub](https://github.com/career-ops-hq/career-ops) |
@@ -231,7 +227,6 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 
 | 名称 | 描述 | 平台 | 链接 |
 |------|------|------|------|
-| devops-engineer | DevOps 工程师 Skill，云基础设施管理 | All | [claude-plugins.dev](https://claude-plugins.dev/skills/@Jeffallan/claude-skills/devops-engineer) |
 | claudekit-skills | Docker/GCP/Cloudflare 部署和管理 | Claude | [GitHub](https://github.com/mrgoonie/claudekit-skills) |
 
 ## 数据处理
@@ -264,7 +259,6 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | theme-factory | ⭐ 主题样式工厂 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/theme-factory) |
 | algorithmic-art | ⭐ 算法艺术生成 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/algorithmic-art) |
 | slack-gif-creator | ⭐ Slack GIF 创建 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator) |
-| product-launch-motion | 输入网址生成 60 fps 产品发布视频（含音乐、音效与动态模糊）的 Skill | Claude | [GitHub](https://github.com/AbubakrChan/product-launch-motion) |
 
 ## Contributing
 
