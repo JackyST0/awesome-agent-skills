@@ -23,6 +23,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.ACTIONS_PUSH_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v7
@@ -46,4 +48,6 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add docs/skills.json
           git commit -m "chore: sync search index [skip ci]"
-          git push
+          git push "https://x-access-token:${ACTIONS_PUSH_TOKEN}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref_name }}
+        env:
+          ACTIONS_PUSH_TOKEN: ${{ secrets.ACTIONS_PUSH_TOKEN }}
