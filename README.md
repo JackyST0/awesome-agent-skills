@@ -132,7 +132,6 @@ Skills work across multiple platforms:
 - [claude-skills-collection](https://github.com/abubakarsiddik31/claude-skills-collection) - 1.1k ⭐ - Curated official and community Skills.
 - [best-skills](https://github.com/xstongxue/best-skills) - 3.1k ⭐ - High-quality Skills collection for paper writing, dev workflow, and content creation.
 - [skillkit](https://github.com/rohitg00/skillkit) - 1.6k ⭐ - Cross-platform skills manager that installs, translates, and syncs skills across 40+ agents.
-- [OrkasVideoStudio](https://github.com/Orkas-AI/Orkas-VideoStudio) - 344 ⭐ - Agent video-production skill pack with CLI and MCP runtime.
 - [youtube-skills](https://github.com/ZeroPointRepo/youtube-skills) - 1.2k ⭐ - YouTube transcript, video search, channel and playlist skills for Claude Code, OpenClaw, Hermes Agent, and other agent runtimes.
 - [oh-my-agent](https://github.com/first-fluke/oh-my-agent) - 1.4k ⭐ - 33 skills and 21 workflows kept in one `.agents/skills` folder and symlinked per skill into Claude Code, Codex, Cursor and other runtimes; `oma link --dry-run` previews what it will write.
 - [sno-station-skills](https://github.com/sno-ai/sno-station-skills) - 861 ⭐ - Skills for Claude Code and Codex: cross-vendor peer review, handoff when one agent hits its usage limit, delegation and reporting.
@@ -140,7 +139,6 @@ Skills work across multiple platforms:
 
 ## Development Tools
 
-- [orca-replay](https://github.com/Continuum-AI-Corp/OrcaReplay/tree/main/skills/orca-replay) - 352 ⭐ - Read a recorded agent run from its trace: what it actually sent, ran and changed. Replay is offline for the model only — the recorded shell commands re-execute for real and `worktree` isolation is not a sandbox, so the skill requires checking side effects first.
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) - 113.6k ⭐ - Production-grade engineering skills and slash-command workflows for AI coding agents.
 - [claude-code-security-review](https://github.com/anthropics/claude-code-security-review) - 6.7k ⭐ - AI security review GitHub Action (Official).
 - [trailofbits/skills](https://github.com/trailofbits/skills) - 8.0k ⭐ - Trail of Bits security research and audit Skills.
@@ -171,16 +169,13 @@ Skills work across multiple platforms:
 - [obra/superpowers](https://github.com/obra/superpowers) - 313.1k ⭐ - Complete dev workflow (Debug/TDD/Code Review/Planning).
 - [planning-with-files](https://github.com/OthmanAdi/planning-with-files) - 27.9k ⭐ - Persistent file-based planning with task plans, findings, progress tracking, and session recovery for long-running agent work.
 - [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) - 58.8k ⭐ - Marketing Skills (SEO/Copywriting/CRO/Ads).
-- [gingiris-opensource](https://github.com/Gingiris/gingiris-opensource) - 264 ⭐ - Open source marketing playbook focused on GitHub growth and launch strategy.
 - [changelog-generator](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/changelog-generator) - 78.9k ⭐ - Generate changelogs from Git commits.
-- [universal-exam-cram-coach](https://github.com/ZeKaiNie/universal-examprep-skill) - 367 ⭐ - Exam-prep tutor that teaches from your own slides, notes and past papers with page citations, figure crops, homework-only quizzes and cross-session progress.
 - [new-term-radar](https://github.com/zhuyansen/new-term-radar) - 2.1k ⭐ - Spots new AI model, product and repo names on X, Hugging Face, GitHub and sitemaps, then ranks the search terms behind them by Google Ads volume and DataForSEO Trends (an estimate of Google search interest). Three skills and an MCP server; needs an AIsa API key, and an optional GoAnyAPI key adds Google Trends related queries and country-level trend series.
 - [answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) - 5.5k ⭐ - Agent skill that writes the answer as a Markdown draft and renders one offline HTML page, using about 1/8 of the output tokens.
 - [career-ops](https://github.com/career-ops-hq/career-ops) - 80.5k ⭐ - Open-source AI job search agent for Claude Code, Codex and OpenCode: scans company career pages, scores each job posting 1-5 against your CV, tailors an ATS-friendly resume and tracks applications; you submit every application yourself. No telemetry; your CV goes only to the AI provider you choose. [Website](https://career-ops.org)
 
 ## DevOps
 
-- [devops-engineer](https://claude-plugins.dev/skills/@Jeffallan/claude-skills/devops-engineer) - DevOps engineer Skill for cloud infrastructure management.
 - [claudekit-skills](https://github.com/mrgoonie/claudekit-skills) - 2.2k ⭐ - Docker/GCP/Cloudflare deployment and management.
 
 ## Data Processing
@@ -207,7 +202,6 @@ Skills work across multiple platforms:
 - [theme-factory](https://github.com/anthropics/skills/tree/main/skills/theme-factory) - 187.8k ⭐ - Theme style factory Skill.
 - [algorithmic-art](https://github.com/anthropics/skills/tree/main/skills/algorithmic-art) - 187.8k ⭐ - Algorithmic art generation Skill.
 - [slack-gif-creator](https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator) - 187.8k ⭐ - Slack GIF creator Skill.
-- [product-launch-motion](https://github.com/AbubakrChan/product-launch-motion) - 424 ⭐ - Turn a website URL into a 60 fps launch video with music and sound effects.
 
 ## Contributing
 
