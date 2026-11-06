@@ -158,7 +158,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | microsoft/skills | ⭐ 微软官方 131 个 Azure SDK Skills | 3.2k | [GitHub](https://github.com/microsoft/agent-skills) |
 | microsoft/azure-skills | ⭐ 微软官方 Azure Skills 插件，内置 MCP 配置与 20 个 Azure 技能 | 1.6k | [GitHub](https://github.com/microsoft/azure-skills) |
 | OpenAI Codex: Agent Skills | OpenAI 官方 Codex Agent Skills 使用指南，覆盖 CLI、IDE 扩展和 Codex app | - | [OpenAI Developers](https://developers.openai.com/codex/skills/) |
-| github/awesome-copilot | GitHub 官方 Copilot 资源合集 | 40.8k | [GitHub](https://github.com/github/awesome-copilot) |
+| github/awesome-copilot | GitHub 官方 Copilot 资源合集 | 40.9k | [GitHub](https://github.com/github/awesome-copilot) |
 | Agent Skills 索引 | 社区 Skills 搜索引擎 | - | [agent-skills.md](https://agent-skills.md/) |
 | Skills 排行榜 | 开放 Agent Skills 生态目录 | - | [skills.sh](https://skills.sh) |
 | 腾讯 SkillHub | ⭐ 腾讯 Skills 社区，收录 1.3 万+ 技能，国内镜像加速 | - | [skillhub.tencent.com](https://skillhub.tencent.com/) |
@@ -181,6 +181,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | youtube-skills | 面向 YouTube 的转录、视频搜索、频道浏览与播放列表 Skills，适用于 Claude Code、OpenClaw、Hermes Agent 等 Agent 运行时 | 1.2k | [GitHub](https://github.com/ZeroPointRepo/youtube-skills) |
 | oh-my-agent | 33 个技能和 21 个工作流，统一放在 `.agents/skills`，按条目软链接到 Claude Code、Codex、Cursor 等工具的技能目录；`oma link --dry-run` 先预览要写的文件 | 1.4k | [GitHub](https://github.com/first-fluke/oh-my-agent) |
 | sno-station-skills | 面向 Claude Code 与 Codex 的 Skills 合集：两家模型互相审查、一个 Agent 用到额度上限时交给另一个接着做，以及任务委派与汇报 | 861 | [GitHub](https://github.com/sno-ai/sno-station-skills) |
+| laolaoshiren/claude-code-skills-zh | 面向中文开发者的 Claude Code Skills 精选集，438+ 精选 + 20 原创技能 | 905 | [GitHub](https://github.com/laolaoshiren/claude-code-skills-zh) |
 
 ## 开发工具
 

@@ -124,7 +124,7 @@
     "nameZh": "github/awesome-copilot",
     "desc": "GitHub 官方 Copilot 资源合集",
     "descEn": "Official Copilot resources collection",
-    "stars": "40.8k",
+    "stars": "40.9k",
     "platform": "copilot",
     "category": "official",
     "url": "https://github.com/github/awesome-copilot"
@@ -300,11 +300,21 @@
     "url": "https://github.com/sno-ai/sno-station-skills"
   },
   {
+    "name": "laolaoshiren/claude-code-skills-zh",
+    "nameZh": "laolaoshiren/claude-code-skills-zh",
+    "desc": "面向中文开发者的 Claude Code Skills 精选集，438+ 精选 + 20 原创技能",
+    "descEn": "Curated Claude Code skills collection for Chinese developers, with 438+ curated skills and 20 original skills",
+    "stars": "905",
+    "platform": "claude",
+    "category": "collection",
+    "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+  },
+  {
     "name": "orca-replay",
     "nameZh": "orca-replay",
     "desc": "从录像回答 Agent 那次运行到底做了什么：发出的请求、每次工具调用、shell 退出码与文件改动，并可离线重放或从检查点分叉。重放只阻断模型侧出网，录下的 shell 命令会真的再执行一次，worktree 隔离也不等于沙箱，因此技能要求先确认副作用再重放",
     "descEn": "Read a recorded agent run from its trace: what it actually sent, ran and changed. Replay is offline for the model only — the recorded shell commands re-execute for real and worktree isolation is not a sandbox, so the skill requires checking side effects first",
-    "stars": "350",
+    "stars": "352",
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/Continuum-AI-Corp/OrcaReplay/tree/main/skills/orca-replay"
@@ -314,7 +324,7 @@
     "nameZh": "addyosmani/agent-skills",
     "desc": "面向 AI 编程代理的生产级工程技能与斜杠命令工作流",
     "descEn": "Production-grade engineering skills and slash-command workflows for AI coding agents",
-    "stars": "113.5k",
+    "stars": "113.6k",
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/addyosmani/agent-skills"
@@ -514,7 +524,7 @@
     "nameZh": "reverse-engineer-anything",
     "desc": "用 REA CLI/MCP 分析二进制与 JavaScript/Electron 应用并保留证据；原生深度分析需自备 Hopper、Ghidra 或 IDA",
     "descEn": "Inspect shipped binaries and JavaScript/Electron apps using REA CLI/MCP evidence; deep native analysis needs separately installed Hopper, Ghidra, or IDA",
-    "stars": "434.8k",
+    "stars": "435.2k",
     "platform": "codex",
     "category": "devtools",
     "url": "https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything"
