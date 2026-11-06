@@ -304,7 +304,7 @@
     "nameZh": "orca-replay",
     "desc": "从录像回答 Agent 那次运行到底做了什么：发出的请求、每次工具调用、shell 退出码与文件改动，并可离线重放或从检查点分叉。重放只阻断模型侧出网，录下的 shell 命令会真的再执行一次，worktree 隔离也不等于沙箱，因此技能要求先确认副作用再重放",
     "descEn": "Read a recorded agent run from its trace: what it actually sent, ran and changed. Replay is offline for the model only — the recorded shell commands re-execute for real and worktree isolation is not a sandbox, so the skill requires checking side effects first",
-    "stars": "349",
+    "stars": "350",
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/Continuum-AI-Corp/OrcaReplay/tree/main/skills/orca-replay"
@@ -514,7 +514,7 @@
     "nameZh": "reverse-engineer-anything",
     "desc": "用 REA CLI/MCP 分析二进制与 JavaScript/Electron 应用并保留证据；原生深度分析需自备 Hopper、Ghidra 或 IDA",
     "descEn": "Inspect shipped binaries and JavaScript/Electron apps using REA CLI/MCP evidence; deep native analysis needs separately installed Hopper, Ghidra, or IDA",
-    "stars": "434.7k",
+    "stars": "434.8k",
     "platform": "codex",
     "category": "devtools",
     "url": "https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything"
@@ -574,7 +574,7 @@
     "nameZh": "coreyhaines31/marketingskills",
     "desc": "营销 Skills（SEO/文案/CRO/广告）",
     "descEn": "Marketing Skills (SEO/Copywriting/CRO/Ads)",
-    "stars": "58.7k",
+    "stars": "58.8k",
     "platform": "all",
     "category": "productivity",
     "url": "https://github.com/coreyhaines31/marketingskills"
@@ -628,6 +628,16 @@
     "platform": "cursor/claude/codex/opencode",
     "category": "productivity",
     "url": "https://github.com/QingYunA/answer-me-with-html"
+  },
+  {
+    "name": "career-ops",
+    "nameZh": "career-ops",
+    "desc": "开源的 AI 求职智能体：扫描公司招聘页面，对照你的简历为每个职位打 1-5 分，定制 ATS 友好的简历并跟踪申请；每份申请都由你自己提交。无遥测，简历只发送给你选择的 AI 服务",
+    "descEn": "Open-source AI job search agent for Claude Code, Codex and OpenCode: scans company career pages, scores each job posting 1-5 against your CV, tailors an ATS-friendly resume and tracks applications; you submit every application yourself. No telemetry; your CV goes only to the AI provider you choose. Website",
+    "stars": "80.5k",
+    "platform": "claude/codex/opencode",
+    "category": "productivity",
+    "url": "https://github.com/career-ops-hq/career-ops"
   },
   {
     "name": "devops-engineer",

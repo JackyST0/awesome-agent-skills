@@ -139,7 +139,7 @@ Skills work across multiple platforms:
 
 ## Development Tools
 
-- [orca-replay](https://github.com/Continuum-AI-Corp/OrcaReplay/tree/main/skills/orca-replay) - 349 ⭐ - Read a recorded agent run from its trace: what it actually sent, ran and changed. Replay is offline for the model only — the recorded shell commands re-execute for real and `worktree` isolation is not a sandbox, so the skill requires checking side effects first.
+- [orca-replay](https://github.com/Continuum-AI-Corp/OrcaReplay/tree/main/skills/orca-replay) - 350 ⭐ - Read a recorded agent run from its trace: what it actually sent, ran and changed. Replay is offline for the model only — the recorded shell commands re-execute for real and `worktree` isolation is not a sandbox, so the skill requires checking side effects first.
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) - 113.5k ⭐ - Production-grade engineering skills and slash-command workflows for AI coding agents.
 - [claude-code-security-review](https://github.com/anthropics/claude-code-security-review) - 6.7k ⭐ - AI security review GitHub Action (Official).
 - [trailofbits/skills](https://github.com/trailofbits/skills) - 8.0k ⭐ - Trail of Bits security research and audit Skills.
@@ -160,7 +160,7 @@ Skills work across multiple platforms:
 - [debug-helper](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/debug-helper) - 667 ⭐ - Code debugging assistant Skill.
 - [birdview](https://github.com/Qiuner/birdview) - 675 ⭐ - Generate evidence-linked architecture and constraint maps, review planned change scope before implementation, and record verification results.
 - [task-observer](https://github.com/rebelytics/one-skill-to-rule-them-all) - 3.7k ⭐ - Watches work sessions, logs where skills fail, and turns the corrections into proposed skill improvements.
-- [reverse-engineer-anything](https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything) - 434.7k ⭐ - Inspect shipped binaries and JavaScript/Electron apps using REA CLI/MCP evidence; deep native analysis needs separately installed Hopper, Ghidra, or IDA.
+- [reverse-engineer-anything](https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything) - 434.8k ⭐ - Inspect shipped binaries and JavaScript/Electron apps using REA CLI/MCP evidence; deep native analysis needs separately installed Hopper, Ghidra, or IDA.
 
 ## Productivity
 
@@ -169,12 +169,13 @@ Skills work across multiple platforms:
 - [claude-code-skill-factory](https://github.com/alirezarezvani/claude-code-skill-factory) - 895 ⭐ - Skills factory for batch generation and deployment.
 - [obra/superpowers](https://github.com/obra/superpowers) - 313.1k ⭐ - Complete dev workflow (Debug/TDD/Code Review/Planning).
 - [planning-with-files](https://github.com/OthmanAdi/planning-with-files) - 27.9k ⭐ - Persistent file-based planning with task plans, findings, progress tracking, and session recovery for long-running agent work.
-- [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) - 58.7k ⭐ - Marketing Skills (SEO/Copywriting/CRO/Ads).
+- [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) - 58.8k ⭐ - Marketing Skills (SEO/Copywriting/CRO/Ads).
 - [gingiris-opensource](https://github.com/Gingiris/gingiris-opensource) - 264 ⭐ - Open source marketing playbook focused on GitHub growth and launch strategy.
 - [changelog-generator](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/changelog-generator) - 78.9k ⭐ - Generate changelogs from Git commits.
 - [universal-exam-cram-coach](https://github.com/ZeKaiNie/universal-examprep-skill) - 367 ⭐ - Exam-prep tutor that teaches from your own slides, notes and past papers with page citations, figure crops, homework-only quizzes and cross-session progress.
 - [new-term-radar](https://github.com/zhuyansen/new-term-radar) - 2.1k ⭐ - Spots new AI model, product and repo names on X, Hugging Face, GitHub and sitemaps, then ranks the search terms behind them by Google Ads volume and DataForSEO Trends (an estimate of Google search interest). Three skills and an MCP server; needs an AIsa API key, and an optional GoAnyAPI key adds Google Trends related queries and country-level trend series.
 - [answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) - 5.5k ⭐ - Agent skill that writes the answer as a Markdown draft and renders one offline HTML page, using about 1/8 of the output tokens.
+- [career-ops](https://github.com/career-ops-hq/career-ops) - 80.5k ⭐ - Open-source AI job search agent for Claude Code, Codex and OpenCode: scans company career pages, scores each job posting 1-5 against your CV, tailors an ATS-friendly resume and tracks applications; you submit every application yourself. No telemetry; your CV goes only to the AI provider you choose. [Website](https://career-ops.org)
 
 ## DevOps
 
