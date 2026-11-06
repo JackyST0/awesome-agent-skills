@@ -260,6 +260,16 @@
     "url": "https://github.com/rohitg00/skillkit"
   },
   {
+    "name": "OrkasVideoStudio",
+    "nameZh": "OrkasVideoStudio",
+    "desc": "面向 Agent 的视频制作 Skills 合集，配套 CLI 与 MCP 运行时",
+    "descEn": "Agent video-production skill pack with CLI and MCP runtime",
+    "stars": "344",
+    "platform": "all",
+    "category": "collection",
+    "url": "https://github.com/Orkas-AI/Orkas-VideoStudio"
+  },
+  {
     "name": "youtube-skills",
     "nameZh": "youtube-skills",
     "desc": "面向 YouTube 的转录、视频搜索、频道浏览与播放列表 Skills，适用于 Claude Code、OpenClaw、Hermes Agent 等 Agent 运行时",
@@ -298,6 +308,16 @@
     "platform": "claude",
     "category": "collection",
     "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+  },
+  {
+    "name": "orca-replay",
+    "nameZh": "orca-replay",
+    "desc": "从录像回答 Agent 那次运行到底做了什么：发出的请求、每次工具调用、shell 退出码与文件改动，并可离线重放或从检查点分叉。重放只阻断模型侧出网，录下的 shell 命令会真的再执行一次，worktree 隔离也不等于沙箱，因此技能要求先确认副作用再重放",
+    "descEn": "Read a recorded agent run from its trace: what it actually sent, ran and changed. Replay is offline for the model only — the recorded shell commands re-execute for real and worktree isolation is not a sandbox, so the skill requires checking side effects first",
+    "stars": "352",
+    "platform": "all",
+    "category": "devtools",
+    "url": "https://github.com/Continuum-AI-Corp/OrcaReplay/tree/main/skills/orca-replay"
   },
   {
     "name": "addyosmani/agent-skills",
@@ -570,6 +590,16 @@
     "url": "https://github.com/coreyhaines31/marketingskills"
   },
   {
+    "name": "gingiris-opensource",
+    "nameZh": "gingiris-opensource",
+    "desc": "面向 GitHub 增长与开源发布策略的营销 Playbook",
+    "descEn": "Open source marketing playbook focused on GitHub growth and launch strategy",
+    "stars": "264",
+    "platform": "all",
+    "category": "productivity",
+    "url": "https://github.com/Gingiris/gingiris-opensource"
+  },
+  {
     "name": "changelog-generator",
     "nameZh": "changelog-generator",
     "desc": "从 Git 提交自动生成 Changelog",
@@ -578,6 +608,16 @@
     "platform": "claude",
     "category": "productivity",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/changelog-generator"
+  },
+  {
+    "name": "universal-exam-cram-coach",
+    "nameZh": "universal-exam-cram-coach",
+    "desc": "期末备考教练：按章讲课件并标页码，只用作业和真题出题",
+    "descEn": "Exam-prep tutor that teaches from your own slides, notes and past papers with page citations, figure crops, homework-only quizzes and cross-session progress",
+    "stars": "367",
+    "platform": "all",
+    "category": "productivity",
+    "url": "https://github.com/ZeKaiNie/universal-examprep-skill"
   },
   {
     "name": "new-term-radar",
@@ -608,6 +648,16 @@
     "platform": "claude/codex/opencode",
     "category": "productivity",
     "url": "https://github.com/career-ops-hq/career-ops"
+  },
+  {
+    "name": "devops-engineer",
+    "nameZh": "devops-engineer",
+    "desc": "DevOps 工程师 Skill，云基础设施管理",
+    "descEn": "DevOps engineer Skill for cloud infrastructure management",
+    "stars": "-",
+    "platform": "all",
+    "category": "devops",
+    "url": "https://claude-plugins.dev/skills/@Jeffallan/claude-skills/devops-engineer"
   },
   {
     "name": "claudekit-skills",
@@ -778,5 +828,15 @@
     "platform": "claude",
     "category": "design",
     "url": "https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator"
+  },
+  {
+    "name": "product-launch-motion",
+    "nameZh": "product-launch-motion",
+    "desc": "输入网址生成 60 fps 产品发布视频（含音乐、音效与动态模糊）的 Skill",
+    "descEn": "Turn a website URL into a 60 fps launch video with music and sound effects",
+    "stars": "424",
+    "platform": "claude",
+    "category": "design",
+    "url": "https://github.com/AbubakrChan/product-launch-motion"
   }
 ]
