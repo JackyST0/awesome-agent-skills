@@ -16,7 +16,7 @@
 - [ ] 保持分类现有顺序 / Preserves the category's existing order
 - [ ] 单个 Skill 仓库包含 SKILL.md（如适用） / Single Skill repository contains SKILL.md (if applicable)
 - [ ] Skills 合集 / 管理器 / 安装器明确服务于 Skills 生态（如适用） / Skills collection / manager / installer clearly serves the skills ecosystem (if applicable)
-- [ ] 社区项目满足最低门槛（256+ Stars，如适用） / Community project meets the minimum threshold (256+ Stars, if applicable)
+- [ ] 社区项目满足最低门槛（512+ Stars，如适用） / Community project meets the minimum threshold (512+ Stars, if applicable)
 
 ## 其他说明 / Additional Notes
 
