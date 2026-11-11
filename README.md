@@ -136,6 +136,8 @@ Skills work across multiple platforms:
 - [oh-my-agent](https://github.com/first-fluke/oh-my-agent) - 1.4k ⭐ - 33 skills and 21 workflows kept in one `.agents/skills` folder and symlinked per skill into Claude Code, Codex, Cursor and other runtimes; `oma link --dry-run` previews what it will write.
 - [sno-station-skills](https://github.com/sno-ai/sno-station-skills) - 861 ⭐ - Skills for Claude Code and Codex: cross-vendor peer review, handoff when one agent hits its usage limit, delegation and reporting.
 - [laolaoshiren/claude-code-skills-zh](https://github.com/laolaoshiren/claude-code-skills-zh) - 907 ⭐ - Curated Claude Code skills collection for Chinese developers, with 438+ curated skills and 20 original skills.
+- [nexscope-ai/eCommerce-Skills](https://github.com/nexscope-ai/eCommerce-Skills) - 1.4k ⭐ - E-commerce skills for AI agents covering product research, marketing, and operations across Amazon, Shopify, TikTok Shop, and more.
+- [nexscope-ai/Amazon-Skills](https://github.com/nexscope-ai/Amazon-Skills) - 863 ⭐ - Free Amazon seller skills for keyword research, competitor analysis, listing audits, and more.
 
 ## Development Tools
 

@@ -181,6 +181,8 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | oh-my-agent | 33 个技能和 21 个工作流，统一放在 `.agents/skills`，按条目软链接到 Claude Code、Codex、Cursor 等工具的技能目录；`oma link --dry-run` 先预览要写的文件 | 1.4k | [GitHub](https://github.com/first-fluke/oh-my-agent) |
 | sno-station-skills | 面向 Claude Code 与 Codex 的 Skills 合集：两家模型互相审查、一个 Agent 用到额度上限时交给另一个接着做，以及任务委派与汇报 | 861 | [GitHub](https://github.com/sno-ai/sno-station-skills) |
 | laolaoshiren/claude-code-skills-zh | 面向中文开发者的 Claude Code Skills 精选集，438+ 精选 + 20 原创技能 | 907 | [GitHub](https://github.com/laolaoshiren/claude-code-skills-zh) |
+| nexscope-ai/eCommerce-Skills | 面向 Amazon、Shopify、TikTok Shop 等平台的电商 Agent Skills，覆盖选品、营销与运营 | 1.4k | [GitHub](https://github.com/nexscope-ai/eCommerce-Skills) |
+| nexscope-ai/Amazon-Skills | 面向亚马逊卖家的免费 Agent Skills，覆盖关键词研究、竞品分析与 Listing 诊断 | 863 | [GitHub](https://github.com/nexscope-ai/Amazon-Skills) |
 
 ## 开发工具
 
