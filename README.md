@@ -120,6 +120,7 @@ Skills work across multiple platforms:
 - [Skills Leaderboard](https://skills.sh) - Open Agent Skills ecosystem directory.
 - [Tencent SkillHub](https://skillhub.tencent.com/) - Tencent's Skills community with 13k+ skills, optimized for Chinese users.
 - [ClawHub](https://docs.openclaw.ai/skills) - OpenClaw's public skills registry for discovering and sharing skills.
+- [HowAI](https://howai.build/) - Library of 500+ reusable AI agent skills for Claude Code, Codex, and Cursor.
 
 ## Skills Collections
 
