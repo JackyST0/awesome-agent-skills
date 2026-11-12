@@ -163,6 +163,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | Skills 排行榜 | 开放 Agent Skills 生态目录 | - | [skills.sh](https://skills.sh) |
 | 腾讯 SkillHub | ⭐ 腾讯 Skills 社区，收录 1.3 万+ 技能，国内镜像加速 | - | [skillhub.tencent.com](https://skillhub.tencent.com/) |
 | ClawHub | OpenClaw 官方 Skills 注册中心 | - | [docs.openclaw.ai](https://docs.openclaw.ai/skills) |
+| HowAI | 500+ 可复用 AI Agent Skills 库，支持 Claude Code / Codex / Cursor | - | [howai.build](https://howai.build/) |
 
 ## Skills 合集
 
