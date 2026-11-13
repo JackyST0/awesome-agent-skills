@@ -164,6 +164,8 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | 腾讯 SkillHub | ⭐ 腾讯 Skills 社区，收录 1.3 万+ 技能，国内镜像加速 | - | [skillhub.tencent.com](https://skillhub.tencent.com/) |
 | ClawHub | OpenClaw 官方 Skills 注册中心 | - | [docs.openclaw.ai](https://docs.openclaw.ai/skills) |
 
+- [Kling AI Plugin Skill (Global)](https://www.npmjs.com/package/@klingai/plugin-global) / [China](https://www.npmjs.com/package/@klingai/plugin-cn) - 官方图像/视频生成与任务查询 Skill，附带 CLI；使用对应地区的 OAuth 账号和积分。
+
 ## Skills 合集
 
 | 名称 | 描述 | Stars | 链接 |
