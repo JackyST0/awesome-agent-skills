@@ -121,6 +121,8 @@ Skills work across multiple platforms:
 - [Tencent SkillHub](https://skillhub.tencent.com/) - Tencent's Skills community with 13k+ skills, optimized for Chinese users.
 - [ClawHub](https://docs.openclaw.ai/skills) - OpenClaw's public skills registry for discovering and sharing skills.
 
+- [Kling AI Plugin Skill (Global)](https://www.npmjs.com/package/@klingai/plugin-global) / [China](https://www.npmjs.com/package/@klingai/plugin-cn) - Official image/video generation and task-tracking Skill with its CLI; regional OAuth accounts and credits required.
+
 ## Skills Collections
 
 - [awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) - 41.1k ⭐ - The most comprehensive Cursor Rules collection.
