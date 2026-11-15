@@ -159,6 +159,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | microsoft/azure-skills | ⭐ 微软官方 Azure Skills 插件，内置 MCP 配置与 20 个 Azure 技能 | 1.6k | [GitHub](https://github.com/microsoft/azure-skills) |
 | OpenAI Codex: Agent Skills | OpenAI 官方 Codex Agent Skills 使用指南，覆盖 CLI、IDE 扩展和 Codex app | - | [OpenAI Developers](https://developers.openai.com/codex/skills/) |
 | github/awesome-copilot | GitHub 官方 Copilot 资源合集 | 40.9k | [GitHub](https://github.com/github/awesome-copilot) |
+| GoVisit Toolkit | GoVisit 官方 MIT 许可工具包，包含 22 个便携式只读 Agent Skills，用于发现和查询 GoVisit 目的地与地点 | 2 | [GitHub](https://github.com/inhotel-io/govisit-toolkit) · [使用指南](https://govisit.ai/en/docs/developers/agent-skills/overview) |
 | Agent Skills 索引 | 社区 Skills 搜索引擎 | - | [agent-skills.md](https://agent-skills.md/) |
 | Skills 排行榜 | 开放 Agent Skills 生态目录 | - | [skills.sh](https://skills.sh) |
 | 腾讯 SkillHub | ⭐ 腾讯 Skills 社区，收录 1.3 万+ 技能，国内镜像加速 | - | [skillhub.tencent.com](https://skillhub.tencent.com/) |
