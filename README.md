@@ -116,6 +116,7 @@ Skills work across multiple platforms:
 - [microsoft/azure-skills](https://github.com/microsoft/azure-skills) - 1.6k ⭐ - Official Azure skills plugin with MCP server configurations and 20 curated Azure skills.
 - [OpenAI Codex: Agent Skills](https://developers.openai.com/codex/skills/) - OpenAI official guide for using Agent Skills in Codex CLI, IDE extension, and Codex app.
 - [GitHub Awesome Copilot](https://github.com/github/awesome-copilot) - 40.9k ⭐ - Official Copilot resources collection.
+- [GoVisit Toolkit](https://github.com/inhotel-io/govisit-toolkit) - Official MIT-licensed toolkit with 22 portable, read-only Agent Skills for discovering and inspecting GoVisit destinations and places ([guide](https://govisit.ai/en/docs/developers/agent-skills/overview)).
 - [Agent Skills Index](https://agent-skills.md/) - Community Skills search engine.
 - [Skills Leaderboard](https://skills.sh) - Open Agent Skills ecosystem directory.
 - [Tencent SkillHub](https://skillhub.tencent.com/) - Tencent's Skills community with 13k+ skills, optimized for Chinese users.
