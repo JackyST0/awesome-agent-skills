@@ -163,8 +163,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | Skills 排行榜 | 开放 Agent Skills 生态目录 | - | [skills.sh](https://skills.sh) |
 | 腾讯 SkillHub | ⭐ 腾讯 Skills 社区，收录 1.3 万+ 技能，国内镜像加速 | - | [skillhub.tencent.com](https://skillhub.tencent.com/) |
 | ClawHub | OpenClaw 官方 Skills 注册中心 | - | [docs.openclaw.ai](https://docs.openclaw.ai/skills) |
-
-- [Kling AI Plugin Skill (Global)](https://www.npmjs.com/package/@klingai/plugin-global) / [China](https://www.npmjs.com/package/@klingai/plugin-cn) - 官方图像/视频生成与任务查询 Skill，附带 CLI；使用对应地区的 OAuth 账号和积分。
+| Kling AI Plugin Skill (Global) | 官方图像与视频生成和任务查询 Skill。使用对应地区的 OAuth 账号和积分。安装时会运行 `postinstall` 脚本，在本地注册共用的 `kling-plugin` CLI。 | - | [全球版 npm](https://www.npmjs.com/package/@klingai/plugin-global) / [中国版 npm](https://www.npmjs.com/package/@klingai/plugin-cn) |
 
 ## Skills 合集
 

@@ -120,8 +120,7 @@ Skills work across multiple platforms:
 - [Skills Leaderboard](https://skills.sh) - Open Agent Skills ecosystem directory.
 - [Tencent SkillHub](https://skillhub.tencent.com/) - Tencent's Skills community with 13k+ skills, optimized for Chinese users.
 - [ClawHub](https://docs.openclaw.ai/skills) - OpenClaw's public skills registry for discovering and sharing skills.
-
-- [Kling AI Plugin Skill (Global)](https://www.npmjs.com/package/@klingai/plugin-global) / [China](https://www.npmjs.com/package/@klingai/plugin-cn) - Official image/video generation and task-tracking Skill with its CLI; regional OAuth accounts and credits required.
+- [Kling AI Plugin Skill (Global)](https://www.npmjs.com/package/@klingai/plugin-global) - Official image and video generation and task-tracking Skill. A [China npm package](https://www.npmjs.com/package/@klingai/plugin-cn) is also available. Use an OAuth account and credits for the corresponding region. Installation runs a `postinstall` script to register the shared `kling-plugin` CLI locally.
 
 ## Skills Collections
 
