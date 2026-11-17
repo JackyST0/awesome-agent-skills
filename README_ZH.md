@@ -164,6 +164,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | 腾讯 SkillHub | ⭐ 腾讯 Skills 社区，收录 1.3 万+ 技能，国内镜像加速 | - | [skillhub.tencent.com](https://skillhub.tencent.com/) |
 | ClawHub | OpenClaw 官方 Skills 注册中心 | - | [docs.openclaw.ai](https://docs.openclaw.ai/skills) |
 | Kling AI Plugin Skill (Global) | 官方图像与视频生成和任务查询 Skill。使用对应地区的 OAuth 账号和积分。安装时会运行 `postinstall` 脚本，在本地注册共用的 `kling-plugin` CLI。 | - | [全球版 npm](https://www.npmjs.com/package/@klingai/plugin-global) / [中国版 npm](https://www.npmjs.com/package/@klingai/plugin-cn) |
+| Levea AI Video Editor | 官方自主 AI 视频剪辑 Skill 与 MCP Server（支持高光切片、280+ 动态字幕模板、9:16 竖屏人物追踪重构、B-roll 动效及云端 MP4 渲染导出）。 | 10 | [GitHub](https://github.com/brajendrak00068/agentic-ai-video-production) / [npm](https://www.npmjs.com/package/levea-mcp-server) |
 
 ## Skills 合集
 
