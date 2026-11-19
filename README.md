@@ -139,6 +139,7 @@ Skills work across multiple platforms:
 - [laolaoshiren/claude-code-skills-zh](https://github.com/laolaoshiren/claude-code-skills-zh) - 911 ⭐ - Curated Claude Code skills collection for Chinese developers, with 438+ curated skills and 20 original skills.
 - [nexscope-ai/eCommerce-Skills](https://github.com/nexscope-ai/eCommerce-Skills) - 1.4k ⭐ - E-commerce skills for AI agents covering product research, marketing, and operations across Amazon, Shopify, TikTok Shop, and more.
 - [nexscope-ai/Amazon-Skills](https://github.com/nexscope-ai/Amazon-Skills) - 871 ⭐ - Free Amazon seller skills for keyword research, competitor analysis, listing audits, and more.
+- [iart-ai/motion-skills](https://github.com/iart-ai/motion-skills) - 1.9k ⭐ - 19 motion graphics and video skill packs covering kinetic typography, data-viz, explainers, social clips, WebGL and Manim animations.
 
 ## Development Tools
 
