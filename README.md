@@ -121,6 +121,7 @@ Skills work across multiple platforms:
 - [Tencent SkillHub](https://skillhub.tencent.com/) - Tencent's Skills community with 13k+ skills, optimized for Chinese users.
 - [ClawHub](https://docs.openclaw.ai/skills) - OpenClaw's public skills registry for discovering and sharing skills.
 - [Kling AI Plugin Skill (Global)](https://www.npmjs.com/package/@klingai/plugin-global) - Official image and video generation and task-tracking Skill. A [China npm package](https://www.npmjs.com/package/@klingai/plugin-cn) is also available. Use an OAuth account and credits for the corresponding region. Installation runs a `postinstall` script to register the shared `kling-plugin` CLI locally.
+- [Buddy Skill](https://buddy.works/docs/ai-agents/skills) - Official Buddy.Works skill that lets coding agents link projects, deploy, run pipelines and read build logs through the `bdy` CLI. Install with `npx skills add buddy/buddy-plugin`; needs a Buddy account and `bdy login`.
 
 ## Skills Collections
 

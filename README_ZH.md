@@ -164,6 +164,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | 腾讯 SkillHub | ⭐ 腾讯 Skills 社区，收录 1.3 万+ 技能，国内镜像加速 | - | [skillhub.tencent.com](https://skillhub.tencent.com/) |
 | ClawHub | OpenClaw 官方 Skills 注册中心 | - | [docs.openclaw.ai](https://docs.openclaw.ai/skills) |
 | Kling AI Plugin Skill (Global) | 官方图像与视频生成和任务查询 Skill。使用对应地区的 OAuth 账号和积分。安装时会运行 `postinstall` 脚本，在本地注册共用的 `kling-plugin` CLI。 | - | [全球版 npm](https://www.npmjs.com/package/@klingai/plugin-global) / [中国版 npm](https://www.npmjs.com/package/@klingai/plugin-cn) |
+| Buddy Skill | Buddy.Works 官方 Skill，让编码智能体通过 `bdy` CLI 关联项目、部署、运行流水线并读取构建日志。使用 `npx skills add buddy/buddy-plugin` 安装；需要 Buddy 账号并执行 `bdy login`。 | - | [Buddy Docs](https://buddy.works/docs/ai-agents/skills) |
 
 ## Skills 合集
 
