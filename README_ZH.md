@@ -262,6 +262,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | theme-factory | ⭐ 主题样式工厂 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/theme-factory) |
 | algorithmic-art | ⭐ 算法艺术生成 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/algorithmic-art) |
 | slack-gif-creator | ⭐ Slack GIF 创建 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator) |
+| heygen-com/hyperframes | HeyGen 开源 AI 视频编辑器 Skills：用 Claude Code / Codex / Cursor / Gemini CLI 制作发布视频、讲解视频和动态图形，为自己的素材加字幕、复刻任意视频；已渲染 5000 万+ 视频，可迁移 Remotion 项目 | All | [GitHub](https://github.com/heygen-com/hyperframes) |
 
 ## Contributing
 

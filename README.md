@@ -205,6 +205,7 @@ Skills work across multiple platforms:
 - [theme-factory](https://github.com/anthropics/skills/tree/main/skills/theme-factory) - 199.1k ⭐ - Theme style factory Skill.
 - [algorithmic-art](https://github.com/anthropics/skills/tree/main/skills/algorithmic-art) - 199.1k ⭐ - Algorithmic art generation Skill.
 - [slack-gif-creator](https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator) - 199.1k ⭐ - Slack GIF creator Skill.
+- [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) - 88.7k ⭐ - HeyGen's open-source AI video editor skills: make launch videos, explainers and motion graphics with Claude Code, Codex, Cursor or Gemini CLI, caption your own footage and remake any video; 50M+ videos rendered, Remotion projects port over.
 
 ## Contributing
 
