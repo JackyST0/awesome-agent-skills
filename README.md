@@ -176,6 +176,7 @@ Skills work across multiple platforms:
 - [new-term-radar](https://github.com/zhuyansen/new-term-radar) - 2.2k ⭐ - Spots new AI model, product and repo names on X, Hugging Face, GitHub and sitemaps, then ranks the search terms behind them by Google Ads volume and DataForSEO Trends (an estimate of Google search interest). Three skills and an MCP server; needs an AIsa API key, and an optional GoAnyAPI key adds Google Trends related queries and country-level trend series.
 - [answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) - 6.3k ⭐ - Agent skill that writes the answer as a Markdown draft and renders one offline HTML page, using about 1/8 of the output tokens.
 - [career-ops](https://github.com/career-ops-hq/career-ops) - 82.8k ⭐ - Open-source AI job search agent for Claude Code, Codex and OpenCode: scans company career pages, scores each job posting 1-5 against your CV, tailors an ATS-friendly resume and tracks applications; you submit every application yourself. No telemetry; your CV goes only to the AI provider you choose. [Website](https://career-ops.org)
+- [last30days](https://github.com/mvanhorn/last30days-skill) - 72.7k ⭐ - Researches any topic across Reddit, X, YouTube, TikTok, Hacker News, Polymarket, GitHub, and the web from the last 30 days, ranks results by real engagement (upvotes, likes, prediction-market odds), and writes one cited brief. Reddit, Hacker News, Polymarket and GitHub need no setup.
 
 ## DevOps
 
