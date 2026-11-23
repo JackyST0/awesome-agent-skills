@@ -187,6 +187,7 @@ Skills work across multiple platforms:
 - [kordoc](https://github.com/chrisryugj/kordoc/tree/main/plugins/kordoc/skills/kordoc) - 3.1k ⭐ - Korean document (HWP/HWPX/PDF) to Markdown conversion, form filling, and HWPX generation Skill.
 - [jiangshan-atlas](https://github.com/DeanChensj/jiangshan-map/tree/main/skills/jiangshan-atlas) - 8.9k ⭐ - Interactive Chinese historical atlas Skill for locating ancient places, classical poems, and figure trajectories.
 - [ava](https://github.com/antvis/AVA/tree/ai/skills/ava) - 1.7k ⭐ - Analyze files and databases, reuse business definitions, verify calculations, and generate interactive charts.
+- [Skool Community Scraper](https://github.com/GeminiGeorge22/publicrecords-skills/tree/main/skills/skool-communities) - Search Skool communities by keyword for members, price, rating, and daily growth.
 
 ## Writing
 
