@@ -140,6 +140,7 @@ Skills work across multiple platforms:
 - [laolaoshiren/claude-code-skills-zh](https://github.com/laolaoshiren/claude-code-skills-zh) - 927 ⭐ - Curated Claude Code skills collection for Chinese developers, with 438+ curated skills and 20 original skills.
 - [nexscope-ai/eCommerce-Skills](https://github.com/nexscope-ai/eCommerce-Skills) - 1.5k ⭐ - E-commerce skills for AI agents covering product research, marketing, and operations across Amazon, Shopify, TikTok Shop, and more.
 - [nexscope-ai/Amazon-Skills](https://github.com/nexscope-ai/Amazon-Skills) - 886 ⭐ - Free Amazon seller skills for keyword research, competitor analysis, listing audits, and more.
+- [flashdatadev/flashdata-skills](https://github.com/flashdatadev/flashdata-skills) - Official Agent Skills for real-time Google Search, timestamped YouTube transcripts/metadata, and batch cloud video downloads via hosted Remote MCP or REST API (free trial, no credit card required).
 
 ## Development Tools
 
