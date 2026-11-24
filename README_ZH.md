@@ -184,6 +184,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | laolaoshiren/claude-code-skills-zh | 面向中文开发者的 Claude Code Skills 精选集，438+ 精选 + 20 原创技能 | 927 | [GitHub](https://github.com/laolaoshiren/claude-code-skills-zh) |
 | nexscope-ai/eCommerce-Skills | 面向 Amazon、Shopify、TikTok Shop 等平台的电商 Agent Skills，覆盖选品、营销与运营 | 1.5k | [GitHub](https://github.com/nexscope-ai/eCommerce-Skills) |
 | nexscope-ai/Amazon-Skills | 面向亚马逊卖家的免费 Agent Skills，覆盖关键词研究、竞品分析与 Listing 诊断 | 886 | [GitHub](https://github.com/nexscope-ai/Amazon-Skills) |
+| flashdatadev/flashdata-skills | 官方 17 项 Agent Skills，覆盖实时 Google 搜索、带时间戳 YouTube 字幕/元数据与云端批量视频下载，支持远程 MCP（免绑卡免费试用） | - | [GitHub](https://github.com/flashdatadev/flashdata-skills) |
 
 ## 开发工具
 
