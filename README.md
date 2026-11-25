@@ -190,6 +190,7 @@ Skills work across multiple platforms:
 - [kordoc](https://github.com/chrisryugj/kordoc/tree/main/plugins/kordoc/skills/kordoc) - 3.1k ⭐ - Korean document (HWP/HWPX/PDF) to Markdown conversion, form filling, and HWPX generation Skill.
 - [jiangshan-atlas](https://github.com/DeanChensj/jiangshan-map/tree/main/skills/jiangshan-atlas) - 8.9k ⭐ - Interactive Chinese historical atlas Skill for locating ancient places, classical poems, and figure trajectories.
 - [ava](https://github.com/antvis/AVA/tree/ai/skills/ava) - 1.7k ⭐ - Analyze files and databases, reuse business definitions, verify calculations, and generate interactive charts.
+- [alphasift](https://github.com/ZhuLinsen/alphasift) - 569 ⭐ - Multi-market (7 equity markets) quantitative stock screening, 13-tool STDIO MCP server, and purged walk-forward empirical validation Skill.
 
 ## Writing
 
