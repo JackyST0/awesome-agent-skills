@@ -340,6 +340,16 @@
     "url": "https://github.com/nexscope-ai/Amazon-Skills"
   },
   {
+    "name": "iart-ai/motion-skills",
+    "nameZh": "iart-ai/motion-skills",
+    "desc": "19 个动效与视频 Skill 包，覆盖动态文字、数据可视化、讲解动画、社媒短片、WebGL 与 Manim 动画",
+    "descEn": "19 motion graphics and video skill packs covering kinetic typography, data-viz, explainers, social clips, WebGL and Manim animations",
+    "stars": "2.1k",
+    "platform": "all",
+    "category": "collection",
+    "url": "https://github.com/iart-ai/motion-skills"
+  },
+  {
     "name": "addyosmani/agent-skills",
     "nameZh": "addyosmani/agent-skills",
     "desc": "面向 AI 编程代理的生产级工程技能与斜杠命令工作流",
