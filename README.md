@@ -115,6 +115,7 @@ Skills work across multiple platforms:
 - [microsoft/skills](https://github.com/microsoft/agent-skills) - 3.2k ⭐ - Microsoft official 131 Azure SDK Skills.
 - [microsoft/azure-skills](https://github.com/microsoft/azure-skills) - 1.7k ⭐ - Official Azure skills plugin with MCP server configurations and 20 curated Azure skills.
 - [sendbird/sendbird-client-plugin](https://github.com/sendbird/sendbird-client-plugin) - 0 ⭐ - Official Sendbird plugin with Agent Skills for adding Sendbird Chat, UIKit and Calls to iOS, Android, React and React Native apps, in Claude Code and Codex.
+- [publora/skills](https://github.com/publora/skills) - 72 ⭐ - Official Publora skills: draft, schedule and publish posts to LinkedIn, X, Instagram, Threads, TikTok, YouTube, Facebook, Bluesky, Mastodon and Telegram through the Publora MCP server, in Claude Code, Codex, Cursor and OpenClaw.
 - [OpenAI Codex: Agent Skills](https://developers.openai.com/codex/skills/) - OpenAI official guide for using Agent Skills in Codex CLI, IDE extension, and Codex app.
 - [GitHub Awesome Copilot](https://github.com/github/awesome-copilot) - 41.5k ⭐ - Official Copilot resources collection.
 - [Agent Skills Index](https://agent-skills.md/) - Community Skills search engine.

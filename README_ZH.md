@@ -158,6 +158,7 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 | microsoft/skills | ⭐ 微软官方 131 个 Azure SDK Skills | 3.2k | [GitHub](https://github.com/microsoft/agent-skills) |
 | microsoft/azure-skills | ⭐ 微软官方 Azure Skills 插件，内置 MCP 配置与 20 个 Azure 技能 | 1.7k | [GitHub](https://github.com/microsoft/azure-skills) |
 | sendbird/sendbird-client-plugin | Sendbird 官方插件，提供 Agent Skills，帮助在 iOS、Android、React 和 React Native 应用中接入 Sendbird Chat、UIKit 和 Calls，支持 Claude Code 和 Codex | 0 | [GitHub](https://github.com/sendbird/sendbird-client-plugin) |
+| publora/skills | Publora 官方 Skills：通过 Publora MCP 服务器起草、排期并发布帖子到 LinkedIn、X、Instagram、Threads、TikTok、YouTube、Facebook、Bluesky、Mastodon 和 Telegram，支持 Claude Code、Codex、Cursor 和 OpenClaw | 72 | [GitHub](https://github.com/publora/skills) |
 | OpenAI Codex: Agent Skills | OpenAI 官方 Codex Agent Skills 使用指南，覆盖 CLI、IDE 扩展和 Codex app | - | [OpenAI Developers](https://developers.openai.com/codex/skills/) |
 | github/awesome-copilot | GitHub 官方 Copilot 资源合集 | 41.5k | [GitHub](https://github.com/github/awesome-copilot) |
 | Agent Skills 索引 | 社区 Skills 搜索引擎 | - | [agent-skills.md](https://agent-skills.md/) |
