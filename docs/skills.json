@@ -1,213 +1,43 @@
 [
   {
-    "name": "Agent Skills Open Standard",
-    "nameZh": "Agent Skills 开放标准",
-    "desc": "Agent Skills 官方规范文档",
-    "descEn": "Official Agent Skills specification",
-    "stars": "-",
-    "platform": "all",
-    "category": "official",
-    "url": "https://skill.md"
-  },
-  {
-    "name": "Agent Skills Specification",
-    "nameZh": "Agent Skills 规范",
-    "desc": "SKILL.md 格式规范",
-    "descEn": "SKILL.md format specification",
-    "stars": "-",
-    "platform": "all",
-    "category": "official",
-    "url": "https://agentskills.io/specification"
-  },
-  {
-    "name": "agentskills/agentskills",
-    "nameZh": "agentskills/agentskills",
-    "desc": "Agent Skills 官方规范与文档仓库",
-    "descEn": "Official Agent Skills specification and documentation repository",
-    "stars": "27.5k",
-    "platform": "all",
-    "category": "official",
-    "url": "https://github.com/agentskills/agentskills"
-  },
-  {
     "name": "anthropics/skills",
     "nameZh": "anthropics/skills",
-    "desc": "Anthropic 官方 Agent Skills 仓库",
-    "descEn": "Official Anthropic Agent Skills repository",
+    "desc": "Anthropic 的文档处理、设计等 Skills",
+    "descEn": "Anthropic's skills for document processing, design, and other tasks",
     "stars": "199.1k",
     "platform": "all",
-    "category": "official",
+    "category": "collection",
     "url": "https://github.com/anthropics/skills"
-  },
-  {
-    "name": "GitHub Docs: About agent skills",
-    "nameZh": "GitHub Docs: About agent skills",
-    "desc": "GitHub 官方 agent skills 概览，涵盖支持的宿主环境与 gh skill",
-    "descEn": "GitHub official overview of agent skills, supported hosts, and gh skill",
-    "stars": "-",
-    "platform": "copilot",
-    "category": "official",
-    "url": "https://docs.github.com/en/copilot/concepts/agents/about-agent-skills"
-  },
-  {
-    "name": "GitHub Docs: Adding agent skills for GitHub Copilot",
-    "nameZh": "GitHub Docs: Adding agent skills for GitHub Copilot",
-    "desc": "GitHub 官方创建、安装与发布 agent skills 指南",
-    "descEn": "GitHub official guide for creating, installing, and publishing agent skills",
-    "stars": "-",
-    "platform": "copilot",
-    "category": "official",
-    "url": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/add-skills"
-  },
-  {
-    "name": "GitHub CLI: gh skill",
-    "nameZh": "GitHub CLI: gh skill",
-    "desc": "GitHub CLI 官方 Skills 命令，用于发现、安装、更新和发布 Agent Skills",
-    "descEn": "Official GitHub CLI commands for discovering, installing, updating, and publishing Agent Skills",
-    "stars": "-",
-    "platform": "all",
-    "category": "official",
-    "url": "https://cli.github.com/manual/gh_skill"
-  },
-  {
-    "name": "VS Code Docs: Use Agent Skills in VS Code",
-    "nameZh": "VS Code Docs: Use Agent Skills in VS Code",
-    "desc": "VS Code 官方 Agent Skills 使用指南，面向 GitHub Copilot in VS Code",
-    "descEn": "Official VS Code guide for using Agent Skills with GitHub Copilot",
-    "stars": "-",
-    "platform": "copilot",
-    "category": "official",
-    "url": "https://code.visualstudio.com/docs/copilot/customization/agent-skills"
-  },
-  {
-    "name": "vercel-labs/skills",
-    "nameZh": "vercel-labs/skills",
-    "desc": "Vercel 官方 Skills CLI 工具（npx skills add）",
-    "descEn": "Vercel official Skills CLI tool",
-    "stars": "40.5k",
-    "platform": "all",
-    "category": "official",
-    "url": "https://github.com/vercel-labs/add-skill"
   },
   {
     "name": "microsoft/skills",
     "nameZh": "microsoft/skills",
-    "desc": "微软官方 131 个 Azure SDK Skills",
-    "descEn": "Microsoft official 131 Azure SDK Skills",
+    "desc": "微软为使用 Azure SDK 提供的 Skills 合集",
+    "descEn": "Microsoft's collection of skills for working with Azure SDKs",
     "stars": "3.2k",
     "platform": "all",
-    "category": "official",
-    "url": "https://github.com/microsoft/agent-skills"
+    "category": "collection",
+    "url": "https://github.com/microsoft/skills"
   },
   {
     "name": "microsoft/azure-skills",
     "nameZh": "microsoft/azure-skills",
-    "desc": "微软官方 Azure Skills 插件，内置 MCP 配置与 20 个 Azure 技能",
-    "descEn": "Official Azure skills plugin with MCP server configurations and 20 curated Azure skills",
+    "desc": "用于 Azure 服务部署、故障排查与运维的 Skills",
+    "descEn": "Skills for provisioning, troubleshooting, and operating Azure services",
     "stars": "1.7k",
     "platform": "all",
-    "category": "official",
+    "category": "collection",
     "url": "https://github.com/microsoft/azure-skills"
-  },
-  {
-    "name": "sendbird/sendbird-client-plugin",
-    "nameZh": "sendbird/sendbird-client-plugin",
-    "desc": "Sendbird 官方插件，提供 Agent Skills，帮助在 iOS、Android、React 和 React Native 应用中接入 Sendbird Chat、UIKit 和 Calls，支持 Claude Code 和 Codex",
-    "descEn": "Official Sendbird plugin with Agent Skills for adding Sendbird Chat, UIKit and Calls to iOS, Android, React and React Native apps, in Claude Code and Codex",
-    "stars": "0",
-    "platform": "claude",
-    "category": "official",
-    "url": "https://github.com/sendbird/sendbird-client-plugin"
-  },
-  {
-    "name": "OpenAI Codex: Agent Skills",
-    "nameZh": "OpenAI Codex: Agent Skills",
-    "desc": "OpenAI 官方 Codex Agent Skills 使用指南，覆盖 CLI、IDE 扩展和 Codex app",
-    "descEn": "OpenAI official guide for using Agent Skills in Codex CLI, IDE extension, and Codex app",
-    "stars": "-",
-    "platform": "codex",
-    "category": "official",
-    "url": "https://developers.openai.com/codex/skills"
   },
   {
     "name": "GitHub Awesome Copilot",
     "nameZh": "github/awesome-copilot",
-    "desc": "GitHub 官方 Copilot 资源合集",
-    "descEn": "Official Copilot resources collection",
+    "desc": "GitHub Copilot 的可复用 Skills，每个 Skill 都有独立目录",
+    "descEn": "Reusable skills for GitHub Copilot, with a separate directory for each skill",
     "stars": "41.5k",
     "platform": "copilot",
-    "category": "official",
-    "url": "https://github.com/github/awesome-copilot"
-  },
-  {
-    "name": "Agent Skills Index",
-    "nameZh": "Agent Skills 索引",
-    "desc": "社区 Skills 搜索引擎",
-    "descEn": "Community Skills search engine",
-    "stars": "-",
-    "platform": "all",
-    "category": "official",
-    "url": "https://agent-skills.md"
-  },
-  {
-    "name": "Skills Leaderboard",
-    "nameZh": "Skills 排行榜",
-    "desc": "开放 Agent Skills 生态目录",
-    "descEn": "Open Agent Skills ecosystem directory",
-    "stars": "-",
-    "platform": "all",
-    "category": "official",
-    "url": "https://skills.sh"
-  },
-  {
-    "name": "Tencent SkillHub",
-    "nameZh": "腾讯 SkillHub",
-    "desc": "腾讯 Skills 社区，收录 1.3 万+ 技能，国内镜像加速",
-    "descEn": "Tencent's Skills community with 13k+ skills, optimized for Chinese users",
-    "stars": "-",
-    "platform": "all",
-    "category": "official",
-    "url": "https://skillhub.tencent.com"
-  },
-  {
-    "name": "ClawHub",
-    "nameZh": "ClawHub",
-    "desc": "OpenClaw 官方 Skills 注册中心",
-    "descEn": "OpenClaw's public skills registry for discovering and sharing skills",
-    "stars": "-",
-    "platform": "openclaw",
-    "category": "official",
-    "url": "https://docs.openclaw.ai/skills"
-  },
-  {
-    "name": "Kling AI Plugin Skill (Global)",
-    "nameZh": "Kling AI Plugin Skill (Global)",
-    "desc": "官方图像与视频生成和任务查询 Skill。使用对应地区的 OAuth 账号和积分。安装时会运行 postinstall 脚本，在本地注册共用的 kling-plugin CLI",
-    "descEn": "Official image and video generation and task-tracking Skill. A China npm package is also available. Use an OAuth account and credits for the corresponding region. Installation runs a postinstall script to register the shared kling-plugin CLI locally",
-    "stars": "-",
-    "platform": "all",
-    "category": "official",
-    "url": "https://www.npmjs.com/package/@klingai/plugin-global"
-  },
-  {
-    "name": "awesome-cursorrules",
-    "nameZh": "awesome-cursorrules",
-    "desc": "最全面的 Cursor Rules 合集",
-    "descEn": "The most comprehensive Cursor Rules collection",
-    "stars": "41.2k",
-    "platform": "cursor",
     "category": "collection",
-    "url": "https://github.com/PatrickJS/awesome-cursorrules"
-  },
-  {
-    "name": "heilcheng/awesome-agent-skills",
-    "nameZh": "heilcheng/awesome-agent-skills",
-    "desc": "社区维护的 Agent Skills 导航，聚焦工程团队实际使用的真实 Skills",
-    "descEn": "Community-curated Agent Skills directory focused on real-world skills used by engineering teams",
-    "stars": "6.4k",
-    "platform": "all",
-    "category": "collection",
-    "url": "https://github.com/heilcheng/awesome-agent-skills"
+    "url": "https://github.com/github/awesome-copilot/tree/main/skills"
   },
   {
     "name": "ComposioHQ/awesome-claude-skills",
@@ -220,46 +50,6 @@
     "url": "https://github.com/ComposioHQ/awesome-claude-skills"
   },
   {
-    "name": "awesome-claude-code",
-    "nameZh": "awesome-claude-code",
-    "desc": "Claude Code skills/hooks/插件合集",
-    "descEn": "Claude Code skills/hooks/plugins collection",
-    "stars": "58.6k",
-    "platform": "claude",
-    "category": "collection",
-    "url": "https://github.com/hesreallyhim/awesome-claude-code"
-  },
-  {
-    "name": "openskills",
-    "nameZh": "openskills",
-    "desc": "通用 Skills 加载器（npm 安装）",
-    "descEn": "Universal Skills loader (npm install)",
-    "stars": "10.8k",
-    "platform": "all",
-    "category": "collection",
-    "url": "https://github.com/numman-ali/openskills"
-  },
-  {
-    "name": "simonw/claude-skills",
-    "nameZh": "simonw/claude-skills",
-    "desc": "Simon Willison 的 Claude Skills 文档",
-    "descEn": "Claude Skills documentation by Simon Willison",
-    "stars": "932",
-    "platform": "claude",
-    "category": "collection",
-    "url": "https://github.com/simonw/claude-skills"
-  },
-  {
-    "name": "claude-skills-collection",
-    "nameZh": "claude-skills-collection",
-    "desc": "官方与社区 Skills 精选集合",
-    "descEn": "Curated official and community Skills",
-    "stars": "1.1k",
-    "platform": "claude",
-    "category": "collection",
-    "url": "https://github.com/abubakarsiddik31/claude-skills-collection"
-  },
-  {
     "name": "best-skills",
     "nameZh": "best-skills",
     "desc": "通用高质量 Skills 合集，涵盖论文写作、开发流程、自媒体创作等",
@@ -270,14 +60,24 @@
     "url": "https://github.com/xstongxue/best-skills"
   },
   {
-    "name": "skillkit",
-    "nameZh": "skillkit",
-    "desc": "跨平台 Skills 管理器，可安装、转换并同步 Skills 到 40+ Agent",
-    "descEn": "Cross-platform skills manager that installs, translates, and syncs skills across 40+ agents",
+    "name": "SkillKit methodology packs",
+    "nameZh": "SkillKit 方法集",
+    "desc": "用于调试、测试、规划和团队交接的 Skills",
+    "descEn": "Skills for debugging, testing, planning, and team handoffs",
     "stars": "1.6k",
     "platform": "all",
     "category": "collection",
-    "url": "https://github.com/rohitg00/skillkit"
+    "url": "https://github.com/rohitg00/skillkit/tree/main/packages/core/src/methodology/packs"
+  },
+  {
+    "name": "Skill Factory collection",
+    "nameZh": "Skill Factory 合集",
+    "desc": "可直接用于 AWS 架构设计、应用商店优化等任务的 Skills",
+    "descEn": "Ready-to-use skills for AWS architecture, app store optimization, and other workflows",
+    "stars": "912",
+    "platform": "claude",
+    "category": "collection",
+    "url": "https://github.com/alirezarezvani/claude-code-skill-factory/tree/dev/generated-skills"
   },
   {
     "name": "youtube-skills",
@@ -340,16 +140,6 @@
     "url": "https://github.com/nexscope-ai/Amazon-Skills"
   },
   {
-    "name": "iart-ai/motion-skills",
-    "nameZh": "iart-ai/motion-skills",
-    "desc": "19 个动效与视频 Skill 包，覆盖动态文字、数据可视化、讲解动画、社媒短片、WebGL 与 Manim 动画",
-    "descEn": "19 motion graphics and video skill packs covering kinetic typography, data-viz, explainers, social clips, WebGL and Manim animations",
-    "stars": "2.1k",
-    "platform": "all",
-    "category": "collection",
-    "url": "https://github.com/iart-ai/motion-skills"
-  },
-  {
     "name": "addyosmani/agent-skills",
     "nameZh": "addyosmani/agent-skills",
     "desc": "面向 AI 编程代理的生产级工程技能与斜杠命令工作流",
@@ -358,16 +148,6 @@
     "platform": "all",
     "category": "devtools",
     "url": "https://github.com/addyosmani/agent-skills"
-  },
-  {
-    "name": "claude-code-security-review",
-    "nameZh": "claude-code-security-review",
-    "desc": "AI 安全审查 GitHub Action（官方）",
-    "descEn": "AI security review GitHub Action (Official)",
-    "stars": "7.1k",
-    "platform": "claude",
-    "category": "devtools",
-    "url": "https://github.com/anthropics/claude-code-security-review"
   },
   {
     "name": "trailofbits/skills",
@@ -477,7 +257,7 @@
     "stars": "121.8k",
     "platform": "all",
     "category": "devtools",
-    "url": "https://github.com/browser-use/browser-use"
+    "url": "https://github.com/browser-use/browser-use/tree/main/skills/browser-use"
   },
   {
     "name": "code-review",
@@ -578,16 +358,6 @@
     "platform": "claude",
     "category": "productivity",
     "url": "https://github.com/alirezarezvani/claude-skills"
-  },
-  {
-    "name": "claude-code-skill-factory",
-    "nameZh": "claude-code-skill-factory",
-    "desc": "Skills 工厂，批量生成和部署 Skills",
-    "descEn": "Skills factory for batch generation and deployment",
-    "stars": "909",
-    "platform": "claude",
-    "category": "productivity",
-    "url": "https://github.com/alirezarezvani/claude-code-skill-factory"
   },
   {
     "name": "obra/superpowers",
