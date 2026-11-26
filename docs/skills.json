@@ -1,33 +1,14 @@
 [
   {
-    "name": "anthropics/skills",
-    "nameZh": "anthropics/skills",
-    "desc": "Anthropic 的文档处理、设计等 Skills",
-    "descEn": "Anthropic's skills for document processing, design, and other tasks",
-    "stars": "199.1k",
-    "platform": "all",
-    "category": "collection",
-    "url": "https://github.com/anthropics/skills"
-  },
-  {
     "name": "microsoft/skills",
     "nameZh": "microsoft/skills",
     "desc": "微软为使用 Azure SDK 提供的 Skills 合集",
     "descEn": "Microsoft's collection of skills for working with Azure SDKs",
     "stars": "3.2k",
-    "platform": "all",
-    "category": "collection",
+    "platform": "claude/copilot/opencode",
+    "category": "devtools",
+    "entryType": "collection",
     "url": "https://github.com/microsoft/skills"
-  },
-  {
-    "name": "microsoft/azure-skills",
-    "nameZh": "microsoft/azure-skills",
-    "desc": "用于 Azure 服务部署、故障排查与运维的 Skills",
-    "descEn": "Skills for provisioning, troubleshooting, and operating Azure services",
-    "stars": "1.7k",
-    "platform": "all",
-    "category": "collection",
-    "url": "https://github.com/microsoft/azure-skills"
   },
   {
     "name": "GitHub Awesome Copilot",
@@ -36,28 +17,9 @@
     "descEn": "Reusable skills for GitHub Copilot, with a separate directory for each skill",
     "stars": "41.5k",
     "platform": "copilot",
-    "category": "collection",
+    "category": "devtools",
+    "entryType": "collection",
     "url": "https://github.com/github/awesome-copilot/tree/main/skills"
-  },
-  {
-    "name": "ComposioHQ/awesome-claude-skills",
-    "nameZh": "ComposioHQ/awesome-claude-skills",
-    "desc": "Composio 维护的 Claude Skills 合集",
-    "descEn": "Claude Skills collection by Composio",
-    "stars": "80.1k",
-    "platform": "claude",
-    "category": "collection",
-    "url": "https://github.com/ComposioHQ/awesome-claude-skills"
-  },
-  {
-    "name": "best-skills",
-    "nameZh": "best-skills",
-    "desc": "通用高质量 Skills 合集，涵盖论文写作、开发流程、自媒体创作等",
-    "descEn": "High-quality Skills collection for paper writing, dev workflow, and content creation",
-    "stars": "3.2k",
-    "platform": "all",
-    "category": "collection",
-    "url": "https://github.com/xstongxue/best-skills"
   },
   {
     "name": "SkillKit methodology packs",
@@ -65,29 +27,10 @@
     "desc": "用于调试、测试、规划和团队交接的 Skills",
     "descEn": "Skills for debugging, testing, planning, and team handoffs",
     "stars": "1.6k",
-    "platform": "all",
-    "category": "collection",
+    "platform": "unspecified",
+    "category": "devtools",
+    "entryType": "collection",
     "url": "https://github.com/rohitg00/skillkit/tree/main/packages/core/src/methodology/packs"
-  },
-  {
-    "name": "Skill Factory collection",
-    "nameZh": "Skill Factory 合集",
-    "desc": "可直接用于 AWS 架构设计、应用商店优化等任务的 Skills",
-    "descEn": "Ready-to-use skills for AWS architecture, app store optimization, and other workflows",
-    "stars": "912",
-    "platform": "claude",
-    "category": "collection",
-    "url": "https://github.com/alirezarezvani/claude-code-skill-factory/tree/dev/generated-skills"
-  },
-  {
-    "name": "youtube-skills",
-    "nameZh": "youtube-skills",
-    "desc": "面向 YouTube 的转录、视频搜索、频道浏览与播放列表 Skills，适用于 Claude Code、OpenClaw、Hermes Agent 等 Agent 运行时",
-    "descEn": "YouTube transcript, video search, channel and playlist skills for Claude Code, OpenClaw, Hermes Agent, and other agent runtimes",
-    "stars": "1.2k",
-    "platform": "openclaw",
-    "category": "collection",
-    "url": "https://github.com/ZeroPointRepo/youtube-skills"
   },
   {
     "name": "oh-my-agent",
@@ -95,49 +38,10 @@
     "desc": "33 个技能和 21 个工作流，统一放在 .agents/skills，按条目软链接到 Claude Code、Codex、Cursor 等工具的技能目录；oma link --dry-run 先预览要写的文件",
     "descEn": "33 skills and 21 workflows kept in one .agents/skills folder and symlinked per skill into Claude Code, Codex, Cursor and other runtimes; oma link --dry-run previews what it will write",
     "stars": "1.5k",
-    "platform": "claude",
-    "category": "collection",
+    "platform": "cursor/claude/codex/opencode",
+    "category": "devtools",
+    "entryType": "collection",
     "url": "https://github.com/first-fluke/oh-my-agent"
-  },
-  {
-    "name": "sno-station-skills",
-    "nameZh": "sno-station-skills",
-    "desc": "面向 Claude Code 与 Codex 的 Skills 合集：两家模型互相审查、一个 Agent 用到额度上限时交给另一个接着做，以及任务委派与汇报",
-    "descEn": "Skills for Claude Code and Codex: cross-vendor peer review, handoff when one agent hits its usage limit, delegation and reporting",
-    "stars": "871",
-    "platform": "claude",
-    "category": "collection",
-    "url": "https://github.com/sno-ai/sno-station-skills"
-  },
-  {
-    "name": "laolaoshiren/claude-code-skills-zh",
-    "nameZh": "laolaoshiren/claude-code-skills-zh",
-    "desc": "面向中文开发者的 Claude Code Skills 精选集，438+ 精选 + 20 原创技能",
-    "descEn": "Curated Claude Code skills collection for Chinese developers, with 438+ curated skills and 20 original skills",
-    "stars": "927",
-    "platform": "claude",
-    "category": "collection",
-    "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
-  },
-  {
-    "name": "nexscope-ai/eCommerce-Skills",
-    "nameZh": "nexscope-ai/eCommerce-Skills",
-    "desc": "面向 Amazon、Shopify、TikTok Shop 等平台的电商 Agent Skills，覆盖选品、营销与运营",
-    "descEn": "E-commerce skills for AI agents covering product research, marketing, and operations across Amazon, Shopify, TikTok Shop, and more",
-    "stars": "1.5k",
-    "platform": "all",
-    "category": "collection",
-    "url": "https://github.com/nexscope-ai/eCommerce-Skills"
-  },
-  {
-    "name": "nexscope-ai/Amazon-Skills",
-    "nameZh": "nexscope-ai/Amazon-Skills",
-    "desc": "面向亚马逊卖家的免费 Agent Skills，覆盖关键词研究、竞品分析与 Listing 诊断",
-    "descEn": "Free Amazon seller skills for keyword research, competitor analysis, listing audits, and more",
-    "stars": "886",
-    "platform": "all",
-    "category": "collection",
-    "url": "https://github.com/nexscope-ai/Amazon-Skills"
   },
   {
     "name": "addyosmani/agent-skills",
@@ -147,6 +51,7 @@
     "stars": "119.8k",
     "platform": "all",
     "category": "devtools",
+    "entryType": "collection",
     "url": "https://github.com/addyosmani/agent-skills"
   },
   {
@@ -157,6 +62,7 @@
     "stars": "8.4k",
     "platform": "claude",
     "category": "devtools",
+    "entryType": "collection",
     "url": "https://github.com/trailofbits/skills"
   },
   {
@@ -167,6 +73,7 @@
     "stars": "3.3k",
     "platform": "claude",
     "category": "devtools",
+    "entryType": "single-skill",
     "url": "https://github.com/lackeyjb/playwright-skill"
   },
   {
@@ -177,6 +84,7 @@
     "stars": "3.1k",
     "platform": "all",
     "category": "devtools",
+    "entryType": "single-skill",
     "url": "https://github.com/Simon-He95/markstream-vue/tree/main/.agents/skills/markstream-install"
   },
   {
@@ -187,6 +95,7 @@
     "stars": "1.5k",
     "platform": "claude",
     "category": "devtools",
+    "entryType": "single-skill",
     "url": "https://github.com/skills-directory/skill-codex"
   },
   {
@@ -197,6 +106,7 @@
     "stars": "1.5k",
     "platform": "claude",
     "category": "devtools",
+    "entryType": "collection",
     "url": "https://github.com/daymade/claude-code-skills"
   },
   {
@@ -207,6 +117,7 @@
     "stars": "613",
     "platform": "all",
     "category": "devtools",
+    "entryType": "collection",
     "url": "https://github.com/elastic/agent-skills"
   },
   {
@@ -217,6 +128,7 @@
     "stars": "34.8k",
     "platform": "all",
     "category": "devtools",
+    "entryType": "collection",
     "url": "https://github.com/vercel-labs/agent-skills"
   },
   {
@@ -227,16 +139,18 @@
     "stars": "6.1k",
     "platform": "all",
     "category": "devtools",
+    "entryType": "collection",
     "url": "https://github.com/antfu/skills"
   },
   {
     "name": "Supabase Agent Skills",
     "nameZh": "supabase/agent-skills",
-    "desc": "Supabase Postgres 最佳实践 Skill",
-    "descEn": "PostgreSQL best practices Skill by Supabase",
+    "desc": "用于 Supabase 开发和 PostgreSQL 最佳实践的 Skills",
+    "descEn": "Skills for working with Supabase and PostgreSQL",
     "stars": "3.1k",
     "platform": "all",
     "category": "devtools",
+    "entryType": "collection",
     "url": "https://github.com/supabase/agent-skills"
   },
   {
@@ -247,6 +161,7 @@
     "stars": "4.2k",
     "platform": "all",
     "category": "devtools",
+    "entryType": "collection",
     "url": "https://github.com/expo/skills"
   },
   {
@@ -257,6 +172,7 @@
     "stars": "121.8k",
     "platform": "all",
     "category": "devtools",
+    "entryType": "single-skill",
     "url": "https://github.com/browser-use/browser-use/tree/main/skills/browser-use"
   },
   {
@@ -267,6 +183,7 @@
     "stars": "670",
     "platform": "all",
     "category": "devtools",
+    "entryType": "single-skill",
     "url": "https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/code-review"
   },
   {
@@ -277,6 +194,7 @@
     "stars": "670",
     "platform": "all",
     "category": "devtools",
+    "entryType": "single-skill",
     "url": "https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/git-commit"
   },
   {
@@ -287,6 +205,7 @@
     "stars": "670",
     "platform": "all",
     "category": "devtools",
+    "entryType": "single-skill",
     "url": "https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/unit-test-generator"
   },
   {
@@ -297,6 +216,7 @@
     "stars": "670",
     "platform": "all",
     "category": "devtools",
+    "entryType": "single-skill",
     "url": "https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/api-doc-generator"
   },
   {
@@ -307,6 +227,7 @@
     "stars": "670",
     "platform": "all",
     "category": "devtools",
+    "entryType": "single-skill",
     "url": "https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/debug-helper"
   },
   {
@@ -317,6 +238,7 @@
     "stars": "704",
     "platform": "claude/codex",
     "category": "devtools",
+    "entryType": "single-skill",
     "url": "https://github.com/Qiuner/birdview"
   },
   {
@@ -327,6 +249,7 @@
     "stars": "4.0k",
     "platform": "claude",
     "category": "devtools",
+    "entryType": "single-skill",
     "url": "https://github.com/rebelytics/one-skill-to-rule-them-all"
   },
   {
@@ -337,6 +260,7 @@
     "stars": "474.4k",
     "platform": "codex",
     "category": "devtools",
+    "entryType": "single-skill",
     "url": "https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything"
   },
   {
@@ -346,8 +270,119 @@
     "descEn": "Production-grade dev workflows with quality checks",
     "stars": "720",
     "platform": "claude",
-    "category": "productivity",
+    "category": "devtools",
+    "entryType": "collection",
     "url": "https://github.com/shinpr/claude-code-workflows"
+  },
+  {
+    "name": "obra/superpowers",
+    "nameZh": "obra/superpowers",
+    "desc": "完整开发工作流（调试/TDD/代码审查/计划）",
+    "descEn": "Complete dev workflow (Debug/TDD/Code Review/Planning)",
+    "stars": "324.3k",
+    "platform": "all",
+    "category": "devtools",
+    "entryType": "collection",
+    "url": "https://github.com/obra/superpowers"
+  },
+  {
+    "name": "context-engineering",
+    "nameZh": "context-engineering",
+    "desc": "上下文工程和多 Agent 架构 Skills",
+    "descEn": "Context engineering and multi-Agent architecture",
+    "stars": "18.4k",
+    "platform": "all",
+    "category": "devtools",
+    "entryType": "collection",
+    "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering"
+  },
+  {
+    "name": "anthropics/skills",
+    "nameZh": "anthropics/skills",
+    "desc": "Anthropic 的文档处理、设计等 Skills",
+    "descEn": "Anthropic's skills for document processing, design, and other tasks",
+    "stars": "199.1k",
+    "platform": "claude",
+    "category": "productivity",
+    "entryType": "collection",
+    "url": "https://github.com/anthropics/skills"
+  },
+  {
+    "name": "ComposioHQ/awesome-claude-skills",
+    "nameZh": "ComposioHQ/awesome-claude-skills",
+    "desc": "Composio 维护的 Claude Skills 合集",
+    "descEn": "Claude Skills collection by Composio",
+    "stars": "80.1k",
+    "platform": "cursor/claude/codex",
+    "category": "productivity",
+    "entryType": "collection",
+    "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+  },
+  {
+    "name": "best-skills",
+    "nameZh": "best-skills",
+    "desc": "通用高质量 Skills 合集，涵盖论文写作、开发流程、自媒体创作等",
+    "descEn": "High-quality Skills collection for paper writing, dev workflow, and content creation",
+    "stars": "3.2k",
+    "platform": "cursor/claude/codex/openclaw",
+    "category": "productivity",
+    "entryType": "collection",
+    "url": "https://github.com/xstongxue/best-skills"
+  },
+  {
+    "name": "Skill Factory collection",
+    "nameZh": "Skill Factory 合集",
+    "desc": "可直接用于 AWS 架构设计、应用商店优化等任务的 Skills",
+    "descEn": "Ready-to-use skills for AWS architecture, app store optimization, and other workflows",
+    "stars": "912",
+    "platform": "claude",
+    "category": "productivity",
+    "entryType": "collection",
+    "url": "https://github.com/alirezarezvani/claude-code-skill-factory/tree/dev/generated-skills"
+  },
+  {
+    "name": "sno-station-skills",
+    "nameZh": "sno-station-skills",
+    "desc": "面向 Claude Code 与 Codex 的 Skills 合集：两家模型互相审查、一个 Agent 用到额度上限时交给另一个接着做，以及任务委派与汇报",
+    "descEn": "Skills for Claude Code and Codex: cross-vendor peer review, handoff when one agent hits its usage limit, delegation and reporting",
+    "stars": "871",
+    "platform": "cursor/claude/codex/openclaw",
+    "category": "productivity",
+    "entryType": "collection",
+    "url": "https://github.com/sno-ai/sno-station-skills"
+  },
+  {
+    "name": "laolaoshiren/claude-code-skills-zh",
+    "nameZh": "laolaoshiren/claude-code-skills-zh",
+    "desc": "面向中文开发者的 Claude Code Skills 精选集，438+ 精选 + 20 原创技能",
+    "descEn": "Curated Claude Code skills collection for Chinese developers, with 438+ curated skills and 20 original skills",
+    "stars": "927",
+    "platform": "cursor/claude/codex",
+    "category": "productivity",
+    "entryType": "collection",
+    "url": "https://github.com/laolaoshiren/claude-code-skills-zh"
+  },
+  {
+    "name": "nexscope-ai/eCommerce-Skills",
+    "nameZh": "nexscope-ai/eCommerce-Skills",
+    "desc": "面向 Amazon、Shopify、TikTok Shop 等平台的电商 Agent Skills，覆盖选品、营销与运营",
+    "descEn": "E-commerce skills for AI agents covering product research, marketing, and operations across Amazon, Shopify, TikTok Shop, and more",
+    "stars": "1.5k",
+    "platform": "all",
+    "category": "productivity",
+    "entryType": "collection",
+    "url": "https://github.com/nexscope-ai/eCommerce-Skills"
+  },
+  {
+    "name": "nexscope-ai/Amazon-Skills",
+    "nameZh": "nexscope-ai/Amazon-Skills",
+    "desc": "面向亚马逊卖家的免费 Agent Skills，覆盖关键词研究、竞品分析与 Listing 诊断",
+    "descEn": "Free Amazon seller skills for keyword research, competitor analysis, listing audits, and more",
+    "stars": "886",
+    "platform": "all",
+    "category": "productivity",
+    "entryType": "collection",
+    "url": "https://github.com/nexscope-ai/Amazon-Skills"
   },
   {
     "name": "alirezarezvani/claude-skills",
@@ -357,17 +392,8 @@
     "stars": "30.3k",
     "platform": "claude",
     "category": "productivity",
+    "entryType": "collection",
     "url": "https://github.com/alirezarezvani/claude-skills"
-  },
-  {
-    "name": "obra/superpowers",
-    "nameZh": "obra/superpowers",
-    "desc": "完整开发工作流（调试/TDD/代码审查/计划）",
-    "descEn": "Complete dev workflow (Debug/TDD/Code Review/Planning)",
-    "stars": "324.3k",
-    "platform": "all",
-    "category": "productivity",
-    "url": "https://github.com/obra/superpowers"
   },
   {
     "name": "planning-with-files",
@@ -377,6 +403,7 @@
     "stars": "28.2k",
     "platform": "all",
     "category": "productivity",
+    "entryType": "single-skill",
     "url": "https://github.com/OthmanAdi/planning-with-files"
   },
   {
@@ -387,6 +414,7 @@
     "stars": "62.1k",
     "platform": "all",
     "category": "productivity",
+    "entryType": "collection",
     "url": "https://github.com/coreyhaines31/marketingskills"
   },
   {
@@ -397,6 +425,7 @@
     "stars": "80.1k",
     "platform": "claude",
     "category": "productivity",
+    "entryType": "single-skill",
     "url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/changelog-generator"
   },
   {
@@ -407,6 +436,7 @@
     "stars": "2.2k",
     "platform": "all",
     "category": "productivity",
+    "entryType": "collection",
     "url": "https://github.com/zhuyansen/new-term-radar"
   },
   {
@@ -417,6 +447,7 @@
     "stars": "6.6k",
     "platform": "cursor/claude/codex/opencode",
     "category": "productivity",
+    "entryType": "single-skill",
     "url": "https://github.com/QingYunA/answer-me-with-html"
   },
   {
@@ -427,6 +458,7 @@
     "stars": "84.3k",
     "platform": "claude/codex/opencode",
     "category": "productivity",
+    "entryType": "single-skill",
     "url": "https://github.com/career-ops-hq/career-ops"
   },
   {
@@ -437,7 +469,19 @@
     "stars": "72.7k",
     "platform": "all",
     "category": "productivity",
+    "entryType": "single-skill",
     "url": "https://github.com/mvanhorn/last30days-skill"
+  },
+  {
+    "name": "microsoft/azure-skills",
+    "nameZh": "microsoft/azure-skills",
+    "desc": "用于 Azure 服务部署、故障排查与运维的 Skills",
+    "descEn": "Skills for provisioning, troubleshooting, and operating Azure services",
+    "stars": "1.7k",
+    "platform": "cursor/claude/copilot/codex/opencode",
+    "category": "devops",
+    "entryType": "collection",
+    "url": "https://github.com/microsoft/azure-skills"
   },
   {
     "name": "claudekit-skills",
@@ -447,17 +491,19 @@
     "stars": "2.2k",
     "platform": "claude",
     "category": "devops",
+    "entryType": "collection",
     "url": "https://github.com/mrgoonie/claudekit-skills"
   },
   {
-    "name": "context-engineering",
-    "nameZh": "context-engineering",
-    "desc": "上下文工程和多 Agent 架构 Skills",
-    "descEn": "Context engineering and multi-Agent architecture",
-    "stars": "18.4k",
-    "platform": "all",
+    "name": "youtube-skills",
+    "nameZh": "youtube-skills",
+    "desc": "面向 YouTube 的转录、视频搜索、频道浏览与播放列表 Skills，适用于 Claude Code、OpenClaw、Hermes Agent 等 Agent 运行时",
+    "descEn": "YouTube transcript, video search, channel and playlist skills for Claude Code, OpenClaw, Hermes Agent, and other agent runtimes",
+    "stars": "1.2k",
+    "platform": "cursor/claude/codex/openclaw",
     "category": "data",
-    "url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering"
+    "entryType": "collection",
+    "url": "https://github.com/ZeroPointRepo/youtube-skills"
   },
   {
     "name": "kordoc",
@@ -467,6 +513,7 @@
     "stars": "3.1k",
     "platform": "claude",
     "category": "data",
+    "entryType": "single-skill",
     "url": "https://github.com/chrisryugj/kordoc/tree/main/plugins/kordoc/skills/kordoc"
   },
   {
@@ -477,6 +524,7 @@
     "stars": "8.9k",
     "platform": "all",
     "category": "data",
+    "entryType": "single-skill",
     "url": "https://github.com/DeanChensj/jiangshan-map/tree/main/skills/jiangshan-atlas"
   },
   {
@@ -487,6 +535,7 @@
     "stars": "1.7k",
     "platform": "claude/codex",
     "category": "data",
+    "entryType": "single-skill",
     "url": "https://github.com/antvis/AVA/tree/ai/skills/ava"
   },
   {
@@ -497,6 +546,7 @@
     "stars": "199.1k",
     "platform": "claude",
     "category": "writing",
+    "entryType": "single-skill",
     "url": "https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring"
   },
   {
@@ -507,6 +557,7 @@
     "stars": "199.1k",
     "platform": "claude",
     "category": "writing",
+    "entryType": "single-skill",
     "url": "https://github.com/anthropics/skills/tree/main/skills/internal-comms"
   },
   {
@@ -517,6 +568,7 @@
     "stars": "199.1k",
     "platform": "claude",
     "category": "writing",
+    "entryType": "single-skill",
     "url": "https://github.com/anthropics/skills/tree/main/skills/docx"
   },
   {
@@ -527,6 +579,7 @@
     "stars": "199.1k",
     "platform": "claude",
     "category": "writing",
+    "entryType": "single-skill",
     "url": "https://github.com/anthropics/skills/tree/main/skills/pdf"
   },
   {
@@ -537,6 +590,7 @@
     "stars": "199.1k",
     "platform": "claude",
     "category": "writing",
+    "entryType": "single-skill",
     "url": "https://github.com/anthropics/skills/tree/main/skills/pptx"
   },
   {
@@ -547,6 +601,7 @@
     "stars": "199.1k",
     "platform": "claude",
     "category": "writing",
+    "entryType": "single-skill",
     "url": "https://github.com/anthropics/skills/tree/main/skills/xlsx"
   },
   {
@@ -557,6 +612,7 @@
     "stars": "199.1k",
     "platform": "claude",
     "category": "design",
+    "entryType": "single-skill",
     "url": "https://github.com/anthropics/skills/tree/main/skills/frontend-design"
   },
   {
@@ -567,6 +623,7 @@
     "stars": "199.1k",
     "platform": "claude",
     "category": "design",
+    "entryType": "single-skill",
     "url": "https://github.com/anthropics/skills/tree/main/skills/brand-guidelines"
   },
   {
@@ -577,6 +634,7 @@
     "stars": "199.1k",
     "platform": "claude",
     "category": "design",
+    "entryType": "single-skill",
     "url": "https://github.com/anthropics/skills/tree/main/skills/canvas-design"
   },
   {
@@ -587,6 +645,7 @@
     "stars": "199.1k",
     "platform": "claude",
     "category": "design",
+    "entryType": "single-skill",
     "url": "https://github.com/anthropics/skills/tree/main/skills/theme-factory"
   },
   {
@@ -597,6 +656,7 @@
     "stars": "199.1k",
     "platform": "claude",
     "category": "design",
+    "entryType": "single-skill",
     "url": "https://github.com/anthropics/skills/tree/main/skills/algorithmic-art"
   },
   {
@@ -607,6 +667,7 @@
     "stars": "199.1k",
     "platform": "claude",
     "category": "design",
+    "entryType": "single-skill",
     "url": "https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator"
   }
 ]
