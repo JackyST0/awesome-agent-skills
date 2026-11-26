@@ -20,39 +20,60 @@
 
 ### 方式一：手动安装
 
-1. 下载或克隆 skill 仓库
-2. 将 skill 文件夹复制到对应目录
+以给 Cursor 安装本仓库的 `code-review` 为例。已有本地副本时，直接在仓库根目录运行对应终端的命令；否则先执行：
+
+```text
+git clone https://github.com/JackyST0/awesome-agent-skills.git
+cd awesome-agent-skills
+```
+
+**Bash（macOS / Linux / Windows 上的 Git Bash）：**
 
 ```bash
-# 示例：安装 code-review skill 到 Cursor
-git clone https://github.com/example/code-review-skill.git
-cp -r code-review-skill ~/.cursor/skills/
+dest="$HOME/.cursor/skills"
+mkdir -p "$dest"
+cp -R examples/code-review "$dest/"
 ```
+
+**Windows PowerShell：**
+
+```powershell
+$dest = Join-Path $HOME '.cursor\skills'
+New-Item -ItemType Directory -Path $dest -Force | Out-Null
+Copy-Item -LiteralPath '.\examples\code-review' -Destination $dest -Recurse -Force
+```
+
+重复安装会覆盖同名文件，不会清理旧版本独有的文件。如果改过已安装的 Skill，请先备份。
+
+使用其他工具时，按[平台表](#支持的平台)替换目标目录；项目级安装请使用目标项目内 skills 目录的完整路径。从合集安装时，只复制包含 `SKILL.md` 的单个技能文件夹。
+
+> WSL 中的 `~` 默认是 Linux 家目录。如果工具运行在 Windows 本机，请用 Windows PowerShell 安装到 Windows 用户目录。
 
 ### 方式二：使用 Git 子模块
 
-适合项目级别的 skills：
+如果技能仓库的根目录就有 `SKILL.md`，可以把它作为子模块加入项目。在目标项目的 Git 根目录运行以下命令（Bash 和 PowerShell 通用）。先把 `REPO_URL` 换成仓库地址，`SKILL_NAME` 换成技能名：
 
-```bash
-# 在项目根目录
-mkdir -p .cursor/skills
-cd .cursor/skills
-git submodule add https://github.com/example/code-review-skill.git
+```text
+git submodule add REPO_URL .cursor/skills/SKILL_NAME
 ```
 
 ### 方式三：使用本仓库安装器
 
-先按照仓库首页的快速开始说明下载安装脚本。当前稳定版本可直接写在同一条命令中，无需提前设置环境变量：
+按[快速开始](../README_ZH.md#快速开始)下载并校验对应的安装脚本。要把内置的 `code-review` 安装到 Codex，可在脚本所在目录运行：
+
+**Bash（macOS / Linux）：**
 
 ```bash
-AAS_REPOSITORY_REF="v1.0.1" bash install.sh -p codex -s code-review
+bash install.sh -p codex -s code-review
 ```
 
-需要测试其他已审核版本时，替换对应的 tag 或完整 commit SHA：
+**Windows PowerShell：**
 
-```bash
-AAS_REPOSITORY_REF="<release-tag-or-full-commit-sha>" bash install.sh -p codex -s code-review
+```powershell
+.\install.ps1 -Platform codex -Skill code-review
 ```
+
+默认使用安装器内置的稳定版本。要指定其他已审核的 tag 或完整 commit SHA，Bash 设置 `AAS_REPOSITORY_REF`，PowerShell 使用 `-RepositoryRef`。
 
 ## 全局 vs 项目级别
 
@@ -75,9 +96,18 @@ AAS_REPOSITORY_REF="<release-tag-or-full-commit-sha>" bash install.sh -p codex -
 
 ### 1. 检查目录
 
+以手动安装的 Cursor 示例为例，检查 `SKILL.md` 是否在 `code-review` 子目录中：
+
+**Bash：**
+
 ```bash
-ls ~/.cursor/skills/
-# 应该看到你安装的 skill 文件夹
+ls "$HOME/.cursor/skills/code-review/SKILL.md"
+```
+
+**Windows PowerShell（应返回 `True`）：**
+
+```powershell
+Test-Path -LiteralPath (Join-Path $HOME '.cursor\skills\code-review\SKILL.md') -PathType Leaf
 ```
 
 ### 2. 测试使用
@@ -93,26 +123,15 @@ AI：[如果 code-review skill 安装正确，会按照 skill 的格式输出]
 
 ### 查看已安装的 Skills
 
-```bash
-# Cursor
-ls ~/.cursor/skills/
-
-# Codex
-ls ~/.codex/skills/
-```
+以 Cursor 为例：Bash 运行 `ls "$HOME/.cursor/skills"`，Windows PowerShell 运行 `Get-ChildItem -LiteralPath (Join-Path $HOME '.cursor\skills')`。其他工具请替换为平台表中对应的目录。
 
 ### 更新 Skill
 
-```bash
-cd ~/.cursor/skills/code-review-skill
-git pull
-```
+手动复制的 Skill 不会随源仓库自动更新。先备份自己的改动，再从更新后的源仓库重新复制技能文件夹。只有技能本身是独立的 Git 克隆时，才在安装后的技能文件夹中运行 `git pull --ff-only`。
 
 ### 删除 Skill
 
-```bash
-rm -rf ~/.cursor/skills/code-review-skill
-```
+手动安装的示例只需删除 skills 目录下的 `code-review` 文件夹。不要删除整个 skills 目录，以免移除其他技能。
 
 ## 优先级说明
 

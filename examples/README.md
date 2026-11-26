@@ -16,31 +16,9 @@ This directory contains ready-to-use example Agent Skills.
 
 ## 如何使用 / How to Use
 
-### Cursor
+在**仓库根目录**按[手动安装说明](../README_ZH.md#如何使用)选择 Bash 或 Windows PowerShell，将命令中的 `code-review` 换成上表中的示例名。其他工具的安装目录见[平台表](../docs/how-to-use.md#支持的平台)。
 
-```bash
-cp -r code-review ~/.cursor/skills/
-```
-
-### Claude Code
-
-```bash
-cp -r code-review ~/.claude/skills/
-```
-
-### OpenAI Codex
-
-```bash
-cp -r code-review ~/.codex/skills/
-```
-
-### GitHub Copilot
-
-```bash
-cp -r code-review ~/.copilot/skills/
-# 或放入项目目录 / Or place in project directory
-cp -r code-review .github/skills/
-```
+From the **repository root**, follow the [manual install instructions](../README.md#manual-install) for Bash or Windows PowerShell. Replace `code-review` with any example name from the table above. For another tool, use its directory from the [platform table](../README.md#what-are-agent-skills).
 
 ## 创建你自己的 / Create Your Own
 

@@ -65,16 +65,7 @@ if ((Get-FileHash install.ps1 -Algorithm SHA256).Hash.ToLower() -ne $expected) {
 
 ### 手动安装
 
-```bash
-# 克隆本仓库的示例
-git clone https://github.com/JackyST0/awesome-agent-skills.git
-cp -r awesome-agent-skills/examples/code-review ~/.cursor/skills/
-
-# 或克隆官方 Skills
-git clone https://github.com/anthropics/skills.git ~/.cursor/skills/anthropics
-```
-
-`SKILL.md` 的格式见 [Agent Skills 规范](https://agentskills.io/specification)。
+只想安装单个 Skill？见[手动复制的 Bash 和 Windows PowerShell 示例](#如何使用)。`SKILL.md` 的格式见 [Agent Skills 规范](https://agentskills.io/specification)。
 
 ---
 
@@ -121,28 +112,41 @@ Skills 可在多个平台使用：
 
 ### 方式一：手动复制
 
-```bash
-# Cursor
-cp -r my-skill ~/.cursor/skills/
+以给 Cursor 安装 `code-review` 为例。在本仓库根目录运行对应终端的命令；如果尚未克隆，先执行：
 
-# Claude Code
-cp -r my-skill ~/.claude/skills/
-
-# GitHub Copilot
-cp -r my-skill ~/.copilot/skills/
-# 或项目级
-cp -r my-skill .github/skills/
+```text
+git clone https://github.com/JackyST0/awesome-agent-skills.git
+cd awesome-agent-skills
 ```
+
+**Bash（macOS / Linux / Windows 上的 Git Bash）：**
+
+```bash
+dest="$HOME/.cursor/skills"
+mkdir -p "$dest"
+cp -R examples/code-review "$dest/"
+```
+
+**Windows PowerShell：**
+
+```powershell
+$dest = Join-Path $HOME '.cursor\skills'
+New-Item -ItemType Directory -Path $dest -Force | Out-Null
+Copy-Item -LiteralPath '.\examples\code-review' -Destination $dest -Recurse -Force
+```
+
+重复安装会覆盖同名文件。如果改过已安装的 Skill，请先备份。
+
+换用其他工具时，把目标目录改为上表中对应的目录。若只想在某个项目使用，请填写**目标项目**内 skills 目录的完整路径，避免复制到本示例仓库。
+
+> WSL 中的 `~` 默认是 Linux 家目录。如果工具运行在 Windows 本机，请用 Windows PowerShell 安装到 Windows 用户目录。
 
 ### 方式二：Git Clone
 
-```bash
-# 克隆到全局目录
-git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
-```
+如果上游仓库根目录直接包含 `SKILL.md`，可以在工具的 skills 目录中运行 `git clone <仓库地址> <技能名>`（先替换两个占位符）。如果是合集，先把仓库克隆到安装目录以外，再按方式一复制包含 `SKILL.md` 的单个技能文件夹。
 
 > 💡 **提示**：全局 skills 对所有项目生效，项目级 skills 仅对当前项目生效。
-> 
+>
 > 📖 **详细指南**：查看 [如何使用 Agent Skills](docs/how-to-use.md)
 
 ## 按用途浏览 Skills

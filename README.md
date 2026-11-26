@@ -75,14 +75,34 @@ if ((Get-FileHash install.ps1 -Algorithm SHA256).Hash.ToLower() -ne $expected) {
 
 ### Manual Install
 
-```bash
-# Clone examples from this repository
-git clone https://github.com/JackyST0/awesome-agent-skills.git
-cp -r awesome-agent-skills/examples/code-review ~/.cursor/skills/
+To install the bundled `code-review` skill for Cursor, start at the root of this repository. If you haven't cloned it yet, run:
 
-# Or clone official skills
-git clone https://github.com/anthropics/skills.git ~/.cursor/skills/anthropics
+```text
+git clone https://github.com/JackyST0/awesome-agent-skills.git
+cd awesome-agent-skills
 ```
+
+**Bash (macOS / Linux / Git Bash on Windows):**
+
+```bash
+dest="$HOME/.cursor/skills"
+mkdir -p "$dest"
+cp -R examples/code-review "$dest/"
+```
+
+**Windows PowerShell:**
+
+```powershell
+$dest = Join-Path $HOME '.cursor\skills'
+New-Item -ItemType Directory -Path $dest -Force | Out-Null
+Copy-Item -LiteralPath '.\examples\code-review' -Destination $dest -Recurse -Force
+```
+
+Reinstalling overwrites files with the same name. Back up any local edits to the installed skill first.
+
+For another tool, use its directory from the [platform table](#what-are-agent-skills). For a project install, set the destination to the full path of the skills directory in the **target project**. When installing from a collection, copy the individual folder containing `SKILL.md`, not the whole collection.
+
+> In WSL, `~` normally points to your Linux home directory. If your tool runs natively on Windows, use Windows PowerShell to install into your Windows profile.
 
 > 📖 See [How to Use Agent Skills](docs/how-to-use.md) for the guide, or the [Agent Skills specification](https://agentskills.io/specification) for the `SKILL.md` format.
 
