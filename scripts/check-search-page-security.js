@@ -2,7 +2,8 @@
 
 const fs = require('fs');
 const path = require('path');
-const { isHttpUrl } = require('./sync-search-index');
+const assert = require('node:assert/strict');
+const { sourceRepository } = require('./catalog');
 
 const page = fs.readFileSync(path.resolve(__dirname, '..', 'docs', 'index.html'), 'utf8');
 const requiredSnippets = [
@@ -25,9 +26,7 @@ if (page.includes('innerHTML')) {
 }
 
 for (const url of ['javascript:alert(1)', 'data:text/html,<script>alert(1)</script>']) {
-  if (isHttpUrl(url)) {
-    throw new Error(`Search-index URL validation accepted an unsafe URL: ${url}`);
-  }
+  assert.throws(() => sourceRepository(url), /GitHub source repository/);
 }
 
 console.log('Search-page security checks passed.');

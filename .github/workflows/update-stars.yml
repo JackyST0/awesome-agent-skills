@@ -40,7 +40,7 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add README.md README_ZH.md
-          git commit -m "chore: update star counts [skip ci]"
+          git commit -m "chore: update star counts"
           git push "https://x-access-token:${ACTIONS_PUSH_TOKEN}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref_name }}
         env:
           ACTIONS_PUSH_TOKEN: ${{ secrets.ACTIONS_PUSH_TOKEN }}

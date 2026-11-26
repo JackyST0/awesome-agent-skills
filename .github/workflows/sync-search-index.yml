@@ -9,6 +9,7 @@ on:
       - 'README_ZH.md'
       - 'docs/skills.json'
       - 'scripts/sync-search-index.js'
+      - 'scripts/catalog.js'
       - 'package.json'
   workflow_dispatch:
 

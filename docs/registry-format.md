@@ -15,7 +15,6 @@ The goal is to provide one normalized data source for:
 3. Distinguish "declared support" from "verified support".
 4. Support different entry types:
    - single skills
-   - bundled examples
    - collections of skills hosted together
 
 All catalog entries must meet the [inclusion requirements](../CONTRIBUTING.md), including the 512-star minimum for the public source repository. Documentation and tools may be linked as references, not as entries.
@@ -40,8 +39,8 @@ Each entry should use this shape:
   "id": "example-code-review",
   "name": "code-review",
   "slug": "code-review",
-  "entryType": "example",
-  "category": "development-tools",
+  "entryType": "single-skill",
+  "category": "devtools",
   "description": {
     "en": "Smart code review example skill.",
     "zh": "智能代码审查示例 Skill。"
@@ -103,21 +102,19 @@ Recommended format:
 
 Allowed values:
 
-- `example`
 - `single-skill`
 - `collection`
 
-Use `example` for bundled skills shipped inside this repo.
+Bundled examples are single skills. Record their origin in `source.kind`, not `entryType`.
 
 ### `category`
 
-Allowed values should match README sections:
+The primary use case is independent of `entryType`. The README sections and search index use these IDs:
 
-- `skills-collections`
-- `development-tools`
+- `devtools`
 - `productivity`
 - `devops`
-- `data-processing`
+- `data`
 - `writing`
 - `design`
 
@@ -175,6 +172,7 @@ Allowed values:
 Important:
 
 - `platforms` means "this entry targets or supports these platforms"
+- An em dash in a catalog row means no platform was specified. Use an empty `platforms` array in this draft, not `all`.
 - it does **not** automatically mean "fully verified on every platform"
 
 ### `status`

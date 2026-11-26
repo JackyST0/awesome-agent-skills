@@ -56,11 +56,11 @@
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
       <div class="bg-white rounded-xl p-4 text-center shadow-sm">
         <div class="text-2xl font-bold gradient-text" id="stat-total">0</div>
-        <div class="text-gray-500 text-sm" id="stat-total-label">Skills 总数</div>
+        <div class="text-gray-500 text-sm" id="stat-total-label">收录条目</div>
       </div>
       <div class="bg-white rounded-xl p-4 text-center shadow-sm">
         <div class="text-2xl font-bold gradient-text" id="stat-categories">0</div>
-        <div class="text-gray-500 text-sm" id="stat-categories-label">分类数量</div>
+        <div class="text-gray-500 text-sm" id="stat-categories-label">用途分类</div>
       </div>
       <div class="bg-white rounded-xl p-4 text-center shadow-sm">
         <div class="text-2xl font-bold gradient-text" id="stat-platforms">7</div>
@@ -76,12 +76,19 @@
     <div class="max-w-2xl mx-auto mb-6">
       <div class="relative">
         <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input type="text" id="searchInput" placeholder="搜索 Skills 名称、描述、分类或平台..." class="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 outline-none transition text-sm">
+        <input type="text" id="searchInput" placeholder="搜索名称、描述、类型、用途或平台..." class="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 outline-none transition text-sm">
       </div>
     </div>
 
     <!-- Filters -->
-    <div class="flex flex-wrap gap-2 mb-2 justify-center" id="category-filters"></div>
+    <fieldset class="mb-3">
+      <legend id="category-filter-label" class="w-full text-center text-sm text-gray-600 mb-2">用途</legend>
+      <div class="flex flex-wrap gap-2 justify-center" id="category-filters"></div>
+    </fieldset>
+    <fieldset class="mb-4">
+      <legend id="type-filter-label" class="w-full text-center text-sm text-gray-600 mb-2">类型</legend>
+      <div class="flex flex-wrap gap-2 justify-center" id="type-filters"></div>
+    </fieldset>
 
     <!-- Progress bar -->
     <div class="h-1 rounded-full gradient-bar mb-4 opacity-60"></div>
@@ -110,18 +117,13 @@
     let skills = [];
 
     const categoryLabels = {
-      zh: { collection: 'Skills 合集', devtools: '开发工具', productivity: '效率提升', devops: 'DevOps', data: '数据处理', writing: '写作创作', design: '设计相关' },
-      en: { collection: 'Collections', devtools: 'Dev Tools', productivity: 'Productivity', devops: 'DevOps', data: 'Data Processing', writing: 'Writing', design: 'Design' }
+      zh: { devtools: '开发与测试', productivity: '任务与效率', devops: '部署运维', data: '数据处理', writing: '写作', design: '设计' },
+      en: { devtools: 'Development and Testing', productivity: 'Tasks and Productivity', devops: 'Deployment and Operations', data: 'Data Processing', writing: 'Writing', design: 'Design' }
     };
 
-    const categoryOrder = {
-      collection: 1,
-      devtools: 2,
-      productivity: 3,
-      devops: 4,
-      data: 5,
-      writing: 6,
-      design: 7
+    const typeLabels = {
+      zh: { 'single-skill': '单个 Skill', collection: 'Skills 合集' },
+      en: { 'single-skill': 'Single Skill', collection: 'Skills Collection' }
     };
 
     const platformColors = {
@@ -135,25 +137,27 @@
       all: 'bg-green-100 text-green-700',
     };
 
-    let currentFilter = 'all';
+    const activeFilters = { category: 'all', entryType: 'all' };
     let currentLang = 'zh';
 
     const i18n = {
       zh: {
         subtitle: '精选 AI Agent Skills，让 AI 编程更专业',
-        placeholder: '搜索 Skills 名称、描述、分类或平台...',
+        placeholder: '搜索名称、描述、类型、用途或平台...',
         noResults: '没有找到匹配的 Skills',
-        showing: (c, t) => `显示 ${c} / ${t} 个 Skills`,
+        showing: (count, total) => `显示 ${count} / ${total} 个条目`,
+        all: '全部', useCase: '用途', type: '类型', unspecified: '平台未注明',
         footer: 'Made with ❤️ by',
-        totalLabel: 'Skills 总数', catLabel: '分类数量', platLabel: '支持平台', minStarsLabel: '源码仓库最低星数'
+        totalLabel: '收录条目', catLabel: '用途分类', platLabel: '支持平台', minStarsLabel: '源码仓库最低星数'
       },
       en: {
         subtitle: 'Curated AI Agent Skills for smarter coding',
-        placeholder: 'Search skills by name, description, category, or platform...',
+        placeholder: 'Search by name, description, type, use case, or platform...',
         noResults: 'No skills found matching your search.',
-        showing: (c, t) => `Showing ${c} of ${t} skills`,
+        showing: (count, total) => `Showing ${count} of ${total} entries`,
+        all: 'All', useCase: 'Use case', type: 'Type', unspecified: 'Platform not specified',
         footer: 'Made with ❤️ by',
-        totalLabel: 'Total Skills', catLabel: 'Categories', platLabel: 'Platforms', minStarsLabel: 'Minimum GitHub stars'
+        totalLabel: 'Entries', catLabel: 'Use cases', platLabel: 'Platforms', minStarsLabel: 'Minimum GitHub stars'
       }
     };
 
@@ -192,36 +196,38 @@
       return link;
     }
 
-    function renderCategoryFilters() {
-      const filters = document.getElementById('category-filters');
-      const categories = [...new Set(skills.map(skill => skill.category))]
-        .sort((a, b) => (categoryOrder[a] ?? 99) - (categoryOrder[b] ?? 99));
-      const labels = categoryLabels[currentLang];
-
+    function renderFilterGroup(id, field, labels) {
+      const filters = document.getElementById(id);
+      function updateButtons() {
+        for (const button of filters.children) {
+          const active = button.dataset.filter === activeFilters[field];
+          button.classList.toggle('active', active);
+          button.setAttribute('aria-pressed', String(active));
+        }
+      }
       filters.replaceChildren();
-      ['all', ...categories].forEach(category => {
+      ['all', ...Object.keys(labels)].forEach(value => {
         const btn = document.createElement('button');
+        btn.type = 'button';
         btn.className = 'category-btn px-4 py-2 rounded-lg bg-gray-100 text-sm whitespace-nowrap transition';
-        btn.dataset.filter = category;
-        btn.textContent = category === 'all'
-          ? (currentLang === 'zh' ? '全部' : 'All')
-          : (labels[category] || category);
-        btn.addEventListener('click', () => filterBy(category));
+        btn.dataset.filter = value;
+        btn.textContent = value === 'all' ? i18n[currentLang].all : labels[value];
+        btn.addEventListener('click', () => {
+          activeFilters[field] = value;
+          updateButtons();
+          renderSkills();
+        });
         filters.appendChild(btn);
       });
-
-      filters.querySelectorAll('.category-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.filter === currentFilter);
-      });
+      updateButtons();
     }
 
     function renderSkills() {
       const query = document.getElementById('searchInput').value.toLowerCase();
-      let filtered = skills;
-
-      if (currentFilter !== 'all') {
-        filtered = filtered.filter(s => s.category === currentFilter || s.platform === currentFilter);
-      }
+      let filtered = skills.filter(skill =>
+        (activeFilters.category === 'all' || skill.category === activeFilters.category) &&
+        (activeFilters.entryType === 'all' || skill.entryType === activeFilters.entryType)
+      );
       if (query) {
         filtered = filtered.filter(s =>
           s.name.toLowerCase().includes(query) ||
@@ -229,6 +235,7 @@
           (currentLang === 'zh' ? s.desc : s.descEn).toLowerCase().includes(query) ||
           s.category.toLowerCase().includes(query) ||
           s.platform.toLowerCase().includes(query) ||
+          (typeLabels[currentLang][s.entryType] || '').toLowerCase().includes(query) ||
           (categoryLabels[currentLang][s.category] || '').toLowerCase().includes(query)
         );
       }
@@ -272,14 +279,20 @@
         const footer = document.createElement('div');
         footer.className = 'flex items-center justify-between';
         const tags = document.createElement('div');
-        tags.className = 'flex gap-1.5';
+        tags.className = 'flex flex-wrap gap-1.5';
         const platform = document.createElement('span');
         platform.className = `text-xs px-2 py-0.5 rounded-full ${platClass}`;
-        platform.textContent = skill.platform;
+        platform.textContent = skill.platform === 'unspecified' ? i18n[currentLang].unspecified : skill.platform;
         const category = document.createElement('span');
         category.className = 'text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-500';
         category.textContent = catLabel;
-        tags.append(platform, category);
+        if (typeLabels[currentLang][skill.entryType]) {
+          const type = document.createElement('span');
+          type.className = 'text-xs px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-700';
+          type.textContent = typeLabels[currentLang][skill.entryType];
+          tags.appendChild(type);
+        }
+        tags.append(category, platform);
 
         const external = makeLink(skill.url, 'text-gray-400 hover:text-purple-500 transition', '↗');
         external.setAttribute('aria-label', `${name} external link`);
@@ -290,16 +303,9 @@
       grid.replaceChildren(...cards);
     }
 
-    function filterBy(category) {
-      currentFilter = category;
-      document.querySelectorAll('.category-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.filter === category);
-      });
-      renderSkills();
-    }
-
     function switchLang(lang) {
       currentLang = lang;
+      document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
       document.querySelectorAll('.lang-btn').forEach(btn => {
         if (btn.dataset.lang === lang) {
           btn.classList.add('active');
@@ -318,7 +324,10 @@
       document.getElementById('stat-platforms-label').textContent = i18n[lang].platLabel;
       document.getElementById('stat-min-stars-label').textContent = i18n[lang].minStarsLabel;
 
-      renderCategoryFilters();
+      document.getElementById('category-filter-label').textContent = i18n[lang].useCase;
+      document.getElementById('type-filter-label').textContent = i18n[lang].type;
+      renderFilterGroup('category-filters', 'category', categoryLabels[lang]);
+      renderFilterGroup('type-filters', 'entryType', typeLabels[lang]);
       renderSkills();
     }
 

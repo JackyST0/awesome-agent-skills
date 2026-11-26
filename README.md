@@ -23,13 +23,13 @@ This catalog lists usable Agent Skills and collections from public GitHub reposi
 
 - [Quick Start](#quick-start)
 - [What Are Agent Skills](#what-are-agent-skills)
-- [Skills Collections](#skills-collections)
-- [Development Tools](#development-tools)
-- [Productivity](#productivity)
-- [DevOps](#devops)
-- [Data Processing](#data-processing)
-- [Writing](#writing)
-- [Design](#design)
+- [Skills by Use Case](#skills-by-use-case)
+  - [Development and Testing](#development-and-testing)
+  - [Tasks and Productivity](#tasks-and-productivity)
+  - [Deployment and Operations](#deployment-and-operations)
+  - [Data Processing](#data-processing)
+  - [Writing](#writing)
+  - [Design](#design)
 
 ## Quick Start
 
@@ -102,87 +102,100 @@ Skills work across multiple platforms:
 |OpenCode   |`~/.config/opencode/skills/` |`.opencode/skills/` |
 |OpenClaw   |`~/.openclaw/skills/`        |`skills/`           |
 
-## Skills Collections
+## Skills by Use Case
 
-- [anthropics/skills](https://github.com/anthropics/skills) - 199.1k ⭐ - Anthropic's skills for document processing, design, and other tasks.
-- [microsoft/skills](https://github.com/microsoft/skills) - 3.2k ⭐ - Microsoft's collection of skills for working with Azure SDKs.
-- [microsoft/azure-skills](https://github.com/microsoft/azure-skills) - 1.7k ⭐ - Skills for provisioning, troubleshooting, and operating Azure services.
-- [GitHub Awesome Copilot](https://github.com/github/awesome-copilot/tree/main/skills) - 41.5k ⭐ - Reusable skills for GitHub Copilot, with a separate directory for each skill.
-- [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) - 80.1k ⭐ - Claude Skills collection by Composio.
-- [best-skills](https://github.com/xstongxue/best-skills) - 3.2k ⭐ - High-quality Skills collection for paper writing, dev workflow, and content creation.
-- [SkillKit methodology packs](https://github.com/rohitg00/skillkit/tree/main/packages/core/src/methodology/packs) - 1.6k ⭐ - Skills for debugging, testing, planning, and team handoffs.
-- [Skill Factory collection](https://github.com/alirezarezvani/claude-code-skill-factory/tree/dev/generated-skills) - 912 ⭐ - Ready-to-use skills for AWS architecture, app store optimization, and other workflows.
-- [youtube-skills](https://github.com/ZeroPointRepo/youtube-skills) - 1.2k ⭐ - YouTube transcript, video search, channel and playlist skills for Claude Code, OpenClaw, Hermes Agent, and other agent runtimes.
-- [oh-my-agent](https://github.com/first-fluke/oh-my-agent) - 1.5k ⭐ - 33 skills and 21 workflows kept in one `.agents/skills` folder and symlinked per skill into Claude Code, Codex, Cursor and other runtimes; `oma link --dry-run` previews what it will write.
-- [sno-station-skills](https://github.com/sno-ai/sno-station-skills) - 871 ⭐ - Skills for Claude Code and Codex: cross-vendor peer review, handoff when one agent hits its usage limit, delegation and reporting.
-- [laolaoshiren/claude-code-skills-zh](https://github.com/laolaoshiren/claude-code-skills-zh) - 927 ⭐ - Curated Claude Code skills collection for Chinese developers, with 438+ curated skills and 20 original skills.
-- [nexscope-ai/eCommerce-Skills](https://github.com/nexscope-ai/eCommerce-Skills) - 1.5k ⭐ - E-commerce skills for AI agents covering product research, marketing, and operations across Amazon, Shopify, TikTok Shop, and more.
-- [nexscope-ai/Amazon-Skills](https://github.com/nexscope-ai/Amazon-Skills) - 886 ⭐ - Free Amazon seller skills for keyword research, competitor analysis, listing audits, and more.
+Choose a section by what you want to do. The **Type** column distinguishes a single skill from a collection; each entry appears once.
 
-## Development Tools
+### Development and Testing
 
-- [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) - 119.8k ⭐ - Production-grade engineering skills and slash-command workflows for AI coding agents.
-- [trailofbits/skills](https://github.com/trailofbits/skills) - 8.4k ⭐ - Trail of Bits security research and audit Skills.
-- [playwright-skill](https://github.com/lackeyjb/playwright-skill) - 3.3k ⭐ - Playwright browser automation testing Skill.
-- [markstream-install](https://github.com/Simon-He95/markstream-vue/tree/main/.agents/skills/markstream-install) - 3.1k ⭐ - Install streaming Markdown renderers across Vue, React, Svelte, Angular, and Vue 2 projects.
-- [skill-codex](https://github.com/skills-directory/skill-codex) - 1.5k ⭐ - Delegate tasks to Codex Skill.
-- [claude-code-skills](https://github.com/daymade/claude-code-skills) - 1.5k ⭐ - Professional Skills marketplace.
-- [elastic/agent-skills](https://github.com/elastic/agent-skills) - 613 ⭐ - Official Elastic skills for Elasticsearch, Kibana, Observability, and Security workflows.
-- [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) - 34.8k ⭐ - Vercel React/Web design best practices Skills.
-- [antfu/skills](https://github.com/antfu/skills) - 6.1k ⭐ - Vue/Vite/Vitest development Skills.
-- [Supabase Agent Skills](https://github.com/supabase/agent-skills) - 3.1k ⭐ - PostgreSQL best practices Skill by Supabase.
-- [Expo Skills](https://github.com/expo/skills) - 4.2k ⭐ - Expo/React Native development Skills.
-- [browser-use/browser-use](https://github.com/browser-use/browser-use/tree/main/skills/browser-use) - 121.8k ⭐ - Browser automation Skill.
-- [code-review](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/code-review) - 670 ⭐ - Smart code review example Skill.
-- [git-commit](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/git-commit) - 670 ⭐ - Git commit message generator Skill.
-- [unit-test-generator](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/unit-test-generator) - 670 ⭐ - Unit test auto-generator Skill.
-- [api-doc-generator](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/api-doc-generator) - 670 ⭐ - API documentation generator Skill.
-- [debug-helper](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/debug-helper) - 670 ⭐ - Code debugging assistant Skill.
-- [birdview](https://github.com/Qiuner/birdview) - 704 ⭐ - Generate evidence-linked architecture and constraint maps, review planned change scope before implementation, and record verification results.
-- [task-observer](https://github.com/rebelytics/one-skill-to-rule-them-all) - 4.0k ⭐ - Watches work sessions, logs where skills fail, and turns the corrections into proposed skill improvements.
-- [reverse-engineer-anything](https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything) - 474.4k ⭐ - Inspect shipped binaries and JavaScript/Electron apps using REA CLI/MCP evidence; deep native analysis needs separately installed Hopper, Ghidra, or IDA.
+| Name | Type | Description | Platforms | Stars | Source |
+| --- | --- | --- | --- | --- | --- |
+| microsoft/skills | Skills Collection | Microsoft's collection of skills for working with Azure SDKs. | Claude/Copilot/OpenCode | 3.2k | [GitHub](https://github.com/microsoft/skills) |
+| GitHub Awesome Copilot | Skills Collection | Reusable skills for GitHub Copilot, with a separate directory for each skill. | Copilot | 41.5k | [GitHub](https://github.com/github/awesome-copilot/tree/main/skills) |
+| SkillKit methodology packs | Skills Collection | Skills for debugging, testing, planning, and team handoffs. | — | 1.6k | [GitHub](https://github.com/rohitg00/skillkit/tree/main/packages/core/src/methodology/packs) |
+| oh-my-agent | Skills Collection | 33 skills and 21 workflows kept in one `.agents/skills` folder and symlinked per skill into Claude Code, Codex, Cursor and other runtimes; `oma link --dry-run` previews what it will write. | Cursor/Claude/Codex/OpenCode | 1.5k | [GitHub](https://github.com/first-fluke/oh-my-agent) |
+| addyosmani/agent-skills | Skills Collection | Production-grade engineering skills and slash-command workflows for AI coding agents. | All | 119.8k | [GitHub](https://github.com/addyosmani/agent-skills) |
+| trailofbits/skills | Skills Collection | Trail of Bits security research and audit Skills. | Claude | 8.4k | [GitHub](https://github.com/trailofbits/skills) |
+| playwright-skill | Single Skill | Playwright browser automation testing Skill. | Claude | 3.3k | [GitHub](https://github.com/lackeyjb/playwright-skill) |
+| markstream-install | Single Skill | Install streaming Markdown renderers across Vue, React, Svelte, Angular, and Vue 2 projects. | All | 3.1k | [GitHub](https://github.com/Simon-He95/markstream-vue/tree/main/.agents/skills/markstream-install) |
+| skill-codex | Single Skill | Delegate tasks to Codex Skill. | Claude | 1.5k | [GitHub](https://github.com/skills-directory/skill-codex) |
+| claude-code-skills | Skills Collection | Professional Skills marketplace. | Claude | 1.5k | [GitHub](https://github.com/daymade/claude-code-skills) |
+| elastic/agent-skills | Skills Collection | Official Elastic skills for Elasticsearch, Kibana, Observability, and Security workflows. | All | 613 | [GitHub](https://github.com/elastic/agent-skills) |
+| vercel-labs/agent-skills | Skills Collection | Vercel React/Web design best practices Skills. | All | 34.8k | [GitHub](https://github.com/vercel-labs/agent-skills) |
+| antfu/skills | Skills Collection | Vue/Vite/Vitest development Skills. | All | 6.1k | [GitHub](https://github.com/antfu/skills) |
+| Supabase Agent Skills | Skills Collection | Skills for working with Supabase and PostgreSQL. | All | 3.1k | [GitHub](https://github.com/supabase/agent-skills) |
+| Expo Skills | Skills Collection | Expo/React Native development Skills. | All | 4.2k | [GitHub](https://github.com/expo/skills) |
+| browser-use/browser-use | Single Skill | Browser automation Skill. | All | 121.8k | [GitHub](https://github.com/browser-use/browser-use/tree/main/skills/browser-use) |
+| code-review | Single Skill | Smart code review example Skill. | All | 670 | [GitHub](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/code-review) |
+| git-commit | Single Skill | Git commit message generator Skill. | All | 670 | [GitHub](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/git-commit) |
+| unit-test-generator | Single Skill | Unit test auto-generator Skill. | All | 670 | [GitHub](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/unit-test-generator) |
+| api-doc-generator | Single Skill | API documentation generator Skill. | All | 670 | [GitHub](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/api-doc-generator) |
+| debug-helper | Single Skill | Code debugging assistant Skill. | All | 670 | [GitHub](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/debug-helper) |
+| birdview | Single Skill | Generate evidence-linked architecture and constraint maps, review planned change scope before implementation, and record verification results. | Claude/Codex | 704 | [GitHub](https://github.com/Qiuner/birdview) |
+| task-observer | Single Skill | Watches work sessions, logs where skills fail, and turns the corrections into proposed skill improvements. | Claude | 4.0k | [GitHub](https://github.com/rebelytics/one-skill-to-rule-them-all) |
+| reverse-engineer-anything | Single Skill | Inspect shipped binaries and JavaScript/Electron apps using REA CLI/MCP evidence; deep native analysis needs separately installed Hopper, Ghidra, or IDA. | Codex | 474.4k | [GitHub](https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything) |
+| claude-code-workflows | Skills Collection | Production-grade dev workflows with quality checks. | Claude | 720 | [GitHub](https://github.com/shinpr/claude-code-workflows) |
+| obra/superpowers | Skills Collection | Complete dev workflow (Debug/TDD/Code Review/Planning). | All | 324.3k | [GitHub](https://github.com/obra/superpowers) |
+| context-engineering | Skills Collection | Context engineering and multi-Agent architecture. | All | 18.4k | [GitHub](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) |
 
-## Productivity
+### Tasks and Productivity
 
-- [claude-code-workflows](https://github.com/shinpr/claude-code-workflows) - 720 ⭐ - Production-grade dev workflows with quality checks.
-- [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) - 30.3k ⭐ - 20+ productivity tools with 8 expert Agents.
-- [obra/superpowers](https://github.com/obra/superpowers) - 324.3k ⭐ - Complete dev workflow (Debug/TDD/Code Review/Planning).
-- [planning-with-files](https://github.com/OthmanAdi/planning-with-files) - 28.2k ⭐ - Persistent file-based planning with task plans, findings, progress tracking, and session recovery for long-running agent work.
-- [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) - 62.1k ⭐ - Marketing Skills (SEO/Copywriting/CRO/Ads).
-- [changelog-generator](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/changelog-generator) - 80.1k ⭐ - Generate changelogs from Git commits.
-- [new-term-radar](https://github.com/zhuyansen/new-term-radar) - 2.2k ⭐ - Spots new AI model, product and repo names on X, Hugging Face, GitHub and sitemaps, then ranks the search terms behind them by Google Ads volume and DataForSEO Trends (an estimate of Google search interest). Three skills and an MCP server; needs an AIsa API key, and an optional GoAnyAPI key adds Google Trends related queries and country-level trend series.
-- [answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) - 6.6k ⭐ - Agent skill that writes the answer as a Markdown draft and renders one offline HTML page, using about 1/8 of the output tokens.
-- [career-ops](https://github.com/career-ops-hq/career-ops) - 84.3k ⭐ - Open-source AI job search agent for Claude Code, Codex and OpenCode: scans company career pages, scores each job posting 1-5 against your CV, tailors an ATS-friendly resume and tracks applications; you submit every application yourself. No telemetry; your CV goes only to the AI provider you choose. [Website](https://career-ops.org)
-- [last30days](https://github.com/mvanhorn/last30days-skill) - 72.7k ⭐ - Researches any topic across Reddit, X, YouTube, TikTok, Hacker News, Polymarket, GitHub, and the web from the last 30 days, ranks results by real engagement (upvotes, likes, prediction-market odds), and writes one cited brief. Reddit, Hacker News, Polymarket and GitHub need no setup.
+| Name | Type | Description | Platforms | Stars | Source |
+| --- | --- | --- | --- | --- | --- |
+| anthropics/skills | Skills Collection | Anthropic's skills for document processing, design, and other tasks. | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills) |
+| ComposioHQ/awesome-claude-skills | Skills Collection | Claude Skills collection by Composio. | Cursor/Claude/Codex | 80.1k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
+| best-skills | Skills Collection | High-quality Skills collection for paper writing, dev workflow, and content creation. | Cursor/Claude/Codex/OpenClaw | 3.2k | [GitHub](https://github.com/xstongxue/best-skills) |
+| Skill Factory collection | Skills Collection | Ready-to-use skills for AWS architecture, app store optimization, and other workflows. | Claude | 912 | [GitHub](https://github.com/alirezarezvani/claude-code-skill-factory/tree/dev/generated-skills) |
+| sno-station-skills | Skills Collection | Skills for Claude Code and Codex: cross-vendor peer review, handoff when one agent hits its usage limit, delegation and reporting. | Cursor/Claude/Codex/OpenClaw | 871 | [GitHub](https://github.com/sno-ai/sno-station-skills) |
+| laolaoshiren/claude-code-skills-zh | Skills Collection | Curated Claude Code skills collection for Chinese developers, with 438+ curated skills and 20 original skills. | Cursor/Claude/Codex | 927 | [GitHub](https://github.com/laolaoshiren/claude-code-skills-zh) |
+| nexscope-ai/eCommerce-Skills | Skills Collection | E-commerce skills for AI agents covering product research, marketing, and operations across Amazon, Shopify, TikTok Shop, and more. | All | 1.5k | [GitHub](https://github.com/nexscope-ai/eCommerce-Skills) |
+| nexscope-ai/Amazon-Skills | Skills Collection | Free Amazon seller skills for keyword research, competitor analysis, listing audits, and more. | All | 886 | [GitHub](https://github.com/nexscope-ai/Amazon-Skills) |
+| alirezarezvani/claude-skills | Skills Collection | 20+ productivity tools with 8 expert Agents. | Claude | 30.3k | [GitHub](https://github.com/alirezarezvani/claude-skills) |
+| planning-with-files | Single Skill | Persistent file-based planning with task plans, findings, progress tracking, and session recovery for long-running agent work. | All | 28.2k | [GitHub](https://github.com/OthmanAdi/planning-with-files) |
+| coreyhaines31/marketingskills | Skills Collection | Marketing Skills (SEO/Copywriting/CRO/Ads). | All | 62.1k | [GitHub](https://github.com/coreyhaines31/marketingskills) |
+| changelog-generator | Single Skill | Generate changelogs from Git commits. | Claude | 80.1k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/changelog-generator) |
+| new-term-radar | Skills Collection | Spots new AI model, product and repo names on X, Hugging Face, GitHub and sitemaps, then ranks the search terms behind them by Google Ads volume and DataForSEO Trends (an estimate of Google search interest). Three skills and an MCP server; needs an AIsa API key, and an optional GoAnyAPI key adds Google Trends related queries and country-level trend series. | All | 2.2k | [GitHub](https://github.com/zhuyansen/new-term-radar) |
+| answer-me-with-html | Single Skill | Agent skill that writes the answer as a Markdown draft and renders one offline HTML page, using about 1/8 of the output tokens. | Cursor/Claude/Codex/OpenCode | 6.6k | [GitHub](https://github.com/QingYunA/answer-me-with-html) |
+| career-ops | Single Skill | Open-source AI job search agent for Claude Code, Codex and OpenCode: scans company career pages, scores each job posting 1-5 against your CV, tailors an ATS-friendly resume and tracks applications; you submit every application yourself. No telemetry; your CV goes only to the AI provider you choose. [Website](https://career-ops.org) | Claude/Codex/OpenCode | 84.3k | [GitHub](https://github.com/career-ops-hq/career-ops) |
+| last30days | Single Skill | Researches any topic across Reddit, X, YouTube, TikTok, Hacker News, Polymarket, GitHub, and the web from the last 30 days, ranks results by real engagement (upvotes, likes, prediction-market odds), and writes one cited brief. Reddit, Hacker News, Polymarket and GitHub need no setup. | All | 72.7k | [GitHub](https://github.com/mvanhorn/last30days-skill) |
 
-## DevOps
+### Deployment and Operations
 
-- [claudekit-skills](https://github.com/mrgoonie/claudekit-skills) - 2.2k ⭐ - Docker/GCP/Cloudflare deployment and management.
+| Name | Type | Description | Platforms | Stars | Source |
+| --- | --- | --- | --- | --- | --- |
+| microsoft/azure-skills | Skills Collection | Skills for provisioning, troubleshooting, and operating Azure services. | Cursor/Claude/Copilot/Codex/OpenCode | 1.7k | [GitHub](https://github.com/microsoft/azure-skills) |
+| claudekit-skills | Skills Collection | Docker/GCP/Cloudflare deployment and management. | Claude | 2.2k | [GitHub](https://github.com/mrgoonie/claudekit-skills) |
 
-## Data Processing
+### Data Processing
 
-- [context-engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) - 18.4k ⭐ - Context engineering and multi-Agent architecture.
-- [kordoc](https://github.com/chrisryugj/kordoc/tree/main/plugins/kordoc/skills/kordoc) - 3.1k ⭐ - Korean document (HWP/HWPX/PDF) to Markdown conversion, form filling, and HWPX generation Skill.
-- [jiangshan-atlas](https://github.com/DeanChensj/jiangshan-map/tree/main/skills/jiangshan-atlas) - 8.9k ⭐ - Interactive Chinese historical atlas Skill for locating ancient places, classical poems, and figure trajectories.
-- [ava](https://github.com/antvis/AVA/tree/ai/skills/ava) - 1.7k ⭐ - Analyze files and databases, reuse business definitions, verify calculations, and generate interactive charts.
+| Name | Type | Description | Platforms | Stars | Source |
+| --- | --- | --- | --- | --- | --- |
+| youtube-skills | Skills Collection | YouTube transcript, video search, channel and playlist skills for Claude Code, OpenClaw, Hermes Agent, and other agent runtimes. | Cursor/Claude/Codex/OpenClaw | 1.2k | [GitHub](https://github.com/ZeroPointRepo/youtube-skills) |
+| kordoc | Single Skill | Korean document (HWP/HWPX/PDF) to Markdown conversion, form filling, and HWPX generation Skill. | Claude | 3.1k | [GitHub](https://github.com/chrisryugj/kordoc/tree/main/plugins/kordoc/skills/kordoc) |
+| jiangshan-atlas | Single Skill | Interactive Chinese historical atlas Skill for locating ancient places, classical poems, and figure trajectories. | All | 8.9k | [GitHub](https://github.com/DeanChensj/jiangshan-map/tree/main/skills/jiangshan-atlas) |
+| ava | Single Skill | Analyze files and databases, reuse business definitions, verify calculations, and generate interactive charts. | Claude/Codex | 1.7k | [GitHub](https://github.com/antvis/AVA/tree/ai/skills/ava) |
 
-## Writing
+### Writing
 
-- [doc-coauthoring](https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring) - 199.1k ⭐ - Document co-authoring Skill.
-- [internal-comms](https://github.com/anthropics/skills/tree/main/skills/internal-comms) - 199.1k ⭐ - Internal communications generation Skill.
-- [docx](https://github.com/anthropics/skills/tree/main/skills/docx) - 199.1k ⭐ - Word document processing Skill.
-- [pdf](https://github.com/anthropics/skills/tree/main/skills/pdf) - 199.1k ⭐ - Portable document format processing Skill.
-- [pptx](https://github.com/anthropics/skills/tree/main/skills/pptx) - 199.1k ⭐ - PowerPoint presentation generator Skill.
-- [xlsx](https://github.com/anthropics/skills/tree/main/skills/xlsx) - 199.1k ⭐ - Excel spreadsheet processing Skill.
+| Name | Type | Description | Platforms | Stars | Source |
+| --- | --- | --- | --- | --- | --- |
+| doc-coauthoring | Single Skill | Document co-authoring Skill. | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring) |
+| internal-comms | Single Skill | Internal communications generation Skill. | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/internal-comms) |
+| docx | Single Skill | Word document processing Skill. | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/docx) |
+| pdf | Single Skill | Portable document format processing Skill. | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/pdf) |
+| pptx | Single Skill | PowerPoint presentation generator Skill. | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/pptx) |
+| xlsx | Single Skill | Excel spreadsheet processing Skill. | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/xlsx) |
 
-## Design
+### Design
 
-- [frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design) - 199.1k ⭐ - Frontend UI design Skill.
-- [brand-guidelines](https://github.com/anthropics/skills/tree/main/skills/brand-guidelines) - 199.1k ⭐ - Brand design guidelines Skill.
-- [canvas-design](https://github.com/anthropics/skills/tree/main/skills/canvas-design) - 199.1k ⭐ - Canvas design Skill.
-- [theme-factory](https://github.com/anthropics/skills/tree/main/skills/theme-factory) - 199.1k ⭐ - Theme style factory Skill.
-- [algorithmic-art](https://github.com/anthropics/skills/tree/main/skills/algorithmic-art) - 199.1k ⭐ - Algorithmic art generation Skill.
-- [slack-gif-creator](https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator) - 199.1k ⭐ - Slack GIF creator Skill.
+| Name | Type | Description | Platforms | Stars | Source |
+| --- | --- | --- | --- | --- | --- |
+| frontend-design | Single Skill | Frontend UI design Skill. | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/frontend-design) |
+| brand-guidelines | Single Skill | Brand design guidelines Skill. | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/brand-guidelines) |
+| canvas-design | Single Skill | Canvas design Skill. | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/canvas-design) |
+| theme-factory | Single Skill | Theme style factory Skill. | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/theme-factory) |
+| algorithmic-art | Single Skill | Algorithmic art generation Skill. | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/algorithmic-art) |
+| slack-gif-creator | Single Skill | Slack GIF creator Skill. | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator) |
 
 ## Contributing
 

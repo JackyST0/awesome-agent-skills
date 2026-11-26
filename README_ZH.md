@@ -80,7 +80,7 @@ git clone https://github.com/anthropics/skills.git ~/.cursor/skills/anthropics
 
 ## 在线搜索
 
-不想翻阅长列表？试试 **[在线搜索工具](https://jackyst0.github.io/awesome-agent-skills/)**，支持按名称、描述、平台快速筛选！
+不想翻阅长列表？试试 **[在线搜索工具](https://jackyst0.github.io/awesome-agent-skills/)**，可按用途和类型组合筛选，也可搜索名称、描述或平台。
 
 ---
 
@@ -88,13 +88,13 @@ git clone https://github.com/anthropics/skills.git ~/.cursor/skills/anthropics
 
 - [什么是 Agent Skills](#什么是-agent-skills)
 - [如何使用](#如何使用)
-- [Skills 合集](#skills-合集)
-- [开发工具](#开发工具)
-- [效率提升](#效率提升)
-- [DevOps](#devops)
-- [数据处理](#数据处理)
-- [写作创作](#写作创作)
-- [设计相关](#设计相关)
+- [按用途浏览 Skills](#按用途浏览-skills)
+  - [开发与测试](#开发与测试)
+  - [任务与效率](#任务与效率)
+  - [部署运维](#部署运维)
+  - [数据处理](#数据处理)
+  - [写作](#写作)
+  - [设计](#设计)
 
 ## 什么是 Agent Skills
 
@@ -145,109 +145,108 @@ git clone https://github.com/example/my-skill.git ~/.cursor/skills/my-skill
 > 
 > 📖 **详细指南**：查看 [如何使用 Agent Skills](docs/how-to-use.md)
 
-## Skills 合集
+## 按用途浏览 Skills
 
-| 名称 | 描述 | Stars | 链接 |
-|------|------|-------|------|
-| anthropics/skills | Anthropic 的文档处理、设计等 Skills | 199.1k | [GitHub](https://github.com/anthropics/skills) |
-| microsoft/skills | 微软为使用 Azure SDK 提供的 Skills 合集 | 3.2k | [GitHub](https://github.com/microsoft/skills) |
-| microsoft/azure-skills | 用于 Azure 服务部署、故障排查与运维的 Skills | 1.7k | [GitHub](https://github.com/microsoft/azure-skills) |
-| github/awesome-copilot | GitHub Copilot 的可复用 Skills，每个 Skill 都有独立目录 | 41.5k | [GitHub](https://github.com/github/awesome-copilot/tree/main/skills) |
-| ComposioHQ/awesome-claude-skills | ⭐ Composio 维护的 Claude Skills 合集 | 80.1k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
-| best-skills | 通用高质量 Skills 合集，涵盖论文写作、开发流程、自媒体创作等 | 3.2k | [GitHub](https://github.com/xstongxue/best-skills) |
-| SkillKit 方法集 | 用于调试、测试、规划和团队交接的 Skills | 1.6k | [GitHub](https://github.com/rohitg00/skillkit/tree/main/packages/core/src/methodology/packs) |
-| Skill Factory 合集 | 可直接用于 AWS 架构设计、应用商店优化等任务的 Skills | 912 | [GitHub](https://github.com/alirezarezvani/claude-code-skill-factory/tree/dev/generated-skills) |
-| youtube-skills | 面向 YouTube 的转录、视频搜索、频道浏览与播放列表 Skills，适用于 Claude Code、OpenClaw、Hermes Agent 等 Agent 运行时 | 1.2k | [GitHub](https://github.com/ZeroPointRepo/youtube-skills) |
-| oh-my-agent | 33 个技能和 21 个工作流，统一放在 `.agents/skills`，按条目软链接到 Claude Code、Codex、Cursor 等工具的技能目录；`oma link --dry-run` 先预览要写的文件 | 1.5k | [GitHub](https://github.com/first-fluke/oh-my-agent) |
-| sno-station-skills | 面向 Claude Code 与 Codex 的 Skills 合集：两家模型互相审查、一个 Agent 用到额度上限时交给另一个接着做，以及任务委派与汇报 | 871 | [GitHub](https://github.com/sno-ai/sno-station-skills) |
-| laolaoshiren/claude-code-skills-zh | 面向中文开发者的 Claude Code Skills 精选集，438+ 精选 + 20 原创技能 | 927 | [GitHub](https://github.com/laolaoshiren/claude-code-skills-zh) |
-| nexscope-ai/eCommerce-Skills | 面向 Amazon、Shopify、TikTok Shop 等平台的电商 Agent Skills，覆盖选品、营销与运营 | 1.5k | [GitHub](https://github.com/nexscope-ai/eCommerce-Skills) |
-| nexscope-ai/Amazon-Skills | 面向亚马逊卖家的免费 Agent Skills，覆盖关键词研究、竞品分析与 Listing 诊断 | 886 | [GitHub](https://github.com/nexscope-ai/Amazon-Skills) |
+按想完成的任务找到对应栏目。「类型」列区分单个 Skill 和 Skills 合集，每个条目只列一次。
 
-## 开发工具
+### 开发与测试
 
-| 名称 | 描述 | 平台 | 链接 |
-|------|------|------|------|
-| addyosmani/agent-skills | 面向 AI 编程代理的生产级工程技能与斜杠命令工作流 | All | [GitHub](https://github.com/addyosmani/agent-skills) |
-| trailofbits/skills | ⭐ Trail of Bits 安全研究和审计 Skills | Claude | [GitHub](https://github.com/trailofbits/skills) |
-| playwright-skill | Playwright 浏览器自动化测试 Skill | Claude | [GitHub](https://github.com/lackeyjb/playwright-skill) |
-| markstream-install | 为 Vue、React、Svelte、Angular 和 Vue 2 项目安装流式 Markdown 渲染器 | All | [GitHub](https://github.com/Simon-He95/markstream-vue/tree/main/.agents/skills/markstream-install) |
-| skill-codex | 将任务委派给 Codex 的 Skill | Claude | [GitHub](https://github.com/skills-directory/skill-codex) |
-| claude-code-skills | 专业级 Skills 市场 | Claude | [GitHub](https://github.com/daymade/claude-code-skills) |
-| elastic/agent-skills | Elastic 官方 Skills，覆盖 Elasticsearch、Kibana、可观测性与安全工作流 | All | [GitHub](https://github.com/elastic/agent-skills) |
-| vercel-labs/agent-skills | ⭐ Vercel React/Web 设计最佳实践 Skills（34.8k ⭐） | All | [GitHub](https://github.com/vercel-labs/agent-skills) |
-| antfu/skills | ⭐ Vue/Vite/Vitest 开发 Skills（6.1k ⭐） | All | [GitHub](https://github.com/antfu/skills) |
-| supabase/agent-skills | ⭐ Supabase Postgres 最佳实践 Skill（3.1k ⭐） | All | [GitHub](https://github.com/supabase/agent-skills) |
-| expo/skills | ⭐ Expo/React Native 开发 Skills（4.2k ⭐） | All | [GitHub](https://github.com/expo/skills) |
-| browser-use/browser-use | 浏览器自动化 Skill（121.8k ⭐） | All | [GitHub](https://github.com/browser-use/browser-use/tree/main/skills/browser-use) |
-| code-review | 智能代码审查示例 Skill | All | [示例](examples/code-review/) |
-| git-commit | Git 提交信息生成示例 Skill | All | [示例](examples/git-commit/) |
-| unit-test-generator | 单元测试自动生成 Skill | All | [示例](examples/unit-test-generator/) |
-| api-doc-generator | API 文档生成 Skill | All | [示例](examples/api-doc-generator/) |
-| debug-helper | 代码调试助手 Skill | All | [示例](examples/debug-helper/) |
-| birdview | 根据源码生成带证据的架构与约束视图，在实现前审查修改范围，并记录实际验证结果 | Codex/Claude | [GitHub](https://github.com/Qiuner/birdview) |
-| task-observer | 观察工作会话，记录 Skills 失效之处，并将修正转化为 Skills 改进建议 | Claude | [GitHub](https://github.com/rebelytics/one-skill-to-rule-them-all) |
-| reverse-engineer-anything | 用 REA CLI/MCP 分析二进制与 JavaScript/Electron 应用并保留证据；原生深度分析需自备 Hopper、Ghidra 或 IDA | Codex | [GitHub](https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything) |
+| 名称 | 类型 | 描述 | 平台 | Stars | 源码 |
+| --- | --- | --- | --- | --- | --- |
+| microsoft/skills | Skills 合集 | 微软为使用 Azure SDK 提供的 Skills 合集 | Claude/Copilot/OpenCode | 3.2k | [GitHub](https://github.com/microsoft/skills) |
+| github/awesome-copilot | Skills 合集 | GitHub Copilot 的可复用 Skills，每个 Skill 都有独立目录 | Copilot | 41.5k | [GitHub](https://github.com/github/awesome-copilot/tree/main/skills) |
+| SkillKit 方法集 | Skills 合集 | 用于调试、测试、规划和团队交接的 Skills | — | 1.6k | [GitHub](https://github.com/rohitg00/skillkit/tree/main/packages/core/src/methodology/packs) |
+| oh-my-agent | Skills 合集 | 33 个技能和 21 个工作流，统一放在 `.agents/skills`，按条目软链接到 Claude Code、Codex、Cursor 等工具的技能目录；`oma link --dry-run` 先预览要写的文件 | Cursor/Claude/Codex/OpenCode | 1.5k | [GitHub](https://github.com/first-fluke/oh-my-agent) |
+| addyosmani/agent-skills | Skills 合集 | 面向 AI 编程代理的生产级工程技能与斜杠命令工作流 | All | 119.8k | [GitHub](https://github.com/addyosmani/agent-skills) |
+| trailofbits/skills | Skills 合集 | Trail of Bits 安全研究和审计 Skills | Claude | 8.4k | [GitHub](https://github.com/trailofbits/skills) |
+| playwright-skill | 单个 Skill | Playwright 浏览器自动化测试 Skill | Claude | 3.3k | [GitHub](https://github.com/lackeyjb/playwright-skill) |
+| markstream-install | 单个 Skill | 为 Vue、React、Svelte、Angular 和 Vue 2 项目安装流式 Markdown 渲染器 | All | 3.1k | [GitHub](https://github.com/Simon-He95/markstream-vue/tree/main/.agents/skills/markstream-install) |
+| skill-codex | 单个 Skill | 将任务委派给 Codex 的 Skill | Claude | 1.5k | [GitHub](https://github.com/skills-directory/skill-codex) |
+| claude-code-skills | Skills 合集 | 专业级 Skills 市场 | Claude | 1.5k | [GitHub](https://github.com/daymade/claude-code-skills) |
+| elastic/agent-skills | Skills 合集 | Elastic 官方 Skills，覆盖 Elasticsearch、Kibana、可观测性与安全工作流 | All | 613 | [GitHub](https://github.com/elastic/agent-skills) |
+| vercel-labs/agent-skills | Skills 合集 | Vercel React/Web 设计最佳实践 Skills | All | 34.8k | [GitHub](https://github.com/vercel-labs/agent-skills) |
+| antfu/skills | Skills 合集 | Vue/Vite/Vitest 开发 Skills | All | 6.1k | [GitHub](https://github.com/antfu/skills) |
+| supabase/agent-skills | Skills 合集 | 用于 Supabase 开发和 PostgreSQL 最佳实践的 Skills | All | 3.1k | [GitHub](https://github.com/supabase/agent-skills) |
+| expo/skills | Skills 合集 | Expo/React Native 开发 Skills | All | 4.2k | [GitHub](https://github.com/expo/skills) |
+| browser-use/browser-use | 单个 Skill | 浏览器自动化 Skill | All | 121.8k | [GitHub](https://github.com/browser-use/browser-use/tree/main/skills/browser-use) |
+| code-review | 单个 Skill | 智能代码审查示例 Skill | All | 670 | [GitHub](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/code-review) |
+| git-commit | 单个 Skill | Git 提交信息生成示例 Skill | All | 670 | [GitHub](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/git-commit) |
+| unit-test-generator | 单个 Skill | 单元测试自动生成 Skill | All | 670 | [GitHub](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/unit-test-generator) |
+| api-doc-generator | 单个 Skill | API 文档生成 Skill | All | 670 | [GitHub](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/api-doc-generator) |
+| debug-helper | 单个 Skill | 代码调试助手 Skill | All | 670 | [GitHub](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/debug-helper) |
+| birdview | 单个 Skill | 根据源码生成带证据的架构与约束视图，在实现前审查修改范围，并记录实际验证结果 | Claude/Codex | 704 | [GitHub](https://github.com/Qiuner/birdview) |
+| task-observer | 单个 Skill | 观察工作会话，记录 Skills 失效之处，并将修正转化为 Skills 改进建议 | Claude | 4.0k | [GitHub](https://github.com/rebelytics/one-skill-to-rule-them-all) |
+| reverse-engineer-anything | 单个 Skill | 用 REA CLI/MCP 分析二进制与 JavaScript/Electron 应用并保留证据；原生深度分析需自备 Hopper、Ghidra 或 IDA | Codex | 474.4k | [GitHub](https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything) |
+| claude-code-workflows | Skills 合集 | 生产级开发工作流，自动化质量检查 | Claude | 720 | [GitHub](https://github.com/shinpr/claude-code-workflows) |
+| obra/superpowers | Skills 合集 | 完整开发工作流（调试/TDD/代码审查/计划） | All | 324.3k | [GitHub](https://github.com/obra/superpowers) |
+| context-engineering | Skills 合集 | 上下文工程和多 Agent 架构 Skills | All | 18.4k | [GitHub](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) |
 
-## 效率提升
+### 任务与效率
 
-| 名称 | 描述 | 平台 | 链接 |
-|------|------|------|------|
-| claude-code-workflows | 生产级开发工作流，自动化质量检查 | Claude | [GitHub](https://github.com/shinpr/claude-code-workflows) |
-| alirezarezvani/claude-skills | 20+ 生产力工具，含 8 个专家 Agent | Claude | [GitHub](https://github.com/alirezarezvani/claude-skills) |
-| obra/superpowers | ⭐ 完整开发工作流（调试/TDD/代码审查/计划）（324.3k ⭐） | All | [GitHub](https://github.com/obra/superpowers) |
-| planning-with-files | 基于文件的持久化规划，包含任务计划、研究发现、进度跟踪和会话恢复 | All | [GitHub](https://github.com/OthmanAdi/planning-with-files) |
-| coreyhaines31/marketingskills | ⭐ 营销 Skills（SEO/文案/CRO/广告）（62.1k ⭐） | All | [GitHub](https://github.com/coreyhaines31/marketingskills) |
-| changelog-generator | 从 Git 提交自动生成 Changelog | Claude | [ComposioHQ](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/changelog-generator) |
-| new-term-radar | 发现 X、Hugging Face、GitHub 和 sitemap 上刚出现的 AI 模型、产品和仓库名，用 Google Ads 搜索量和 DataForSEO Trends（对 Google 搜索热度的估算）给背后的搜索词排优先级。3 个 Skill 和一个 MCP 服务器；需要 AIsa API key，可选的 GoAnyAPI key 会加上 Google Trends 相关搜索和分国家的趋势 | All | [GitHub](https://github.com/zhuyansen/new-term-radar) |
-| answer-me-with-html | 回答难题时输出一页可离线打开的 HTML：模型只写 Markdown 草稿，由内置 CLI 渲染 | Claude/Codex/Cursor/OpenCode | [GitHub](https://github.com/QingYunA/answer-me-with-html) |
-| career-ops | 开源的 AI 求职智能体：扫描公司招聘页面，对照你的简历为每个职位打 1-5 分，定制 ATS 友好的简历并跟踪申请；每份申请都由你自己提交。无遥测，简历只发送给你选择的 AI 服务。 | Claude/Codex/OpenCode | [GitHub](https://github.com/career-ops-hq/career-ops) |
-| last30days | 调研任意话题在过去 30 天内的 Reddit、X、YouTube、TikTok、Hacker News、Polymarket、GitHub 和网页讨论，按真实互动数据（点赞、投票、预测市场赔率）排序，生成一份带引用的简报。Reddit、Hacker News、Polymarket 和 GitHub 无需配置 | All | [GitHub](https://github.com/mvanhorn/last30days-skill) |
+| 名称 | 类型 | 描述 | 平台 | Stars | 源码 |
+| --- | --- | --- | --- | --- | --- |
+| anthropics/skills | Skills 合集 | Anthropic 的文档处理、设计等 Skills | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills) |
+| ComposioHQ/awesome-claude-skills | Skills 合集 | Composio 维护的 Claude Skills 合集 | Cursor/Claude/Codex | 80.1k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills) |
+| best-skills | Skills 合集 | 通用高质量 Skills 合集，涵盖论文写作、开发流程、自媒体创作等 | Cursor/Claude/Codex/OpenClaw | 3.2k | [GitHub](https://github.com/xstongxue/best-skills) |
+| Skill Factory 合集 | Skills 合集 | 可直接用于 AWS 架构设计、应用商店优化等任务的 Skills | Claude | 912 | [GitHub](https://github.com/alirezarezvani/claude-code-skill-factory/tree/dev/generated-skills) |
+| sno-station-skills | Skills 合集 | 面向 Claude Code 与 Codex 的 Skills 合集：两家模型互相审查、一个 Agent 用到额度上限时交给另一个接着做，以及任务委派与汇报 | Cursor/Claude/Codex/OpenClaw | 871 | [GitHub](https://github.com/sno-ai/sno-station-skills) |
+| laolaoshiren/claude-code-skills-zh | Skills 合集 | 面向中文开发者的 Claude Code Skills 精选集，438+ 精选 + 20 原创技能 | Cursor/Claude/Codex | 927 | [GitHub](https://github.com/laolaoshiren/claude-code-skills-zh) |
+| nexscope-ai/eCommerce-Skills | Skills 合集 | 面向 Amazon、Shopify、TikTok Shop 等平台的电商 Agent Skills，覆盖选品、营销与运营 | All | 1.5k | [GitHub](https://github.com/nexscope-ai/eCommerce-Skills) |
+| nexscope-ai/Amazon-Skills | Skills 合集 | 面向亚马逊卖家的免费 Agent Skills，覆盖关键词研究、竞品分析与 Listing 诊断 | All | 886 | [GitHub](https://github.com/nexscope-ai/Amazon-Skills) |
+| alirezarezvani/claude-skills | Skills 合集 | 20+ 生产力工具，含 8 个专家 Agent | Claude | 30.3k | [GitHub](https://github.com/alirezarezvani/claude-skills) |
+| planning-with-files | 单个 Skill | 基于文件的持久化规划，包含任务计划、研究发现、进度跟踪和会话恢复 | All | 28.2k | [GitHub](https://github.com/OthmanAdi/planning-with-files) |
+| coreyhaines31/marketingskills | Skills 合集 | 营销 Skills（SEO/文案/CRO/广告） | All | 62.1k | [GitHub](https://github.com/coreyhaines31/marketingskills) |
+| changelog-generator | 单个 Skill | 从 Git 提交自动生成 Changelog | Claude | 80.1k | [GitHub](https://github.com/ComposioHQ/awesome-claude-skills/tree/master/changelog-generator) |
+| new-term-radar | Skills 合集 | 发现 X、Hugging Face、GitHub 和 sitemap 上刚出现的 AI 模型、产品和仓库名，用 Google Ads 搜索量和 DataForSEO Trends（对 Google 搜索热度的估算）给背后的搜索词排优先级。3 个 Skill 和一个 MCP 服务器；需要 AIsa API key，可选的 GoAnyAPI key 会加上 Google Trends 相关搜索和分国家的趋势 | All | 2.2k | [GitHub](https://github.com/zhuyansen/new-term-radar) |
+| answer-me-with-html | 单个 Skill | 回答难题时输出一页可离线打开的 HTML：模型只写 Markdown 草稿，由内置 CLI 渲染 | Cursor/Claude/Codex/OpenCode | 6.6k | [GitHub](https://github.com/QingYunA/answer-me-with-html) |
+| career-ops | 单个 Skill | 开源的 AI 求职智能体：扫描公司招聘页面，对照你的简历为每个职位打 1-5 分，定制 ATS 友好的简历并跟踪申请；每份申请都由你自己提交。无遥测，简历只发送给你选择的 AI 服务。 | Claude/Codex/OpenCode | 84.3k | [GitHub](https://github.com/career-ops-hq/career-ops) |
+| last30days | 单个 Skill | 调研任意话题在过去 30 天内的 Reddit、X、YouTube、TikTok、Hacker News、Polymarket、GitHub 和网页讨论，按真实互动数据（点赞、投票、预测市场赔率）排序，生成一份带引用的简报。Reddit、Hacker News、Polymarket 和 GitHub 无需配置 | All | 72.7k | [GitHub](https://github.com/mvanhorn/last30days-skill) |
 
-## DevOps
+### 部署运维
 
-| 名称 | 描述 | 平台 | 链接 |
-|------|------|------|------|
-| claudekit-skills | Docker/GCP/Cloudflare 部署和管理 | Claude | [GitHub](https://github.com/mrgoonie/claudekit-skills) |
+| 名称 | 类型 | 描述 | 平台 | Stars | 源码 |
+| --- | --- | --- | --- | --- | --- |
+| microsoft/azure-skills | Skills 合集 | 用于 Azure 服务部署、故障排查与运维的 Skills | Cursor/Claude/Copilot/Codex/OpenCode | 1.7k | [GitHub](https://github.com/microsoft/azure-skills) |
+| claudekit-skills | Skills 合集 | Docker/GCP/Cloudflare 部署和管理 | Claude | 2.2k | [GitHub](https://github.com/mrgoonie/claudekit-skills) |
 
-## 数据处理
+### 数据处理
 
-| 名称 | 描述 | 平台 | 链接 |
-|------|------|------|------|
-| context-engineering | 上下文工程和多 Agent 架构 Skills | All | [GitHub](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) |
-| kordoc | 韩国文档（HWP/HWPX/PDF）转 Markdown、表单填写与 HWPX 生成 Skill | Claude | [GitHub](https://github.com/chrisryugj/kordoc/tree/main/plugins/kordoc/skills/kordoc) |
-| jiangshan-atlas | 中国历史地图与古诗地名、人物轨迹定位可视化 Skill | All | [GitHub](https://github.com/DeanChensj/jiangshan-map/tree/main/skills/jiangshan-atlas) |
-| ava | 连接文件和数据库，复用业务口径，核对查询结果并生成交互图表 | Claude/Codex | [GitHub](https://github.com/antvis/AVA/tree/ai/skills/ava) |
+| 名称 | 类型 | 描述 | 平台 | Stars | 源码 |
+| --- | --- | --- | --- | --- | --- |
+| youtube-skills | Skills 合集 | 面向 YouTube 的转录、视频搜索、频道浏览与播放列表 Skills，适用于 Claude Code、OpenClaw、Hermes Agent 等 Agent 运行时 | Cursor/Claude/Codex/OpenClaw | 1.2k | [GitHub](https://github.com/ZeroPointRepo/youtube-skills) |
+| kordoc | 单个 Skill | 韩国文档（HWP/HWPX/PDF）转 Markdown、表单填写与 HWPX 生成 Skill | Claude | 3.1k | [GitHub](https://github.com/chrisryugj/kordoc/tree/main/plugins/kordoc/skills/kordoc) |
+| jiangshan-atlas | 单个 Skill | 中国历史地图与古诗地名、人物轨迹定位可视化 Skill | All | 8.9k | [GitHub](https://github.com/DeanChensj/jiangshan-map/tree/main/skills/jiangshan-atlas) |
+| ava | 单个 Skill | 连接文件和数据库，复用业务口径，核对查询结果并生成交互图表 | Claude/Codex | 1.7k | [GitHub](https://github.com/antvis/AVA/tree/ai/skills/ava) |
 
-## 写作创作
+### 写作
 
-| 名称 | 描述 | 平台 | 链接 |
-|------|------|------|------|
-| doc-coauthoring | ⭐ 文档协作撰写 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring) |
-| internal-comms | ⭐ 内部沟通文档生成 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/internal-comms) |
-| docx | ⭐ Word 文档读写处理 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/docx) |
-| pdf | ⭐ PDF 文档处理 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/pdf) |
-| pptx | ⭐ PPT 演示文稿生成 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/pptx) |
-| xlsx | ⭐ Excel 表格处理 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/xlsx) |
+| 名称 | 类型 | 描述 | 平台 | Stars | 源码 |
+| --- | --- | --- | --- | --- | --- |
+| doc-coauthoring | 单个 Skill | 文档协作撰写 Skill | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring) |
+| internal-comms | 单个 Skill | 内部沟通文档生成 Skill | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/internal-comms) |
+| docx | 单个 Skill | Word 文档读写处理 Skill | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/docx) |
+| pdf | 单个 Skill | PDF 文档处理 Skill | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/pdf) |
+| pptx | 单个 Skill | PPT 演示文稿生成 Skill | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/pptx) |
+| xlsx | 单个 Skill | Excel 表格处理 Skill | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/xlsx) |
 
-## 设计相关
+### 设计
 
-| 名称 | 描述 | 平台 | 链接 |
-|------|------|------|------|
-| frontend-design | ⭐ 前端 UI 设计 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/frontend-design) |
-| brand-guidelines | ⭐ 品牌设计规范 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/brand-guidelines) |
-| canvas-design | ⭐ Canvas 画布设计 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/canvas-design) |
-| theme-factory | ⭐ 主题样式工厂 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/theme-factory) |
-| algorithmic-art | ⭐ 算法艺术生成 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/algorithmic-art) |
-| slack-gif-creator | ⭐ Slack GIF 创建 Skill | Claude | [官方](https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator) |
+| 名称 | 类型 | 描述 | 平台 | Stars | 源码 |
+| --- | --- | --- | --- | --- | --- |
+| frontend-design | 单个 Skill | 前端 UI 设计 Skill | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/frontend-design) |
+| brand-guidelines | 单个 Skill | 品牌设计规范 Skill | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/brand-guidelines) |
+| canvas-design | 单个 Skill | Canvas 画布设计 Skill | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/canvas-design) |
+| theme-factory | 单个 Skill | 主题样式工厂 Skill | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/theme-factory) |
+| algorithmic-art | 单个 Skill | 算法艺术生成 Skill | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/algorithmic-art) |
+| slack-gif-creator | 单个 Skill | Slack GIF 创建 Skill | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator) |
 
 ## Contributing
 
 欢迎提交 PR！请遵循以下步骤：
 
 1. Fork 这个仓库
-2. 添加你的 skill 到对应分类
-3. 确保填写完整信息（名称、描述、平台、链接）
+2. 将 Skill 放入对应的用途栏目
+3. 中英文都填写名称、类型、描述、平台、Stars 和源码链接
 4. 提交 Pull Request
 
 详细指南请查看 [CONTRIBUTING.md](CONTRIBUTING.md)。

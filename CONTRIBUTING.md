@@ -13,8 +13,8 @@
 #### 添加新的条目
 
 1. **Fork** 这个仓库
-2. 在 README.md 和 README_ZH.md 中找到合适的分类
-3. 按下方格式分别添加英文列表项和中文表格行。
+2. 在两份 README 的「按用途浏览 Skills」中选择同一个主要用途。
+3. 按下方六列表头各添加一行，在「类型」列标明是单个 Skill 还是 Skills 合集。
 4. 提交 **Pull Request**
 
 > 在线搜索页的数据会在 PR 合并后由 GitHub Actions 从 `README.md` 和 `README_ZH.md` 自动生成，无需手动编辑。
@@ -51,19 +51,24 @@
 
 #### Skill 条目格式
 
-在 `README.md` 中添加列表项，在 `README_ZH.md` 中添加表格行。两处使用相同的源码链接；把示例星数替换为该仓库的实际星数。中文合集表的第三列填星数，其他分类填平台。
+每个用途采用相同的六列。名称和描述可以翻译；两份 README 的用途、类型、平台、星数和源码链接须对应。只添加数据行，不重复表头；示例星数请替换为源码仓库的实际星数。
 
 ```markdown
-- [my-skill](URL) - 512 ⭐ - What the skill does.
+| Name | Type | Description | Platforms | Stars | Source |
+| --- | --- | --- | --- | --- | --- |
+| my-skill | Single Skill | What the skill does. | Claude/Codex | 512 | [GitHub](URL) |
 ```
 
 ```markdown
-| my-skill | 简短说明该 Skill 的用途 | All | [GitHub](URL) |
+| 名称 | 类型 | 描述 | 平台 | Stars | 源码 |
+| --- | --- | --- | --- | --- | --- |
+| my-skill | 单个 Skill | 简短说明该 Skill 的用途 | Claude/Codex | 512 | [GitHub](URL) |
 ```
 
 #### 平台标识
 
 - `All` - 支持所有平台
+- `—` - 未注明平台；不要根据项目名称推断支持范围
 - `Cursor` - 仅 Cursor
 - `Claude` - 仅 Claude
 - `Copilot` - 仅 GitHub Copilot
@@ -73,17 +78,18 @@
 - `OpenClaw` - 仅 OpenClaw
 - 多个平台用 `/` 分隔：`Cursor/Claude`（仅列出已验证支持的平台）
 
-### 分类说明
+### 用途和类型
 
-| 分类 | 说明 |
+**用途**回答「帮用户做什么」，决定条目出现在哪个栏目。每个条目只列一次；跨多个领域且没有单一主用途的综合合集放在「任务与效率」。**类型**回答「收录的是一个还是一组 Skill」：`单个 Skill` / `Skills 合集`（英文 `Single Skill` / `Skills Collection`）。同一个 Skill 的平台适配或翻译不算不同的 Skill。
+
+| 用途 | 说明 |
 |------|------|
-| Skills 合集 | 在同一仓库中提供多个可直接使用的 Skill |
-| 开发工具 | 代码审查、调试、测试等 |
-| 效率提升 | 通用生产力工具 |
-| 写作创作 | 文档、文章相关 |
+| 开发与测试 | 编程、代码审查、调试和测试 |
+| 任务与效率 | 任务规划、协作、业务流程和跨领域工作 |
+| 部署运维 | 部署、基础设施和运维 |
 | 数据处理 | 数据分析、转换 |
-| DevOps | 部署、运维相关 |
-| 设计相关 | UI/UX 设计 |
+| 写作 | 撰写或编辑文档、文章 |
+| 设计 | 视觉、界面和创意设计 |
 
 如果你的条目不属于现有分类，可以在 PR 中建议新分类。
 
@@ -95,11 +101,13 @@
 ## 添加条目
 
 **名称**：
-**源码仓库或 Skill 目录**：
-**SKILL.md 链接**（合集提供两个）：
-**描述**：
-**分类**：
 **类型**：单个 Skill / Skills 合集
+**描述**：
+**平台**：
+**Stars**：
+**源码**（仓库或 Skill 目录）：
+**主要用途**：
+**SKILL.md 链接**（合集提供两个）：
 
 ## 检查清单
 
@@ -154,8 +162,8 @@ Thanks for your interest in contributing to Awesome Agent Skills!
 #### Adding a New Entry
 
 1. **Fork** this repository
-2. Find the appropriate category in both README.md and README_ZH.md
-3. Add an English list item and a Chinese table row using the format below.
+2. Choose the same primary use case under “Skills by Use Case” in both READMEs.
+3. Add one six-column row to each table and mark it as a single skill or a collection in the Type column.
 4. Submit a **Pull Request**
 
 > The online search page is generated automatically from `README.md` and `README_ZH.md` by GitHub Actions after PRs are merged. No manual search-index edits are required.
@@ -192,19 +200,24 @@ Thanks for your interest in contributing to Awesome Agent Skills!
 
 #### Skill Entry Format
 
-Add a list item in `README.md` and a table row in `README_ZH.md`. Use the same source URL in both and replace the example star count with the repository's actual count. The third column of the Chinese table contains stars for collections and platforms for all other categories.
+Every use case uses the same six columns. Names and descriptions may be translated; the use case, type, platforms, stars, and source URL must agree across both READMEs. Add only a data row, not another header. Replace the example star count with the actual count for the source repository.
 
 ```markdown
-- [my-skill](URL) - 512 ⭐ - What the skill does.
+| Name | Type | Description | Platforms | Stars | Source |
+| --- | --- | --- | --- | --- | --- |
+| my-skill | Single Skill | What the skill does. | Claude/Codex | 512 | [GitHub](URL) |
 ```
 
 ```markdown
-| my-skill | 简短说明该 Skill 的用途 | All | [GitHub](URL) |
+| 名称 | 类型 | 描述 | 平台 | Stars | 源码 |
+| --- | --- | --- | --- | --- | --- |
+| my-skill | 单个 Skill | 简短说明该 Skill 的用途 | Claude/Codex | 512 | [GitHub](URL) |
 ```
 
 #### Platform Labels
 
 - `All` - Supports all platforms
+- `—` - No platform specified; do not infer support from the project name
 - `Cursor` - Cursor only
 - `Claude` - Claude only
 - `Copilot` - GitHub Copilot only
@@ -214,17 +227,18 @@ Add a list item in `README.md` and a table row in `README_ZH.md`. Use the same s
 - `OpenClaw` - OpenClaw only
 - Multiple platforms separated by `/`: `Cursor/Claude` (list only platforms the project has verified)
 
-### Categories
+### Use Cases and Types
 
-| Category | Description |
+The **use case** describes the task and determines the section. List each entry once; put broad collections with no single primary use case in **Tasks and Productivity**. The **type** describes what is being listed: `Single Skill` or `Skills Collection` (`单个 Skill` or `Skills 合集` in Chinese). Translations or runtime variants of the same skill do not make it a collection.
+
+| Use case | Description |
 |----------|-------------|
-| Skills Collections | Multiple usable skills shipped in the same repository |
-| Development Tools | Code review, debugging, testing, etc. |
-| Productivity | General productivity tools |
-| Writing | Documentation, articles |
+| Development and Testing | Programming, code review, debugging, and testing |
+| Tasks and Productivity | Task planning, collaboration, business workflows, and cross-domain work |
+| Deployment and Operations | Deployment, infrastructure, and operations |
 | Data Processing | Data analysis, transformation |
-| DevOps | Deployment, operations |
-| Design | UI/UX design |
+| Writing | Writing and editing documents or articles |
+| Design | Visual, interface, and creative design |
 
 If your entry doesn't fit existing categories, feel free to suggest a new one in your PR.
 
@@ -236,11 +250,13 @@ Please include the following information when submitting a PR:
 ## Add Entry
 
 **Name**:
-**Source repository or skill directory**:
-**SKILL.md link(s)** (two for a collection):
-**Description**:
-**Category**:
 **Type**: Single Skill / Skills Collection
+**Description**:
+**Platforms**:
+**Stars**:
+**Source** (repository or skill directory):
+**Primary use case**:
+**SKILL.md link(s)** (two for a collection):
 
 ## Checklist
 

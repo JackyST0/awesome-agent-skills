@@ -1,14 +1,8 @@
 #!/usr/bin/env node
 
-/**
- * Update Star Counts Script
- * Fetches star counts from GitHub API and updates existing numeric labels in
- * both READMEs. Star columns additionally populate missing GitHub entries, so
- * category formats stay stable and the search index can expose star filters.
- */
-
 const fs = require('fs');
 const https = require('https');
+const { formats, parseCatalog, buildIndex, sourceRepository, splitTableLine } = require('./catalog');
 
 const ROOT = require('path').resolve(__dirname, '..');
 
@@ -84,100 +78,45 @@ function fetchRepoInfo(repoOrPath, originalRepo = repoOrPath, redirectCount = 0)
   });
 }
 
-// Update star count in README content
-function updateStarsInContent(content, repo, formattedStars) {
-  const repoUrl = `https://github.com/${repo}`;
-  return content.split('\n').map((line) => {
-    if (!line.includes(repoUrl)) return line;
-
-    const enStarMatch = line.match(/^(\s*-\s*\[[^\]]+\]\([^)\s]+\)\s*-\s*)(.*)$/);
-    if (enStarMatch && /^(?:[\d.,]+k?\s*⭐\s*-\s*)+/.test(enStarMatch[2])) {
-      return `${enStarMatch[1]}${formattedStars} ⭐ - ${enStarMatch[2].replace(
-        /^(?:[\d.,]+k?\s*⭐\s*-\s*)+/,
-        ''
-      )}`;
-    }
-
-    return line
-      .replace(/([（(])\s*[\d.]+k?\s*⭐\s*([）)])/gi, `$1${formattedStars} ⭐$2`)
-      .replace(/(\|\s*)[\d.]+k?(\s*\|\s*\[[^\]]+\]\(https:\/\/github\.com\/[^)]+\))/i, `$1${formattedStars}$2`);
-  }).join('\n');
-}
-
-function updateMissingStarsInContent(content, repo, formattedStars) {
-  const repoUrl = `https://github.com/${repo}`;
-  return content.split('\n').map((line) => {
-    if (!line.includes(repoUrl)) return line;
-
-    const enMatch = line.match(/^(\s*-\s*\[[^\]]+\]\([^)\s]+\)\s*-\s*)(.*)$/);
-    if (enMatch && /^[\d.,]+k?\s*⭐\s*-\s*/.test(enMatch[2])) return line;
-
-    if (enMatch) return `${enMatch[1]}${formattedStars} ⭐ - ${enMatch[2]}`;
-
-    const zhMatch = line.match(/^(\|[^|]*\|[^|]*\|)\s*-\s*(\|\s*\[[^\]]+\]\([^)\s]+\)\s*\|\s*)$/);
-    if (zhMatch) return `${zhMatch[1]}${formattedStars}${zhMatch[2]}`;
-
-    return line;
-  }).join('\n');
-}
-
-function collectRepos(...contents) {
-  const repos = new Set();
-  const pattern = /https:\/\/github\.com\/([^/\s)]+\/[^/\s)#]+)/g;
-
-  for (const content of contents) {
-    for (const match of content.matchAll(pattern)) {
-      const repo = match[1].replace(/\.git$/, '');
-      if (repo && repo !== 'example/my-skill') {
-        repos.add(repo);
-      }
-    }
+function updateStarColumn(markdown, entries, counts, language) {
+  const lines = markdown.split('\n');
+  const column = formats[language].columns.indexOf('Stars') + 1;
+  for (const entry of entries) {
+    const count = counts.get(sourceRepository(entry.url));
+    if (!count || count === entry.stars) continue;
+    const cells = splitTableLine(lines[entry.lineIndex]);
+    cells[column] = cells[column].replace(entry.stars, count);
+    lines[entry.lineIndex] = cells.join('|');
   }
-
-  return [...repos].sort();
+  return lines.join('\n');
 }
 
 async function main() {
-  console.log('Fetching star counts...\n');
-
-  const readmeEn = fs.readFileSync(`${ROOT}/README.md`, 'utf8');
-  const readmeZh = fs.readFileSync(`${ROOT}/README_ZH.md`, 'utf8');
-  const repos = collectRepos(readmeEn, readmeZh);
-
-  // Fetch every GitHub repository referenced by the two READMEs.
-  const results = [];
-  for (const repo of repos) {
+  const english = fs.readFileSync(`${ROOT}/README.md`, 'utf8');
+  const chinese = fs.readFileSync(`${ROOT}/README_ZH.md`, 'utf8');
+  const enRows = parseCatalog(english, 'en');
+  const zhRows = parseCatalog(chinese, 'zh');
+  const index = buildIndex(enRows, zhRows);
+  const repositories = new Set(index.map(entry => sourceRepository(entry.url)));
+  const counts = new Map();
+  for (const repository of repositories) {
     try {
-      const info = await fetchRepoInfo(repo);
-      console.log(`${repo}: ${info.formatted} stars`);
-      results.push(info);
+      const { formatted } = await fetchRepoInfo(repository);
+      if (formatted !== '-') counts.set(repository, formatted);
     } catch (error) {
-      console.error(`Error fetching ${repo}: ${error.message}`);
-      results.push({ repo, stars: 0, formatted: '-' });
+      console.error(`Keeping existing stars for ${repository}: ${error.message}`);
     }
   }
-
-  let updatedEn = readmeEn;
-  let updatedZh = readmeZh;
-
-  // Update existing star labels in both files, then fill missing star columns.
-  for (const { repo, formatted } of results) {
-    if (formatted !== '-') {
-      updatedEn = updateStarsInContent(updatedEn, repo, formatted);
-      updatedZh = updateStarsInContent(updatedZh, repo, formatted);
-      updatedEn = updateMissingStarsInContent(updatedEn, repo, formatted);
-      updatedZh = updateMissingStarsInContent(updatedZh, repo, formatted);
-    }
-  }
-
-  // Write updated files
-  fs.writeFileSync(`${ROOT}/README.md`, updatedEn);
-  fs.writeFileSync(`${ROOT}/README_ZH.md`, updatedZh);
-
-  console.log('\nREADME files updated successfully!');
+  fs.writeFileSync(`${ROOT}/README.md`, updateStarColumn(english, enRows, counts, 'en'));
+  fs.writeFileSync(`${ROOT}/README_ZH.md`, updateStarColumn(chinese, zhRows, counts, 'zh'));
+  console.log(`Updated star columns from ${counts.size} GitHub repositories.`);
 }
 
-main().catch((error) => {
-  console.error('Script failed:', error);
-  process.exit(1);
-});
+if (require.main === module) {
+  main().catch(error => {
+    console.error(error.message);
+    process.exitCode = 1;
+  });
+}
+
+module.exports = { updateStarColumn };

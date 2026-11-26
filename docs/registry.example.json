@@ -7,8 +7,8 @@
       "id": "example-code-review",
       "name": "code-review",
       "slug": "code-review",
-      "entryType": "example",
-      "category": "development-tools",
+      "entryType": "single-skill",
+      "category": "devtools",
       "description": {
         "en": "Smart code review example skill.",
         "zh": "智能代码审查示例 Skill。"
@@ -58,8 +58,8 @@
       "id": "example-git-commit",
       "name": "git-commit",
       "slug": "git-commit",
-      "entryType": "example",
-      "category": "development-tools",
+      "entryType": "single-skill",
+      "category": "devtools",
       "description": {
         "en": "Git commit message generator example skill.",
         "zh": "Git 提交信息生成示例 Skill。"
@@ -110,7 +110,7 @@
       "name": "anthropics/skills",
       "slug": "anthropics-skills",
       "entryType": "collection",
-      "category": "skills-collections",
+      "category": "productivity",
       "description": {
         "en": "Official Anthropic Agent Skills repository.",
         "zh": "Anthropic 官方 Agent Skills 仓库。"
