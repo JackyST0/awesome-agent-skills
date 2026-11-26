@@ -18,7 +18,6 @@ const OUTPUT = path.join(ROOT, 'docs', 'skills.json');
 const REPOSITORY_TREE_URL = 'https://github.com/JackyST0/awesome-agent-skills/tree/main';
 
 const CATEGORIES = [
-  { id: 'official', en: 'Official Resources', zh: '官方资源' },
   { id: 'collection', en: 'Skills Collections', zh: 'Skills 合集' },
   { id: 'devtools', en: 'Development Tools', zh: '开发工具' },
   { id: 'productivity', en: 'Productivity', zh: '效率提升' },
@@ -60,6 +59,12 @@ function isHttpUrl(url) {
   } catch {
     return false;
   }
+}
+
+function sourceRepository(url) {
+  const match = /^https:\/\/github\.com\/([A-Za-z0-9-]+\/[A-Za-z0-9_.-]+)(?:\/tree\/[^?#\s]+)?$/.exec(url);
+  if (!match) throw new Error(`Catalog entries must link to a GitHub source repository or skill directory: ${url}`);
+  return match[1];
 }
 
 function sectionContent(markdown, heading) {
@@ -157,7 +162,7 @@ function parseChinese(readme) {
 
       const { desc, stars: starsFromDesc } = cleanChineseDescription(rawDesc);
       const starOrPlatform = third.replace(/—/g, '-').trim();
-      const usesStarsColumn = category.id === 'official' || category.id === 'collection';
+      const usesStarsColumn = category.id === 'collection';
 
       const key = keyFor(category.id, url);
       if (byUrl.has(key)) {
@@ -256,6 +261,7 @@ function assertBilingualConsistency(enEntries, zhByUrl) {
   const errors = [];
 
   for (const entry of enEntries) {
+    sourceRepository(entry.url);
     const key = keyFor(entry.category, entry.url);
     if (englishKeys.has(key)) {
       errors.push(`Duplicate English entry: ${key}`);
@@ -305,8 +311,13 @@ function writeJson(file, data) {
 function main() {
   const checkSynced = process.argv.includes('--check');
   const validateOnly = process.argv.includes('--validate');
-  const enEntries = parseEnglish(read(README_EN));
-  const zhByUrl = parseChinese(read(README_ZH));
+  const english = read(README_EN);
+  const chinese = read(README_ZH);
+  if (/^## Official Resources\s*$/m.test(english) || /^## 官方资源\s*$/m.test(chinese)) {
+    throw new Error('Official Resources is no longer a catalog category. List qualifying skills by use case or as a collection.');
+  }
+  const enEntries = parseEnglish(english);
+  const zhByUrl = parseChinese(chinese);
   assertBilingualConsistency(enEntries, zhByUrl);
   const index = buildIndex(enEntries, zhByUrl);
   const next = `${JSON.stringify(index, null, 2)}\n`;
@@ -334,4 +345,4 @@ if (require.main === module) {
   main();
 }
 
-module.exports = { isHttpUrl };
+module.exports = { isHttpUrl, parseEnglish, sourceRepository };

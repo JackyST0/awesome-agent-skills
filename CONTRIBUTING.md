@@ -14,12 +14,7 @@
 
 1. **Fork** 这个仓库
 2. 在 README.md 和 README_ZH.md 中找到合适的分类
-3. 按照格式添加你的条目：
-
-```markdown
-| skill-name | 简短描述 | 支持平台 | [GitHub](URL) |
-```
-
+3. 按下方格式分别添加英文列表项和中文表格行。
 4. 提交 **Pull Request**
 
 > 在线搜索页的数据会在 PR 合并后由 GitHub Actions 从 `README.md` 和 `README_ZH.md` 自动生成，无需手动编辑。
@@ -39,27 +34,31 @@
 
 #### 按条目类型区分
 
-- [ ] 社区项目默认需要至少 **512 GitHub Stars**；维护者明确认可的特殊项目可例外
-- [ ] 单个 Skill 仓库：必须包含 `SKILL.md`，并满足社区项目 Stars 门槛
-- [ ] Skills 合集 / 管理器 / 安装器：必须明确服务于 Skills 的发现、安装、同步、分发或管理；不强制仓库根目录包含 `SKILL.md`，但必须满足社区项目 Stars 门槛
-- [ ] 官方资源：可不受 Stars 限制，但必须是官方项目、官方文档或公认的生态基础设施
+- [ ] **所有条目的源码仓库在审核时必须至少有 512 个 GitHub Stars（含 512）。** 以实际托管所提交 Skill 的公开仓库为准，不能借用同一组织其他项目的星数。官方、社区和已提交但尚未合并的 PR 均适用，没有豁免。
+- [ ] 单个 Skill：仓库必须实际提供可使用的 `SKILL.md`。条目链接指向源码仓库或 Skill 目录，在 PR 中附上 `SKILL.md` 链接。
+- [ ] Skills 合集：同一仓库必须实际提供至少两个不同的 Skill，在 PR 中附上两个对应的 `SKILL.md` 链接。指向其他仓库的链接不计入。
+- [ ] 纯文档、规范、排行榜、外链导航以及安装器或管理器本身不作为条目收录。工具若随附可独立使用的 Skill，可以提交该 Skill，而不是工具首页。
 
 #### 建议
 
 - [ ] 优先收录开源项目
 - [ ] 提供中英文描述
 - [ ] 包含使用示例
-- [ ] 商业产品封装通常需要更高的社区认可度
+- [ ] 产品集成请注明所需账号、付费服务或本地依赖
 - [ ] 第三方托管试用 / Demo 入口需要清晰说明运行方式、数据处理、隐私政策和维护责任；涉及用户代码、diff、日志或凭据的外部服务通常不会直接加入 README
 
 ### 格式规范
 
 #### Skill 条目格式
 
+在 `README.md` 中添加列表项，在 `README_ZH.md` 中添加表格行。两处使用相同的源码链接；把示例星数替换为该仓库的实际星数。中文合集表的第三列填星数，其他分类填平台。
+
 ```markdown
-| 名称 | 描述 | 平台 | 链接 |
-|------|------|------|------|
-| my-skill | 做什么的简短描述（10-20字） | All | [链接](https://github.com/...) |
+- [my-skill](URL) - 512 ⭐ - What the skill does.
+```
+
+```markdown
+| my-skill | 简短说明该 Skill 的用途 | All | [GitHub](URL) |
 ```
 
 #### 平台标识
@@ -78,8 +77,7 @@
 
 | 分类 | 说明 |
 |------|------|
-| 官方资源 | 官方维护的资源、文档和生态基础设施 |
-| Skills 合集 | 多个 skills 的集合仓库，以及 skills 管理/安装工具 |
+| Skills 合集 | 在同一仓库中提供多个可直接使用的 Skill |
 | 开发工具 | 代码审查、调试、测试等 |
 | 效率提升 | 通用生产力工具 |
 | 写作创作 | 文档、文章相关 |
@@ -97,10 +95,11 @@
 ## 添加条目
 
 **名称**：
-**链接**：
+**源码仓库或 Skill 目录**：
+**SKILL.md 链接**（合集提供两个）：
 **描述**：
 **分类**：
-**类型**：单个 Skill / Skills 合集 / 管理器 / 安装器 / 官方资源
+**类型**：单个 Skill / Skills 合集
 
 ## 检查清单
 
@@ -110,9 +109,8 @@
 - [ ] 放在正确分类
 - [ ] 没有为单个项目新增独立 section
 - [ ] 保持该分类现有的有意义顺序；不要求对整个历史列表重新排序
-- [ ] 单个 Skill 仓库包含 SKILL.md
-- [ ] Skills 合集 / 管理器 / 安装器明确服务于 Skills 生态
-- [ ] GitHub 仓库满足最低门槛（社区项目 512+ Stars）
+- [ ] 所附 SKILL.md 来自该源码仓库（单个 Skill 一个，合集两个不同的 Skill）
+- [ ] 实际托管该 Skill 的公开 GitHub 仓库已有至少 512 Stars
 ```
 
 ### 本地检查
@@ -123,6 +121,8 @@ npm run check
 ```
 
 `npm run check` 会校验双语条目、搜索索引生成结果、仓库结构和安装器，不要求提交 `docs/skills.json`。
+
+PR 检查通过 GitHub API 核对新增或更换链接的条目，不采用 README 里的星数。维护者可在已登录 GitHub CLI 的环境中运行 `npm run check:stars` 核查整个目录；是否真正提供可用的 Skill 仍需审核源码。
 
 ### 发布流程
 
@@ -155,12 +155,7 @@ Thanks for your interest in contributing to Awesome Agent Skills!
 
 1. **Fork** this repository
 2. Find the appropriate category in both README.md and README_ZH.md
-3. Add your entry following the format:
-
-```markdown
-| skill-name | Short description | Platform | [GitHub](URL) |
-```
-
+3. Add an English list item and a Chinese table row using the format below.
 4. Submit a **Pull Request**
 
 > The online search page is generated automatically from `README.md` and `README_ZH.md` by GitHub Actions after PRs are merged. No manual search-index edits are required.
@@ -180,27 +175,31 @@ Thanks for your interest in contributing to Awesome Agent Skills!
 
 #### By Entry Type
 
-- [ ] Community submissions should have at least **512 GitHub Stars** by default; maintainers may make explicit exceptions for special cases
-- [ ] Single Skill repositories: must contain a `SKILL.md` file and meet the community stars threshold
-- [ ] Skills collections / managers / installers: must clearly serve skill discovery, installation, sync, distribution, or management; `SKILL.md` at the repo root is not required, but the repository must meet the community stars threshold
-- [ ] Official Resources: may be exempt from the stars threshold, but must be official projects, official docs, or widely recognized ecosystem infrastructure
+- [ ] **Every entry's public source repository must have at least 512 GitHub stars at review time.** Count the stars of the repository that actually hosts the submitted skills, not another project from the same organization. This applies equally to first-party and community entries, including open PRs, without exceptions.
+- [ ] Single skill: the repository must ship a usable `SKILL.md`. Link the catalog entry to the source repository or skill directory, and provide the `SKILL.md` link in the PR.
+- [ ] Collection: the same repository must ship at least two distinct skills. Link two of their `SKILL.md` files in the PR. Links to skills hosted elsewhere do not count.
+- [ ] Standalone documentation, specifications, rankings, link directories, installers, and managers are not catalog entries. If a tool ships a standalone skill, submit that skill rather than the tool's homepage.
 
 #### Recommended
 
 - [ ] Open source projects preferred
 - [ ] Provide bilingual description (English/Chinese)
 - [ ] Include usage examples
-- [ ] Commercial product wrappers typically require higher community validation
+- [ ] For product integrations, note any required accounts, paid services, or local dependencies
 - [ ] Third-party hosted trials / demos should clearly document runtime behavior, data handling, privacy policy, and maintenance responsibility; external services that process user code, diffs, logs, or credentials are generally not linked directly from the README
 
 ### Format Guidelines
 
 #### Skill Entry Format
 
+Add a list item in `README.md` and a table row in `README_ZH.md`. Use the same source URL in both and replace the example star count with the repository's actual count. The third column of the Chinese table contains stars for collections and platforms for all other categories.
+
 ```markdown
-| Name | Description | Platform | Link |
-|------|-------------|----------|------|
-| my-skill | Short description of what it does (10-20 words) | All | [Link](https://github.com/...) |
+- [my-skill](URL) - 512 ⭐ - What the skill does.
+```
+
+```markdown
+| my-skill | 简短说明该 Skill 的用途 | All | [GitHub](URL) |
 ```
 
 #### Platform Labels
@@ -219,8 +218,7 @@ Thanks for your interest in contributing to Awesome Agent Skills!
 
 | Category | Description |
 |----------|-------------|
-| Official Resources | Officially maintained resources, docs, and ecosystem infrastructure |
-| Skills Collections | Repositories containing multiple skills, plus skill managers/installers |
+| Skills Collections | Multiple usable skills shipped in the same repository |
 | Development Tools | Code review, debugging, testing, etc. |
 | Productivity | General productivity tools |
 | Writing | Documentation, articles |
@@ -238,10 +236,11 @@ Please include the following information when submitting a PR:
 ## Add Entry
 
 **Name**:
-**Link**:
+**Source repository or skill directory**:
+**SKILL.md link(s)** (two for a collection):
 **Description**:
 **Category**:
-**Type**: Single Skill / Skills Collection / Manager / Installer / Official Resource
+**Type**: Single Skill / Skills Collection
 
 ## Checklist
 
@@ -251,9 +250,8 @@ Please include the following information when submitting a PR:
 - [ ] Placed in correct category
 - [ ] Did not create a standalone section for a single project
 - [ ] Preserves the category's existing meaningful order; do not reorder the historical list solely for alphabetization
-- [ ] Single Skill repository contains SKILL.md
-- [ ] Skills collections / managers / installers clearly serve the skills ecosystem
-- [ ] Repository meets the minimum threshold (512+ Stars for community projects)
+- [ ] Linked SKILL.md files belong to the source repository (one for a single skill, two distinct skills for a collection)
+- [ ] The public GitHub repository hosting the submitted skills has at least 512 stars
 ```
 
 ### Local Validation
@@ -264,6 +262,8 @@ npm run check
 ```
 
 `npm run check` validates the bilingual entries, search-index generation, repository structure, and installers without requiring `docs/skills.json` in the PR.
+
+PR checks look up new or relinked entries using the GitHub API rather than the displayed star counts. Maintainers can run `npm run check:stars` with an authenticated GitHub CLI to audit the full catalog. Reviewers still verify that the linked source ships usable skills.
 
 ### Release Process
 

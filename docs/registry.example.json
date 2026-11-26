@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "draft": true,
-  "generatedAt": "2026-03-24T00:00:00Z",
+  "generatedAt": "2026-11-26T01:19:23Z",
   "entries": [
     {
       "id": "example-code-review",
@@ -19,7 +19,7 @@
       },
       "repo": {
         "fullName": "JackyST0/awesome-agent-skills",
-        "stars": 400,
+        "stars": 670,
         "license": "CC0-1.0"
       },
       "platforms": [
@@ -70,7 +70,7 @@
       },
       "repo": {
         "fullName": "JackyST0/awesome-agent-skills",
-        "stars": 400,
+        "stars": 670,
         "license": "CC0-1.0"
       },
       "platforms": [
@@ -109,8 +109,8 @@
       "id": "anthropics-skills",
       "name": "anthropics/skills",
       "slug": "anthropics-skills",
-      "entryType": "official-resource",
-      "category": "official-resources",
+      "entryType": "collection",
+      "category": "skills-collections",
       "description": {
         "en": "Official Anthropic Agent Skills repository.",
         "zh": "Anthropic 官方 Agent Skills 仓库。"
@@ -120,8 +120,7 @@
       },
       "repo": {
         "fullName": "anthropics/skills",
-        "stars": 80300,
-        "license": "MIT"
+        "stars": 200545
       },
       "platforms": [
         "claude"
@@ -148,89 +147,6 @@
       "tags": [
         "official",
         "upstream"
-      ]
-    },
-    {
-      "id": "pivoshenko-kasetto",
-      "name": "kasetto",
-      "slug": "kasetto",
-      "entryType": "manager",
-      "category": "skills-collections",
-      "description": {
-        "en": "Extremely fast AI skills manager written in Rust.",
-        "zh": "用 Rust 编写的极速 AI 技能管理器。"
-      },
-      "links": {
-        "repo": "https://github.com/pivoshenko/kasetto"
-      },
-      "repo": {
-        "fullName": "pivoshenko/kasetto",
-        "stars": 22,
-        "license": "MIT OR Apache-2.0"
-      },
-      "platforms": [
-        "all"
-      ],
-      "status": [
-        "community-tested"
-      ],
-      "verification": {
-        "status": "community-tested",
-        "verifiedPlatforms": [],
-        "notes": "Included as a skills manager. Platform compatibility should be treated as community-reported unless specifically verified."
-      },
-      "source": {
-        "kind": "external",
-        "repo": "pivoshenko/kasetto"
-      },
-      "installation": {
-        "bundledInstaller": false,
-        "manualCopy": false,
-        "thirdPartyManager": true
-      },
-      "tags": [
-        "manager",
-        "rust"
-      ]
-    },
-    {
-      "id": "resource-clawhub",
-      "name": "ClawHub",
-      "slug": "clawhub",
-      "entryType": "official-resource",
-      "category": "official-resources",
-      "description": {
-        "en": "OpenClaw's public skills registry for discovering and sharing skills.",
-        "zh": "OpenClaw 官方 Skills 注册中心。"
-      },
-      "links": {
-        "docs": "https://docs.openclaw.ai/skills"
-      },
-      "platforms": [
-        "openclaw"
-      ],
-      "status": [
-        "verified"
-      ],
-      "verification": {
-        "status": "verified",
-        "verifiedPlatforms": [
-          "openclaw"
-        ],
-        "notes": "Official OpenClaw registry/docs resource."
-      },
-      "source": {
-        "kind": "resource"
-      },
-      "installation": {
-        "bundledInstaller": false,
-        "manualCopy": false,
-        "thirdPartyManager": false
-      },
-      "tags": [
-        "official",
-        "registry",
-        "openclaw"
       ]
     }
   ]

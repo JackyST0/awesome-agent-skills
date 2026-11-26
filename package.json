@@ -4,6 +4,7 @@
     "sync:search": "node scripts/sync-search-index.js",
     "check:search": "node scripts/sync-search-index.js --validate",
     "check:search-index": "node scripts/sync-search-index.js --check",
+    "check:stars": "node scripts/check-entry-stars.js",
     "check:search-security": "node scripts/check-search-page-security.js",
     "check:repository": "node scripts/check-repository.js",
     "check:installers": "node scripts/check-installers.js",

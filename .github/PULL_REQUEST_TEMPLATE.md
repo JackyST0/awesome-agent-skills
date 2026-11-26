@@ -1,10 +1,11 @@
 ## 添加条目 / Add Entry
 
 **名称 / Name**: 
-**链接 / Link**: 
+**源码仓库或 Skill 目录 / Source repository or skill directory**:
+**SKILL.md 链接 / SKILL.md link(s)**（合集提供两个 / two for a collection）:
 **描述 / Description**: 
 **分类 / Category**: 
-**类型 / Type**: Single Skill / Skills Collection / Manager / Installer / Official Resource
+**类型 / Type**: Single Skill / Skills Collection
 
 ## 检查清单 / Checklist
 
@@ -14,9 +15,8 @@
 - [ ] 放在正确分类 / Placed in correct category
 - [ ] 没有为单个项目新增独立 section / Did not create a standalone section for a single project
 - [ ] 保持分类现有顺序 / Preserves the category's existing order
-- [ ] 单个 Skill 仓库包含 SKILL.md（如适用） / Single Skill repository contains SKILL.md (if applicable)
-- [ ] Skills 合集 / 管理器 / 安装器明确服务于 Skills 生态（如适用） / Skills collection / manager / installer clearly serves the skills ecosystem (if applicable)
-- [ ] 社区项目满足最低门槛（512+ Stars，如适用） / Community project meets the minimum threshold (512+ Stars, if applicable)
+- [ ] 所附 SKILL.md 来自该源码仓库，合集为两个不同的 Skill / Linked SKILL.md files come from this repository (two distinct skills for a collection)
+- [ ] 实际托管该 Skill 的公开 GitHub 仓库已有至少 512 星，官方和社区同一标准 / The public GitHub repository hosting the skills has at least 512 stars, whether first-party or community-maintained
 
 ## 其他说明 / Additional Notes
 

@@ -17,11 +17,12 @@
 
 English | [简体中文](README_ZH.md)
 
+This catalog lists usable Agent Skills and collections from public GitHub repositories with **at least 512 stars**. The same [inclusion criteria](CONTRIBUTING.md) apply to first-party and community skills.
+
 ## Contents
 
 - [Quick Start](#quick-start)
 - [What Are Agent Skills](#what-are-agent-skills)
-- [Official Resources](#official-resources)
 - [Skills Collections](#skills-collections)
 - [Development Tools](#development-tools)
 - [Productivity](#productivity)
@@ -83,7 +84,7 @@ cp -r awesome-agent-skills/examples/code-review ~/.cursor/skills/
 git clone https://github.com/anthropics/skills.git ~/.cursor/skills/anthropics
 ```
 
-> 📖 See [How to Use Agent Skills](docs/how-to-use.md) for the complete guide.
+> 📖 See [How to Use Agent Skills](docs/how-to-use.md) for the guide, or the [Agent Skills specification](https://agentskills.io/specification) for the `SKILL.md` format.
 
 ## What Are Agent Skills
 
@@ -101,51 +102,26 @@ Skills work across multiple platforms:
 |OpenCode   |`~/.config/opencode/skills/` |`.opencode/skills/` |
 |OpenClaw   |`~/.openclaw/skills/`        |`skills/`           |
 
-## Official Resources
-
-- [Agent Skills Open Standard](https://skill.md/) - Official Agent Skills specification.
-- [Agent Skills Specification](https://agentskills.io/specification) - SKILL.md format specification.
-- [agentskills/agentskills](https://github.com/agentskills/agentskills) - 27.5k ⭐ - Official Agent Skills specification and documentation repository.
-- [anthropics/skills](https://github.com/anthropics/skills) - 199.1k ⭐ - Official Anthropic Agent Skills repository.
-- [GitHub Docs: About agent skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills) - GitHub official overview of agent skills, supported hosts, and `gh skill`.
-- [GitHub Docs: Adding agent skills for GitHub Copilot](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/add-skills) - GitHub official guide for creating, installing, and publishing agent skills.
-- [GitHub CLI: gh skill](https://cli.github.com/manual/gh_skill) - Official GitHub CLI commands for discovering, installing, updating, and publishing Agent Skills.
-- [VS Code Docs: Use Agent Skills in VS Code](https://code.visualstudio.com/docs/copilot/customization/agent-skills) - Official VS Code guide for using Agent Skills with GitHub Copilot.
-- [vercel-labs/skills](https://github.com/vercel-labs/add-skill) - 40.5k ⭐ - Vercel official Skills CLI tool.
-- [microsoft/skills](https://github.com/microsoft/agent-skills) - 3.2k ⭐ - Microsoft official 131 Azure SDK Skills.
-- [microsoft/azure-skills](https://github.com/microsoft/azure-skills) - 1.7k ⭐ - Official Azure skills plugin with MCP server configurations and 20 curated Azure skills.
-- [sendbird/sendbird-client-plugin](https://github.com/sendbird/sendbird-client-plugin) - 0 ⭐ - Official Sendbird plugin with Agent Skills for adding Sendbird Chat, UIKit and Calls to iOS, Android, React and React Native apps, in Claude Code and Codex.
-- [OpenAI Codex: Agent Skills](https://developers.openai.com/codex/skills/) - OpenAI official guide for using Agent Skills in Codex CLI, IDE extension, and Codex app.
-- [GitHub Awesome Copilot](https://github.com/github/awesome-copilot) - 41.5k ⭐ - Official Copilot resources collection.
-- [Agent Skills Index](https://agent-skills.md/) - Community Skills search engine.
-- [Skills Leaderboard](https://skills.sh) - Open Agent Skills ecosystem directory.
-- [Tencent SkillHub](https://skillhub.tencent.com/) - Tencent's Skills community with 13k+ skills, optimized for Chinese users.
-- [ClawHub](https://docs.openclaw.ai/skills) - OpenClaw's public skills registry for discovering and sharing skills.
-- [Kling AI Plugin Skill (Global)](https://www.npmjs.com/package/@klingai/plugin-global) - Official image and video generation and task-tracking Skill. A [China npm package](https://www.npmjs.com/package/@klingai/plugin-cn) is also available. Use an OAuth account and credits for the corresponding region. Installation runs a `postinstall` script to register the shared `kling-plugin` CLI locally.
-
 ## Skills Collections
 
-- [awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) - 41.2k ⭐ - The most comprehensive Cursor Rules collection.
-- [heilcheng/awesome-agent-skills](https://github.com/heilcheng/awesome-agent-skills) - 6.4k ⭐ - Community-curated Agent Skills directory focused on real-world skills used by engineering teams.
+- [anthropics/skills](https://github.com/anthropics/skills) - 199.1k ⭐ - Anthropic's skills for document processing, design, and other tasks.
+- [microsoft/skills](https://github.com/microsoft/skills) - 3.2k ⭐ - Microsoft's collection of skills for working with Azure SDKs.
+- [microsoft/azure-skills](https://github.com/microsoft/azure-skills) - 1.7k ⭐ - Skills for provisioning, troubleshooting, and operating Azure services.
+- [GitHub Awesome Copilot](https://github.com/github/awesome-copilot/tree/main/skills) - 41.5k ⭐ - Reusable skills for GitHub Copilot, with a separate directory for each skill.
 - [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) - 80.1k ⭐ - Claude Skills collection by Composio.
-- [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) - 58.6k ⭐ - Claude Code skills/hooks/plugins collection.
-- [openskills](https://github.com/numman-ali/openskills) - 10.8k ⭐ - Universal Skills loader (npm install).
-- [simonw/claude-skills](https://github.com/simonw/claude-skills) - 932 ⭐ - Claude Skills documentation by Simon Willison.
-- [claude-skills-collection](https://github.com/abubakarsiddik31/claude-skills-collection) - 1.1k ⭐ - Curated official and community Skills.
 - [best-skills](https://github.com/xstongxue/best-skills) - 3.2k ⭐ - High-quality Skills collection for paper writing, dev workflow, and content creation.
-- [skillkit](https://github.com/rohitg00/skillkit) - 1.6k ⭐ - Cross-platform skills manager that installs, translates, and syncs skills across 40+ agents.
+- [SkillKit methodology packs](https://github.com/rohitg00/skillkit/tree/main/packages/core/src/methodology/packs) - 1.6k ⭐ - Skills for debugging, testing, planning, and team handoffs.
+- [Skill Factory collection](https://github.com/alirezarezvani/claude-code-skill-factory/tree/dev/generated-skills) - 912 ⭐ - Ready-to-use skills for AWS architecture, app store optimization, and other workflows.
 - [youtube-skills](https://github.com/ZeroPointRepo/youtube-skills) - 1.2k ⭐ - YouTube transcript, video search, channel and playlist skills for Claude Code, OpenClaw, Hermes Agent, and other agent runtimes.
 - [oh-my-agent](https://github.com/first-fluke/oh-my-agent) - 1.5k ⭐ - 33 skills and 21 workflows kept in one `.agents/skills` folder and symlinked per skill into Claude Code, Codex, Cursor and other runtimes; `oma link --dry-run` previews what it will write.
 - [sno-station-skills](https://github.com/sno-ai/sno-station-skills) - 871 ⭐ - Skills for Claude Code and Codex: cross-vendor peer review, handoff when one agent hits its usage limit, delegation and reporting.
 - [laolaoshiren/claude-code-skills-zh](https://github.com/laolaoshiren/claude-code-skills-zh) - 927 ⭐ - Curated Claude Code skills collection for Chinese developers, with 438+ curated skills and 20 original skills.
 - [nexscope-ai/eCommerce-Skills](https://github.com/nexscope-ai/eCommerce-Skills) - 1.5k ⭐ - E-commerce skills for AI agents covering product research, marketing, and operations across Amazon, Shopify, TikTok Shop, and more.
 - [nexscope-ai/Amazon-Skills](https://github.com/nexscope-ai/Amazon-Skills) - 886 ⭐ - Free Amazon seller skills for keyword research, competitor analysis, listing audits, and more.
-- [iart-ai/motion-skills](https://github.com/iart-ai/motion-skills) - 2.1k ⭐ - 19 motion graphics and video skill packs covering kinetic typography, data-viz, explainers, social clips, WebGL and Manim animations.
 
 ## Development Tools
 
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) - 119.8k ⭐ - Production-grade engineering skills and slash-command workflows for AI coding agents.
-- [claude-code-security-review](https://github.com/anthropics/claude-code-security-review) - 7.1k ⭐ - AI security review GitHub Action (Official).
 - [trailofbits/skills](https://github.com/trailofbits/skills) - 8.4k ⭐ - Trail of Bits security research and audit Skills.
 - [playwright-skill](https://github.com/lackeyjb/playwright-skill) - 3.3k ⭐ - Playwright browser automation testing Skill.
 - [markstream-install](https://github.com/Simon-He95/markstream-vue/tree/main/.agents/skills/markstream-install) - 3.1k ⭐ - Install streaming Markdown renderers across Vue, React, Svelte, Angular, and Vue 2 projects.
@@ -156,7 +132,7 @@ Skills work across multiple platforms:
 - [antfu/skills](https://github.com/antfu/skills) - 6.1k ⭐ - Vue/Vite/Vitest development Skills.
 - [Supabase Agent Skills](https://github.com/supabase/agent-skills) - 3.1k ⭐ - PostgreSQL best practices Skill by Supabase.
 - [Expo Skills](https://github.com/expo/skills) - 4.2k ⭐ - Expo/React Native development Skills.
-- [browser-use/browser-use](https://github.com/browser-use/browser-use) - 121.8k ⭐ - Browser automation Skill.
+- [browser-use/browser-use](https://github.com/browser-use/browser-use/tree/main/skills/browser-use) - 121.8k ⭐ - Browser automation Skill.
 - [code-review](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/code-review) - 670 ⭐ - Smart code review example Skill.
 - [git-commit](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/git-commit) - 670 ⭐ - Git commit message generator Skill.
 - [unit-test-generator](https://github.com/JackyST0/awesome-agent-skills/tree/main/examples/unit-test-generator) - 670 ⭐ - Unit test auto-generator Skill.
@@ -170,7 +146,6 @@ Skills work across multiple platforms:
 
 - [claude-code-workflows](https://github.com/shinpr/claude-code-workflows) - 720 ⭐ - Production-grade dev workflows with quality checks.
 - [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) - 30.3k ⭐ - 20+ productivity tools with 8 expert Agents.
-- [claude-code-skill-factory](https://github.com/alirezarezvani/claude-code-skill-factory) - 909 ⭐ - Skills factory for batch generation and deployment.
 - [obra/superpowers](https://github.com/obra/superpowers) - 324.3k ⭐ - Complete dev workflow (Debug/TDD/Code Review/Planning).
 - [planning-with-files](https://github.com/OthmanAdi/planning-with-files) - 28.2k ⭐ - Persistent file-based planning with task plans, findings, progress tracking, and session recovery for long-running agent work.
 - [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) - 62.1k ⭐ - Marketing Skills (SEO/Copywriting/CRO/Ads).

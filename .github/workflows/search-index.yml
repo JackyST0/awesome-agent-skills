@@ -38,5 +38,10 @@ jobs:
       - name: Validate repository
         run: npm run check
 
+      - name: Verify stars for new catalog sources
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: npm run check:stars
+
       - name: Validate patch formatting
         run: git diff --check "$BASE_SHA...$HEAD_SHA"

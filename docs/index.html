@@ -67,8 +67,8 @@
         <div class="text-gray-500 text-sm" id="stat-platforms-label">支持平台</div>
       </div>
       <div class="bg-white rounded-xl p-4 text-center shadow-sm">
-        <div class="text-2xl font-bold gradient-text" id="stat-official">3</div>
-        <div class="text-gray-500 text-sm" id="stat-official-label">官方资源</div>
+        <div class="text-2xl font-bold gradient-text">≥512</div>
+        <div class="text-gray-500 text-sm" id="stat-min-stars-label">源码仓库最低星数</div>
       </div>
     </div>
 
@@ -110,12 +110,11 @@
     let skills = [];
 
     const categoryLabels = {
-      zh: { official: '官方资源', collection: 'Skills 合集', devtools: '开发工具', productivity: '效率提升', devops: 'DevOps', data: '数据处理', writing: '写作创作', design: '设计相关' },
-      en: { official: 'Official', collection: 'Collections', devtools: 'Dev Tools', productivity: 'Productivity', devops: 'DevOps', data: 'Data Processing', writing: 'Writing', design: 'Design' }
+      zh: { collection: 'Skills 合集', devtools: '开发工具', productivity: '效率提升', devops: 'DevOps', data: '数据处理', writing: '写作创作', design: '设计相关' },
+      en: { collection: 'Collections', devtools: 'Dev Tools', productivity: 'Productivity', devops: 'DevOps', data: 'Data Processing', writing: 'Writing', design: 'Design' }
     };
 
     const categoryOrder = {
-      official: 0,
       collection: 1,
       devtools: 2,
       productivity: 3,
@@ -146,7 +145,7 @@
         noResults: '没有找到匹配的 Skills',
         showing: (c, t) => `显示 ${c} / ${t} 个 Skills`,
         footer: 'Made with ❤️ by',
-        totalLabel: 'Skills 总数', catLabel: '分类数量', platLabel: '支持平台', offLabel: '官方资源'
+        totalLabel: 'Skills 总数', catLabel: '分类数量', platLabel: '支持平台', minStarsLabel: '源码仓库最低星数'
       },
       en: {
         subtitle: 'Curated AI Agent Skills for smarter coding',
@@ -154,7 +153,7 @@
         noResults: 'No skills found matching your search.',
         showing: (c, t) => `Showing ${c} of ${t} skills`,
         footer: 'Made with ❤️ by',
-        totalLabel: 'Total Skills', catLabel: 'Categories', platLabel: 'Platforms', offLabel: 'Official'
+        totalLabel: 'Total Skills', catLabel: 'Categories', platLabel: 'Platforms', minStarsLabel: 'Minimum GitHub stars'
       }
     };
 
@@ -317,7 +316,7 @@
       document.getElementById('stat-total-label').textContent = i18n[lang].totalLabel;
       document.getElementById('stat-categories-label').textContent = i18n[lang].catLabel;
       document.getElementById('stat-platforms-label').textContent = i18n[lang].platLabel;
-      document.getElementById('stat-official-label').textContent = i18n[lang].offLabel;
+      document.getElementById('stat-min-stars-label').textContent = i18n[lang].minStarsLabel;
 
       renderCategoryFilters();
       renderSkills();
@@ -333,7 +332,6 @@
         document.getElementById('stat-total').textContent = skills.length;
         document.getElementById('stat-categories').textContent = new Set(skills.map(skill => skill.category)).size;
         document.getElementById('stat-platforms').textContent = '7';
-        document.getElementById('stat-official').textContent = skills.filter(skill => skill.category === 'official').length;
         switchLang(browserLang);
       } catch (error) {
         console.error(error);

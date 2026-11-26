@@ -16,9 +16,9 @@ The goal is to provide one normalized data source for:
 4. Support different entry types:
    - single skills
    - bundled examples
-   - collections
-   - managers / installers
-   - official resources
+   - collections of skills hosted together
+
+All catalog entries must meet the [inclusion requirements](../CONTRIBUTING.md), including the 512-star minimum for the public source repository. Documentation and tools may be linked as references, not as entries.
 
 ## Top-Level Shape
 
@@ -52,7 +52,7 @@ Each entry should use this shape:
   },
   "repo": {
     "fullName": "JackyST0/awesome-agent-skills",
-    "stars": 400,
+    "stars": 670,
     "license": "CC0-1.0"
   },
   "platforms": [
@@ -98,7 +98,6 @@ Recommended format:
 
 - bundled examples: `example-<slug>`
 - external repos: `<owner>-<repo>`
-- doc resources: `resource-<slug>`
 
 ### `entryType`
 
@@ -107,9 +106,6 @@ Allowed values:
 - `example`
 - `single-skill`
 - `collection`
-- `manager`
-- `installer`
-- `official-resource`
 
 Use `example` for bundled skills shipped inside this repo.
 
@@ -117,7 +113,6 @@ Use `example` for bundled skills shipped inside this repo.
 
 Allowed values should match README sections:
 
-- `official-resources`
 - `skills-collections`
 - `development-tools`
 - `productivity`
@@ -160,7 +155,7 @@ Recommended fields:
 - `stars`
 - `license`
 
-For non-repo resources, this object may be omitted.
+Use the repository that contains the skill files, not a related project's repository.
 
 ### `platforms`
 
@@ -197,7 +192,7 @@ Examples:
 
 - bundled example with no runtime validation yet:
   - `["bundled", "docs-only"]`
-- official resource already used in production:
+- skill tested on its declared platform:
   - `["verified"]`
 
 ### `verification`
@@ -234,10 +229,6 @@ Examples:
 { "kind": "external", "repo": "anthropics/skills" }
 ```
 
-```json
-{ "kind": "resource" }
-```
-
 ### `installation`
 
 Installation hints for future product work.
@@ -259,7 +250,6 @@ Examples:
 - `review`
 - `testing`
 - `docs`
-- `manager`
 - `official`
 - `openclaw`
 
