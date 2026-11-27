@@ -157,6 +157,7 @@ Choose a section by what you want to do. The **Type** column distinguishes a sin
 | claude-code-workflows | Skills Collection | Production-grade dev workflows with quality checks. | Claude | 720 | [GitHub](https://github.com/shinpr/claude-code-workflows) |
 | obra/superpowers | Skills Collection | Complete dev workflow (Debug/TDD/Code Review/Planning). | All | 324.3k | [GitHub](https://github.com/obra/superpowers) |
 | context-engineering | Skills Collection | Context engineering and multi-Agent architecture. | All | 18.4k | [GitHub](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) |
+| 100x Engineer Skill | Skills Collection | Open source skills that plan the work before coding, then check the result with tests and formal verification before calling it done. | Claude/Cursor/Codex | 763 | [GitHub](https://github.com/DeadInternetStudios/100x-engineer-skill) |
 
 ### Tasks and Productivity
 
