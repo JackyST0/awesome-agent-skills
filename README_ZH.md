@@ -184,6 +184,7 @@ Copy-Item -LiteralPath '.\examples\code-review' -Destination $dest -Recurse -For
 | claude-code-workflows | Skills 合集 | 生产级开发工作流，自动化质量检查 | Claude | 720 | [GitHub](https://github.com/shinpr/claude-code-workflows) |
 | obra/superpowers | Skills 合集 | 完整开发工作流（调试/TDD/代码审查/计划） | All | 324.3k | [GitHub](https://github.com/obra/superpowers) |
 | context-engineering | Skills 合集 | 上下文工程和多 Agent 架构 Skills | All | 18.4k | [GitHub](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) |
+| 100x Engineer Skill | Skills 合集 | 开源 Skills 合集,先规划再编码,完成前用测试和形式化验证检查结果 | Claude/Cursor/Codex | 763 | [GitHub](https://github.com/DeadInternetStudios/100x-engineer-skill) |
 
 ### 任务与效率
 
