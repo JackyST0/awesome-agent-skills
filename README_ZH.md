@@ -237,6 +237,7 @@ Copy-Item -LiteralPath '.\examples\code-review' -Destination $dest -Recurse -For
 
 | 名称 | 类型 | 描述 | 平台 | Stars | 源码 |
 | --- | --- | --- | --- | --- | --- |
+| viralforge | 单个 Skill | 本地视频结构分析与可编辑工程导出。 | Claude/Codex | 560 | [GitHub](https://github.com/fendouai/ViralForge/tree/main/skills/viralforge) |
 | frontend-design | 单个 Skill | 前端 UI 设计 Skill | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/frontend-design) |
 | brand-guidelines | 单个 Skill | 品牌设计规范 Skill | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/brand-guidelines) |
 | canvas-design | 单个 Skill | Canvas 画布设计 Skill | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/canvas-design) |
