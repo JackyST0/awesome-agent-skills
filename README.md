@@ -210,6 +210,7 @@ Choose a section by what you want to do. The **Type** column distinguishes a sin
 
 | Name | Type | Description | Platforms | Stars | Source |
 | --- | --- | --- | --- | --- | --- |
+| viralforge | Single Skill | Local video structure analysis and editable project exports. | Claude/Codex | 560 | [GitHub](https://github.com/fendouai/ViralForge/tree/main/skills/viralforge) |
 | frontend-design | Single Skill | Frontend UI design Skill. | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/frontend-design) |
 | brand-guidelines | Single Skill | Brand design guidelines Skill. | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/brand-guidelines) |
 | canvas-design | Single Skill | Canvas design Skill. | Claude | 199.1k | [GitHub](https://github.com/anthropics/skills/tree/main/skills/canvas-design) |
